@@ -1,16 +1,6 @@
 # Unit 0 orientation learning diary
 
 
-### Table of Contents
-1. [The work](#The-work)
-2. [The rationale](#The-rationale)
-3. [The map](#Related-topics)
-4. [What went right and wrong](#What-went-right-and-wrong)
-5. [Related topics](#Related-topics)
-6. [References](#References)
-7. [Get in touch](#Get-in-touch)
-
-
 ## The work
 <!-- describe briefly what you have done as work for that unit. -->
 
