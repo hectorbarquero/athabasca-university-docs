@@ -29,7 +29,7 @@ html_static_path = ['_static']
 
 # -- add css override 
 html_css_files = [
-    'css/custom.css'
+    'custom.css'
 ]
 
 # -- add logo placement, if needed
