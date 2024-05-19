@@ -11,7 +11,8 @@ COMP266 documentation
 +++++++++++++++++++++++
 Welcome to my COMP 266 project. Here you'll find my learning diary, my reading notes, and useful attachments like my sitemap, personas, and prototypes. You'll also find my source code, which you're free to fork and repurpose.
 
-
+.. image:: images/COMP266assessment.png
+   :alt: Course overview
 
 What's in my learning diary?
 ==============================
