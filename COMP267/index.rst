@@ -54,3 +54,4 @@ Since I'm working through unit 1 shortly, I'll let you know soon.
    :hidden:
 
    Unit 0/learningDiary.md
+   Unit 1/learningDiary.md
