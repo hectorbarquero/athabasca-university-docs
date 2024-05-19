@@ -14,15 +14,16 @@ The work
    This section briefly describes what I completed for the unit.
 
 
-1. Visit [AU course book](https://scis.lms.athabascau.ca/mod/book/view.php?id=13057)  > **print book** as .pdf for offline reading. 
+1. 1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13057>`_ > **print book** as .pdf for offline reading.
 
 2. Read, understood, and commented on the 41 orientation pages.
 
-    > *Note:* The Unit 0 orientation reading markup is provided as an attachment under **References**.
+    .. Note::
+       The Unit 0 orientation reading markup is provided as an attachment under **References**.
 
 3. Submit a support ticket for SCIS access to the web server.
 
-4. Create a template that I can use to submit learning diary formats in markdown.
+4. Create a template that I can use to submit learning diary formats in reStructuredText.
 
 5. Join the COMP266 group and read class mate blog posts.
 
@@ -37,7 +38,7 @@ The rationale
    you developed in Unit 1.
 The work performed is aligned with the course outline, including requesting access to the SCIS server, joining the COMP266 group, and submitting this blog entry. 
 
-I decided to download the reading for offline viewing since I could add annotations and submit it as evidence that the reading is complete. I've created a template in markdown because I'll be working in an IDE and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
+I decided to download the reading for offline viewing since I could add annotations and submit it as evidence that the reading is complete. I've created a template in reStructuredText because I'll be working in an IDE and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
 
 
 The map
@@ -80,8 +81,8 @@ Related topics
 References
 ===========
 
-+ [COMP 266 - Unit 0 orientation notes](/attachments/COMP%20266%20-%20Unit%200%20orientation.pdf)
-+ [Hectors project GitHub](https://github.com/hectorbarquero/university-COMP266)
++ `COMP 266 - Unit 0 orientation notes <attachments/COMP%20266%20-%20Unit%200%20orientation.pdf>`_
++ `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
 Get in touch
