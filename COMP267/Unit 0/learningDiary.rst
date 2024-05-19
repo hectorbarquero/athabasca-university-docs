@@ -36,6 +36,7 @@ The rationale
 ==============
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios
    you developed in Unit 1.
+
 The work performed is aligned with the course outline, including requesting access to the SCIS server, joining the COMP266 group, and submitting this blog entry. 
 
 I decided to download the reading for offline viewing since I could add annotations and submit it as evidence that the reading is complete. I've created a template in reStructuredText because I'll be working in an IDE and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
@@ -45,6 +46,7 @@ The map
 ========
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you
    produce (typically your code or other design artifacts).
+
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
 
 Expected outcomes for Unit 0
