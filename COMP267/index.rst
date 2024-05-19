@@ -54,4 +54,10 @@ Since I'm working through unit 1 shortly, I'll let you know soon.
    :hidden:
 
    Unit 0/learningDiary.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Unit 1
+   :hidden:
+
    Unit 1/learningDiary.md
