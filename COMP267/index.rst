@@ -53,11 +53,11 @@ Since I'm working through unit 1 shortly, I'll let you know soon.
    :caption: Unit 0
    :hidden:
 
-   Unit 0/learningDiary.md
+   Unit 0/learningDiary.rst
 
 .. toctree::
    :maxdepth: 2
    :caption: Unit 1
    :hidden:
 
-   Unit 1/learningDiary.md
+   Unit 1/learningDiary.rst

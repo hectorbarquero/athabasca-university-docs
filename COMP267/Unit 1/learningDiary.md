@@ -1,3 +1,5 @@
-# Unit 1 site design learning diary
+Unit 1 site design learning diary
++++++++++++++++++++++++++++++++++++
 
-> *Pending completion. Check back soon.*
+.. Warning::
+   Pending completion. Check back soon.
