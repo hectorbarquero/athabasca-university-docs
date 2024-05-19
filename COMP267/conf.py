@@ -15,6 +15,17 @@ author = 'Hector Barquero'
 
 extensions = ['myst_parser']
 
+latex_elements = {
+    'papersize': 'a4paper',  # or 'letterpaper'
+    'pointsize': '10pt',
+    'preamble': '',
+    'figure_align': 'htbp',
+}
+
+latex_documents = [
+    ('index', 'MyProject.tex', 'COMP 266 documentation', 'Hector Barquero', 'manual'),
+]
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
