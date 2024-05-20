@@ -13,7 +13,9 @@ author = 'Hector Barquero'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinxawesome_theme'
+]
 
 
 templates_path = ['_templates']
