@@ -17,5 +17,4 @@ formats:
 
 python:
   install:
-    - requirements: Athabasca University/requirements.txt
     - requirements: requirements.txt
