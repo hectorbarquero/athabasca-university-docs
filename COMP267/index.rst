@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 .. tip::
-   You can use the side bar to navigate to the chapters you're interested in, or the top search bar to navigate directly to content you're looking for.
+   Use the side bar to navigate the chapters, or use the top search bar to navigate directly to content you're looking for.
 
 
 COMP266 documentation
