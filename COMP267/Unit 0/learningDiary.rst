@@ -46,7 +46,8 @@ The map
 ========
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
+.. Tip:: 
+   Normally, an evaluator will find the mapped activities to learning outcomes here. Right now, Unit 0 has no direct correlation to the template provided by AU. You can read this paragraph below to understand how the work completed correlates to the learning outcomes of Unit 0, but in future, you can expect to see the template for mapped activities here. 
 
 Expected outcomes for Unit 0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
