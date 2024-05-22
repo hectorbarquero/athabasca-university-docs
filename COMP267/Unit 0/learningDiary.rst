@@ -16,14 +16,14 @@ The work
 
 1. 1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13057>`_ > **print book** as .pdf for offline reading.
 
-2. Read, understood, and commented on the 41 orientation pages.
+2. Read the 41 orientation pages.
 
     .. Note::
        The Unit 0 orientation reading markup is provided as an attachment under **References**.
 
 3. Submit a support ticket for SCIS access to the web server.
 
-4. Create a template that I can use to submit learning diary formats in reStructuredText.
+4. Create a template for learning diary formats in reStructuredText.
 
 5. Join the COMP266 group and read class mate blog posts.
 
@@ -44,8 +44,7 @@ I decided to download the reading for offline viewing since I could add annotati
 
 The map
 ========
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you
-   produce (typically your code or other design artifacts).
+.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
 
@@ -57,8 +56,14 @@ Expected outcomes for Unit 0
 4. Optional - start making connections with COMP266 students.
 5. Set up your website in the SCIS web space provided.
 
+
 My mapped learning
 ~~~~~~~~~~~~~~~~~~~~
+
+.. Tip:: 
+   Normally, an evaluator will find the mapped activities to learning outcomes here. Right now, Unit 0 has no direct correlation to the template provided by AU. You can read this paragraph below to understand how the work completed correlates to the learning outcomes of Unit 0, but in future, you can expect to see the template for mapped activities here. 
+
+
 I was able to complete the activities, and started a course of action which is aligned to the suggested tempo of study in the outline. I reviewed the portfolio requirements, and have a good idea of what I'd like to make. My learning diary is created, and I created a template to make sure it's easy to author while I code. Since it was optional, I did not connect with other students, though I'm sure in time, I will. My SCIS request has been submitted, and I am waiting for access to set up a web space.
 
 All in all, my work is aligned with the desired outcome of unit 0; I am informed of what is needed to successfully pass and complete COMP 266.
