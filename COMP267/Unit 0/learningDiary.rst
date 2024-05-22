@@ -88,7 +88,7 @@ Related topics
 References
 ===========
 
-+ `COMP 266 - Unit 0 orientation notes <attachments/COMP 266 - Unit 0 orientation.pdf>`_
++ `COMP 266 - Unit 0 orientation notes <attachments/unit0Reading.pdf>`_
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
