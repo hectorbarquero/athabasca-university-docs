@@ -17,14 +17,14 @@ Welcome to my COMP 266 project. Here you'll find my learning diary, my reading n
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Unit 0
    :hidden:
 
    Unit 0/learningDiary.rst
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Unit 1
    :hidden:
 
