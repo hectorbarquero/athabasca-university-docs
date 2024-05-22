@@ -16,7 +16,7 @@ The work
 .. describe briefly what you have done as work for that unit.
 
 
-1. 1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13059>`_ > **print book** as .pdf for offline reading.
+1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13059>`_ > **print book** as .pdf for offline reading.
 
 2. Read the 19 instruction pages.
 
