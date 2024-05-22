@@ -70,7 +70,7 @@ What went right and wrong
 ==========================
 .. describe what you would do differently if you had to do it again.
 
- If I could re-do this unit, I would use **Adobe Acrobat** to organize pages and *remove* the unecessary duplicate pages. Rather than be 41 pages, the introduction course reading is really ~30 pages(+-), and the other 10 are duplicate to themselves. I may have also been better to submit an access support ticket during the week or earlier in the course, so that IT could grant me permissions to the server sooner. 
+If I could re-do this unit, I would use **Adobe Acrobat** to organize pages and *remove* the unecessary duplicate pages. Rather than be 41 pages, the introduction course reading is really ~30 pages(+-), and the other 10 are duplicate to themselves. I may have also been better to submit an access support ticket during the week or earlier in the course, so that IT could grant me permissions to the server sooner. 
 
 
 Related topics
