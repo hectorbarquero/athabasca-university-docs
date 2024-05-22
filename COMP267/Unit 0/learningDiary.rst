@@ -14,7 +14,7 @@ The work
    This section briefly describes what I completed for the unit.
 
 
-1. 1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13057>`_ > **print book** as .pdf for offline reading.
+1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13057>`_ > **print book** as .pdf for offline reading.
 
 2. Read the 41 orientation pages.
 
