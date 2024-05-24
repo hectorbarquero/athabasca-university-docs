@@ -83,9 +83,10 @@ Personas and scenarios
 ~~~~~~~~~~~~~~~~~~~~~~~
 I made sure to prepare a future-proof way of managing my personas, which are important because they dictate a lot of the compliant code I will need to write to make the site responsive and compliant with AODA requirements for accessibility.
 
-I used a :download:`.csv for the data <../attachments/personaData.csv>`, and an .indd file for the publishing template. Since I know that this can change in future, I want to make sure I have an easy way to edit the source data and re-publish the .pdf's quickly. The way I have designed this has automated this process for me, since the template accepts the persona data as variables, managed from the .csv.
+I used a :download:`.csv for the data <../attachments/personaData.csv>`, and an :download:`.indd file for the publishing <../attachments/personaMain.indd>` template. Since I know that this can change in future, I want to make sure I have an easy way to edit the source data and re-publish the .pdf's quickly. The way I have designed this has automated this process for me, since the template accepts the persona data as variables, managed from the .csv.
 
-Read my personas here
+
+Read my personas **with their scenarios** `here <https://github.com/hectorbarquero/university-COMP266/tree/main/attachments/personas>`_
 
 .. image:: ../images/peter.jpg
    :alt: Persona of Peter
