@@ -1,14 +1,18 @@
+.. file not submitted yet to AU, file open
+
 Unit 1 site design learning diary
 +++++++++++++++++++++++++++++++++++
 
-.. Caution::
+.. _unit1-ref:
+
+.. Error::
    This is currently being worked. Unit 1 data below is not reflective to a complete state. Check back soon.
 
 
 Summary
 ========
 
-    *"I took my time to complete this unit because I knew that if I made purposeful decisions, then it would make for an easier time completing the coding in the later units. I disregarded style sheets and visual design, leaving my mock up to be a very bare metal with an emphasis on the sitemap, carefully engineered to my personas and their scenarios."*
+    *"I took my time to complete this unit because I knew that if I made purposeful decisions, they would connect together when completing the coding in the later units. I disregarded style sheets and visual design, leaving my mock up to be a very bare metal with an emphasis on the sitemap, carefully engineered to my personas and their scenarios."*
 
 
 The work
@@ -39,13 +43,41 @@ The work
 
 
 
-The rationale
-==============
+Assignment 1 submission
+========================
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios you developed in Unit 1.
 
 Theme and purpose
 ~~~~~~~~~~~~~~~~~~
-I chose a site that I am passionate about; building CRUD tools for an industry I am already working in. I think this is useful because it helps others who don't have the time to dig into the hours of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
+
+   *A website for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users of all skill levels can use this accessible website to automate processes, learn, or get inspiration to write their own CRUD tools. The website is inspired by the authors experience working in the industry, a desire to innovate*
+
+
+I chose a site that I am passionate about; building CRUD tools for an industry I am already working in. I think this is useful because it helps others who don't have the time to dig into the *hours* of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
+
+I want to make sure my site serves three points:
+
+1. It should appeal to an audience with a wide skill, industry, and age range.
+2. It should be accessible, with limited barriers.
+3. It should be primarily focused on publication, but dynamically demonstrate the tools.
+
+
+My audience is a pool of 27,000+ technical writers, editors, copywriters, product managers, knowledgebase specialists, developer advocates, solutions architects, and really anyone involved in data, scientific, product, or knowledge publications. They are collected in subreddits and communities that I belong to. 
+
+There is a growing number of these professionals who are currently being trapped by outdated learning resources hidden behind a pay wall.
+
+   *My goal is to provide knowledge for free. I believe that `information wants to be free.*
+   
+
+The scope for this build is realistic and well thought. I have a variety of tools that I've created, but I lack the front-end and javascript know-how to present them in a captivating way. I am passionate to discover how to leverage javascript and connect with rich libraries:
+
++ `chart.js <https://www.chartjs.org/>`_
++ `d3.js <https://d3js.org/>`_
++ `three.js <https://threejs.org/>`_
+
+With these ideas, I can keep my site focused primarily on publication through the documentation of my tools, while doing it in a dynamic way with forms, actions, animations, conversions, sorts, multimedia control, and more.
+
+
 
 Personas and scenarios
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,9 +85,28 @@ I made sure to prepare a future-proof way of managing my personas, which are imp
 
 I used a .csv for the data, and an .indd file for the publishing template. Since I know that this can change in future, I want to make sure I have an easy way to edit the source data and re-publish the .pdf's quickly. The way I have designed this has automated this process for me, since the template accepts the persona data as variables, managed from the .csv.
 
+Read my personas here.
+
+
+
+
 Further requirements
 ~~~~~~~~~~~~~~~~~~~~~
-I considered a few legal obligations, and fortunately, my site does not have many. Since it's more a personal blog with tools that help others for an industry I am involved in, then I can choose style guides and schemas as they suit me. One thing I need to be aware of is compliance declarations, privacy notices, and warnings to remove liability for potential data and system corruption when running any of the tools.
+I considered a few legal obligations and browsed similar products to determine I need the following:
+
++ Accessibility compliance statement
++ Canadian consumer protection laws
++ Anti spam
++ Open source license declaration
++ Security declaration for trust
++ Third-party software acknowledgement
++ Respect for third-party licenses
++ Privacy and data protection notices
++ Warnings to remove liability for potential data
++ System corruption when running any of the tools
++ Notifications and consent
+
+
 
 Mock up and site map
 ~~~~~~~~~~~~~~~~~~~~~
@@ -83,6 +134,15 @@ What went right and wrong
 ==========================
 .. describe what you would do differently if you had to do it again.
 
+   I am happy with the the work I did. If I were to do it again, not a lot would be done differently. 
+
+One issue that was plaguing me was the .pdf builder for my project. In short, there is no cache busting on my server. To temporarily fix this, I give the DNS cache approximately 24 hours to resolve CDN issues itself. I withheld .pdf submissions from my learning diary posts on the AU landing, and leave those .pdf submissions for the drop-box instead.
+
+The simplest way to submit assignments would be to use a standard text editor and generate a .pdf with the built-in .pdf exporter engine. 
+
+I opted to use a different solution, especially for my personas, because the imminent future maintainability of this project is on my mind. The instructions noted that we should choose something that we're passionate about, and something that we could see ourselves working on for months or years.
+
+In those months and years, I think my complicated debugging will feel nominal for the value added gain of ease of maintenance. 
 
 
 
@@ -90,19 +150,18 @@ Related topics
 ================
 .. link related reading or topics
 
-.. Note::
-   There is nothing to see here. In the future. you can expect to see related blog posts from earlier units listed here.
++ :ref: `Unit 0 learning diary <_unit0-ref>`
 
 
 References
 ===========
 
-+ `COMP 266 - Unit 1 orientation notes <attachments/COMP%20266%20-%20Unit%200%20orientation.pdf>`_
++ :download:`COMP 266 - Unit 1 orientation notes <../attachments/unit1Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
 Get in touch
 =============
 
-I don't check my emails often. Connect with me on LinkedIn, or see what I'm up to on GitHub.
+I don't check my emails often. Connect with me on `LinkedIn <https://www.linkedin.com/in/hectorbarquero>`_, or see what I'm up to on `GitHub <https://github.com/hectorbarquero>`_.
 

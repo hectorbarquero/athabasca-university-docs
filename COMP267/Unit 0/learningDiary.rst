@@ -1,5 +1,9 @@
+.. submitted already to AU for assessment, file locked 22 MAY 2024
+
 Unit 0 orientation learning diary
 ++++++++++++++++++++++++++++++++++
+
+.. _unit0-ref:
 
 Summary
 ========
@@ -32,8 +36,8 @@ The work
 7. Submit a learning diary post as a blog entry in the **Group Blog**.
 
 
-The rationale
-==============
+Assignment 0 submission
+=========================
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios
    you developed in Unit 1.
 
@@ -91,4 +95,4 @@ References
 Get in touch
 =============
 
-I don't check my emails often. Connect with me on LinkedIn, or see what I'm up to on GitHub.
+I don't check my emails often. Connect with me on `LinkedIn <https://www.linkedin.com/in/hectorbarquero>`_, or see what I'm up to on `GitHub <https://github.com/hectorbarquero>`_.
