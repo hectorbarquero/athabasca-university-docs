@@ -23,7 +23,7 @@ The work
     .. Note::
        The Unit 1 orientation reading markup is provided as an attachment under **References**.
 
-3. Prepare the design documentation.
+3. Prepare the `design documentation<>_`.
 
    - What kind of website, the theme and purpose
    - Personas
@@ -97,7 +97,7 @@ Related topics
 References
 ===========
 
-+ `COMP 266 - Unit 0 orientation notes <attachments/COMP%20266%20-%20Unit%200%20orientation.pdf>`_
++ `COMP 266 - Unit 1 orientation notes <attachments/COMP%20266%20-%20Unit%200%20orientation.pdf>`_
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
