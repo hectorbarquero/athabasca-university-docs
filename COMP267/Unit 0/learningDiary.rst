@@ -77,14 +77,14 @@ Related topics
 ================
 .. link related reading or topics
 
-.. Note::
+.. Error::
    There is nothing to see here. In the future. you can expect to see related blog posts from earlier units listed here.
 
 
 References
 ===========
 
-+ `COMP 266 - Unit 0 orientation notes <attachments/unit0Reading.pdf>`
++ :download:`COMP 266 - Unit 0 orientation notes <../attachments/unit0Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
