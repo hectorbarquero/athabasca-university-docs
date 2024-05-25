@@ -48,7 +48,7 @@ Assignment 1 submission
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios you developed in Unit 1.
 
 Theme and purpose
-~~~~~~~~~~~~~~~~~~
+------------------
 
    *A website for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users of all skill levels can use this accessible website to automate processes, learn, or get inspiration to write their own CRUD tools. The website is inspired by the authors experience working in the industry, and a desire to innovate.*
 
@@ -80,7 +80,7 @@ With these ideas, I can keep my site focused primarily on publication through th
 
 
 Personas and scenarios
-~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 I made sure to prepare a future-proof way of managing my personas, which are important because they dictate a lot of the compliant code I will need to write to make the site responsive and compliant with AODA requirements for accessibility.
 
 I used a :download:`.csv for the data <../attachments/personaData.csv>`, and an :download:`.indd file for the publishing <../attachments/personaMain.indd>` template. Since I know that this can change in future, I want to make sure I have an easy way to edit the source data and re-publish the .pdf's quickly. The way I have designed this has automated this process for me, since the template accepts the persona data as variables, managed from the .csv.
@@ -109,7 +109,7 @@ Read my personas **with their scenarios** `here <https://github.com/hectorbarque
 
 
 Further requirements
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 I considered a few legal obligations and browsed similar products to determine I need the following:
 
 + Accessibility compliance statement
@@ -128,7 +128,7 @@ Source more information about these Canadian e-Commerce requirements `here <http
 
 
 Mock up and site map
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 I used two different approaches here, again for maintainability. I chose to use:
 
 - an ASCII table represent the site map hierarchy
@@ -146,14 +146,22 @@ The learning map
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
 
 Expected outcomes for Unit 1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 1. Identify the potential audience and purpose for a website.
 2. Use a simple but structured process to identify how the website will address the needs of the anticipated audience.
 
 
 My mapped learning
-~~~~~~~~~~~~~~~~~~~~
+-------------------
 
+.. Tip::
+   AU evaluators use this rubric to grade assignments. To comment, open the build options menu, titled **Latest**, on the bottom right corner of the static site > select .pdf to > comment on a local file.
+
+
+.. csv-table:: Template for mapping your activities to learning outcomes
+   :file: ../attachments/learningTemplate1.csv
+   :widths: 45, 35, 10, 10
+   :header-rows: 1
 
 
 
@@ -180,8 +188,8 @@ Related topics
 + :ref: `Unit 0 learning diary <_unit0-ref>`
 
 
-References
-===========
+Additional reading
+===================
 
 + :download:`COMP 266 - Unit 1 orientation notes <../attachments/unit1Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_

@@ -1,0 +1,26 @@
+Table 1
+Learning Outcome,Evidence of Meeting the Learning Outcome,Your Own Assessment of the Grade You Believe Would Be Appropriate,Tutor’s Justification of Grading (optional)
+"Apply a structured approach to identifying needs, interests, and functionality of a
+website.",design documentation package,A,
+Design dynamic websites that meet specified needs and interests.,not applicable this unit,NA,
+"Write well-structured, easily maintained, standards-compliant, accessible HTML code.",not applicable this unit,NA,
+"Write well-structured, easily maintained, standards-compliant CSS code to present HTML pages in different ways.",not applicable this unit,NA,
+"Use JavaScript to add
+dynamic content to pages.",not applicable this unit,NA,
+"Critique JavaScript code written by others, identifying examples of both good and bad practice.",not applicable this unit,NA,
+"Select appropriate HTML, CSS, and JavaScript code from public repositories of open source and free scripts that improves your site and that enhances the experience
+of site visitors.","see design documentation, selected three APIs that I think are suitable for my dynamic plans",A,
+"Modify existing HTML, CSS, and JavaScript code to extend and alter its functionality, and to correct errors and cases
+of poor practice.","learning diary built as a static site, modifying Sphinx/reStructuredText/HTML/python/Javascript to render, instead of basic word processor",A,
+"Write well-structured, easily maintained JavaScript code following accepted good practice, including",not applicable this unit,"A, B, C, D",
+"•    general appearance and form: commented, properly laid out, appropriate capitalization","Source code in GitHub repo is commented, sentence casing and writing follows Microsoft style guide",A,
+"•    structure: modular, using functions and objects effectively",not applicable this unit,NA,
+•    standards-compliant,not applicable this unit,NA,
+•    accessible,"images contain alt text, site is responsive for mobile, ePUB and .pdf available as export options, and two themes for colour blindness exist",A,
+"Write JavaScript code that works in all major browsers (including IE, Mozilla-based browsers such as Firefox, Opera, Konqueror, Safari,
+Chrome).",not applicable this unit,NA,
+"Effectively debug JavaScript code, making use of good practice and debugging tools.",not applicable this unit,NA,
+"Use JavaScript libraries (e.g., JQuery) to create dynamic pages.",not applicable this unit,NA,
+"Use JavaScript to access and use web services for dynamic content (AJAX,
+JSON, etc.).",not applicable this unit,NA,
+Overall,"Quality of submission is high, unique, and visibly more maintainable as a long-term project.",A,

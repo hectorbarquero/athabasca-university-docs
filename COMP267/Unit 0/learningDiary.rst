@@ -54,7 +54,7 @@ The learning map
    Normally, an evaluator will find the mapped activities to learning outcomes here. Right now, Unit 0 has no direct correlation to the template provided by AU. You can read this paragraph below to understand how the work completed correlates to the learning outcomes of Unit 0, but in future, you can expect to see the template for mapped activities here. 
 
 Expected outcomes for Unit 0
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 1. Complete the unit 0 activities - start to plan your course of action.
 2. Review the portfolio requirements
 3. Set up a learning diary blog in the landing, and write your first reflection.
@@ -63,7 +63,7 @@ Expected outcomes for Unit 0
 
 
 My mapped learning
-~~~~~~~~~~~~~~~~~~~~
+-------------------
 I was able to complete the activities, and started a course of action which is aligned to the suggested tempo of study in the outline. I reviewed the portfolio requirements, and have a good idea of what I'd like to make. My learning diary is created, and I created a template to make sure it's easy to author while I code. Since it was optional, I did not connect with other students, though I'm sure in time, I will. My SCIS request has been submitted, and I am waiting for access to set up a web space.
 
 All in all, my work is aligned with the desired outcome of unit 0; I am informed of what is needed to successfully pass and complete COMP 266.
@@ -85,8 +85,8 @@ Related topics
    There is nothing to see here. In the future. you can expect to see related blog posts from earlier units listed here.
 
 
-References
-===========
+Additional reading
+===================
 
 + :download:`COMP 266 - Unit 0 orientation notes <../attachments/unit0Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
