@@ -66,7 +66,7 @@ My audience is a pool of 27,000+ technical writers, editors, copywriters, produc
 
 There is a growing number of these professionals who are currently being trapped by outdated learning resources hidden behind a pay wall.
 
-   *My goal is to provide knowledge and valuable upskilling for free, while demonstrating how a technical writer could 10x productivity.
+   *My goal is to provide knowledge and valuable upskilling for free, while demonstrating how a technical writer could 10x productivity.*
    
 
 The scope for this build is realistic and well thought. I have a variety of tools that I've created, but I lack the front-end and javascript know-how to present them in a captivating way. I am passionate to discover how to leverage javascript and connect with rich libraries:
