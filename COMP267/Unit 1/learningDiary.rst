@@ -129,7 +129,9 @@ Source more information about these Canadian e-Commerce requirements `here <http
 
 Mock up and site map
 ---------------------
-My site map is available here, and it shows:
+My site map is available here as both `.xml <https://github.com/hectorbarquero/university-COMP266/blob/main/attachments/siteMap.drawio>`_ and a `.png <https://github.com/hectorbarquero/university-COMP266/blob/main/images/COMP266sitemap.png>`_.
+
+It contains:
 
 + The typical user journey
 + The navigation choices (3)
