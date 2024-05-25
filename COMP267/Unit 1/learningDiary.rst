@@ -129,13 +129,17 @@ Source more information about these Canadian e-Commerce requirements `here <http
 
 Mock up and site map
 ---------------------
-I used two different approaches here, again for maintainability. I chose to use:
+My site map is available here, and it shows:
 
-- an ASCII table represent the site map hierarchy
-- a diagramming tool to understand the navigation
-- a graphics program to sketch a rough mock up
++ The typical user journey
++ The navigation choices (3)
++ Pages within the navigation choices (12)
++ The connections between some, where an excerpt exists
++ The external flows to other technologies powering some of the features, which the AU server can't power reliably
 
 
+.. image:: ../images/COMP266sitemap.png
+   :alt: Site map of my project.
 
 
 
