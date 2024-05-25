@@ -129,7 +129,7 @@ Source more information about these Canadian e-Commerce requirements `here <http
 
 Mock up and site map
 ---------------------
-My site map is available here as both `.xml <https://github.com/hectorbarquero/university-COMP266/blob/main/attachments/siteMap.drawio>`_ and a `.png <https://github.com/hectorbarquero/university-COMP266/blob/main/images/COMP266sitemap.png>`_.
+My site map is available here as both `.xml <https://github.com/hectorbarquero/university-COMP266/blob/main/attachments/siteMap.drawio>`_ and a `.png <https://github.com/hectorbarquero/university-COMP266/blob/main/images/COMP266sitemap.png>`_. 
 
 It contains:
 
@@ -143,6 +143,24 @@ It contains:
 .. image:: ../images/COMP266sitemap.png
    :alt: Site map of my project.
 
+
+To see it all connected, check out my mock up.
+
+.. image:: ../images/COMP266welcome.png
+   :alt: Mock up of the initial welcome pages
+
+.. image:: ../images/COMP266news-showcase.png
+   :alt: Mock up of the news and showcase reel
+
+.. image:: ../images/COMP266testimonials-footer.png
+   :alt: Mock up of the footer including testimonials
+
+.. image:: ../images/COMP266showcase-downloads.png
+   :alt: Mock up of the tools section
+
+.. image:: ../images/COMP266about-faq-contact.png
+   :alt: Mock up of the final page, contact and about information
+   
 
 
 The learning map
