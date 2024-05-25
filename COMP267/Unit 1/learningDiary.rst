@@ -155,7 +155,7 @@ My mapped learning
 -------------------
 
 .. Tip::
-   AU evaluators use this rubric to grade assignments. To comment, open the build options menu, titled **Latest**, on the bottom right corner of the static site > select .pdf to > comment on a local file.
+   AU evaluators use this rubric to grade assignments. To comment, open the build menu, titled **v: latest** > select .pdf to > comment on a local pdf reader.
 
 
 .. csv-table:: Template for mapping your activities to learning outcomes
