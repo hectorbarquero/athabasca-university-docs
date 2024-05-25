@@ -1,13 +1,9 @@
-.. file not submitted yet to AU, file open
+.. submitted already to AU for assessment, file locked 25 MAY 2024
 
 Unit 1 site design learning diary
 +++++++++++++++++++++++++++++++++++
 
 .. _unit1-ref:
-
-.. Error::
-   This is currently being worked. Unit 1 data below is not reflective to a complete state. Check back soon.
-
 
 Summary
 ========
@@ -144,7 +140,8 @@ It contains:
    :alt: Site map of my project.
 
 
-To see it all connected, check out my mock up.
+To see it all connected, check out my mock up. You can also `view these on my GitHub <https://github.com/hectorbarquero/university-COMP266/tree/main/images/mockup>`_ to view them individually.
+
 
 .. image:: ../images/mockup/COMP266welcome.png
    :alt: Mock up of the initial welcome pages
