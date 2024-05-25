@@ -146,21 +146,20 @@ It contains:
 
 To see it all connected, check out my mock up.
 
-.. image:: ../images/COMP266welcome.png
+.. image:: ../images/mockup/COMP266welcome.png
    :alt: Mock up of the initial welcome pages
 
-.. image:: ../images/COMP266news-showcase.png
+.. image:: ../images/mockup/COMP266news-showcase.png
    :alt: Mock up of the news and showcase reel
 
-.. image:: ../images/COMP266testimonials-footer.png
+.. image:: ../images/mockup/COMP266testimonials-footer.png
    :alt: Mock up of the footer including testimonials
 
-.. image:: ../images/COMP266showcase-downloads.png
+.. image:: ../images/mockup/COMP266showcase-downloads.png
    :alt: Mock up of the tools section
 
-.. image:: ../images/COMP266about-faq-contact.png
+.. image:: ../images/mockup/COMP266about-faq-contact.png
    :alt: Mock up of the final page, contact and about information
-   
 
 
 The learning map
