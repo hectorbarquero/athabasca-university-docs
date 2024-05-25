@@ -27,9 +27,9 @@ The work
     .. Note::
        The Unit 1 orientation reading markup is provided as an attachment under **References**.
 
-3. Prepare the `design documentation<>_`.
+3. Prepare the design documentation.
 
-   - What kind of website, the theme and purpose
+   - Theme and purpose
    - Personas
    - Scenarios
    - Further requirements
@@ -39,7 +39,7 @@ The work
 
 4. Upload the documentation to GitHub and submit a learning diary post as a blog entry in the **Group Blog**.
 
-5. Notify the tutor of the submission, and `upload to the AU drop box<https://scis.lms.athabascau.ca/mod/assign/view.php?id=22720>`.
+5. Notify the tutor of the submission, and upload to the **AU drop box**.
 
 
 
@@ -50,7 +50,7 @@ Assignment 1 submission
 Theme and purpose
 ~~~~~~~~~~~~~~~~~~
 
-   *A website for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users of all skill levels can use this accessible website to automate processes, learn, or get inspiration to write their own CRUD tools. The website is inspired by the authors experience working in the industry, a desire to innovate*
+   *A website for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users of all skill levels can use this accessible website to automate processes, learn, or get inspiration to write their own CRUD tools. The website is inspired by the authors experience working in the industry, and a desire to innovate.*
 
 
 I chose a site that I am passionate about; building CRUD tools for an industry I am already working in. I think this is useful because it helps others who don't have the time to dig into the *hours* of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
@@ -66,7 +66,7 @@ My audience is a pool of 27,000+ technical writers, editors, copywriters, produc
 
 There is a growing number of these professionals who are currently being trapped by outdated learning resources hidden behind a pay wall.
 
-   *My goal is to provide knowledge for free. I believe that `information wants to be free.*
+   *My goal is to provide knowledge and valuable upskilling for free, while demonstrating how a technical writer could 10x productivity.
    
 
 The scope for this build is realistic and well thought. I have a variety of tools that I've created, but I lack the front-end and javascript know-how to present them in a captivating way. I am passionate to discover how to leverage javascript and connect with rich libraries:
@@ -124,14 +124,23 @@ I considered a few legal obligations and browsed similar products to determine I
 + System corruption when running any of the tools
 + Notifications and consent
 
+Source more information about these Canadian e-Commerce requirements `here <https://sbs-spe.feddevontario.canada.ca/en/e-business-security-privacy-and-legal-requirements>`_.
 
 
 Mock up and site map
 ~~~~~~~~~~~~~~~~~~~~~
+I used two different approaches here, again for maintainability. I chose to use:
+
+- an ASCII table represent the site map hierarchy
+- a diagramming tool to understand the navigation
+- a graphics program to sketch a rough mock up
 
 
-The map
-========
+
+
+
+The learning map
+=================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
