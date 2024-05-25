@@ -1,9 +1,10 @@
 .. submitted already to AU for assessment, file locked 22 MAY 2024
 
+.. _unit0-ref:
+
 Unit 0 orientation learning diary
 ++++++++++++++++++++++++++++++++++
 
-.. _unit0-ref:
 
 Summary
 ========

@@ -185,7 +185,7 @@ Related topics
 ================
 .. link related reading or topics
 
-+ :ref: `Unit 0 learning diary <_unit0-ref>`
++ :ref:`Unit 0 learning diary <unit0-ref>`
 
 
 Additional reading
