@@ -95,8 +95,8 @@ Read my personas **with their scenarios** `here <https://github.com/hectorbarque
 
 .. image:: ../images/simran.jpg
    :alt: Persona of Simran
-   
-   .. image:: ../images/john.jpg
+
+.. image:: ../images/john.jpg
    :alt: Persona of John
    
 .. image:: ../images/leeanne.jpg
