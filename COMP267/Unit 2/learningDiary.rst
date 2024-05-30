@@ -6,7 +6,7 @@ Unit 2 HTML site building learning diary
 .. _unit2-ref:
 
 .. Caution::
-   Nothing to see here yet. I'm still working this unit. Check back soon.
+   Nothing to see here yet. I'm still working this unit. Check back soon..
 
 Summary
 ========
