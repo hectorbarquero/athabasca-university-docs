@@ -21,7 +21,7 @@ The work
 2. Read the 19 instruction pages.
 
     .. Note::
-       The Unit 1 orientation reading markup is provided as an attachment under **References**.
+       The Unit 1 reading markup is provided as an attachment under **References**.
 
 3. Prepare the design documentation.
 
@@ -120,7 +120,7 @@ I considered a few legal obligations and browsed similar products to determine I
 + System corruption when running any of the tools
 + Notifications and consent
 
-Source more information about these Canadian e-Commerce requirements `here <https://sbs-spe.feddevontario.canada.ca/en/e-business-security-privacy-and-legal-requirements>`_.
+Source more information about these Canadian e-Commerce requirements `on this web page <https://sbs-spe.feddevontario.canada.ca/en/e-business-security-privacy-and-legal-requirements>`_.
 
 
 Mock up and site map
@@ -211,7 +211,7 @@ Related topics
 Additional reading
 ===================
 
-+ :download:`COMP 266 - Unit 1 orientation notes <../attachments/unit1Reading.pdf>`
++ :download:`COMP 266 - Unit 1 orientation notes <../attachments/readings/unit1Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 
 
