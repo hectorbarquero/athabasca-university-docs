@@ -11,7 +11,7 @@ Unit 2 HTML site building learning diary
 Summary
 ========
 
-   *"Despite working with HTML 4.01 in the past, I chose to use HTML5 to benefit from deeper learning. I'm optimistic about the standard, with things like default canvas graphics API, the native support for features like .svg, <audio> and <video> tags, the strong focus on the DOM, mobile optimization, and form controls."*
+   *"Despite working with HTML 4.01 in the past, I chose to use HTML5 to benefit from deeper learning, which required me to read a lot of W3 and MDN docs."*
 
 
 The work
@@ -27,8 +27,8 @@ The work
 
 3. Prepare the site HTML.
 
-   - Create 15 HTML pages, compliant with HTML5
-   - Several images, custom made
+   - Create my HTML pages, compliant with HTML5
+   - Add several images, custom made
    - Hyperlinks between all the pages using relative URLs
    - Sufficient text for three heading styles
    - Several unordered lists
@@ -49,8 +49,122 @@ Assignment 2 submission
 Review of sample.html
 ----------------------
 
-.. Caution::
-   Nothing to see here yet. I'm still working this unit. Check back soon.
+Overall, `sample1.html <..attachments/src/sample1.html>`_ is missing a lot of closing tags and has poor structure and readability including lacking indentation and semantic writing. In terms of accessibility, the file is missing meaningful content, which could be optimized in meta tagsets. The document lacks roles and attributes, which would help accessibility. 
+
+The .html file is using inline .css styling, which could be better left to a stylesheet. It may be better to use span tags in those areas.
+
+`sample2.html <..attachments/src/sample2.html>`_ seems to be empty, but is at least declared correctly. In my opinion, it would be better to move this to html5, but it appears the purpose for sample2.html is to allow sample1.html to demonstrate linking.
+
+
+.. code-block:: html
+   :caption: Undeclared/unspecified DOCTYPE -- missing encoding and responsive declaration
+   :linenos:
+
+   <html>
+   <head>
+   ...
+
+
+.. code-block:: html
+   :caption: Missing title and meta info.
+   :linenos:
+
+   <html>
+   <head>
+   <title></title>
+   </head>
+   ...
+
+.. code-block:: html
+   :caption: Para tag is not closed. h1 is declared in wrong spot, move to meta, and lowercase for best practice.
+   :linenos:
+
+   <body>
+   <H1> This page is poorly written</H1>
+   <p>
+   There are many things wrong with this page. It's not so bad that it won't work on most browsers, but it has many things that could be written much better.
+   Your job is to use this code as a starting point and improve it.
+   ...
+
+.. code-block:: html
+   :caption: h2 missing closing tag, uppercase. Para tag missing closing, uppercase.
+   :linenos:
+
+   ...
+   that could be written much better.
+   Your job is to use this code as a starting point and improve it.
+
+   <H2>You could, of course, cheat!
+   <P>There is nothing wrong with using an HTML cleaner
+   ...
+
+.. code-block:: html
+   :caption: inline styles.
+   :linenos:
+
+   ...
+   you will find it <i>much</i> harder later on.
+   ...
+
+.. code-block:: html
+   :caption: h3 uppercase, not closed. a href is closed incorrectly.
+   :linenos:
+
+   ...
+   <H3>
+   Adding links
+   <p><a href="sample2.html">This is a link to the other page in this badly written pair of pages</a>).
+   ...
+
+.. code-block:: html
+   :caption: missing roles in img tag, img tag not closed properly. Para tag not closed.
+   :linenos:
+
+   ...
+   <h3>Using pictures</h3>
+   <p>Pictures are not a part of a web page - 
+   ...
+   <img src=aulogo.gif>
+   ...
+
+.. No highlighting. Lex linting doesn't know what to do with the tags in sample.
+.. code-block::
+   :caption: ul tags are not closed properly or indented.
+   :linenos:
+
+   ...
+   <h3>Making lists...
+   <ul>...<ul<li>indented<ol><li>numbered<li>like this</li></ol></ul><li> and more</li></ul>
+   ...
+
+.. code-block:: html
+   :caption: Table tags not closed properly, h3 is not closed.
+   :linenos:
+
+   ...
+   <h3>Making tables
+   <table border=1><tr><td>Tables should only be used for tabular data<td>and never for layout</tr>
+   <tr><td>but many people do <td>use them for layout</tr>
+   <tr><td colspan=2>It's not good for accessibility. Stylesheets work much better for this</td>
+   </tr>
+   </table>
+   ...
+
+.. code-block:: html
+   :caption: sample 2 is declared better, but empty. Could be improved by moving to html5
+   :linenos:
+
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   <html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>Untitled Document</title>
+   </head>
+
+   <body>
+   </body>
+   </html>
+
 
 
 Pages versus personas
@@ -90,9 +204,11 @@ What went right and wrong
 
 Despite working with HTML 4.01 in the past, I chose to use HTML5 to benefit from deeper learning. I'm optimistic about the default canvas graphics API in HTML5, the native support for features like .svg, <audio> and <video> tags, the strong focus on the DOM, mobile optimization, and form controls. 
 
+This unit required me to read a lot of W3 and MDN docs, which is good because now I understand a range of html tags and best practices, like semantic writing and ARIA compliance.
+
 If I were to do this unit again, I would focus on completing *just* enough to submit and move on to Unit 3, rather than completing all of my site .html pages. 
 
-The reason I think this would have been better is that it would have allowed me to get to the later units more quickly, and discover what might need to change sooner. 
+The reason I think this would have been better is that it would have allowed me to get to the later units more quickly, and discover what might need to change sooner. I'm sure there will be needed changes.
 
 Normally, I program both side-by-side, and doing all of the .html first might become problematic later and require more technical debt.
 
@@ -103,7 +219,7 @@ Related topics
 .. link related reading or topics
 
 + :ref:`Unit 0 learning diary <unit0-ref>`
-+ :ref:`Unit 0 learning diary <unit1-ref>`
++ :ref:`Unit 1 learning diary <unit1-ref>`
 
 
 Additional reading

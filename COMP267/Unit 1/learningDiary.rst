@@ -130,8 +130,8 @@ My site map is available here as both `.xml <https://github.com/hectorbarquero/u
 It contains:
 
 + The typical user journey
-+ The navigation choices (3)
-+ Pages within the navigation choices (12)
++ The navigation choices
++ Pages within the navigation choices
 + The connections between some, where an excerpt exists
 + The external flows to other technologies powering some of the features, which the AU server can't power reliably
 
