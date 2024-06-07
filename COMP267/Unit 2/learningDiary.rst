@@ -170,8 +170,23 @@ The .html file is using inline .css styling, which could be better left to a sty
 Pages versus personas
 ----------------------
 
-.. Caution::
-   Nothing to see here yet. I'm still working this unit. Check back soon.
+It's important to note that some of the requests for Unit 2 shaped the build, which directly conflicts with the personas. Rather than edit the personas to comply with the needed tags of Unit 2, I decided to use workarounds. An example is my persona Peter J Demarko, who doesn't like giving his email. A requirement of Unit 2 is to *give an email which mails to me*, so to workaround this, I used a privacy declaration in a README.txt. Some other requirements can be better fixed in Unit 3 and 4, where ``.css`` and ``.js`` files will be able to provide better solves. The below was implemented with .html only, per the requests of Unit 2. 
+
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Name                | Wants                 | Requests             | Needs             | Solve                                                                                                                                                               |
++=====================+=======================+======================+===================+=====================================================================================================================================================================+
+| Peter J Demarko     | News                  | Privacy              | Hearing aid       | No popups, aria labels for screen readers, and a privacy declaration in the README.txt                                                                              |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Lena Wagner-Bauer   | Skills                | No pay walls         | Vision aid        | GNU license, headings for visibility, aria-labels for readers. Unit 3 will handle more vision impairment help.                                                      |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Priya Patel         | Tools                 | No pop ups           | Colour blind help | No plans for js pop ups. Unit 3 will have dark and light mode, high contrast                                                                                        |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Simran Gupta-Sharma | Images                | No nested navigation | None              | Navbar doesnt go many indentures deep. iFrame supports rendering content on similar pages                                                                           |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| John Aaron Smith    | Short posts           | Slow loading pages   | None              | Used lazy loading, and plans for dns soaking, and cache busting                                                                                                     |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Lee-anne Rutherland | Videos, one stop shop | No external links    | Neurodivergent    | Used embedded video to show tool in one stop. Downloads available on same site, but external links optional. Will keep styling as minimally distracting as possible |
++---------------------+-----------------------+----------------------+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 The learning map
@@ -227,6 +242,7 @@ Additional reading
 
 + :download:`COMP 266 - Unit 2 orientation notes <../attachments/readings/unit2Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
++ :download:`COMP 266 - Unit 2 source code <../attachments/unit1.zip>`
 
 
 Get in touch
