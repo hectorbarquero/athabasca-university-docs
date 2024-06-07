@@ -242,7 +242,7 @@ Additional reading
 
 + :download:`COMP 266 - Unit 2 orientation notes <../attachments/readings/unit2Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
-+ :download:`COMP 266 - Unit 2 source code <../attachments/unit1.zip>`
++ :download:`COMP 266 - Unit 2 source code <../attachments/unit2.zip>`
 
 
 Get in touch
