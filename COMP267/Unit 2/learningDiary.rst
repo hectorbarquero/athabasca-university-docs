@@ -5,13 +5,14 @@ Unit 2 HTML site building learning diary
 
 .. _unit2-ref:
 
-.. Caution::
-   Nothing to see here yet. I'm still working this unit. Check back soon.
+.. Tip::
+   :download:`Download my Unit 2 source code by clicking here<../attachments/src/unit2-code.zip>`. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_, but if you do this, you'll see the project at it's latest state since I'm developing daily.
+
 
 Summary
 ========
 
-   *"Despite working with HTML 4.01 in the past, I chose to use HTML5 to benefit from deeper learning, which required me to read a lot of W3 and MDN docs."*
+   *"Despite working with HTML 4.01 in the past, I chose to use HTML5 to benefit from deeper learning, which required me to read a lot of W3 and MDN docs. So far, I've written ~730 lines of valid HTML5."*
 
 
 The work
@@ -242,7 +243,7 @@ Additional reading
 
 + :download:`COMP 266 - Unit 2 orientation notes <../attachments/readings/unit2Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
-+ :download:`COMP 266 - Unit 2 source code <../attachments/unit2.zip>`
++ :download:`COMP 266 - Unit 2 source code <../attachments/src/unit2-code.zip>`
 
 
 Get in touch
