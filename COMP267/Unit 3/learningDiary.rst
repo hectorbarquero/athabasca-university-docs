@@ -57,20 +57,6 @@ Expected outcomes for Unit 3
 1. Write well-structured, easily maintained, standard compliant CSS to present HTML pages in different ways.
 
 
-My mapped learning
--------------------
-
-.. Tip::
-   AU evaluators use this rubric to grade assignments. To comment, open the build menu, titled **v: latest** > select .pdf to > comment on a local pdf reader.
-
-.. 
-    .. csv-table:: Template for mapping your activities to learning outcomes
-   :file: ../attachments/learningTemplate2.csv
-   :widths: 45, 35, 10, 10
-   :header-rows: 1
-
-
-
 What went right and wrong
 ==========================
 .. describe what you would do differently if you had to do it again.
