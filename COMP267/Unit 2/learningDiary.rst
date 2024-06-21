@@ -6,7 +6,7 @@ Unit 2 HTML site building learning diary
 .. _unit2-ref:
 
 .. Tip::
-   :download:`Download my Unit 2 source code by clicking here<../attachments/src/unit2-code.zip>`. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_, but if you do this, you'll see the project at it's latest state since I'm developing daily.
+   :download:`Download my Unit 2 source code by clicking here<../attachments/src/unit2-code.zip>`. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 
 Summary
@@ -198,7 +198,8 @@ Use this section to map my learning with the expected outcomes. This section is 
 
 Expected outcomes for Unit 2
 -----------------------------
-1. Write well-structured, easily maintained, standards-compliant, accessible HTML code.
+
+1. This unit required to write well-structured, easily maintained, standards-compliant, accessible HTML code. See the AU rubric, and compare against my source code.
 
 
 What went right and wrong

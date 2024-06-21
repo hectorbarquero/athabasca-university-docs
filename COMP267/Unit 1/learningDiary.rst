@@ -165,24 +165,14 @@ The learning map
 
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
 
+
 Expected outcomes for Unit 1
 -----------------------------
-1. Identify the potential audience and purpose for a website.
-2. Use a simple but structured process to identify how the website will address the needs of the anticipated audience.
 
+1. This unit required me to identify the potential audience and purpose for a website. 
+2. This unit required me to use a simple but structured process to identify how the website will address the needs of the anticipated audience.
 
-My mapped learning
--------------------
-
-.. Tip::
-   AU evaluators use this rubric to grade assignments. To comment, open the build menu, titled **v: latest** > select .pdf to > comment on a local pdf reader.
-
-
-.. csv-table:: Template for mapping your activities to learning outcomes
-   :file: ../attachments/learningTemplate1.csv
-   :widths: 45, 35, 10, 10
-   :header-rows: 1
-
+See the AU rubric, and compare my design files against these expectations.
 
 
 What went right and wrong
