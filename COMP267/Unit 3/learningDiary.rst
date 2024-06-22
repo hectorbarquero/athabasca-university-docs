@@ -62,7 +62,13 @@ What went right and wrong
 ==========================
 .. describe what you would do differently if you had to do it again.
 
-Filling this out once I complete the work.
+- Figuring out how to keep scope and specificity of CSS was tricky. My CSS is actually one large file called ``styles.css`` generated from my SCSS when I run the command ``npm run sass`` to execute the generic SASS build script. It's nice because I can manage complex style sheets as modules, but it's tedious to manage selector scope. I had to debug a few things and settle with some common global values.
+
+- Learning about the syntax of SCSS was interesting. This made the unit worthwhile because CSS by itself is not new to me. I was able to do some things that bare metal vanilla CSS can't do, and I could take advantage of some features like nesting, indentation, variables, and functions, right inside my SCSS.
+
+- The down side of this unit was having to tackle some problems with HTML and CSS only. I think the units that will challenge me the most are 5-7, and I needed some contextual knowledge from 4-7 in this unit in order to save myself some technical debt. What I ended up doing was studying ahead and completing javascript courses in order to accomplish what I needed, since otherwise, it was hard to visualize if the CSS was *working* without the accompanying javascript to do transformations like animation or transitions. I'll submit some of these in unit 4 or 5, although it might be problematic to submit in unit 4 since I programmed these myself.
+
+- I foresee myself needing to undo a few things in later units. My temporary implementations of javascript are crude and not my best writing, but they work.
 
 
 Related topics
