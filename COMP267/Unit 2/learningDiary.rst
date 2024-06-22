@@ -39,9 +39,6 @@ The work
 
 4. Upload the docs to GitHub and submit a learning diary post as a blog entry in the **Group Blog**
 
-5. Notify the tutor of the submission, and upload to the **AU drop box**.
-
-
 
 Assignment 2 submission
 ========================

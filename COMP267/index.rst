@@ -43,3 +43,10 @@ Welcome to my COMP 266 project. Here you'll find my learning diary, my reading n
    :hidden:
 
    Unit 3/learningDiary.rst
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Unit 4
+   :hidden:
+
+   Unit 4/learningDiary.rst   

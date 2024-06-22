@@ -33,9 +33,6 @@ The work
 
 4. Upload the docs to GitHub and submit a learning diary post as a blog entry in the **Group Blog**
 
-5. Notify the tutor of the submission, and upload to the **AU drop box**.
-
-
 
 Assignment 3 submission
 ========================
@@ -64,11 +61,9 @@ What went right and wrong
 
 - Figuring out how to keep scope and specificity of CSS was tricky. My CSS is actually one large file called ``styles.css`` generated from my SCSS when I run the command ``npm run sass`` to execute the generic SASS build script. It's nice because I can manage complex style sheets as modules, but it's tedious to manage selector scope. I had to debug a few things and settle with some common global values.
 
-- Learning about the syntax of SCSS was interesting. This made the unit worthwhile because CSS by itself is not new to me. I was able to do some things that bare metal vanilla CSS can't do, and I could take advantage of some features like nesting, indentation, variables, and functions, right inside my SCSS.
+- SCSS learning curve. After a lot of reading, I was able to do some things that bare metal vanilla CSS can't do, and I could take advantage of some features like nesting, indentation, variables, and functions, right inside my SCSS.
 
-- The down side of this unit was having to tackle some problems with HTML and CSS only. I think the units that will challenge me the most are 5-7, and I needed some contextual knowledge from 4-7 in this unit in order to save myself some technical debt. What I ended up doing was studying ahead and completing javascript courses in order to accomplish what I needed, since otherwise, it was hard to visualize if the CSS was *working* without the accompanying javascript to do transformations like animation or transitions. I'll submit some of these in unit 4 or 5, although it might be problematic to submit in unit 4 since I programmed these myself.
-
-- I foresee myself needing to undo a few things in later units. My temporary implementations of javascript are crude and not my best writing, but they work.
+- Minor edits to HTML as seen in source code. Download my .zip, and diff the two files to see where I had issues. I ended up needing to add more classes, or restructure a few tags to allow the specificity to be applied correctly.
 
 
 Related topics
@@ -83,7 +78,7 @@ Related topics
 Additional reading
 ===================
 
-+ :download:`COMP 266 - Unit 3 orientation notes <>`
++ :download:`COMP 266 - Unit 3 orientation notes <./attachments/readings/unit3Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 + :download:`COMP 266 - Unit 3 source code <>`
 
