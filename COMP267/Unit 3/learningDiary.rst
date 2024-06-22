@@ -11,7 +11,7 @@ Unit 3 CSS site styling learning diary
 Summary
 ========
 
-   *"Lorem ipsum - pending completion of this unit"*
+   *"Since I already know CSS, I decided to learn SASS and SCSS. This unit was difficult to execute because it requires knowing about the technologies in the units ahead, before actually studying them. I found myself studying into unit 4 and 5 concurrently to overcome this. For example, I found myself thinking the only way to animate something was with CSS, but in later units, we would be learning how to do this with javascript. This incurred a bit of technical debt which I hope is paid off."*
 
 
 The work
@@ -31,9 +31,9 @@ The work
     - ideally **do not change HTML unless necessary**.
     - change ``head`` tags as needed.
 
-5. Upload the docs to GitHub and submit a learning diary post as a blog entry in the **Group Blog**
+4. Upload the docs to GitHub and submit a learning diary post as a blog entry in the **Group Blog**
 
-6. Notify the tutor of the submission, and upload to the **AU drop box**.
+5. Notify the tutor of the submission, and upload to the **AU drop box**.
 
 
 
@@ -44,6 +44,7 @@ Assignment 3 submission
 Blank heading - fill in with assignment heading
 -------------------------------------------------
 
+:download:`You can download my Unit 3 source code by clicking here<../attachments/src/unit3-code.zip>`. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 
 The learning map
