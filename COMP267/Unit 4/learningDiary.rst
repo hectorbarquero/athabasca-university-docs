@@ -49,7 +49,7 @@ The learning map
 
 Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
 
-Expected outcomes for Unit 3
+Expected outcomes for Unit 4
 -----------------------------
 1. Critique JavaScript code written by others, identifying examples of both good and bad practice.
 
