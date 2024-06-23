@@ -146,9 +146,6 @@ To see it all connected, check out my mock up. You can also `view these on my Gi
 .. image:: ../images/mockup/COMP266welcome.png
    :alt: Mock up of the initial welcome pages
 
-.. image:: ../images/mockup/COMP266news-showcase.png
-   :alt: Mock up of the news and showcase reel
-
 .. image:: ../images/mockup/COMP266testimonials-footer.png
    :alt: Mock up of the footer including testimonials
 
