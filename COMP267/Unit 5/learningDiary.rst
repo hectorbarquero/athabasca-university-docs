@@ -6,7 +6,7 @@ Unit 5 Script use and augmentation
 .. _unit5-ref:
 
 .. Warning::
-   Nothing to see here. I am currently working Unit 3. Check back soon, since I'm updating these docs as I work on the code. Unit 4 is here staged for the next submission after Unit 3.
+   Nothing to see here. I am currently working Unit 3. Check back soon, since I'm updating these docs as I work on the code. Unit 5 is here staged for the next submission after Unit 4.
 
 
 Summary

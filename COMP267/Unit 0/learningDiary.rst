@@ -53,7 +53,7 @@ The learning map
 =================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-Find the rubric here and grade my work here:
+There is no learning map for Unit 0. The objective of Unit 0 was to get an introduction into the course structure, and set up a learning diary, which you're reading now.
 
 
 What went right and wrong
