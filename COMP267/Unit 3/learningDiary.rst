@@ -48,7 +48,9 @@ The learning map
 =================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
+Find the rubric here and grade my work here:
+
+
 
 Expected outcomes for Unit 3
 -----------------------------
@@ -61,18 +63,9 @@ What went right and wrong
 
 - Figuring out how to keep scope and specificity of CSS was tricky. My CSS is actually one large file called ``styles.css`` generated from my SCSS when I run the command ``npm run sass`` to execute the generic SASS build script. It's nice because I can manage complex style sheets as modules, but it's tedious to manage selector scope. I had to debug a few things and settle with some common global values.
 
-- SCSS learning curve. After a lot of reading, I was able to do some things that bare metal vanilla CSS can't do, and I could take advantage of some features like nesting, indentation, variables, and functions, right inside my SCSS.
+- SCSS learning curve. After a lot of reading, I was able to do some things that bare metal vanilla CSS can't do, and I could take advantage of some features like nesting, indentation, variables, and functions, right inside my SCSS -- all while writing valid CSS.
 
 - Minor edits to HTML as seen in source code. Download my .zip, and diff the two files to see where I had issues. I ended up needing to add more classes, or restructure a few tags to allow the specificity to be applied correctly.
-
-
-Related topics
-================
-.. link related reading or topics
-
-+ :ref:`Unit 0 learning diary <unit0-ref>`
-+ :ref:`Unit 1 learning diary <unit1-ref>`
-+ :ref:`Unit 2 learning diary <unit2-ref>`
 
 
 Additional reading
@@ -81,6 +74,9 @@ Additional reading
 + :download:`COMP 266 - Unit 3 orientation notes <./attachments/readings/unit3Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 + :download:`COMP 266 - Unit 3 source code <>`
++ :ref:`Unit 0 learning diary <unit0-ref>`
++ :ref:`Unit 1 learning diary <unit1-ref>`
++ :ref:`Unit 2 learning diary <unit2-ref>`
 
 
 Get in touch

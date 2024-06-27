@@ -42,25 +42,18 @@ Assignment 0 submission
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios
    you developed in Unit 1.
 
-The work performed is aligned with the course outline, including requesting access to the SCIS server, joining the COMP266 group, and submitting this blog entry. 
+I requested access to the SCIS server, joined the COMP266 group, and submitted this blog entry. 
 
-I decided to download the reading for offline viewing since I could add annotations and submit it as evidence that the reading is complete. I've created a template in reStructuredText because I'll be working in an IDE and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
+I decided to download the reading for offline viewing since I could add annotations and submit it as evidence that the reading is complete. 
+
+I've created a template in reStructuredText because I'll be working in an IDE/nvim/terminal and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
 
 
 The learning map
 =================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-.. Tip:: 
-   Normally, an evaluator will find the mapped activities to learning outcomes here. Right now, Unit 0 has no direct correlation to the template provided by AU. You can read this paragraph below to understand how the work completed correlates to the learning outcomes of Unit 0, but in future, you can expect to see the template for mapped activities here. 
-
-Expected outcomes for Unit 0
------------------------------
-1. Complete the unit 0 activities - start to plan your course of action.
-2. Review the portfolio requirements
-3. Set up a learning diary blog in the landing, and write your first reflection.
-4. Optional - start making connections with COMP266 students.
-5. Set up your website in the SCIS web space provided.
+Find the rubric here and grade my work here:
 
 
 What went right and wrong
@@ -68,14 +61,6 @@ What went right and wrong
 .. describe what you would do differently if you had to do it again.
 
 If I could re-do this unit, I would use **Adobe Acrobat** to organize pages and *remove* the unecessary duplicate pages. Rather than be 41 pages, the introduction course reading is really ~30 pages(+-), and the other 10 are duplicate to themselves. I may have also been better to submit an access support ticket during the week or earlier in the course, so that IT could grant me permissions to the server sooner. 
-
-
-Related topics
-================
-.. link related reading or topics
-
-.. Error::
-   There is nothing to see here. In the future. you can expect to see related blog posts from earlier units listed here.
 
 
 Additional reading

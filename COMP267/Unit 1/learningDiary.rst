@@ -160,7 +160,7 @@ The learning map
 =================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
+Find the rubric here and grade my work here:
 
 
 Expected outcomes for Unit 1
@@ -187,19 +187,12 @@ I opted to use a different solution, especially for my personas, because the imm
 In those months and years, I think my complicated debugging will feel nominal for the value added gain of ease of maintenance. 
 
 
-
-Related topics
-================
-.. link related reading or topics
-
-+ :ref:`Unit 0 learning diary <unit0-ref>`
-
-
 Additional reading
 ===================
 
 + :download:`COMP 266 - Unit 1 orientation notes <../attachments/readings/unit1Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
++ :ref:`Unit 0 learning diary <unit0-ref>`
 
 
 Get in touch

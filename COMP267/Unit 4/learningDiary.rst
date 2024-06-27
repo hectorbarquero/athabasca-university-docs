@@ -47,7 +47,8 @@ The learning map
 =================
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
-Use this section to map my learning with the expected outcomes. This section is for the assessors who are grading my work.
+Find the rubric here and grade my work here:
+
 
 Expected outcomes for Unit 4
 -----------------------------
@@ -68,23 +69,16 @@ Most of my designs and plans seem to be larger and more complex, so this worked 
 
 
 
-Related topics
-================
-.. link related reading or topics
-
-+ :ref:`Unit 0 learning diary <unit0-ref>`
-+ :ref:`Unit 1 learning diary <unit1-ref>`
-+ :ref:`Unit 2 learning diary <unit2-ref>`
-+ :ref:`Unit 3 learning diary <unit3-ref>`
-
-
 Additional reading
 ===================
 
 + :download:`COMP 266 - Unit 4 orientation notes <./attachments/readings/unit4Reading.pdf>`
 + `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
 + :download:`COMP 266 - Unit 4 source code <>`
-
++ :ref:`Unit 0 learning diary <unit0-ref>`
++ :ref:`Unit 1 learning diary <unit1-ref>`
++ :ref:`Unit 2 learning diary <unit2-ref>`
++ :ref:`Unit 3 learning diary <unit3-ref>`
 
 Get in touch
 =============
