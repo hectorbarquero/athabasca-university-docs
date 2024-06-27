@@ -46,32 +46,27 @@ Assignment 1 submission
 Theme and purpose
 ------------------
 
-   *A website for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users of all skill levels can use this accessible website to automate processes, learn, or get inspiration to write their own CRUD tools. The website is inspired by the authors experience working in the industry, and a desire to innovate.*
+   *A website to document some tools I made for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users can use this site to automate processes, learn, or get inspiration to write their own CRUD tools.*
 
 
-I chose a site that I am passionate about; building CRUD tools for an industry I am already working in. I think this is useful because it helps others who don't have the time to dig into the *hours* of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
-
-I want to make sure my site serves three points:
-
-1. It should appeal to an audience with a wide skill, industry, and age range.
-2. It should be accessible, with limited barriers.
-3. It should be primarily focused on publication, but dynamically demonstrate the tools.
+I think this is useful because it helps others who don't have the time to dig into the *hours* of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
 
 
-My audience is a pool of 27,000+ technical writers, editors, copywriters, product managers, knowledgebase specialists, developer advocates, solutions architects, and really anyone involved in data, scientific, product, or knowledge publications. They are collected in subreddits and communities that I belong to. 
+My audience is a pool of ~27,000+ technical writers, editors, copywriters, product managers, knowledgebase specialists, developer advocates, solutions architects, and really anyone involved in data, scientific, product, or knowledge publications. They are collected in subreddits and communities that I belong to. 
 
 There is a growing number of these professionals who are currently being trapped by outdated learning resources hidden behind a pay wall.
 
    *My goal is to provide knowledge and valuable upskilling for free, while demonstrating how a technical writer could 10x productivity.*
    
 
-The scope for this build is realistic and well thought. I have a variety of tools that I've created, but I lack the front-end and javascript know-how to present them in a captivating way. I am passionate to discover how to leverage javascript and connect with rich libraries:
+The scope for this build is realistic and well thought. I have a variety of tools that I've programmed in javascript, but I lack the front-end know-how to present them in a captivating way. I am looking to leverage some frameworks in unit 6, though I saw I'll need to also at least submit one JQuery solution as well:
 
-+ `chart.js <https://www.chartjs.org/>`_
++ `chart.js <https://gsap.com/>`_
++ `GSAP <https://gsap.com/>`_
 + `d3.js <https://d3js.org/>`_
 + `three.js <https://threejs.org/>`_
 
-With these ideas, I can keep my site focused primarily on publication through the documentation of my tools, while doing it in a dynamic way with forms, actions, animations, conversions, sorts, multimedia control, and more.
+With these ideas, I can keep my site focused primarily on publication through the documentation of my tools, while doing it in a dynamic way with forms, actions, animations, conversions, sorts, multimedia control, etc.
 
 
 
