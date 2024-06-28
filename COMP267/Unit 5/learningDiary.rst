@@ -1,7 +1,7 @@
 .. currently working unit 3 file
 
-Unit 5 Script use and augmentation
-+++++++++++++++++++++++++++++++++++
+Unit 5 Writing javascript
+++++++++++++++++++++++++++
 
 .. _unit5-ref:
 
