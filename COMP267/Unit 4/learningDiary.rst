@@ -9,7 +9,7 @@ Unit 4 Script use and augmentation
 Summary
 ========
 
-   *"I chose to use input validation, sourced from `Rasel Mahmud <https://gist.github.com/rsmahmud>`_ on GitHub. Jump to my critique to see what it does. I leave review comments in his code and I integrated an improved version in my HTML5."*
+   *"I chose to use input validation, sourced from Rasel Mahmud (https://gist.github.com/rsmahmud) on GitHub. Jump to my critique to see what it does. I leave review comments in his code and I integrated an improved version in my HTML5."*
 
 
 The work
