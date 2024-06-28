@@ -1,17 +1,15 @@
-.. currently working unit 3 file
+.. READY - just add script to email form on index.html of ../home/welcome/index.html
 
 Unit 4 Script use and augmentation
 +++++++++++++++++++++++++++++++++++
 
 .. _unit4-ref:
 
-.. Warning::
-   Nothing to see here. I am currently working Unit 3. Check back soon, since I'm updating these docs as I work on the code. Unit 4 is here staged for the next submission after Unit 3.
 
 Summary
 ========
 
-   *"Lorem ipsum - currently working"*
+   *"I chose to use input validation, sourced from `Rasel Mahmud <https://gist.github.com/rsmahmud>`_ on GitHub. Jump to my critique to see what it does. I leave review comments in his code and I integrated an improved version in my HTML5."*
 
 
 The work
@@ -46,7 +44,11 @@ On `his commit <https://gist.github.com/rsmahmud/f6ad75b8a212a18720fd833b54ea664
 
 The code is on line ``53`` to ``118``. 
 
-I'll review the code below, providing a comment on each line, and then will leave a diagram and pseudo.
+I'll review the code below, providing a comment on each line.
+
+.. tip::
+   Want to read code block this without the scrollbar? Copy it > paste it in your favourite IDE or text editor.
+
 
 .. code-block:: javascript
 
