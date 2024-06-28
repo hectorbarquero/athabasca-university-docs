@@ -35,8 +35,8 @@ Assignment 4 submission
 ========================
 .. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios you developed in Unit 1.
 
-Javascript critique:
-----------------------
+Javascript critique
+--------------------
 
 I chose to use input validation, sourced from `Rasel Mahmud <https://gist.github.com/rsmahmud>`_ on GitHub, since the pre-reqs require collecting this and my personas want to stay updated with industry news. It's important the emails I collect actually are genuine.
 
