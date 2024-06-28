@@ -53,7 +53,7 @@ Welcome to my COMP 266 project. Here you'll find my learning diary, my reading n
 
 .. toctree::
    :maxdepth: 4
-   :caption: Unit 4
+   :caption: Unit 5
    :hidden:
 
    Unit 5/learningDiary.rst 
