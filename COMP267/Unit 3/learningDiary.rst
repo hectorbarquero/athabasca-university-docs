@@ -6,7 +6,7 @@ CSS site styling
 .. _unit3-ref:
 
 .. Tip::
-   `Download my Unit 3 source by following this link<https://drive.google.com/file/d/1P50k9bN4SpoDFKRKuBJTIMauN1tkCW5O/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+   `Download my Unit 3 source by following this link <https://drive.google.com/file/d/1P50k9bN4SpoDFKRKuBJTIMauN1tkCW5O/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 
 Summary
