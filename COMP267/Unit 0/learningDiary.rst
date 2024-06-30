@@ -2,8 +2,8 @@
 
 .. _unit0-ref:
 
-Unit 0 orientation learning diary
-++++++++++++++++++++++++++++++++++
+Orientation learning diary
+++++++++++++++++++++++++++++
 
 
 Summary
