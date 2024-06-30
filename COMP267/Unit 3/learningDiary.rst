@@ -42,12 +42,13 @@ The work
 
 Assignment 3 submission
 ========================
-.. describe the rationale for what you have done, relating your work explicitly to the personas and scenarios you developed in Unit 1.
+I wrote well-structured, easily maintained (SASS), standard compliant CSS to present HTML pages in different ways.
 
-Blank heading - fill in with assignment heading
--------------------------------------------------
+See it here:
 
-:download:`You can download my Unit 3 source code by clicking here<../attachments/src/unit3-code.zip>`. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
++ `Uni 3 source code <https://drive.google.com/file/d/1P50k9bN4SpoDFKRKuBJTIMauN1tkCW5O/view?usp=drive_link>`_
++ `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
++ `Project website <https://github.com/hectorbarquero/portfolio>`_
 
 
 The learning map
@@ -55,7 +56,6 @@ The learning map
 .. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
 
 Find the rubric here and grade my work here:
-
 
 
 Expected outcomes for Unit 3
@@ -77,9 +77,9 @@ What went right and wrong
 Additional reading
 ===================
 
-+ :download:`COMP 266 - Unit 3 orientation notes <./attachments/readings/unit3Reading.pdf>`
-+ `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
-+ :download:`COMP 266 - Unit 3 source code <>`
++ `Uni 3 source code <https://drive.google.com/file/d/1P50k9bN4SpoDFKRKuBJTIMauN1tkCW5O/view?usp=drive_link>`_
++ `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
++ `Project website <https://github.com/hectorbarquero/portfolio>`_
 + :ref:`Unit 0 learning diary <unit0-ref>`
 + :ref:`Unit 1 learning diary <unit1-ref>`
 + :ref:`Unit 2 learning diary <unit2-ref>`

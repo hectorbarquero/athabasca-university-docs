@@ -222,7 +222,7 @@ Additional reading
 ===================
 
 + :download:`COMP 266 - Unit 2 orientation notes <../attachments/readings/unit2Reading.pdf>`
-+ `Hectors project GitHub <https://github.com/hectorbarquero/university-COMP266>`_
++ `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
 + :download:`COMP 266 - Unit 2 source code <../attachments/src/unit2-code.zip>`
 + :ref:`Unit 0 learning diary <unit0-ref>`
 + :ref:`Unit 1 learning diary <unit1-ref>`
