@@ -1,6 +1,6 @@
 .. currently working this file
 
-Unit 2 HTML site building learning diary
+HTML site building learning diary
 ++++++++++++++++++++++++++++++++++++++++++
 
 .. _unit2-ref:

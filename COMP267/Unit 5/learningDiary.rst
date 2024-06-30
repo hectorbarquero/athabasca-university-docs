@@ -1,6 +1,6 @@
 .. currently working unit 3 file
 
-Unit 5 Writing javascript
+Writing javascript
 ++++++++++++++++++++++++++
 
 .. _unit5-ref:

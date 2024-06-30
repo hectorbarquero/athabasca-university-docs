@@ -1,6 +1,6 @@
 .. currently working this file
 
-Unit 3 CSS site styling learning diary
+CSS site styling learning diary
 ++++++++++++++++++++++++++++++++++++++++++
 
 .. _unit3-ref:
