@@ -1,4 +1,4 @@
-.. READY - just add script to email form on index.html of ../home/welcome/index.html
+.. READY - submitted 30 JUN 2024
 
 Script use and augmentation
 ++++++++++++++++++++++++++++

@@ -1,4 +1,4 @@
-.. currently working this file
+.. READY submitted already
 
 HTML site building
 +++++++++++++++++++
