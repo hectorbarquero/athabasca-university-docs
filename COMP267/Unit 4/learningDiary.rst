@@ -5,6 +5,9 @@ Script use and augmentation
 
 .. _unit4-ref:
 
+.. Tip::
+   `Download my Unit 4 source by following this link <https://drive.google.com/file/d/1ohsr5GTyzS12N20lMOpcU4KrF_eqrI6d/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+
 
 Summary
 ========
