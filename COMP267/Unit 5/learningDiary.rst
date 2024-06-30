@@ -1,11 +1,11 @@
 .. currently working unit 3 file
 
 Writing javascript
-++++++++++++++++++++++++++
++++++++++++++++++++
 
 .. _unit5-ref:
 
-.. Warning::
+.. Danger::
    Nothing to see here. I am currently working Unit 3. Check back soon, since I'm updating these docs as I work on the code. Unit 5 is here staged for the next submission after Unit 4.
 
 

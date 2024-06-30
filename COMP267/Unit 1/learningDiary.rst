@@ -1,7 +1,7 @@
 .. submitted already to AU for assessment, file locked 25 MAY 2024
 
-Site design learning diary
-+++++++++++++++++++++++++++++++++++
+Site design
+++++++++++++
 
 .. _unit1-ref:
 

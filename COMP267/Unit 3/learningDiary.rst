@@ -1,17 +1,18 @@
 .. currently working this file
 
-CSS site styling learning diary
-++++++++++++++++++++++++++++++++++++++++++
+CSS site styling
++++++++++++++++++
 
 .. _unit3-ref:
 
-.. Warning::
-   Nothing to see here. I am currently working Unit 3. Check back soon, since I'm updating these docs as I work on the code.
+.. Tip::
+   `Download my Unit 3 source by following this link<https://drive.google.com/file/d/1P50k9bN4SpoDFKRKuBJTIMauN1tkCW5O/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+
 
 Summary
 ========
 
-   *"Since I already know CSS, I decided to learn SASS and SCSS. This unit was difficult to execute because it requires knowing about the technologies in the units ahead, before actually studying them. I found myself studying into unit 4 and 5 concurrently to overcome this. For example, I found myself thinking the only way to animate something was with CSS, but in later units, we would be learning how to do this with javascript. This incurred a bit of technical debt which I hope is paid off."*
+   *"Since I already know CSS, I decided to learn SASS and SCSS. This unit was difficult to execute because it requires knowing about the technologies in the units ahead, before actually studying them. I found myself studying into unit 4 and 5 concurrently to overcome this, and I also had to repair a lot of .html I did not set up well in unit 1. Diff my zip folders, you'll see what I mean. For example, I found myself thinking the only way to animate something was with CSS, but in later units, we would be learning how to do this with javascript. This incurred a bit of technical debt which I hope is paid off."*
 
 
 The work
@@ -28,7 +29,12 @@ The work
 3. Make code I created in Unit 2 **"...beautiful and useable without changing HTML**.
 
     - Can change ``div``, ``span``, and add extra ``id`` or ``class`` tags.
+
     - ideally **do not change HTML unless necessary**.
+
+      .. danger::
+         I had to change the HTML from my unit 2 .zip file, but I left the original in the unit 2 learning diary. You can also diff the two files or check my GitHub changelog to see the commit history.
+
     - change ``head`` tags as needed.
 
 4. Upload the docs to GitHub and submit a learning diary post as a blog entry in the **Group Blog**
