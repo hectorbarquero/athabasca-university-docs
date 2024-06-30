@@ -8,7 +8,7 @@ Unit 1 site design learning diary
 Summary
 ========
 
-    *"I took my time to complete this unit because I knew that if I made purposeful decisions, they would connect together when completing the coding in the later units. I disregarded style sheets and visual design, leaving my mock up to be a very bare metal with an emphasis on the sitemap, carefully engineered to my personas and their scenarios."*
+    *"I took my time to complete this unit to make purposeful decisions. They save me time later when completing the coding in later units. I wrote .html with future scripts and styling in mind, leaving my mock up to be a very baremetal with an emphasis on the sitemap. My site is built to suit my personas and their scenarios."*
 
 
 The work
@@ -46,7 +46,7 @@ Assignment 1 submission
 Theme and purpose
 ------------------
 
-   *A website to document some tools I made for technical publication specialists. The website showcases free tools that can be used in a variety of workflows. Users can use this site to automate processes, learn, or get inspiration to write their own CRUD tools.*
+   *A website to document some tools I made for technical publication specialists, like a portfolio and download hub. The website showcases free tools that can be used in a variety of workflows. Users can use this site to automate processes, learn, or get inspiration to write their own CRUD tools.*
 
 
 I think this is useful because it helps others who don't have the time to dig into the *hours* of debugging required to write some of these tools, or those who may not have the programming background to do it themselves. 
