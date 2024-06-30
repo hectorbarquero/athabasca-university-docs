@@ -175,10 +175,15 @@ It's important to note that some of the requests for Unit 2 shaped the build, wh
 | Name                | Wants                 | Requests             | Needs               | Solve                                                                                                                        |
 +=====================+=======================+======================+=====================+==============================================================================================================================+
 | Peter J Demarko     | News                  | Privacy              | Hearing aid         | No popups, aria labels for screen readers, and a privacy declaration in the README.txt                                       |
++---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Lena Wagner-Bauer   | Skills                | No pay walls         | Vision aid          | GNU license, headings for visibility, aria-labels for readers. Unit 3 will handle more vision impairment help.               |
++---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Priya Patel         | Tools                 | No pop ups           | Colour blind help   | Email form for news, high contrast colour plans. No plans for too many pop ups.                                              |
++---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Simran Gupta-Sharma | Images                | No nested navigation | None                | Navbar doesnt go many indentures deep. Plans to style aesthetically.                                                         |
++---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 | John Aaron Smith    | Short posts           | Slow loading pages   | None                | Used lazy loading, and plans for dns soaking, and cache busting                                                              |
++---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 | Lee-anne Rutherland | Videos, one stop shop | No external links    | Physical impairment | Used embedded video to show tool in one stop. Downloads easy to find. Will keep styling as minimally distracting as possible |
 +---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 
