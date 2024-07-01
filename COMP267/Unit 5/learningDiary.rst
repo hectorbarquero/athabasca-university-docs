@@ -83,7 +83,7 @@ If I were to do this unit again...
 Additional reading
 ===================
 
-+ :download:`COMP 266 - Unit 5 orientation notes <./attachments/readings/unit5Reading.pdf>`
++ :download:`COMP 266 - Unit 5 orientation notes <../attachments/readings/unit5Reading.pdf>`
 + `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
 + `Project website <https://github.com/hectorbarquero/portfolio>`_
 + :ref:`Unit 0 learning diary <unit0-ref>`

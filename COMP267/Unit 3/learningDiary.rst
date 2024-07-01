@@ -77,7 +77,7 @@ What went right and wrong
 Additional reading
 ===================
 
-+ `Uni 3 source code <https://drive.google.com/file/d/1Gd4wmo4MbY1Vn8SYWwg1xSy0KRSTK_wZ/view?usp=drive_link>`_
++ `Unit 3 source code <https://drive.google.com/file/d/1Gd4wmo4MbY1Vn8SYWwg1xSy0KRSTK_wZ/view?usp=drive_link>`_
 + `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
 + `Project website <https://github.com/hectorbarquero/portfolio>`_
 + :ref:`Unit 0 learning diary <unit0-ref>`

@@ -140,7 +140,7 @@ Most of my designs and plans seem to be larger and more complex, so this worked 
 Additional reading
 ===================
 
-+ :download:`COMP 266 - Unit 4 orientation notes <./attachments/readings/unit4Reading.pdf>`
++ :download:`COMP 266 - Unit 4 orientation notes <../attachments/readings/unit4Reading.pdf>`
 + `Learning diary <https://github.com/hectorbarquero/university-COMP266>`_
 + `Project website <https://github.com/hectorbarquero/portfolio>`_
 + :ref:`Unit 0 learning diary <unit0-ref>`
