@@ -12,7 +12,7 @@ Writing javascript
 Summary
 ========
 
-   *"Having to catch bugs *after* compiling at run time gave me PTSD."*
+   *"Having to catch bugs after compiling at run time gave me PTSD."*
 
 
 The work
@@ -52,6 +52,11 @@ I plan to write some javascript programs to do the following:
    + a loader, which acts as a make-shift means to do hydration and resource pre-fetching, so that there is less risk of jank and layout shifts, and reduce the risk of immediate redirects since I'll be hosting this website on GitHub and negating additional security for the meantime. 
   
    + a popup handler, which directly correlates with some of my user personas distaste for bloated reading and advertisements. I'll be able to use just one means to present the required legal notices, rather than force the browser to load it.
+  
+.. add image for popup handler
+.. image:: ../images/mockup/COMP266-design-popup.png
+   :alt: Flow chart of the pop up handler design.
+
 
    + a slide handler (called testimonials), which will allow me to aesthetically present the testimonials to suit the needs of my personas. My personas dislike nested content and appreciate less text, opting for more visible means of presentation. This slideshow handler will allow me to negate the need to scroll, and will allow the testimonials to present in a more visually pleasing way.
 
