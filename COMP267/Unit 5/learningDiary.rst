@@ -1,12 +1,13 @@
-.. currently working unit 5 file
+.. Submitted 08 SEP 2024 - waiting reply for go ahead to code. 
+.. Working ahead on unit 6 and 7 in the meantime.
 
 Writing javascript
 +++++++++++++++++++
 
 .. _unit5-ref:
 
-.. Danger::
-   Nothing to see here. I am currently working Unit 5. Check back soon, since I'm updating these docs as I work on the code. Unit 5 is here staged for the next submission after Unit 4.
+.. Tip::
+   This has been submitted for instructor review, and I am currently working ahead on unit 6 and 7 in the mean time. Check back soon for the source code upload.
 
 
 Summary
@@ -49,35 +50,47 @@ Javascript ideas
 
 I plan to write some javascript programs to do the following:
 
-   + a loader, which acts as a make-shift means to do hydration and resource pre-fetching, so that there is less risk of jank and layout shifts, and reduce the risk of immediate redirects since I'll be hosting this website on GitHub and negating additional security for the meantime. 
-  
-   + a popup handler, which directly correlates with some of my user personas distaste for bloated reading and advertisements. I'll be able to use just one means to present the required legal notices, rather than force the browser to load it.
-  
+
+Javascript website loader (hydration, pre-fetching)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a loader, which acts as a make-shift means to do hydration and resource pre-fetching, so that there is less risk of jank and layout shifts, and reduce the risk of immediate redirects since I'll be hosting this website on GitHub and negating additional security for the meantime. 
+
+.. add image for loader
+.. image:: ../images/mockup/COMP266-design-loader.png
+   :alt: Flow chart of the loader design.
+
+
+Javascript popup handler
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+a popup handler, which directly correlates with some of my user personas distaste for bloated reading and advertisements. I'll be able to use just one means to present the required legal notices, rather than force the browser to load it.
+
 .. add image for popup handler
 .. image:: ../images/mockup/COMP266-design-popup.png
    :alt: Flow chart of the pop up handler design.
 
 
-   + a slide handler (called testimonials), which will allow me to aesthetically present the testimonials to suit the needs of my personas. My personas dislike nested content and appreciate less text, opting for more visible means of presentation. This slideshow handler will allow me to negate the need to scroll, and will allow the testimonials to present in a more visually pleasing way.
+Javascript transition handler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   + input validation, which helps make sure that the input entered into the form fields is sanitized. This is important since I'll want to make sure that I have the bare minimum means to protect against cross site scripting attacks, injection, or 1=1 attacks. I found this program in unit 4 and credited the programmer, but I've made some modifications for brevity.
+a slide handler (called testimonials), which will allow me to aesthetically present the testimonials to suit the needs of my personas. My personas dislike nested content and appreciate less text, opting for more visible means of presentation. This slideshow handler will allow me to negate the need to scroll, and will allow the testimonials to present in a more visually pleasing way.
 
+.. add image for slide handler
+.. image:: ../images/mockup/COMP266-design-testimonials.png
+   :alt: Flow chart of the testimonial slide handler design.
+   
 
 In unit 6, I plan to use particles.js to write a program that enhances the visual experience of my website to suit the need of a persona.
 
 In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with an API.
 
 
-.. add image for loader
+Javascript input validation handler
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. add image for popup handler
-.. image:: ../images/mockup/COMP266-design-popup.png
-   :alt: Flow chart of the pop up handler design.
+input validation, which helps make sure that the input entered into the form fields is sanitized. This is important since I'll want to make sure that I have the bare minimum means to protect against cross site scripting attacks, injection, or 1=1 attacks. I found this program in unit 4 and credited the programmer, but I've made some modifications for brevity.
 
-.. add image for slide handler
-.. image:: ../images/mockup/COMP266-design-testimonials.png
-   :alt: Flow chart of the testimonial slide handler design.
-   
 .. add image for input validation
 .. image:: ../images/mockup/COMP266-design-validation.png
    :alt: Flow chart of input validation design.
