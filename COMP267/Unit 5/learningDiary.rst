@@ -81,11 +81,6 @@ a slide handler (called testimonials), which will allow me to aesthetically pres
    :alt: Flow chart of the testimonial slide handler design.
    
 
-In unit 6, I plan to use particles.js to write a program that enhances the visual experience of my website to suit the need of a persona.
-
-In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with an API.
-
-
 Javascript input validation handler
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -94,6 +89,11 @@ input validation, which helps make sure that the input entered into the form fie
 .. add image for input validation
 .. image:: ../images/mockup/COMP266-design-validation.png
    :alt: Flow chart of input validation design.
+
+
+In unit 6, I plan to use particles.js to write a program that enhances the visual experience of my website to suit the need of a persona.
+
+In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with an API.
 
 
 The learning map
