@@ -12,7 +12,7 @@ Writing javascript
 Summary
 ========
 
-   *"Having to catch bugs after compiling at run time gave me PTSD."*
+   *"Having to catch bugs after compiling at run time gave me PTSD, but I came out of Unit 5 understanding the time and place for Javascript"*
 
 
 The work
