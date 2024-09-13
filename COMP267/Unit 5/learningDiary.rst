@@ -7,8 +7,7 @@ Writing javascript
 .. _unit5-ref:
 
 .. Tip::
-   This has been submitted for instructor review, and I am currently working ahead on unit 6 and 7 in the mean time. Check back soon for the source code upload.
-
+   `Download my Unit 5 source by following this link <https://drive.google.com/file/d/1pmzY5laetKPVjrrJgpbV1bEZV7BWqyAJ/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 Summary
 ========
@@ -43,7 +42,7 @@ The work
 
 Assignment 5 submission
 ========================
-.. WAITING
+.. DONE - APPROVED ON 10 SEP 2024
 
 Javascript ideas
 ------------------
@@ -93,7 +92,7 @@ input validation, which helps make sure that the input entered into the form fie
 
 In unit 6, I plan to use particles.js to write a program that enhances the visual experience of my website to suit the need of a persona.
 
-In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with an API.
+In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with third party social media API's.
 
 
 The learning map
