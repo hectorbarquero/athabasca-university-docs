@@ -53,9 +53,9 @@ I'll review the code below, providing a comment on each line.
    Want to read code block this without the scrollbar? Copy it > paste it in your favourite IDE or text editor.
 
 
-.. code-block:: javascript
-
-  <script type="text/javascript">            
+.. code-block::
+    
+    <script type="text/javascript">            
       function Validate(){ // he declares a funct called Validate, self describing. Good.
           if(document.myForm.Name.value==""){ // first check = is name empty. He doesn't comment this one. Personally I think it's fine because it's self describing, but he does comment email validation.
               alert("Please provide your name!"); // alert text warns user - I think this is bad practice. Should use modal dialog and callbacks bc alert will block js execution. Personal comment as well, the prompt isn't UX friendly.
@@ -110,14 +110,7 @@ I'll review the code below, providing a comment on each line.
       }
   </script>
   
-
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-Find the rubric here and grade my work here:
-
-
+  
 Expected outcomes for Unit 4
 -----------------------------
 1. Critique JavaScript code written by others, identifying examples of both good and bad practice.

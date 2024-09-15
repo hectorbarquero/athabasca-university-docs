@@ -188,13 +188,6 @@ It's important to note that some of the requests for Unit 2 shaped the build, wh
 +---------------------+-----------------------+----------------------+---------------------+------------------------------------------------------------------------------------------------------------------------------+
 
 
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-Find the rubric here and grade my work here:
-
-
 
 Expected outcomes for Unit 2
 -----------------------------

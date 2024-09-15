@@ -151,13 +151,6 @@ To see it all connected, check out my mock up. You can also `view these on my Gi
    :alt: Mock up of the final page, contact and about information
 
 
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-Find the rubric here and grade my work here:
-
-
 Expected outcomes for Unit 1
 -----------------------------
 

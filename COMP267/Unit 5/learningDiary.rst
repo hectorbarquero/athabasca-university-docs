@@ -95,13 +95,6 @@ In unit 6, I plan to use particles.js to write a program that enhances the visua
 In unit 7, I plan to write two additional programs that satisfy the requirements of unit 7 and enhance the experience for my users per their personas. I will write a widget that toggles the view from web (large) to mobile (or small laptop/tablot), and I will write a program that allows my users to share news or posts to their social media with third party social media API's.
 
 
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-Find the rubric here and grade my work here:
-
-
 Expected outcomes for Unit 5
 -----------------------------
 + write well-structured, easily maintained JavaScript code following accepted good practice, including
@@ -140,7 +133,7 @@ Additional reading
 + :ref:`Unit 1 learning diary <unit1-ref>`
 + :ref:`Unit 2 learning diary <unit2-ref>`
 + :ref:`Unit 3 learning diary <unit3-ref>`
-+ :ref:`Unit 4 learning diary <unit3-ref>`
++ :ref:`Unit 4 learning diary <unit4-ref>`
 
 
 Get in touch

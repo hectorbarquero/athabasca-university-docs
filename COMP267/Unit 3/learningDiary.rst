@@ -51,13 +51,6 @@ See it here:
 + `Project website <https://github.com/hectorbarquero/portfolio>`_
 
 
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-Find the rubric here and grade my work here:
-
-
 Expected outcomes for Unit 3
 -----------------------------
 1. Write well-structured, easily maintained, standard compliant CSS to present HTML pages in different ways.
