@@ -6,7 +6,7 @@ Using libraries
 .. _unit6-ref:
 
 .. Tip::
-   `Download my Unit 6 source by following this link <abc>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+   `Download my Unit 6 source by following this link <https://drive.google.com/file/d/1Ko6LSdfKu25-DC1OX1-FGQRREAtS0Oc-/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 Summary
 ========
