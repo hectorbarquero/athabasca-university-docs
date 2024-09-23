@@ -7,9 +7,9 @@ Using external data sources
    Currently working this final unit. Nothing to see here. Check back soon.
 
 .. _unit7-ref:
-
+.. SWITCH THE LINK HERE 
 .. Tip::
-   `Download my Unit 7 source by following this link <>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+   `Download my Unit 7 source by following this link <https://drive.google.com/file/d/1Ko6LSdfKu25-DC1OX1-FGQRREAtS0Oc-/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 Summary
 ========
@@ -21,7 +21,7 @@ The work
 ==========
 .. WORKING
 
-1. Visit `AU course book <>`_ > **print book** as .pdf for offline reading.
+1. Visit `AU course book <https://scis.lms.athabascau.ca/mod/book/view.php?id=13071>`_ > **print book** as .pdf for offline reading.
 
 2. Read the 6 instruction pages.
 
