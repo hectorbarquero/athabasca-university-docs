@@ -48,14 +48,6 @@ I decided to download the reading for offline viewing since I could add annotati
 
 I've created a template in reStructuredText because I'll be working in an IDE/nvim/terminal and it'll be easy to document as I code, which I can then paste over to the AU landing page, and submit as part of the evidence in future.
 
-
-The learning map
-=================
-.. for each learning outcome for the unit, explain how you have met it, with reference to the content that you produce (typically your code or other design artifacts).
-
-There is no learning map for Unit 0. The objective of Unit 0 was to get an introduction into the course structure, and set up a learning diary, which you're reading now.
-
-
 What went right and wrong
 ==========================
 .. describe what you would do differently if you had to do it again.
