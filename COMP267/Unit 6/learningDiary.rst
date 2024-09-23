@@ -1,4 +1,4 @@
-.. Currently working
+.. Submitted ON ~15 SEP 2024
 
 Using libraries
 ++++++++++++++++
@@ -33,7 +33,7 @@ The work
 
 
 
-Assignment 5 submission
+Assignment 6 submission
 ========================
 .. DONE
 
@@ -73,7 +73,7 @@ As an overview, the process requires that you:
 Finally, I can override the required parameters with the listed **Options** in the documentation. I can observe the build and use an inspector to see which .sass parameters I'd like to override in order to get the desired .css for my site.
  
 
-Expected outcomes for Unit 5
+Expected outcomes for Unit 6
 -----------------------------
 When you have completed this unit, you should be able to use JavaScript libraries (e.g. ,JQuery) to create dynamic pages.
 
