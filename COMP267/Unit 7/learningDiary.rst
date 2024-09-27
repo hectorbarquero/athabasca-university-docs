@@ -1,15 +1,15 @@
-.. Currently working
+.. Suybmitted on 27 SEP 2024 - done program, waiting for grading and messaged TA and instructor
 
 Using external data sources
 +++++++++++++++++++++++++++++
-
-.. danger::
-   Currently working this final unit. Nothing to see here. Check back soon.
+.. ADD package here
+.. note::
+   This is my final submission, and the course is now complete. I am awaiting grading. Instructors can find my submission package containing source code, rubrics, learning diaries, and documentation here. A short video is recorded to walk you through my submission package, available here.
+   
 
 .. _unit7-ref:
-.. SWITCH THE LINK HERE
 .. Tip::
-   Download my Unit 7 source by following this link ``PENDING``. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
+   Download my Unit 7 source by following this link ``https://drive.google.com/file/d/12O2RyAlRuhhsKwE3wRZDfLo1oaRBjvCw/view?usp=drive_link``. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
 
 
 Summary
@@ -45,20 +45,67 @@ API implementations
 
 Tech news API -> NewsAPI.org
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Some of my personas in unit 1 want industry news *alongside* the tools, so I needed an API that can grab curated news links.
 
-Done - this was tricky because it doesn't use a public API, it requires a private key, and that I don't want to have it revoked if stolen and misused. I ended up needing to create a proxy server, and then a back-end serverless function to hide my key in an environment variable. 
+After I chose this API, I discovered it requires a private key, and that I don't want to have it revoked if stolen and misused. I ended up needing to create a proxy server, and then a back-end serverless function to hide my key in an environment variable. If I didn't do this, it would have been visible in my code. 
 
-This was complicated, and the most timely component to this unit since I had to watch headers and understand the requests and responses to debug why my CORS was being denied.
+This was complicated, and the most timely component to this unit since I had to watch headers and understand the requests and responses to debug why my CORS was being denied from my server. I ended up spending the bulk of the allocated hours for this unit in building and setting up a server.
 
-It's done, and I'll upload design docs momentarily-- my live build works, and I'm okay with the end result (though it could use more refining; this might extend beyond the scope of this course as I continue my studies after this course ends)
+.. code-block:: javascript
+
+   // serverless function for hiding NEWS_API_KEY from my calls
+
+   const fetch = require('node-fetch');
+
+   exports.handler = async (event) => {
+      const apiKey = process.env.NEWS_API_KEY;
+
+      try {
+         // Adding very weird specifications to exclude some odd hate related results, use -china -nazi to exclude
+         const response = await fetch(`https://newsapi.org/v2/everything?q="documentation" -china -nazi -kremlin -roman -birds -russian -death -photons -police&apiKey=${apiKey}`);
+         
+         if (!response.ok) {
+            throw new Error('ERROR: Network response timeout');
+         }
+
+         const data = await response.json();
+
+         return {
+            statusCode: 200,
+            headers: {
+               'Content-Type': 'application/json',
+               // adding this bc it gives domains access to this function - else CORS error
+               'Access-Control-Allow-Origin': '*',
+               'Access-Control-Allow-Headers': 'Content-Type',
+            },
+            body: JSON.stringify(data),
+         };
+      } catch (error) {
+         return {
+            statusCode: 500,
+            headers: {
+               'Content-Type': 'application/json',
+               // adding this bc it gives domains access to this function - else CORS error
+               'Access-Control-Allow-Origin': '*',
+               'Access-Control-Allow-Headers': 'Content-Type',
+            },
+            body: JSON.stringify({ ERROR: error.message }),
+         };
+      }
+   };
+
+The downside to this API is that the source pulls a lot of propaganda, sometimes radical, from various sources. I had to scrub the results and read documentation for exclusive queries. If you inspect my source code, you'll see some of the strange words I needed to exclude in order to refine the results so that they weren't filled with propaganda. 
 
 
 Github Repositories API -> Github REST API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once I figured out the first API implementation, I used this API and found it much easier. It uses a public key, so there was no need to abstract the key into an environment variable like GITHUB_API_KEY. I am happy with the outcome because I went further into the MDN docs to learn how to use existing .css in the javascript, so that the output seems to populate my tools index.html page automatically while appearing to be the same aesthetic.
+Once I figured out the first API implementation, I used the GitHub API and found it much easier. It uses a public key, so there was no need to abstract the key into an environment variable like ``GITHUB_API_KEY``. I am happy with the outcome because I went further into the MDN docs to learn how to use existing .css in the javascript, so that the output seems to populate my tools index.html page automatically while appearing to be the same aesthetic.
 
-Once I figured out the first implementation, this was much simpler and saved me a lot of time instead of needing to populate a table by myself. Now the API takes care of it for me, and all I need to do is take care of my GitHub repo's and projects.
+.. image:: ../images/mockup/COMP266-design-github-api.png
+   :alt: mockup of the schema for the github api integration.
+
+This is a huge time saver for me. Now the API takes care of updating my tools releases for me, and all I need to do is take care of my GitHub repo's and projects.
 
 
 Expected outcomes for Unit 7
@@ -83,6 +130,7 @@ I remedied this issue by creating a server function which hides the token in a p
 
 Once I had figured out how to accomplish this once, it was easy to repeat the solution for the other API implentations. I only needed to reference the documentation to know which webhooks were available for me.
 
+Otherwise, this unit went well and the implementation felt familiar to unit 6.
 
 
 Additional reading
