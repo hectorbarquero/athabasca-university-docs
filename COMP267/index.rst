@@ -11,9 +11,6 @@ COMP266 documentation
 +++++++++++++++++++++++
 Welcome to my COMP 266 project. Here you'll find my learning diary, my reading notes, and useful attachments like my sitemap, personas, and prototypes. You'll also find my source code, which you're free to fork and repurpose.
 
-.. ADD package here
-.. note::
-   This course is now complete. I am awaiting grading. Instructors can find my submission package containing source code, rubrics, learning diaries, and documentation here. A short video is recorded to walk you through my submission package, available here.
 
 .. image:: images/COMP266assessment.png
    :alt: Course overview

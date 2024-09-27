@@ -2,11 +2,7 @@
 
 Using external data sources
 +++++++++++++++++++++++++++++
-.. ADD package here
-.. note::
-   This is my final submission, and the course is now complete. I am awaiting grading. Instructors can find my submission package containing source code, rubrics, learning diaries, and documentation here. A short video is recorded to walk you through my submission package, available here.
    
-
 .. _unit7-ref:
 .. Tip::
    Download my Unit 7 source by following `this link <https://drive.google.com/file/d/12O2RyAlRuhhsKwE3wRZDfLo1oaRBjvCw/view?usp=drive_link>`_. Unpack the .zip and view the README.txt to learn more about the file structure. `You can also check out my project on GitHub <https://github.com/hectorbarquero/technicalwriting_sandbox>`_
