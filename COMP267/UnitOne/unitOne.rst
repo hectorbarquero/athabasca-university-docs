@@ -1,3 +1,6 @@
+.. I'm on page 18/38 right now
+.. I still haven't done the challenge work yet
+
 Unit one
 ++++++++++
 
