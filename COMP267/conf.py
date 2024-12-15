@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'COMP200 documentation'
+project = 'COMP200'
 copyright = '2024, Hector Barquero'
 author = 'Hector Barquero'
 

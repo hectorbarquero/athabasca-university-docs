@@ -8,7 +8,7 @@ COMP200 documentation
 
 .. toctree::
    :maxdepth: 4
-   :caption: Unit 1
+   :caption: Unit one
    :hidden:
 
    UnitOne/unitOne.rst

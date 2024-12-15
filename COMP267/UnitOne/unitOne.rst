@@ -1,8 +1,8 @@
 .. I'm on page 18/38 right now
 .. I still haven't done the challenge work yet
 
-Unit one
-++++++++++
+Unit one, section one
+++++++++++++++++++++++
 
    *"Computer science is no more about computers than astronomy is about telescopes, biology is about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools. It is about how we use them and what we find out when we do."*
 
@@ -72,7 +72,7 @@ The course text is not alone in focusing on the approach rather than the tools. 
 
 Definitions which focus on the tools of computer science (programming, languages, hardware, or systems) can mislead a reader away from the mathematical theory which can largely be done with pen and paper.
 
-Put eloquently, *"computer science is no more about computers than astronomy is about telescopes, biology is about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools. It is about how we use them and what we find out when we do"* (Fellows & Parberry, 1993).
+Put simply, *"computer science is no more about computers than astronomy is about telescopes, biology is about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools. It is about how we use them and what we find out when we do"* (Fellows & Parberry, 1993).
 
 
 
