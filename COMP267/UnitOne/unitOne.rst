@@ -4,8 +4,14 @@
 Unit one
 ++++++++++
 
-Reading notes
-==============
+   *"Computer science is no more about computers than astronomy is about telescopes, biology is about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools. It is about how we use them and what we find out when we do."*
+
+   Michael R. Fellows and Ian Parberry, Computing Research News
+
+
+
+General reading notes
+======================
 
 * Most fundamental work occurred in 1920 - 1940 under the branch of logic and applied mathematics.
 * CS was not recognized until 1950 to early 1960.
@@ -30,9 +36,8 @@ Reading notes
 
 
 
-
-Algorithms
-===========
+Definition of algorithms
+=========================
 An algorithm is an unambiguous procedure or set of instructions for completing something, and requires a finite number of steps using primitive functions. It is a sequence of instructions that must produce an observable result.
 
 They are imporant in computer science because if we can specify an algorithm to solve a problem, then we can automate its solution.
@@ -45,40 +50,40 @@ Algorithms can be one of three types:
 
 
 
-Quotes
-=======
 
-Computer science vs tools
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-| Computer science is no more about computers than astronomy is about telescopes, biology is
-| about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools.
-| It is about how we use them and what we find out when we do.
-|                            - Michael R. Fellows and Ian Parberry, Computing Research News
-|
-| 1 Fellows, M. R., and Parberry, I. “Getting Children Excited About Computer Science,” Computing Research News
-| vol. 5, no. 1 (January 1993).
-
-
-A definition of computer science
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-| ? -> read page 6 of the text, the answer is here
-| ? -> read page 10, note about computer science can be viewed as the science of algorithmic problem solving.
-| ? -> read page 11 ctrl+f on "that is what computer science is all about."
-|
-| Gibbs, N. E., and Tucker, A. B. “A Model Curriculum for a Liberal Arts Degree in Computer Science,” 
-| Comm. of the ACM, vol. 29, no. 3 (March 1986).
-
-
-
-
-Assignment notes
-=================
+Assignment submission
+======================
 
 1. Read chapter one of the textbook.
 2. Complete chellenge work #2, on page 41 of the text.
 
 
+.. note:: 
+   Corresponds to challenge work #2 on page 41 of the text.
 
 
+A misleading definition of computer science is *a branch of study that deals with the theory of computation or the design of computers* (Meriam-Webster). After reading the text, I can see it lacks meaning.
+
+The course reading focuses on defining computer science as an approach to a task. The task of a computer scientist is to *"...design and develop algorithms to solve a range of important problems"* (Gibbs & Tucker, 1986, pp 202-210) with the idea that *"if we can specify an algorithm to solve a problem, we can automate its solution"* (Schneider & Gersting, 2013, p. 10).
+
+Webster doesn't mention that the task can be done with pen and paper, but the text makes this clear.
+
+The course text is not alone in focusing on the approach rather than the tools. The IEEE published an article in April of 2023 which describes a historical overview of computing, consistently defining computer science as an algorithmic pursuit through technological, cultural, economic, and industrial dimensions, including **Pascals calculator** in 1642. 
+
+Definitions which focus on the tools of computer science (programming, languages, hardware, or systems) can mislead a reader away from the mathematical theory which can largely be done with pen and paper.
+
+Put eloquently, *"computer science is no more about computers than astronomy is about telescopes, biology is about microscopes, or chemistry is about beakers and test tubes. Science is not about the tools. It is about how we use them and what we find out when we do"* (Fellows & Parberry, 1993).
+
+
+
+Works cited
+~~~~~~~~~~~~
+Merriam-Webster. “Computer Science.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/computer%20science. Accessed 15 Dec. 2024.
+
+Gibbs, Norman E., and Allen B. Tucker. “A Model Curriculum for a Liberal Arts Degree in Computer Science.” Communications of the ACM, vol. 29, no. 3, Mar. 1986, pp. 202–210.
+
+IEEE. IEEE Annals of the History of Computing. IEEE Xplore, https://xplorestaging.ieee.org/xpl/aboutJournal.jsp?punumber=85. Accessed 15 Dec. 2024.
+
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+Fellows, M. R., and Parberry, I. “Getting Children Excited About Computer Science,” Computing Research News, vol. 5, no. 1 (January 1993).
