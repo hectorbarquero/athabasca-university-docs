@@ -13,3 +13,7 @@ COMP200 documentation
 
    UnitOne/unitOneSectionOne.rst
    UnitOne/unitOneSectionTwo.rst
+
+
+.. image:: ./images/athabasca-university.png
+   :height: 400px

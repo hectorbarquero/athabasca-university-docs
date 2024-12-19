@@ -59,8 +59,8 @@ Algorithms can be one of three types:
 
 
 
-Assignment submission
-======================
+Challenge work submission
+===========================
 
 1. Read chapter one of the textbook.
 2. Complete challenge work #2, on page 41 of the text.
