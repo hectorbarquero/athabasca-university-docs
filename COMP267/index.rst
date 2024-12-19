@@ -11,4 +11,5 @@ COMP200 documentation
    :caption: Unit one
    :hidden:
 
-   UnitOne/unitOne.rst
+   UnitOne/unitOneSectionOne.rst
+   UnitOne/unitOneSectionTwo.rst

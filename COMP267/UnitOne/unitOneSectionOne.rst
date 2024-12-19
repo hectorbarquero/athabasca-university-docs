@@ -1,5 +1,6 @@
-.. I'm on page 18/38 right now
-.. I still haven't done the challenge work yet
+.. I'm on page 39/38 right now
+.. Submitted challenge work on 15-DEC-24 12:20pm
+.. assignments aren't required for this chapter
 
 Unit one, section one
 ++++++++++++++++++++++
@@ -33,6 +34,13 @@ General reading notes
 * We call unambiguous operations *primitive operations*.
 * Algorithms must be *doable*, or effectively computable. One algorithm may not be suitable for another solution.
 * Sometimes an algorithm doesn't produce an answer, but it always produces a result.
+* Early slide rule and mechanical calculators were not computers. They lacked memory and were not programmable.
+* The first device that could do this was a loom (jacquards french loom, used punch cards to produce rugs).
+* Babbage analytical engine four core components are the mill, store, operator, and the output unit. In order, they are responsible for arithmetic, memory, the processor, and I/O.
+* Although the jacque loom was first, the analytical engine is considered the first true computer.
+* John Von Neumann took the 1940s Mark 1, Z1, ENIAC and Colossus computer designs one step further towards the true definition of a modern computer by changing the idea of how the switches were programmed. Rather than physical switches, he proposed using internal gates and relays to program new switches.
+* His contribution to the invention of programming as we know it today is now recognized as the Von Neumann Architecture.
+* We are in the fifth generation of computing, 1985+, but scientists now think that the usefulness of conventional computing generations is outlived.
 
 
 
@@ -55,7 +63,7 @@ Assignment submission
 ======================
 
 1. Read chapter one of the textbook.
-2. Complete chellenge work #2, on page 41 of the text.
+2. Complete challenge work #2, on page 41 of the text.
 
 
 .. note:: 
