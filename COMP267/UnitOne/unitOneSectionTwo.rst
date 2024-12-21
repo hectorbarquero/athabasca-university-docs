@@ -6,7 +6,7 @@
 Unit one, section two
 ++++++++++++++++++++++
 
-.. quote goes here
+    *"an algorithm is deemed correct only when it produces the correct result for all possible cases."*
 
 
 General reading notes
@@ -30,6 +30,8 @@ General reading notes
 * In a do/while condition, the loop is always executed at least once.
 * A while condition can execute 0, 1, 2, or more times.
 * To be considered effective, algorithms need to accomplish tasks in a reasonable time.
+* A sequential search algorithm takes an array of data and parses it without any sort.
+* An algorithm is deemed correct only when it produces the correct result for *all* possible cases.
 
 
 *Notes are ongoing, pending completion*
