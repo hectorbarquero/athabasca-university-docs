@@ -1,4 +1,4 @@
-.. I'm on 66/89 right now
+.. I'm on 70/89 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 2 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 
@@ -32,6 +32,12 @@ General reading notes
 * To be considered effective, algorithms need to accomplish tasks in a reasonable time.
 * A sequential search algorithm takes an array of data and parses it without any sort.
 * An algorithm is deemed correct only when it produces the correct result for *all* possible cases.
+* In while loops, we use an index pointer, usually a variable denoted as *i*. This acts as a moving finger scanning the list of data as we iterate through the loop.
+* The selection of an algorithm to solve a problem is greatly influenced by the way the input data for that problem are organized.
+* A sorting algorithm can reduce the time it takes to use a sequential search algorithm.
+* A collection of prewritten algorithms is called a library, and they are important tools in design and development for more algorithms.
+* "compare and save or discard" is referring to a sorting algorithm in the text. If it comes up in a test, it's probably going to ask which algorithm does this correlate to.
+* Instructions that tell us not to do anything are usually omitted from an algorithm, because they do not carry any meaningful information.
 
 
 *Notes are ongoing, pending completion*
@@ -94,6 +100,17 @@ Write an algorithm that gets as input three data values `x`, `y`, and `z` and ou
 
    console.log(averageValues(0,2,1))
 
+
+Practice problem C
+~~~~~~~~~~~~~~~~~~~~
+Modify the algorithm of Figure 2.14 so that it finds the smallest value in a list rather than the largest. Describe exactly what changes were necessary
+
+.. image:: ../images/figure-214.png
+   :height: 400px
+
+.. code-block:: javascript
+    
+   // working right now... check soon
 
 
 Challenge work submission
