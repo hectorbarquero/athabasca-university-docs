@@ -41,6 +41,15 @@ An algorithm that gets three data values `x`, `y`, and `z` as input and outputs 
    // in the function, return the sum of all variables divided by three
    // run the function which gets user inputs for x,y,z
 
+   let x = 0;
+   let y = 0;
+   let z = 0;
+
+   function averageValues(x,y,z){
+      return (x + y + z) / 3;
+   }
+
+   console.log(averageValues(3,2,1))
 
 
 
