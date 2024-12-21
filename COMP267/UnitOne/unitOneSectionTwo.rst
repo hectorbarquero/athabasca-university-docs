@@ -9,7 +9,6 @@ Unit one, section two
 .. quote goes here
 
 
-
 General reading notes
 ======================
 
@@ -17,7 +16,7 @@ General reading notes
 * High-level programming languages have a high level of abstraction from machine language, so they're close to plain speak, but they carry cryptic syntax.
 * Psuedocode ignores the cryptic syntax of high-level programming language, making the transfer of an idea during the programming concept easier.
 * Psuedocode is simple, highly readable, and has virtually no grammatical rules. It's often called *a programming language without the details*
-* In Psuedocode, it doesn't matter how you write your instructions. They justs need to be clear, effective, computable, and unambiguous.
+* In psuedocode, it doesn't matter how you write your instructions. They just need to be clear, effective, computable, and unambiguous.
 * A variable is a named storage location which holds data. It's often compared to a mailbox where you can place a value and retrieve it.
 
 *Notes are ongoing, pending completion*
