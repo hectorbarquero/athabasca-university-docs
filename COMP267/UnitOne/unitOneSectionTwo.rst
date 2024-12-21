@@ -109,9 +109,33 @@ Modify the algorithm of Figure 2.14 so that it finds the smallest value in a lis
    :height: 400px
 
 .. code-block:: javascript
-    
-   // working right now... check soon
 
+   // declare a flag to check if swap is done or not
+   // do: set flag to false
+   //   for loop while the counter is less than the array length.. 
+   //   if the array index n is greater than the index of n + 1...
+   //   swap the elements. 
+   //   swap = array n, array n + n = array n + 1, array n
+   //   set swap flag to true to restart
+   // use postcheck: while the flag is false...
+   // return sorted array
+
+   function sortArray(arr) {
+   let swapCheck;
+
+   do {
+      swapCheck = false;
+      for (let i =0; i < arr.length - 1; i++) {
+         if (arr[i] > arr[i + 1]) {
+         [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+         swapCheck = true;
+       }
+      }
+    } while (swapCheck);
+    return arr;
+   }
+
+   console.log(sortArray([10,1,5,17,2]));
 
 Challenge work submission
 ===========================
