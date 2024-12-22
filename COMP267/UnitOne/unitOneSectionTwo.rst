@@ -160,6 +160,8 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #3, on page 88 of the text. The instructions say a short paper, but the course Brightspace says 2-3 paragraphs is sufficient.
 
+.. image:: ../images/liu-hui.jpeg
+   :height: 400px
 
 The mathematical contributions of Liu Hui, 263 CE 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
