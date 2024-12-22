@@ -1,6 +1,7 @@
 .. I'm on 83/89 right now
-.. I have not submitted the challenge work yet
+.. I submitted the challenge work on 22 DEC 2024 11:20 EST
 .. an assignment is required for chapter 2 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
+.. assignment not submitted yet.
 
 
 Unit one, section two

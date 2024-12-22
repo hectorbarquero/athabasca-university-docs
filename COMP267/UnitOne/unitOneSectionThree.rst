@@ -1,6 +1,7 @@
 .. I'm on 90/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
+.. assignment not submitted yet.
 
 
 Unit one, section three
