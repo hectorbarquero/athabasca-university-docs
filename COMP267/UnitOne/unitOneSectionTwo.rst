@@ -50,9 +50,6 @@ General reading notes
 * Designing a technically correct algorithm to solve a given problem is only part of what computer scientists do. We must also ensure that we have the most efficient algorithm.
 
 
-*Notes are ongoing, pending completion*
-
-
 Algorithm discovery and design
 ================================
 Finding a solution to a given problem is called *algorithm discovery*.
@@ -164,13 +161,30 @@ Challenge work submission
    Corresponds to challenge work #3, on page 88 of the text. The instructions say a short paper, but the course Brightspace says 2-3 paragraphs is sufficient.
 
 
-Pending completion
+The mathematical contributions of Liu Hui, 263 CE 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Recently in 2023, Liu Hui was commemorated at the 42nd session of the General Conference (Global Times, 2023) to celebrate the anniversary of his birth.
+
+Liu Hui was a brilliant mathematician and ancient chinese scholar who made significant contributions to todays use of computer science in graphics programming, which are documented with detailed mathematical proof in his work: the *Nine Chapters on the Mathematical Art* (J-C Martlzoff, 1997).
+
+His contributions in the *Nine Chapters on the Mathematical Art* were the foundation for todays advancements in computing that we see in graphics programming and 3D rendering. His contributions include polygonal approximations using iterative refinement to improve accuracy, volume calculations, and geometric dissections (Liu Hui, 263 CE).
+
+His work in iterative refinement contributes to todays ability for building polygonal meshes in computing, and his work in volume calculations allows us to achieve voxel rendering and physics simulations. Without his foundational work in geometric dissections, computer science would be unable to have built the binary search partition we use today to compute computational geometry in 3D space, including collision detection. 
+
+The foundational work Liu Hui has been described as *"a light of wisdom spanning two millennia"* in computing and in mathematics, since the *Nine Chapters* serves as a current bridge to connect abstract mathematical theories with practical application (Global Times, 2023).
+
 
 
 Works cited
 ~~~~~~~~~~~~
+"Chinese Mathematician Liu Hui's Contributions to Geometry and Computational Techniques." Global Times, 9 Sept. 2024, www.globaltimes.cn/page/202409/1320363.shtml. Accessed 22 Dec. 2024.
 
-Pending completion
+"Liu Hui." MacTutor History of Mathematics Archive, University of St Andrews, www.mathshistory.st-andrews.ac.uk/Biographies/Liu_Hui/. Accessed 22 Dec. 2024.
+
+Martzloff, J.-C. A History of Chinese Mathematics. Springer-Verlag, 1997.
+
+Foley, James D., and Andres Van Dam. Fundamentals of Interactive Computer Graphics. Systems Programming Series, 1st ed., Addison-Wesley, 1982.
+
 
 
 Assignment 1 (chapter one, section two)
