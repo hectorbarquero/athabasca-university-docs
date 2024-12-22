@@ -1,4 +1,4 @@
-.. I'm on 70/89 right now
+.. I'm on 83/89 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 2 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 
@@ -38,6 +38,16 @@ General reading notes
 * A collection of prewritten algorithms is called a library, and they are important tools in design and development for more algorithms.
 * "compare and save or discard" is referring to a sorting algorithm in the text. If it comes up in a test, it's probably going to ask which algorithm does this correlate to.
 * Instructions that tell us not to do anything are usually omitted from an algorithm, because they do not carry any meaningful information.
+* The process of searching for a special pattern of symbols within a larger collection of information is called *pattern matching*.
+* Most word processors and text editors provide this as a feature in the **Find** tool.
+* Pattern matching can be applied to any media type.
+* Abstraction refers to the separation fo the high-level view of an entity or an operation from the low-level details of its implementation.
+* Abstraction is one of the most important tools in computer science.
+* In the design process, we use abstraction to ignore how we'll implement an algorithm so we can focus on the details of the design.
+* This is called top-down design. (viewing the problem at a high level, implementing the details later).
+* A *sliding forward* step in an algorithm helps to begin searching for a pattern in the next array or sequential position.
+* When you use the *sliding forward* step, you can fall off the search string or input by exceeding the length of the search sequence. You need to terminate the sliding search by the length value.
+* Designing a technically correct algorithm to solve a given problem is only part of what computer scientists do. We must also ensure that we have the most efficient algorithm.
 
 
 *Notes are ongoing, pending completion*
@@ -137,6 +147,12 @@ Modify the algorithm of Figure 2.14 so that it finds the smallest value in a lis
 
    console.log(sortArray([10,1,5,17,2]));
 
+
+I re-wrote the algorithm to be designed behind a dynamically typed programming language, and not a static one. Variables are declared as I use them, specifically the counter and index, so it's omitted from the psuedo. I changed the operand which checks if the array index is smaller, to checking if it's larger. 
+
+I also switched the continuation condition to a postcheck for better error handling, since there's a possibility that the loop would not run at all.
+
+
 Challenge work submission
 ===========================
 
@@ -155,3 +171,8 @@ Works cited
 ~~~~~~~~~~~~
 
 Pending completion
+
+
+Assignment 1 (chapter one, section two)
+========================================
+.. this is technically part 1/2 for assignment 1. The second part is in the next chapter, unitOneSectionThree.rst

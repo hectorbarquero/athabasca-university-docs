@@ -13,6 +13,7 @@ COMP200 documentation
 
    UnitOne/unitOneSectionOne.rst
    UnitOne/unitOneSectionTwo.rst
+   UnitOne/unitOneSectionThree.rst
 
 
 .. image:: ./images/athabasca-university.png
