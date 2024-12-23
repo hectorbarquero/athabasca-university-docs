@@ -1,4 +1,4 @@
-.. I'm on 90/148 right now
+.. I'm on 101s/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -13,10 +13,24 @@ Unit one, section three
 General reading notes
 ======================
 
-* A 
-* B 
-* C 
-
+* It's possible that you can use the right algorithm, but to the wrong problem.
+* Mismatching an algorithm to a problem is one of the most common causes of an incorrect algorithm.
+* It's important to ask "are we solving the right problem? are we solving the problem right?".
+* Algorithms aren't intended for academic interest. They're meant to be used.
+* A great deal of time goes into program maintenance.
+* Usually, the person who has to correct the program and maintain it isn't the one who originally wrote the program.
+* It's important to make algorithms clear and easy to understand for this reason.
+* *Elegance* is the algorithmic equivalent to *style*.
+* A computer scientist should be watchful of resourses and performance. If two algorithms solve a problem, the one which consumes fewer resources and is more performant is the correct algorithm.
+* *Efficiency* is the term used to describe the care and use of computing resources.
+* *Space efficiency* is judged by the amount of information an algorithm stores in the memory, in addition to initial input data.
+* If you try to measure algorithm efficiency with a stop watch, you'd be measuring hardware and not the algorithm itself.
+* It's not to say that the stop watch method is useless. You can do benchmarking with this technique.
+* To measure algorithm efficiency, we check the amount of work the algorithm takes, independent of the hardware.
+* The stufy of algorithmic efficiency is called *analysis of algorithms*.
+* Sequential search algorithms aren't efficient for large values of *n*. Best case 1, worst case *n*, average case *n/2*.
+* A sequential search algorithm stores only a few peripheral variables, which is small in comparison to the value of *n*. It's space efficient.
+* A peripheral value is constant and doesn't really matter in terms of the space efficiency calculations because of *order of magnitude*. If c = constant, and n = number of data, then the total work is c(n). This means the peripheral work is constant and scales with the throughput.
 
 *Notes are ongoing, pending completion*
 
@@ -28,12 +42,12 @@ The efficiency of algorithms
 Practice problem A
 ~~~~~~~~~~~~~~~~~~~~
 Currently working. Check back soon. 
-
+.. Gaus formula, page 94
 
 Practice problem B 
 ~~~~~~~~~~~~~~~~~~~~
 Currently working. Check back soon. 
-
+.. practice problem on page 101
 
 Practice problem C
 ~~~~~~~~~~~~~~~~~~~~
