@@ -1,4 +1,4 @@
-.. I'm on 103/148 right now
+.. I'm on 107/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -34,6 +34,9 @@ General reading notes
 * Order of magnitude of n is written as O(n), and it's anything with a constant that scales irrelevant to the input linearly, since the constant is so insignificant to the time efficiency, it's discarded.
 * For linear search, the algorithm equation to calculate average case is roughly half but the real equation is much more complicated than that. Use n / 2 for now.
 * The selection sort algorithm performs a sort of a list, and it *grows* a sorted subsection of the list from the back to the front.
+* The selection sort does comparisons and exchanges. That needs to be factored into a constant calculation.
+* Work contributed by exchanges and marker moving is so much less than the amount contributed by comparisons that it can be ignored
+* Despite needing a temporary location in memory to hold a value while the swap occurs, selection sort is space efficient and the required overhead to do the swap is nominal in comparison to the compare overhead.
 * 
 
 *Notes are ongoing, pending completion*
