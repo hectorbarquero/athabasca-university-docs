@@ -1,4 +1,4 @@
-.. I'm on 117/148 right now
+.. I'm on 129/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -49,6 +49,10 @@ General reading notes
 * A supercomputer is almost 82k times faster than a standard desktop.
 * A compartive study shows that a supercomputer falls behind a standard computer, despite higher FLOPs, because the supercomputer was using O(n^2) vs O(n) after the input of (n) grew.
 * To analyze the time efficiency of an algorithm, you look at the fundmental units of work the algorithm performs.
+* Choosing a faster algorithm at the cost of space is called time/space trade-off.
+* The number of times (n) can be cut in half and not go below 1 is called the logarithm of (n) to the base of 2, which is abbreviated lg (n), log (n), log2 (n).
+* The textbook notes that O(lg n) is equivalent to various modes of flying, using the transport analogy earlier. It's exponentially faster.
+* The difference in FLOPs can mitigate but not eliminate the difference in algorithm time efficiency.
 
 
 *Notes are ongoing, pending completion*
@@ -56,19 +60,72 @@ General reading notes
 
 The efficiency of algorithms
 =============================
+
+Algorithm speed
+~~~~~~~~~~~~~~~~
 If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms.
 
+Polynomial expressions
+~~~~~~~~~~~~~~~~~~~~~~~
 If an algorithm has higher orders of magnitude **and has lower order of magnitude operations** in it's runtime expression, it's still considered a higher order of magnitude. This is because we concentrate on worst-case efficiency, and lower order terms have insignificant effect on scalability.
 
     **T(n) = 15(n^2) + 5(n) + 3
     T(n) = O(n^2)**
 
+Selection sort
+~~~~~~~~~~~~~~~
 Selection sort is an O(n^2) algorithm in all cases, and sequential search is an O(n) algorithm in the worst case."
 
+Shuffle left
+~~~~~~~~~~~~~
 The shuffle left algorithm is O(n^2) in the worst case, but it is space efficient since it only needs ~4 memory allocations to store (n), left index, right index, and the array itself.
 
-The copy over algorithm
+Copy over
+~~~~~~~~~~
+The copy over algorithm can be faster, but costs more in space allocation. In the best case, no copies are made. In the worst case, every item is copied. Interestingly, the shuffle left and copy over algorithms are opposite in that they do not share the same best and worst case scenarios. 
 
+Time space trade-off
+~~~~~~~~~~~~~~~~~~~~~
+The copy over algorithm is faster and O(n), but it essentially would double memory allocation with a second array. This trade-off when choosing between two algorithm types is called the time/space trade-off.
+
+It's hard to have both at once.
+
+Converging pointers
+~~~~~~~~~~~~~~~~~~~~
+The converging pointers algorithm. This algorithm parses the array and swaps index positions, until the index of the left and right pointer converge. Then the array is checked again for values before running once more. This algorithm requires no more space than the shuffle left algorithm, but it's as fast as the copy over algorithm.
+
+Binary search
+~~~~~~~~~~~~~~~
+Similar to the sequential search algorithm, but unfortunately **only works on a sorted list.**
+
+Binary search only needs a small amount of additional storage, like sequential search.
+
+Binary search does O(lg n) in the worst case and in the average case.
+
+Logarithm
+~~~~~~~~~~
+The number of times a number (n) can be divided in half and not go below 1 is called the logarithm of (n) to the base of 2. 
+
+It's annotated lg (n), log (n), log2 (n). 
+
+    *lg 16 = 4
+    lg n = m which is equal to 2(m) = n*
+
+Log (n) grows slower than (n). As (n) doubles, generally, log (n) increases by +1.
+
+Pattern matching
+~~~~~~~~~~~~~~~~~
+
+
+Summary
+~~~~~~~~
+O(n) is proportional to (n). If you double (n), you double the work. O(n^2) is proportional to the *square* of (n).
+
+Time annotation is in big O notation, but space is in runtime expression because time is more elastic than space. We *want* an algorithm to run in the shortest time possible, but there is usually no cap. There is a cap for space, so the notation is more precise.
+
+If you have to sort a list, even with a higher order of magnitude, to then use an algorithm with a lower order of magnitude on a search, it would be more optimal than performing a search with a higher order of magnitude to avoid sorting a list.
+
+The difference in FLOPs can mitigate but not eliminate the difference in algorithm time efficiency.
 
 Practice problem A
 ~~~~~~~~~~~~~~~~~~~~
