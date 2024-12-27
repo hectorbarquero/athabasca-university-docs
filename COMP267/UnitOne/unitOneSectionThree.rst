@@ -1,4 +1,4 @@
-.. I'm on 110/148 right now
+.. I'm on 117/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -45,6 +45,10 @@ General reading notes
 * If you have to choose, choose the algorithm with the lesser order of magnitude.
 * We care about runtime expressions when we have a large order of (n) to be concerned with.
 * For small factors of (n), the constant factor for time efficiency is nominal.
+* FLOPs are Floating-Point Operations per Second. It's the comparitive performance amongst different computers. We look at how many arithmetic operations the CPU can do in one second, and we compare that.
+* A supercomputer is almost 82k times faster than a standard desktop.
+* A compartive study shows that a supercomputer falls behind a standard computer, despite higher FLOPs, because the supercomputer was using O(n^2) vs O(n) after the input of (n) grew.
+* To analyze the time efficiency of an algorithm, you look at the fundmental units of work the algorithm performs.
 
 
 *Notes are ongoing, pending completion*
@@ -54,7 +58,16 @@ The efficiency of algorithms
 =============================
 If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms.
 
+If an algorithm has higher orders of magnitude **and has lower order of magnitude operations** in it's runtime expression, it's still considered a higher order of magnitude. This is because we concentrate on worst-case efficiency, and lower order terms have insignificant effect on scalability.
+
+    **T(n) = 15(n^2) + 5(n) + 3
+    T(n) = O(n^2)**
+
 Selection sort is an O(n^2) algorithm in all cases, and sequential search is an O(n) algorithm in the worst case."
+
+The shuffle left algorithm is O(n^2) in the worst case, but it is space efficient since it only needs ~4 memory allocations to store (n), left index, right index, and the array itself.
+
+The copy over algorithm
 
 
 Practice problem A
