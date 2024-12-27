@@ -1,4 +1,4 @@
-.. I'm on 107/148 right now
+.. I'm on 110/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -7,7 +7,7 @@
 Unit one, section three
 ++++++++++++++++++++++++
 
-    *"nothing to see here yet. Currently working"*
+    *"If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms."*
 
 
 General reading notes
@@ -37,13 +37,24 @@ General reading notes
 * The selection sort does comparisons and exchanges. That needs to be factored into a constant calculation.
 * Work contributed by exchanges and marker moving is so much less than the amount contributed by comparisons that it can be ignored
 * Despite needing a temporary location in memory to hold a value while the swap occurs, selection sort is space efficient and the required overhead to do the swap is nominal in comparison to the compare overhead.
-* 
+* The selection sort is O(n^2) in all cases unlike a sequential search which is O(n).
+* O(n^2) grows approximately to the square of the rate, unlike O(n) which grows linear to the problem size.
+* O(n^2) grows much faster than O(n). When you look at a line chart, the curved one growing upwards, quickly, is most likely to be O(n^2).
+* No matter what the constants are, O(n^2) has a faster growth rate than O(n).
+* In case it comes up on a test question, the analogy used in the textbook between the two orders of magnitude are walking vs driving, where walking activities can vary between jogging and running, driving can vary between sports engines and economy vehicles. The constants are the modes of transportations, but the two (walking vs driving) are "quantum leaps".
+* If you have to choose, choose the algorithm with the lesser order of magnitude.
+* We care about runtime expressions when we have a large order of (n) to be concerned with.
+* For small factors of (n), the constant factor for time efficiency is nominal.
+
 
 *Notes are ongoing, pending completion*
 
 
 The efficiency of algorithms
 =============================
+If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms.
+
+Selection sort is an O(n^2) algorithm in all cases, and sequential search is an O(n) algorithm in the worst case."
 
 
 Practice problem A
@@ -59,7 +70,7 @@ Currently working. Check back soon.
 Practice problem C
 ~~~~~~~~~~~~~~~~~~~~
 Currently working. Check back soon. 
-
+.. pratice problem 1 on page 107
 
 
 Challenge work submission
