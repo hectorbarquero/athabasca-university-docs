@@ -150,23 +150,6 @@ The difference in FLOPs can mitigate but not eliminate the difference in algorit
 
 O(lg n) does less work as (n) grows because a logarithm is the base of (n) by 2. An exponential algorithm is called a Hamiltonian circuit, and they're often trial search algorithms through paths of graphs, or connected nodes. These exponential algorithms are O(2^n).
 
-
-Practice problem A
-~~~~~~~~~~~~~~~~~~~~
-Currently working. Check back soon. 
-.. Gaus formula, page 94
-
-Practice problem B 
-~~~~~~~~~~~~~~~~~~~~
-Currently working. Check back soon. 
-.. practice problem on page 101
-
-Practice problem C
-~~~~~~~~~~~~~~~~~~~~
-Currently working. Check back soon. 
-.. pratice problem 1 on page 107
-
-
 Challenge work submission
 ===========================
 
@@ -175,18 +158,86 @@ Challenge work submission
 
 
 .. note:: 
-   Finding a link.
+   To watch this video, follow this link: https://www.youtube.com/watch?v=YX40hbAHx3s
 
+P vs NP
+~~~~~~~~
+This video does a roughly 10 minute overview of seven problems known as **The Millenium Prize Problems**, of which, **P vs NP** was included. The **P** stands for polynomial time, and **NP** stands for non-deterministic polynomial time. The problems affiliated with an **NP** problem are known as intractables, something we learn about in this chapter of study. The video talks about how important it was historically to solve problems with efficiency, since early computing didn't have the resources for the most time efficient algorithms, so we grew a need to reduce our space time complexity.
 
-Pending completion
+As we moved along, we found very quickly that some solutions could be near impossible to prove efficiently, let alone compute.
+
+The question of **P vs NP** asks an interesting question in the area of computer science and mathematical computation surrounding intractables; *"Does being able to quickly recognize correct answers mean there is also a quick way to find them?"*.
+
+An especially thought provoking quote is left at the end of the video regarding the pursuit of finding **NP-complete problems**: *"If P=NP, then the world would be a profoundly different place... everyone who could appreciate a symphony would be Mozart"*.
+
+.. tip::
+   P=NP is written as an expression to theoretically acknowledge that NP problems can be solved in polynomial time.
 
 
 Works cited
 ~~~~~~~~~~~~
+"P vs NP: The Biggest Unsolved Problem in Computer Science." YouTube, uploaded by Veritasium, 9 Sept. 2021, https://www.youtube.com/watch?v=YX40hbAHx3s. Accessed 28 Dec. 2024.
 
-Pending completion
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
 Assignment 1 (chapter one, section three)
 ==========================================
 .. this is technically part 2/2 for assignment 1. The first part is in the previous chapter, unitOneSectionTwo.rst
+
+*7. Perform a selection sort on the list 7, 4, 2, 9, 6. Show the list after each exchange that has an effect on the list ordering. (Chapter 3, page 140.)*
+
+
+Psuedocode
+~~~~~~~~~~~
+This problem is familiar to my experience programming algorithms in College when I studied computer programming, but I am applying a newfound understanding of what's happening in time complexity.
+
+
+    // declare function selectionSort
+
+    // iterate through elements in array (n)
+
+    // declare var minIndex to current [i]
+
+    // find smallest element in the unsorted section
+
+    // if smaller element == true, minIndex to [i]
+
+    // if minIndex != [i], swap elements
+
+    // i need to log or output the array to show list after swap, if exchange == true
+
+    // repeat until last element is reached
+
+    // output sorted array again, final 
+
+Solution
+~~~~~~~~~
+.. code:: javascript
+
+   function selectionSort(arr) {
+   for (let i = 0; i < arr.length - 1; i++) {
+      let minIndex = i;
+      for (let j = i + 1; j < arr.length; j++) {
+         if (arr[j] < arr[minIndex]) {
+            minIndex = j;
+         }
+      }
+      if (minIndex !== i) {
+         [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+         console.log(arr);
+      }
+    }
+    return arr;
+    }
+
+    console.log(selectionSort([7, 4, 2, 9, 6]));
+
+Runtime
+~~~~~~~~
+.. image:: ../images/comp200-selectionSort.png
+
+
+Works cited
+~~~~~~~~~~~~
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.

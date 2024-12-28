@@ -188,8 +188,102 @@ Martzloff, J.-C. A History of Chinese Mathematics. Springer-Verlag, 1997.
 
 Foley, James D., and Andres Van Dam. Fundamentals of Interactive Computer Graphics. Systems Programming Series, 1st ed., Addison-Wesley, 1982.
 
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
 Assignment 1 (chapter one, section two)
 ========================================
 .. this is technically part 1/2 for assignment 1. The second part is in the next chapter, unitOneSectionThree.rst
+
+7. Write an algorithm that uses a loop (1) to input 10 pairs of numbers, where each pair represents the score of a football game with the Computer State University (CSU) score listed first, and (2) for each pair of numbers, determine whether CSU won or lost. After reading in these 10 pairs of values, print out the won/lost/tie record of CSU. In addition, if this record is a perfect 10-0, then print out the message 'Congratulations on your undefeated season.' (Chapter 2, page 84)
+
+Psuedocode
+~~~~~~~~~~~~
+I chose this question because it reminds me of programming iteration based counting algorithms from my time studying computer programming at college. I am now able to approach this problem with a much deeper understanding of what is happening in polynomial time.
+
+   // declare function trackGame, include readline to run from terminal, stdout and in
+
+   // initialize counter for win, loss, tie
+
+   // if count is less than 10 times, get input pairs of scores
+
+   // read line for input CSU score && opponent score
+
+   // if CSU > opponent, win++
+
+   // if CSU < opponent, loss++
+
+   // else if scores ==, ties++
+
+   // output totals for win, loss, tie
+
+   // check if record is perfect 10-0. If perfect == true, send congrats to console
+
+   // close readline
+
+
+Solution
+~~~~~~~~
+
+.. code:: javascript
+
+   const readline = require('readline');
+
+   const rl = readline.createInterface({
+   input: process.stdin,
+   output: process.stdout
+   });
+
+   function trackGame() {
+   let wins = 0, losses = 0, ties = 0;
+   let count = 0;
+
+   function askQuestion() {
+      if (count < 10) {
+         rl.question(`Enter CSU score ${count + 1}: `, (csuScore) => {
+            rl.question(`Enter opponent score ${count + 1}: `, (opponentScore) => {
+               csuScore = parseInt(csuScore);
+               opponentScore = parseInt(opponentScore);
+
+               if (csuScore > opponentScore) {
+                  wins++;
+               } else if (csuScore < opponentScore) {
+                  losses++;
+               } else {
+                  ties++;
+               }
+
+               count++;
+               askQuestion();
+            });
+         });
+      } else {
+         console.log(`CSU record: ${wins} Wins, ${losses} Losses, ${ties} Ties`);
+         if (wins === 10 && losses === 0) {
+            console.log("Congratulations on your undefeated season.");
+         }
+         rl.close();
+      }
+   }
+
+   askQuestion();
+   }
+
+   trackGame();
+
+
+Runtime
+~~~~~~~~
+Case loss:
+
+.. image:: ../images/comp200-caseloss.png
+
+Case win:
+
+.. image:: ../images/comp200-casewin.png
+
+
+
+Works cited
+~~~~~~~~~~~~
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
