@@ -1,7 +1,7 @@
-.. I'm on 138/148 right now
+.. I'm on 148/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
-.. assignment not submitted yet.
+.. assignment submitted 28 DEC 2024 - submission 119953
 
 
 Unit one, section three
