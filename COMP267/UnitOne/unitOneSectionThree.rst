@@ -1,4 +1,4 @@
-.. I'm on 129/148 right now
+.. I'm on 138/148 right now
 .. I have not submitted the challenge work yet
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment not submitted yet.
@@ -7,7 +7,7 @@
 Unit one, section three
 ++++++++++++++++++++++++
 
-    *"If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms."*
+    *"After reading this chapter, we now see more than ever why we added efficiency as a desirable feature for an algorithm and why future advances in computer technology won’t change this. No matter how fast computers get, they will not be able to solve a problem of size n = 100 using an algorithm of Θ(2n) in any reasonable period of time"*
 
 
 General reading notes
@@ -53,6 +53,15 @@ General reading notes
 * The number of times (n) can be cut in half and not go below 1 is called the logarithm of (n) to the base of 2, which is abbreviated lg (n), log (n), log2 (n).
 * The textbook notes that O(lg n) is equivalent to various modes of flying, using the transport analogy earlier. It's exponentially faster.
 * The difference in FLOPs can mitigate but not eliminate the difference in algorithm time efficiency.
+* Pattern search might also be known as forward march algorithm.
+* A collection of nodes connecting edges is calle a graph.
+* A path through a graph that begins and ends at the same node and goes through all other nodes once is called a Hamiltonian circuit, named after an irish mathematician William Rowan Hamilton.
+* Hamiltonian circuits can be unbound by polynomial expression and can be considered trial searches. They are exponential algorithms of O(2^n).
+* Hamiltonian problems are also known as brute force algorithms.
+* If an O(n^2) and an O(n) algorithm exist for a problem, then the O(n) will be faster, regardless of the peripherals inside of it. This is the rationale for ignoring constant factors and concentrating on the basic order of magitude for algorithms.
+* A problem where no polynomial bounded algorithm exists is called an intractable. They are solvable, but the solution requires so much work that it's useless. Hamiltonian circuits are intractable. No one has found a solution in polynomial time yet.
+* Another intractable is the bin-packing problem.
+* We approach these intractables with approximate algorithms. They do not solve the problem, but they get us close.
 
 
 *Notes are ongoing, pending completion*
@@ -115,6 +124,18 @@ Log (n) grows slower than (n). As (n) doubles, generally, log (n) increases by +
 
 Pattern matching
 ~~~~~~~~~~~~~~~~~
+The pattern search may also be known as the forward march, and is an O((m) x (n)) algorithm in the worst case, but O(n) in the best case. Interestingly uses two measures of input size, (n) for the input size, and the length of the text string (m). The equation to calculate pattern matching efficiency usually goes *n - m + 1*.
+
+The best **and** worst case for this algorithm are when the pattern is not available at all. The difference hinges on *how* the pattern fails to be in the text.
+
++ The best case is when the first character of the pattern is nowhere in the text.
++ The worst case is when the pattern *almost* exists everywhere in the text.
+
+Intractables
+~~~~~~~~~~~~~~
+Some algorithms can't be solved without their peripherals making them entirely useless. These are exponential algorithms, and their problems are called intractable. They're usually used to solve trial search problems like Hamiltonian circuits. To date, they have not been solved, so we use approximate algorithms to get us close, like brute force approaches.
+
+Exponential algorithms are not expressed in polynomial time and are O(2^n).
 
 
 Summary
@@ -126,6 +147,9 @@ Time annotation is in big O notation, but space is in runtime expression because
 If you have to sort a list, even with a higher order of magnitude, to then use an algorithm with a lower order of magnitude on a search, it would be more optimal than performing a search with a higher order of magnitude to avoid sorting a list.
 
 The difference in FLOPs can mitigate but not eliminate the difference in algorithm time efficiency.
+
+O(lg n) does less work as (n) grows because a logarithm is the base of (n) by 2. An exponential algorithm is called a Hamiltonian circuit, and they're often trial search algorithms through paths of graphs, or connected nodes. These exponential algorithms are O(2^n).
+
 
 Practice problem A
 ~~~~~~~~~~~~~~~~~~~~
