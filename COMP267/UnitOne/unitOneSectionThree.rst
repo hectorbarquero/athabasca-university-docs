@@ -1,5 +1,5 @@
 .. I'm on 148/148 right now
-.. I have not submitted the challenge work yet
+.. submitted challenge work on 28 DEC 2024 7pm est
 .. an assignment is required for chapter 3 "Assignment 1 – choose ONE exercise each from Chapters 2 and 3"
 .. assignment submitted 28 DEC 2024 - submission 119953
 
