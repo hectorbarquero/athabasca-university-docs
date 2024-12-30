@@ -15,6 +15,12 @@ COMP200 documentation
    UnitOne/unitOneSectionTwo.rst
    UnitOne/unitOneSectionThree.rst
 
+.. toctree:: 
+   :maxdepth: 4
+   :caption: Unit two
+   :hidden:
+
+   UnitTwo/unitTwoSectionOne.rst
 
 .. image:: ./images/athabasca-university.png
    :height: 400px
