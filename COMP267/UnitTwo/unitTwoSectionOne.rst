@@ -1,4 +1,4 @@
-.. I'm on page 155/218 right now
+.. I'm on page 159/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -25,7 +25,17 @@ General reading notes
 * in an 8 bit, max value is 11111111. In 16 bit, it would be 16x1 for a total of 65,535 bits. Anything over this cannot be represented without a higher bit system.
 * Attempting to represent a binary digit larger would result in a buffer overflow, or arithmetic overflow.
 * One of the differences in math and computer science is that in math, a quantity can take any representation. Computer science deals with finite representations, and it has to handle errors for exceeding those.
-* 
+* In binary addition, if you add 1+1 you get 10, which in base 2 is a total of 2.
+* I recommend looking up a video on how to add binary numbers, because the text book doesn't present this well. It's easier to see in a short video.
+* Binary can also represent signed integers and characters. For signed ints, it will have a 1 for minus, and 0 for addition. For example 1 110001 is -49, and 0 000011 is +3.
+* The meaning of a binary number is based solely on the context in which it's used, meaning that a computer technically doesn't know the difference between 1110001 and 1 110001. It's the context of how we use it.
+* This isn't irregular when you think about the english language i.e ball (sports) vs ball (event).
+* The reason is to avoid the messy representation of negative zero (1 00000..000) vs zero (0 0000...0000). Consider if a = b, do X. Else do y. What if both are 0, but one is + and the other -?.
+* To avoid this, computer designers prefer signed int's that don't suffer the two zero problem, hence the context.
+* Two's complement representation is when you write binary patterns in a circular form in increasing order. The positive works clockwise, whereas the negative is counter clockwise.
+* In the Two's Complement Representation, there is only a single zero (000 ... 0000). There is a problem with the existence of a singular zero pattern.
+
+
 
 
 Heading
