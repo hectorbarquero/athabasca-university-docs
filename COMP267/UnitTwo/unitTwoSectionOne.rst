@@ -1,4 +1,4 @@
-.. I'm on page 159/218 right now
+.. I'm on page 168/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -34,13 +34,37 @@ General reading notes
 * To avoid this, computer designers prefer signed int's that don't suffer the two zero problem, hence the context.
 * Two's complement representation is when you write binary patterns in a circular form in increasing order. The positive works clockwise, whereas the negative is counter clockwise.
 * In the Two's Complement Representation, there is only a single zero (000 ... 0000). There is a problem with the existence of a singular zero pattern.
+* In the two's complement representation, you always have one more negative number than positive. 
+* This is not as severe a problem as having two zeroes.
+* The two's complement is widely used.
+* Fractional numbers can be conveted to binary, but first need to be converted using scientific notation. +- M x B ^+-E. M is the mantissa, B is the exponent base, usually 2 and E is the exponent.
+* Textual information is stored in binary via a preallocated number, called code mapping. for example, in an 8 bit system, A could be 1. This again means the machine determines if it's char A or decimal 1, based on context.
+* ASCII = american standard code for information interchange, and it uses 8 bits to represent chars. It can encode a total of 2^8 or 256 chars.
+* ASCII assigns int chars 0 to 255. 32-126 are printable chars, the remainder are non printed chars.
+* UNICODE uses 16 bit and is increasingly popular. 2^16 or 65,536 chars allows more symbols. Unicode has 50000 mapping in it's standard.
+* Sound is analog information. In analog representation, objects can take any value.
+* The amplitude of a wave is equivalent to volume. The period of a wave is designated as T, and corresponds as time.
+* f is frequency, the number of cylces per unit time, measured in cycles per second *hertz* hz. The equation is f=1/T. Frequency is a measure of pitch.
+* The higher the frequency, the higher the tone pitch. Humans can hear 20 to 20,000 hz.
+* To store a frequency waveform, analog must be digitized. This is called sampling.
+* The accuracy of encoding and decoding these waveforms is dependent on sampling rate and bit depth. 
+* Sampling rate measures how many times per second we sample the amplitude of the waveform.
+* To be effective, it needs to be nearly double the hz a human can hear, totalling 40,000 samples per second.
+* The bit depth is the number of bits used to encode each sample.
+* Most audio encoding schemas use either 16 or 24 bit encoding, allowing 65000 or 16000000 distinct amplitude levels.
+* The textbook lists popular encoding schemas WAV (waveform audio format), AAC (advanced audio coding), WMA (windows media audio), MIDI (musical instrument digital interface) and MP3, MPEG-1 audio level 3 encoding. MPEG = motion picture experts group.
+* MP3 uses 44100 samples per second, 16 bit.
+* encoding process in imagery is called scanning. Scanning measures the intensity values of distinct points located at regular intervals across the images surface.
+* These points are called pixels.
 
 
 
-
-Heading
+Practice questions
 =========================
 
+Binary practice
+~~~~~~~~~~~~~~~~~
+.. questions on page 164
 
 
 
