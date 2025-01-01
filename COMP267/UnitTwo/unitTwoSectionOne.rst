@@ -1,4 +1,4 @@
-.. I'm on page 173/218 right now
+.. I'm on page 181/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -77,7 +77,16 @@ General reading notes
 * As an electronic device ages, voltages may shift, so representing base 10 voltages would be problematic since +5 vdc could quickly become +10 vdc if the shift is ambiguous and inbetween, i.e, 6.75 vdc... will it round up or down?
 * The problem with another representation is that it requires equal stable states.
 * Electronics operate best in a bistable environment in which there are only two states, separated by a huge energy barrier and not a gradual drift.
-
+* Counterclockwise magnetic fields represent 0, and clockwise represent 1. These are found in core memory, from the term magnetic cores. A core is a small iron oxide coated doughnut. The direction of throughput from ferric oxide is rightmost in counterclockwise 0, and leftmost in clockwise 1. These are found in memory.
+* 1 GB has more than 8 billion bits. Cores were swapped out for transistors to accomodate mass memory amounts.
+* Transistors are made of semiconductors, silicon and gallium arsinide. They can be printed onto waffer-like silicon chips, known as an integrated circuit or chip. These transistors can switch on and off states in a billionth of a second.
+* The benefit to this construction using photographic production is that a mask can be produced, which can repeat copies of the chip like a mold.
+* Transistors and chips are an area of physics and electrical engineering.
+* Each transistor has three lines, two input lines and one outpute line. The input lines are collector and control, and the output line is the emitter.
+* Control is the base, it opens and closes the relay. When control is 1, the switch is closed and the circuit is ON.
+* When control is ON, energy passes through the collector through a straight path (the output line called the emitter).
+* Moores law states transistors double on a CPU every two years, improving performance. Moores law predicts a demise since we would need to eventually put transistors within an atomic distance of eachother. Currently we are around 100 nm.
+* We may be able to solve this in the upcoming breakthroughs in quantum computing.
 
 
 Data compression techniques
@@ -91,6 +100,7 @@ example:
 
 .. image:: ../images/cs200-run-length.png
 
+
 Run length is a lossless compression schema.
 
 Variable-length encoding
@@ -99,7 +109,14 @@ Often used to encode text, but can be used with other forms. In essence, shorter
 
 Variable length is a lossless compression schema.
 
+Requirements for constructing a computer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You can build a binary computer and its internal components using any hardware with the following criteria.
 
+1. The stable states need to be bistable.
+2. The two states need to have a large energy barrier.
+3. You need to be able to sense the state the device is in without permanent destruction.
+4. You can switch between the states without immense energy.
 
 Challenge work submission
 ===========================
