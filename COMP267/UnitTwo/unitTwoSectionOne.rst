@@ -1,4 +1,4 @@
-.. I'm on page 168/218 right now
+.. I'm on page 173/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -56,16 +56,48 @@ General reading notes
 * MP3 uses 44100 samples per second, 16 bit.
 * encoding process in imagery is called scanning. Scanning measures the intensity values of distinct points located at regular intervals across the images surface.
 * These points are called pixels.
+* We store different values of bits in each pixel to make use of grayscale. As an example, a pixel with 3 bits can have 2^3 or 8 shades of increasing intensity, whereas a pixel with a bit option of 1 or 0 would produce a stark black and white image.
+* This technique is used in raster graphics, JPEG (joint photographer experts group), GIF (graphics interchange format).
+* colour is the same, though we need to encode a value for colour as well (usually RGB)
+* It uses one byte, or 8 bits, for each colour ranging a value of intensity from 0 to 255.
+* For example, magenta is  RGB 255, 0, 255.
+* True colour is an encoding system that uses 3 bytes per pixel, or 24 bits to get over 16 million colours (used in jpeg).
+* Some image representation techniques reduce values by using a color palette, since storing 16mil+ colours is memory intense.
+* Technically, if you support 16mil+ colours, you can only use 256 at any one time.
+* With 256, you can encode each pixel using 8 bits rather than 24 since 2^8 is 256, reducing storage space by 67%.
+* Each of the 256 doesn't represent an RGB colour, but an index into a palette or colour table.
+* This technique is used in GIF, which holds as few as 2 colours, or as high as 256.
+* Music and sound take far more resources than text. You can always calculate by taking the sampling or scanning, or encoding and multiplying by the number of pixels, samples, or chars.
+* Compression schemas are evaluated by their compression ratio, which measures how much they reduce the storage requirements of the data.
+* Compression ratio = size of uncompressed data / size of compressed data
+* Lossy compression schemas compress data in a way that doesn't gaurantee all of the information will be intact.
+* The tradeoff for accuracy is a better compression ratio.
+* Octal = base 8. Ternary = base 3. Hexadecimal = base 16.
+* Computers use binary for electronic reliability, not theoretical limitation.
+* As an electronic device ages, voltages may shift, so representing base 10 voltages would be problematic since +5 vdc could quickly become +10 vdc if the shift is ambiguous and inbetween, i.e, 6.75 vdc... will it round up or down?
+* The problem with another representation is that it requires equal stable states.
+* Electronics operate best in a bistable environment in which there are only two states, separated by a huge energy barrier and not a gradual drift.
 
 
 
-Practice questions
-=========================
+Data compression techniques
+============================
 
-Binary practice
-~~~~~~~~~~~~~~~~~
-.. questions on page 164
+Run-length encoding
+~~~~~~~~~~~~~~~~~~~~
+Replace a sequence of identical values by a pair of values, which indicates the value is replicated (n) times. If both x and (n) require 1 byte of storage, then the reduced total of bytes goes from (n) down to 2.
 
+example:
+
+.. image:: ../images/cs200-run-length.png
+
+Run length is a lossless compression schema.
+
+Variable-length encoding
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Often used to encode text, but can be used with other forms. In essence, shorter codes are given to frequent common values, and longer codes for less common values.
+
+Variable length is a lossless compression schema.
 
 
 
