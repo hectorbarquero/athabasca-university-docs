@@ -1,4 +1,4 @@
-.. I'm on page 181/218 right now
+.. I'm on page 183/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -87,6 +87,14 @@ General reading notes
 * When control is ON, energy passes through the collector through a straight path (the output line called the emitter).
 * Moores law states transistors double on a CPU every two years, improving performance. Moores law predicts a demise since we would need to eventually put transistors within an atomic distance of eachother. Currently we are around 100 nm.
 * We may be able to solve this in the upcoming breakthroughs in quantum computing.
+* The construction of computer circuits is based on boolean logic.
+* The area of computing regarding boolean logic is known as hardware design, or logic design.
+* In computing, 1 = true. 0 = false.
+* x = 1 can be considered a boolean expression because if x=1, its true. if not, its false. Liekwise x!=1 and c > 2.5 can be seen as boolean expressions.
+* boolean operators are AND OR and NOT.
+* a truth table can show the boolean logic outcomes.
+* AND can be written (x>y) AND (x<100) or (x>y) . (x>100). The dot in the center can indicate the boolean logic expression AND.
+* 
 
 
 Data compression techniques
