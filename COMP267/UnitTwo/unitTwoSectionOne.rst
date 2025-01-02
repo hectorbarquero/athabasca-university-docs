@@ -1,4 +1,4 @@
-.. I'm on page 183/218 right now
+.. I'm on page 190/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
@@ -6,7 +6,6 @@ Unit two, section one
 ++++++++++++++++++++++
 
    *"currently working, nothing to see here"*
-
 
 
 General reading notes
@@ -94,7 +93,15 @@ General reading notes
 * boolean operators are AND OR and NOT.
 * a truth table can show the boolean logic outcomes.
 * AND can be written (x>y) AND (x<100) or (x>y) . (x>100). The dot in the center can indicate the boolean logic expression AND.
-* 
+* OR is written (x + y), and its true if if either or both are true.
+* NOT is different. OR and AND require two operators, binary operators, but NOT only needs one -- a unary operator.
+* NOT is written with a small line above the variable. It's weirdly somewhat backwards. If NOT a is true, it means that the value of a is false. If the value of a were true, then NOT a is false.
+* The fundamental logic behind computers isn't necessarily the transistors, but the logic gates implemented by boolean logic at the silicon level.
+* The rules of logic date back over 2,300 years ago to the Greeks, which was expanded by George Boole 150 years ago.
+* A gate is an electronic device that operates on a collection of binary inputs to produce a binary output.
+* NAND is the exact opposite of AND. Its highly used in hardware design, and stands for NOT AND.
+* NOR is an acronym for NOT OR.
+
 
 
 Data compression techniques
@@ -117,6 +124,7 @@ Often used to encode text, but can be used with other forms. In essence, shorter
 
 Variable length is a lossless compression schema.
 
+
 Requirements for constructing a computer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You can build a binary computer and its internal components using any hardware with the following criteria.
@@ -125,6 +133,50 @@ You can build a binary computer and its internal components using any hardware w
 2. The two states need to have a large energy barrier.
 3. You need to be able to sense the state the device is in without permanent destruction.
 4. You can switch between the states without immense energy.
+
+
+Gate schematics 
+================
+A gate is an electronic device that operates on a collection of binary inputs to produce a binary output.
+
+It transforms a set of 0,1 input values into a single output value of 0 or 1, according to specific transformation rules.
+
+The reason we use gates rather than transistors is that a transistor is too elementary to act as a fundamental design component. It needs a designer to deal with low level currents, voltages, and physics. When you group transistors together, you get more powerful building blocks (called gates).
+
+Once we have gates, we can deal with more complex expressive mathematics instead of lower level discrete physics.
+
+The shift from transistors to gates is one of the many examples of abstraction in computer science.
+
+
+.. image:: ../images/cs200-logic-gates.png
+
+
+A **NOT** gate can be created from a single transistor, since the collector is connected to the power supply and the emitter is connected to logical ground.
+
+To create an AND gate, we connect two transistors in series:
+
+.. image:: ../images/cs200-logic-and-schema.png
+
+.. image:: ../images/cs200-logic-nand-schema.png
+
+
+When you want to build an **AND** gate, all you have to do is add a **NOT** gate to the circuit.
+
+.. note:: 
+   A NAND gate requires two transistors, whereas the AND gate requires three. This is why NAND gates are widely used to build computer circuits, since they require less transistors.
+
+
+To construct an **OR** gate, we use two transistors connected in parallel, not in series.
+
+.. image:: ../images/cs200-logic-or-schema.png
+
+.. image:: ../images/cs200-logic-or-schema-2.png
+
+
+To convert a **NOR** gate to an **OR** gate, we add a **NOT** gate to the output line.
+
+
+
 
 Challenge work submission
 ===========================
