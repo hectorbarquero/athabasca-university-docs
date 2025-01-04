@@ -1,6 +1,6 @@
-.. I'm on page 191/218 right now
+.. I'm on page 208/218 right now
 .. Challenge work required, page 217 question 3
-.. assignment is ??
+.. assignment 2 is one exercise from chapter 4 page 215, question 19. and chapter 5 page 270, question 4.
 
 Unit two, section one
 ++++++++++++++++++++++
@@ -109,6 +109,8 @@ General reading notes
 * Sequential circuits use a feedback loop to use the output of the previous run as a new input for the next run. They're used to build memory circuits since they in a way can contain memory.
 * You can split or tap a line and send its value to different gates. 
 * George booles "not very important work" is the basis of computer design. All we need are gates in circuits, and boolean logic.
+* The inventor of the transistor is william shockley, along with john bardeen and walter brattain while working at Bell labs. Shockley left to set up chockley semiconductor lab in silicon valley, instrumental to its tech growth.
+
 
 
 Data compression techniques
@@ -222,7 +224,13 @@ To check if all 1-CE circuits produce a 1, we AND together the outputs of (n) 1-
 
 Addition circuit algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The ADD circuit performs binary addition on two unsigned n-bit ints. It's called a full adder.
 
+Similar to the CE, 1-ADD signifies that it's adding a single pair of binary digits, along with the carry digits.
+
+.. image:: ../images/cs200-nadd-circuit.png
+
+Each ADD circuit uses 3 NOT gates, 16 AND gates, and 6 OR gates for a total of 25 logic gates. To perform a 32 bit binary addition, its 32 x 25 = 800 gates. It will take 2,200 transistors to build a 32 bit adder circuit.
 
 
 Challenge work submission
