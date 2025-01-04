@@ -1,11 +1,9 @@
-.. I'm on page 190/218 right now
+.. I'm on page 191/218 right now
 .. Challenge work required, page 217 question 3
 .. assignment is ??
 
 Unit two, section one
 ++++++++++++++++++++++
-
-   *"currently working, nothing to see here"*
 
 
 General reading notes
@@ -101,7 +99,16 @@ General reading notes
 * A gate is an electronic device that operates on a collection of binary inputs to produce a binary output.
 * NAND is the exact opposite of AND. Its highly used in hardware design, and stands for NOT AND.
 * NOR is an acronym for NOT OR.
-
+* a circuit is a collection of logic gates, that transforms a set of binary inputs into a set of binary outputs.
+* the values of the outputs depend only on the values of the inputs.
+* This type of circuit is called a combinational circuit.
+* Each AND and OR gate must have two inputs and one output.
+* Multiple AND and OR gates exist, but they aren't frequently used.
+* Each NOT gate must have exactly one input and one output.
+* using pictorial representation may be better for design. Boolean expression can help plan mathematical verification and optimization.
+* Sequential circuits use a feedback loop to use the output of the previous run as a new input for the next run. They're used to build memory circuits since they in a way can contain memory.
+* You can split or tap a line and send its value to different gates. 
+* George booles "not very important work" is the basis of computer design. All we need are gates in circuits, and boolean logic.
 
 
 Data compression techniques
@@ -175,6 +182,46 @@ To construct an **OR** gate, we use two transistors connected in parallel, not i
 
 To convert a **NOR** gate to an **OR** gate, we add a **NOT** gate to the output line.
 
+The sum of products algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+One of the many circuit construction algorithm methods is the sum of products algorithm.
+
+.. note:: 
+   This algorithm doesn't always produce an optimal circuit, where optimal means that the circuit accomplishes its desired function using the smallest number of logic gates. Using optimal circuits saves real money, since each gate takes up costs in material and requires power to operate. Algorithms for circuit optimization are an important sub-area of computer design.
+
+
+1. Truth table construction - construct a truth table. The truth table will help to know what subsequent steps you'll need in the algorithm.
+
+2. Subexpression construction using AND and NOT gates - choose any output column from the truth table, and where a 1 exists, build a boolean logic gate that outputs true and only true for that output. Each of the instances with a 1 in the output are considered a case, and they need a boolean expression.
+
+3. Subexpression combination using OR gates - take the AND and NOT gates from step 2 and combine them two at a time using OR gates.
+
+4. Circuit diagram production - construct the final circuit diagram. Convert the boolean expression into a circuit diagram using gates to implement the operators. 
+
+
+Compare for equality algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Also known as the CE circuit, it tests two unsigned binary numbers for exact equality. The circuit produces the value 1 for true if the two numbers are equal and the value 0 is false.
+
+1-bit compare for equality is represented as 1-CE. 1-CE compares two 1-bit values, a and b, for equality. If both the inputs are the same, the output is true. Otherwise, it's false.
+
+1. Create a truth table
+2. Create a subexpression for cases 
+3. Combine them with an OR gate
+4. Create the circuit diagram
+
+N-nit compare for equality circuit (called CE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Because numbers in computers are usually larger than one digit, we use an (n) of the 1-CE circuit. 
+
+To check if all 1-CE circuits produce a 1, we AND together the outputs of (n) 1-CE.
+
+.. image:: ../images/cs200-nbit-compare.png
+
+
+
+Addition circuit algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
