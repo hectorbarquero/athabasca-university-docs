@@ -1,6 +1,6 @@
-.. I'm on page 208/218 right now
-.. Challenge work required, page 217 question 3
-.. assignment 2 is one exercise from chapter 4 page 215, question 19. and chapter 5 page 270, question 4.
+.. I'm on page 214/214 right now <-- DONE
+.. Challenge work required, page 217 question 3 <-- NOT STARTED
+.. assignment 2 is one exercise from chapter 4 page 215, question 19. and chapter 5 page 270, question 4. <-- NOT STARTED
 
 Unit two, section one
 ++++++++++++++++++++++
@@ -110,6 +110,11 @@ General reading notes
 * You can split or tap a line and send its value to different gates. 
 * George booles "not very important work" is the basis of computer design. All we need are gates in circuits, and boolean logic.
 * The inventor of the transistor is william shockley, along with john bardeen and walter brattain while working at Bell labs. Shockley left to set up chockley semiconductor lab in silicon valley, instrumental to its tech growth.
+* Control circuits dont do arithmetic, they instead manage the order of operations. They are sequencing decision making circuits. They're important because a computer must know what to execute in order and be sequential.
+* A multiplexor circuit has 2^n input lines and 1 output line. Functionally it copies the binary input of two lines and puts the output on one line. The multiplexor chooses one specific input by a selector line, which can be an additional set of (n) lines.
+* The total number of lines in a multiplexor circuit is 2^n + (n).
+* A decoder circuit is opposite to a multiplexor circuit, where a decoder circuit has (n) input lines and 2^n output. It's the job of the decoder to determine the value represented on its (n) input lines and send a signal on its single output line that has an identification number.
+* Multiplexors and decoders are control circuits that allow us to build computers.
 
 
 
