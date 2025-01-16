@@ -1,6 +1,6 @@
 .. I'm on page 214/388 right now <-- NOT STARTED
 .. Challenge work required, page 386 question 21 <-- NOT STARTED
-.. assignment 3 is one exercise from chapter 6, 7, and 8
+.. assignment 3 is one exercise from chapter 6, 7, and 8 <-- NOT STARTED
 
 Unit three, section two
 ++++++++++++++++++++++++
