@@ -248,6 +248,79 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #3 on page 217 of the text.
 
+**CHALLENGE WORK IS PENDING COMPLETION, CHECK BACK SOON. I'M DOING ALL THE ASSIGNMENTS FIRST, THEN READING THE TEXT AGAIN TO DO CHALLENGE WORKS BEFORE THE EXAM.**.
+
+Works cited
+~~~~~~~~~~~~
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+
+Assignment 2 (chapter two, section one)
+========================================
+.. this is technically part 1/2 for assignment 2. The second part is in the next chapter, unitTwoSectionOne.rst
+
+*7. Assume that a=1, b=2, c=2. What is the value of each of the following boolean expressions?  (Chapter 4, page 215.)*
+
+For ease of marking, my answer sequence is: 
+
+a. TRUE
+b. TRUE
+c. FALSE
+d. FALSE
+e. FALSE
+
+
+Question 1
+~~~~~~~~~~~
+This answer is true because only one of the expressions needs to be true, and one is.
+
+.. code-block:: javascript
+
+   (a>1) OR (b=c)
+
+**Solution:** TRUE
+
+Question 2
+~~~~~~~~~~~
+This answer is true because both are true, and when the AND operator is used, both must be true.
+
+.. code-block:: javascript
+
+   [(a+b)>c] AND (b <= c)
+
+**Solution:** TRUE
+
+Question 3
+~~~~~~~~~~~
+This answer is false because the NOT operator negates the expression, reverting it. a=1 is TRUE, so the NOT reverts it to FALSE.
+
+.. code-block:: javascript
+
+   NOT (a=1)
+
+**Solution:** FALSE 
+
+Question 4
+~~~~~~~~~~~
+Similar to question 3, the NOT operator negates the expression of the OR statement, where the OR statement alone would be considered correct, so the answer is FALSE.
+
+.. code-block:: javascript
+
+   NOT [(a=b) OR (b=c)]
+
+**Solution:** FALSE
+
+Question 5
+~~~~~~~~~~~
+The AND operator requires all expressions to be correct, and in this case, only two of them are.
+
+.. code-block:: javascript
+
+   (a=1) AND (b=1) AND (c=2)
+
+**Solution:** FALSE
+
+
 
 Works cited
 ~~~~~~~~~~~~
