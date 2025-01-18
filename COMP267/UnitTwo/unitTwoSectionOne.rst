@@ -1,6 +1,6 @@
 .. I'm on page 214/214 right now <-- DONE
 .. Challenge work required, page 217 question 3 <-- NOT STARTED
-.. assignment 2 is one exercise from chapter 4 page 215, question 19. and chapter 5 page 270, question 4. <-- NOT STARTED
+.. assignment 2 was submitted on 18 JAN 2025 - ID 129181
 
 Unit two, section one
 ++++++++++++++++++++++
