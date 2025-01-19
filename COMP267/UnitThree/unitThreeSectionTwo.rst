@@ -3,7 +3,7 @@
 .. assignment 3 is one exercise from chapter 6, 7, and 8
 .. QUESTION KEY
 .. chapter 6, question 13 page 329
-.. chapter 7, question 1 page 384
+.. chapter 7, question 10 page 385
 .. chapter 8, question 9 page 418
 
 
@@ -46,11 +46,17 @@ Assignment 3 (chapter two, section two)
 ========================================
 .. this is technically part 2/3 for assignment 3. The third part is in the next chapter, unitThreeSectionThree.rst
 
-*1. Show how a modem would encode the 5-bit binary sequence 11001 onto an analog carrier by Modifying its amplitude (the height of the carrier wave), and by Modifying its frequency (the number of waves per second)* (Chapter 7, page 384)
+*10. Agree or disagree with the following assertion and state why: In an Ethernet network, even though there are collisions, every message is guaranteed to be delivered in some maximum amount of time T.* (Chapter 7, page 385)
 
+Disagree
+~~~~~~~~~
+In old ethernet networks that use carrier sense multiple access with collision detection (CSMA/CD), there is no guaranteed max time for message delivery due to the *exponential backoff mechanism* (Gupta & Walrand, 2007). After a collision, devices would wait for random intervals before re-transmitting, and these intervals grow exponentially with repeat collisions. When there is network congestion, delays become significant and unpredictable.
 
+Ethernet is designed for efficiency but it doesn't promise deterministic packet delivery, although in the modern full-duplex networks, collision wouldn't occur-- but it would still be impossible to gaurantee a maximum delivery time due to unpredictable variables like network congestion, payload size, and hardware specifications. 
 
 
 Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+Gupta, R., and J. Walrand. "Impatient Backoff Algorithm: Fairness in a Distributed Ad-Hoc MAC." IEEE Xplore, IEEE, 2007, https://ieeexplore.ieee.org/document/4289259. Accessed 19 Jan. 2025.

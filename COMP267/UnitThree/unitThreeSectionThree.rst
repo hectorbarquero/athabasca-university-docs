@@ -48,7 +48,43 @@ Assignment 3 (chapter two, section two)
 
 *9. Using a Caesar cipher with s = 5, decode the received message RTAJ TZY FY IFBS.* (Chapter 8, page 418)
 
+How it works 
+~~~~~~~~~~~~~
+The caesar cipher shifts each letter by a fixed value, forward for encryption and backward for decryption. My javascript solution decodes the message by shifting letters backward, using the modulo operator to handle wrapping, and discards non-alphabetic characters. It returns the decoded string after adjusting each letter's position.
 
+The output is: `MOVE OUT AT DAWN`
+
+
+Program
+~~~~~~~~
+
+.. code-block:: javascript
+
+   function decodeCaesarCipher(message, shift) {
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return message.split('').map(char => {
+        if (alphabet.includes(char)) {
+            // shift back, use modulo to wrap the alphabet if needed
+            let originalIndex = (alphabet.indexOf(char) - shift + 26) % 26;
+            return alphabet[originalIndex];
+        }
+        // ignore non-print values like hex 0x20
+        return char; 
+    }).join('');
+   }
+
+   //values given from text question, cipher shift val of 5 + encrypted message
+   const encodedMessage = "RTAJ TZY FY IFBS";
+   const shift = 5;
+
+   const decodedMessage = decodeCaesarCipher(encodedMessage, shift);
+   console.log(decodedMessage);
+
+
+Run-time
+~~~~~~~~~
+
+.. image:: ../images/cs200_cipher-program.png
 
 
 Works cited
