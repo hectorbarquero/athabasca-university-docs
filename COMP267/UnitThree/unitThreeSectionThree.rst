@@ -42,8 +42,8 @@ Works cited
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
-Assignment 3 (chapter two, section two)
-========================================
+Assignment 3 (chapter three, section two)
+===========================================
 .. this is technically part 3/3 for assignment 3. The earlier parts are in the prior pages, unitThreeSectionOne.rst, and unitThreeSectionTwo.rst
 
 *9. Using a Caesar cipher with s = 5, decode the received message RTAJ TZY FY IFBS.* (Chapter 8, page 418)

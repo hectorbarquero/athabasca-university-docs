@@ -42,8 +42,8 @@ Works cited
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
-Assignment 3 (chapter two, section one)
-========================================
+Assignment 3 (chapter three, section one)
+===========================================
 .. this is technically part 1/3 for assignment 3. The second part is in the next chapter, unitThreeSectionTwo.rst
 
 *13. Write a complete assembly language program (including all necessary pseudo-ops) that reads in a series of integers, one at a time, and outputs the largest and smallest values. The input will consist of a list of integer values containing exactly 100 numbers.* (Chapter 6, page 329)

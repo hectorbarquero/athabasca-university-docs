@@ -42,8 +42,8 @@ Works cited
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
-Assignment 3 (chapter two, section two)
-========================================
+Assignment 3 (chapter three, section two)
+===========================================
 .. this is technically part 2/3 for assignment 3. The third part is in the next chapter, unitThreeSectionThree.rst
 
 *10. Agree or disagree with the following assertion and state why: In an Ethernet network, even though there are collisions, every message is guaranteed to be delivered in some maximum amount of time T.* (Chapter 7, page 385)
