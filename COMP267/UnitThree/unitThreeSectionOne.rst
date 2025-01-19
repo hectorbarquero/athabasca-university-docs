@@ -3,7 +3,7 @@
 .. assignment 3 is one exercise from chapter 6, 7, and 8
 .. QUESTION KEY
 .. chapter 6, question 13 page 329
-.. chapter 7, question 1 page 384
+.. chapter 7, question 10 page 385
 .. chapter 8, question 9 page 418
 
 
