@@ -38,7 +38,7 @@ Assignment 2 (chapter two, section two)
 ========================================
 .. this is technically part 2/2 for assignment 2. The first part is in the previous chapter, unitTwoSectionOne.rst
 
-4. *Explain what use read-only memory (ROM) serves in the design of a computer system. What type of information is kept in ROM, and how does that information originally get into the memory?*
+4. *Explain what use read-only memory (ROM) serves in the design of a computer system. What type of information is kept in ROM, and how does that information originally get into the memory?* (Chapter 5, page 270)
 
 
 Read-only memory (ROM)
