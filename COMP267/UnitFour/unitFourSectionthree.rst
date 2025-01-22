@@ -60,7 +60,7 @@ Question A
 Question B
 ~~~~~~~~~~~~
 
-.. code-block:: javascript
+.. code-block::
 
    delta = epsilon + 1.23 − sqrt(zz); 
 
