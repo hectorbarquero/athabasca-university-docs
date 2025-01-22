@@ -38,6 +38,9 @@ COMP200 documentation
    :hidden:
 
    UnitFour/unitFourSectionOne.rst
+   UnitFour/unitFourSectionTwo.rst
+   UnitFour/unitFourSectionThree.rst
+   UnitFour/unitFourSectionFour.rst
 
 
 .. image:: ./images/athabasca-university.png
