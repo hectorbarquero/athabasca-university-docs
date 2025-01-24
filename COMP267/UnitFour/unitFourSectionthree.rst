@@ -4,7 +4,7 @@
 .. QUESTION KEY
 .. chapter 9, page 467, question 5.
 .. chapter 10, page 523, question 8
-.. chapter 11, page 570, question 1.
+.. chapter 11, page 572, question 17.
 .. chapter 12, page 618, question 38.
 
 
@@ -46,31 +46,8 @@ Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th 
 Assignment 4 (chapter four, section three)
 ===========================================
 
-1. Identify the tokens in each of the following statements. (You do not need to classify them; just identify them.)
+1.  Discuss what other information, in addition to name and data type, might be kept in a semantic record. From where would this other information come?
 
-
-Question A 
-~~~~~~~~~~~~
-
-.. code-block:: javascript
-
-   if (a == b1) a = x + y; 
-
-
-Question B
-~~~~~~~~~~~~
-
-.. code-block::
-
-   delta = epsilon + 1.23 − sqrt(zz); 
-
-
-Question C 
-~~~~~~~~~~~~
-
-.. code-block:: javascript
-
-   print(Q);
 
 
 Works cited
