@@ -29,12 +29,12 @@ Compilers and language translation
 Challenge work submission
 ===========================
 
-1. Read chapter nine of the textbook.
-2. Complete challenge work #6, on page 467 of the text.
+1. Lorem ipsum
+2. Lorem ipsum
 
 
 .. note:: 
-   Corresponds to challenge work #6, on page 467 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
+   Corresponds to challenge work #?, on page ??? of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
 
 
