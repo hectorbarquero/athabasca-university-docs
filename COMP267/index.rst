@@ -39,7 +39,7 @@ COMP200 documentation
 
    UnitFour/unitFourSectionOne.rst
    UnitFour/unitFourSectionTwo.rst
-   UnitFour/unitFourSectionThree.rst
+   UnitFour/unitFourSectionthree.rst
    UnitFour/unitFourSectionFour.rst
 
 
