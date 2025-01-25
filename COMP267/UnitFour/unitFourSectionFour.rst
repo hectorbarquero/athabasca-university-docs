@@ -44,7 +44,7 @@ Works cited
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
 
-Assignment 4 (chapter four, section three)
+Assignment 4 (chapter four, section four)
 ===========================================
 
 38. What is the significance of the unsolvability of the halting problem?
