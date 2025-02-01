@@ -1,5 +1,5 @@
 .. I'm on page 214/620 right now <-- NOT STARTED
-.. Challenge work required, page 467 question 6 <-- NOT STARTED
+.. Challenge work is not required for this unit
 .. assignment 4 is one exercise from chapter 9, 10, 11, and 12
 .. QUESTION KEY
 .. chapter 9, page 467, question 5. - DONE
@@ -17,27 +17,10 @@ Models of computation
 =========================
 
 
-Challenge work submission
-===========================
-
-1. Lorem ipsum 
-2. Lorem ipsum
-
-
-.. note:: 
-   Corresponds to challenge work #?, on page ??? of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
-
-
-
-Works cited
-~~~~~~~~~~~~
-Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
-
-
 Assignment 4 (chapter four, section four)
 ===========================================
 
-38. What is the significance of the unsolvability of the halting problem?
+1.  What is the significance of the unsolvability of the halting problem?
 
 .. note:: 
    I opted to choose this question because I found the similarity interesting, since the halting problem and the NP-problem are of a related topic (The NP-problem was one I found in one of the earlier chapters Challenge Work questions). 

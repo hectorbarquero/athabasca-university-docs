@@ -1,5 +1,5 @@
 .. I'm on page 214/528 right now <-- NOT STARTED
-.. Challenge work required, page 467 question 6 <-- NOT STARTED
+.. Challenge work required, page 525 question 2 <-- NOT STARTED
 .. assignment 4 is one exercise from chapter 9, 10, 11, and 12
 .. QUESTION KEY
 .. chapter 9, page 467, question 5. - DONE
@@ -18,12 +18,12 @@ The tower of babel
 Challenge work submission
 ===========================
 
-1. Lorem ipsum
-2. Lorem ipsum
+1. Read chapter ten of the textbook.
+2. Complete challenge work #2, on page 525 of the text.
 
 
 .. note:: 
-   Corresponds to challenge work #??, on page ??? of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
+   Corresponds to challenge work #2, on page 525 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
 
 

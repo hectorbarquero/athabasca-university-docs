@@ -1,5 +1,5 @@
 .. I'm on page 214/422 right now <-- NOT STARTED
-.. Challenge work required, page 419 question 2 <-- NOT STARTED
+.. Challenge work required, page 419 question 2 <-- DONE, submitted feb 1 2025
 .. assignment 3 is one exercise from chapter 6, 7, and 8
 .. QUESTION KEY
 .. chapter 6, question 13 page 329
