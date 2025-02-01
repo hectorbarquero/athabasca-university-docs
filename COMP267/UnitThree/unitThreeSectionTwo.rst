@@ -11,19 +11,8 @@ Unit three, section two
 ++++++++++++++++++++++++
 
 
-General reading notes
-======================
-
-* Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
-
 Computer networks
 ===================
-
-.. note::
-   Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
-
 
 Challenge work submission
 ===========================

@@ -11,18 +11,9 @@ Unit three, section one
 ++++++++++++++++++++++++
 
 
-General reading notes
-======================
-
-* Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
 
 System software and virtual machines
 =====================================
-
-.. note::
-   Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
 
 
 Challenge work submission

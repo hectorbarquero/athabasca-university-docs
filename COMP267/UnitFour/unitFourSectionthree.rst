@@ -12,18 +12,8 @@ Unit four, section three
 ++++++++++++++++++++++++++
 
 
-General reading notes
-======================
-
-* Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
-
 Compilers and language translation
 ====================================
-
-.. note::
-   Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
 
 
 Challenge work submission

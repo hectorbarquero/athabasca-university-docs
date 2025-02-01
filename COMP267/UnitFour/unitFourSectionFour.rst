@@ -13,18 +13,8 @@ Unit four, section four
 ++++++++++++++++++++++++++
 
 
-General reading notes
-======================
-
-* Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
-
 Models of computation
 =========================
-
-.. note::
-   Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
 
 
 Challenge work submission
