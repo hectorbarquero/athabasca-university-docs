@@ -1,5 +1,5 @@
 .. I'm on page 214/214 right now <-- DONE
-.. Challenge work required, page 217 question 3 <-- NOT STARTED
+.. Challenge work required, page 217 question 3 <-- DONE submitted feb 1 2025
 .. assignment 2 was submitted on 18 JAN 2025 - ID 129181
 
 Unit two, section one

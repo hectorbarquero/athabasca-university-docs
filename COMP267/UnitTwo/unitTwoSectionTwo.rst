@@ -11,13 +11,6 @@ Computer systems organization
 ==============================
 
 
-Challenge work submission
-===========================
-
-There is no challenge work for this chapter. Quiz 2 and Assignment 2 are submitted within my AU Brightspace portal.   
-
-
-
 
 Assignment 2 (chapter two, section two)
 ========================================
