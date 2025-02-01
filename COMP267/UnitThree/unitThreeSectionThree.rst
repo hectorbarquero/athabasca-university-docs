@@ -25,10 +25,29 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #2, on page 419 of the text. The instructions may say a short paper, but the course Brightspace says 2-3 paragraphs is sufficient.
 
+The bulubebek worm
+~~~~~~~~~~~~~~~~~~~~
+On October 10, 2008, the bulubebek virus targetted windows operating systems through infected USB flash drives. 
+
+When a user would connect an infected drive, the 53 KB worm would execute and infect the system, hiding files and folders on the machine and any connected devices. The user would be locked out of task manager and system registry tools, which stopped removal and made detection difficult.
+
+The worm had a small fingerprint with a payload of 53 KB and was written in visual basic by an unknown author. On execution, two files are created: an .exe file, and an .inf file. The .inf file was especially important since it was overwriting driver behaviour and locking out the task manager.
+
+Because of the small payload and fingerprint, the impact was small and did not cause a widespread or significant outage. The SHA256 checksum was logged in the CVE database and researchers were able to help system administrators harden security against the known checksum: `3e063dcdec166ed00523b85fb45cc3b8d884e44475e5ebe0a9848f55fbf492e2`
+
+Once a system was infected, a user would need to run system scan, disconnect from the network, and turn system restore off. Additional tools were required to access and stop the continuing worms processes since task manager and registry tools would be locked out.
+
+The author of the virus is unknown and was never arrested. No copycat attacks were directly tied to this incident, although worms and malware of similar behaviour is common and detected daily on the mitre CVE database.
+
 
 Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+Hybrid Analysis. "Sample 3e063dcdec166ed00523b85fb45cc3b8d884e44475e5ebe0a9848f55fbf492e2." Hybrid Analysis, 2025, www.hybrid-analysis.com/sample/3e063dcdec166ed00523b85fb45cc3b8d884e44475e5ebe0a9848f55fbf492e2/5b055efe7ca3e16850249005. Accessed 1 Feb. 2025.
+
+"BuluBebek." Wikipedia, Wikimedia Foundation, 29 Jan. 2025, en.wikipedia.org/wiki/BuluBebek. Accessed 1 Feb. 2025.
+
 
 
 Assignment 3 (chapter three, section two)
