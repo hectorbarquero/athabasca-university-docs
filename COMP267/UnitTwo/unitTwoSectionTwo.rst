@@ -7,18 +7,8 @@ Unit two, section two
 ++++++++++++++++++++++
 
 
-General reading notes
-======================
-
-* Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
-
 Computer systems organization
 ==============================
-
-.. note::
-   Pending completion. I'm currently tackling the course content in reverse. Check back soon.
-
 
 
 Challenge work submission
@@ -28,17 +18,12 @@ There is no challenge work for this chapter. Quiz 2 and Assignment 2 are submitt
 
 
 
-Works cited
-~~~~~~~~~~~~
-Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
-
-
 
 Assignment 2 (chapter two, section two)
 ========================================
 .. this is technically part 2/2 for assignment 2. The first part is in the previous chapter, unitTwoSectionOne.rst
 
-4. *Explain what use read-only memory (ROM) serves in the design of a computer system. What type of information is kept in ROM, and how does that information originally get into the memory?* (Chapter 5, page 270)
+1. *Explain what use read-only memory (ROM) serves in the design of a computer system. What type of information is kept in ROM, and how does that information originally get into the memory?* (Chapter 5, page 270)
 
 
 Read-only memory (ROM)

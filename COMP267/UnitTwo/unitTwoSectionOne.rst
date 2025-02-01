@@ -248,11 +248,73 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #3 on page 217 of the text.
 
-**CHALLENGE WORK IS PENDING COMPLETION, CHECK BACK SOON. I'M DOING ALL THE ASSIGNMENTS FIRST, THEN READING THE TEXT AGAIN TO DO CHALLENGE WORKS BEFORE THE EXAM.**.
+
+JPEG encoding compression
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+JPEG achieves a high compression ratios ranging 10:1 or 20:1, and it does it by leveraging the *Discrete Cosine Transform (DCT)*, *quantization*, and *entropy encoding*. In the first step, the image is converted from RGB to YCbCr colour ranges, separating luminance (Y) from chrominance (Cb, Cr). The image then gets divided into 8×8 pixel blocks, with each block undergoing DCT. In DCT, the spatial domain data is transformed into frequency components. High-frequency components are selected since humans can't see them as easily, and they are quantized and set to zero, which reduces the file size.
+
+After quantization, JPEG applies run-length encoding (RLE) and Huffman encoding to compress the nonzero low-frequency values.
+
+Javascript example
+~~~~~~~~~~~~~~~~~~~~~
+Following documentation found on the `Discrete Cosine Transform algorithm <https://www.geeksforgeeks.org/discrete-cosine-transform-algorithm-program/>`_, I was able to apply a 2d dct transform to a sample chunk of 8x8 data. 
+
+
+.. code-block:: javascript
+
+   function dct1D(block) {
+    let N = block.length;
+    let result = new Array(N).fill(0);
+    let scale = Math.sqrt(2 / N);
+    
+    for (let u = 0; u < N; u++) {
+        let sum = 0;
+        for (let x = 0; x < N; x++) {
+            sum += block[x] * Math.cos((Math.PI * (2 * x + 1) * u) / (2 * N));
+        }
+        result[u] = (u === 0 ? 1 / Math.sqrt(2) : 1) * scale * sum;
+    }
+    return result;
+   }
+
+   function dct2D(block) {
+      let N = block.length;
+      let temp = new Array(N).fill(0).map(() => new Array(N).fill(0));
+      let result = new Array(N).fill(0).map(() => new Array(N).fill(0));
+
+      for (let i = 0; i < N; i++) temp[i] = dct1D(block[i]); 
+      for (let j = 0; j < N; j++) {
+         let col = temp.map(row => row[j]);
+         let transformedCol = dct1D(col);
+         for (let i = 0; i < N; i++) result[i][j] = transformedCol[i];
+      }
+      return result;
+   }
+
+   let block = [
+      [52, 55, 61, 66, 70, 61, 64, 73],
+      [63, 59, 55, 90, 109, 85, 69, 72],
+      [62, 59, 68, 113, 144, 104, 66, 73],
+      [63, 58, 71, 122, 154, 106, 70, 69],
+      [67, 61, 68, 104, 126, 88, 68, 70],
+      [79, 65, 60, 70, 77, 68, 58, 75],
+      [85, 71, 64, 59, 55, 61, 65, 83],
+      [87, 79, 69, 68, 65, 76, 78, 94]
+   ];
+
+   console.log(dct2D(block));
+
+
 
 Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+Stewart, James. JPEG Encoding. Queen’s University, https://watkins.cs.queensu.ca/~jstewart/457/notes/30/30-jpeg-encoding.html. Accessed 1 Feb. 2025.
+
+GeeksforGeeks. "Discrete Cosine Transform Algorithm & Program." GeeksforGeeks, 1 Feb. 2025, https://www.geeksforgeeks.org/discrete-cosine-transform-algorithm-program/. Accessed 1 Feb. 2025.
+
 
 
 Assignment 2 (chapter two, section one)
