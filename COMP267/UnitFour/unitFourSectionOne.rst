@@ -1,5 +1,5 @@
 .. I'm on page 214/468 right now <-- NOT STARTED
-.. Challenge work required, page 467 question 6 <-- NOT STARTED
+.. Challenge work required, page 467 question 6 <-- DONE, submitted feb 9 2025
 .. assignment 4 is one exercise from chapter 9, 10, 11, and 12
 .. QUESTION KEY
 .. chapter 9, page 467, question 5. - DONE
@@ -25,7 +25,18 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #6, on page 467 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
+Read more about software engineering and write a short paper on one or more of the following topics:
 
+Version control 
+=================
+
+Version control and version control software (vcs) is essential to software developers. With it, we can track changes and collaborate without exclusive checkout or the risk of overwriting files. Like most software, there are different options available. One of the most popular and commonly known is *git*. Git is a distributed vcs, which means that unlike centralized systems, it can operate locally and allow for offline access to projects, with faster computational operations.
+
+Unlike word processors which may rely on shared drives for collaboration, git provides a branching system which allows us to create a new branch for a feature or patch. When paired with other tools on the market, git becomes integrated into a community, an IDE, or developer tools. GitHub, Bitbucket, and GitLab are some of the most popular choices, though others exist.
+
+A downside of version control software is the learning curve. Unlike a traditional text editor, there are commands which may often need to be run from the terminal. These commands require a new way of thinking for those who are not familiar with the operations, including initialize, push, pull, commit, merge, rebase, and *cherry picking*.
+
+Despite the complexities, it's an invaluable tool to a modern developer. As an example of the general usefulness, the static site and my `source documentation for CS200 <https://comp200-athabasca-university-docs.readthedocs.io/en/latest/index.html>`_ is being maintained on GitHub using Git.
 
 
 
@@ -33,11 +44,16 @@ Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
+Git Documentation. Git-SCM, https://git-scm.com/docs. Accessed 9 Feb. 2025.
+
+"What is Git?" GitHub Guides, https://github.com/git-guides#what-is-git. Accessed 9 Feb. 2025.
+
+
 
 Assignment 4 (chapter four, section one)
 ===========================================
 
-5. Again create a data file of random integers. Then write a program in the language of your choice to implement the selection sort algorithm of Figure 3.6 using file input data. Write a separate function (method, procedure) to find the location of the largest number in the unsorted section of the list (see Figure 2.14) and have your main function call that as needed. Write your sorted list to another data file.
+1. Again create a data file of random integers. Then write a program in the language of your choice to implement the selection sort algorithm of Figure 3.6 using file input data. Write a separate function (method, procedure) to find the location of the largest number in the unsorted section of the list (see Figure 2.14) and have your main function call that as needed. Write your sorted list to another data file.
 
 Psuedocode
 ~~~~~~~~~~~
