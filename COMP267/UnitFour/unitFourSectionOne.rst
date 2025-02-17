@@ -25,7 +25,6 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #6, on page 467 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
-Read more about software engineering and write a short paper on one or more of the following topics:
 
 Version control 
 =================
