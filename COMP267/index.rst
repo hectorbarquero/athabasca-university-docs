@@ -48,6 +48,9 @@ COMP200 documentation
    :hidden:
 
    UnitFive/unitFiveSectionOne.rst
+   UnitFive/unitFiveSectionTwo.rst
+   UnitFive/unitFiveSectionThree.rst
+   UnitFive/unitFiveSectionFour.rst
 
 .. toctree:: 
    :maxdepth: 4
@@ -55,8 +58,6 @@ COMP200 documentation
    :hidden:
 
    UnitSix/unitSixSectionOne.rst
-   UnitSix/unitSixSectionTwo.rst
-   UnitSix/unitSixSectionThree.rst
 
 
 .. image:: ./images/athabasca-university.png
