@@ -10,9 +10,8 @@
 
 Unit five, section four
 ++++++++++++++++++++++++
-
 Computer graphics and entertainment
-=====================================
+
 
 
 Challenge work submission

@@ -11,10 +11,7 @@
 
 Unit four, section four
 ++++++++++++++++++++++++++
-
-
 Models of computation
-=========================
 
 
 Assignment 4 (chapter four, section four)

@@ -9,10 +9,8 @@
 
 Unit three, section two
 ++++++++++++++++++++++++
-
-
 Computer networks
-===================
+
 
 Challenge work submission
 ===========================

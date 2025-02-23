@@ -51,8 +51,8 @@ General reading notes
 * Designing a technically correct algorithm to solve a given problem is only part of what computer scientists do. We must also ensure that we have the most efficient algorithm.
 
 
-Algorithm discovery and design
-================================
+**Algorithm discovery and design**
+
 Finding a solution to a given problem is called *algorithm discovery*.
 
 When you write psuedocode, it needs to carry three basic sequential operations:

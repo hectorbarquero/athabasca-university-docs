@@ -10,9 +10,8 @@
 
 Unit five, section three
 +++++++++++++++++++++++++++
-
 Artificial intelligence
-=========================
+
 
 
 Challenge work submission

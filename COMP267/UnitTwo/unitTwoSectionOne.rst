@@ -118,8 +118,7 @@ General reading notes
 
 
 
-Data compression techniques
-============================
+**Data compression techniques**
 
 Run-length encoding
 ~~~~~~~~~~~~~~~~~~~~

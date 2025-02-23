@@ -10,9 +10,7 @@
 
 Unit five, section two
 ++++++++++++++++++++++++
-
 Commerce and databases
-=======================
 
 
 Challenge work submission

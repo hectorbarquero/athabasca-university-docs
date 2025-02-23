@@ -5,10 +5,8 @@
 
 Unit two, section two
 ++++++++++++++++++++++
-
-
 Computer systems organization
-==============================
+
 
 
 

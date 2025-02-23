@@ -9,11 +9,8 @@
 
 Unit three, section one
 ++++++++++++++++++++++++
-
-
-
 System software and virtual machines
-=====================================
+
 
 
 Challenge work submission

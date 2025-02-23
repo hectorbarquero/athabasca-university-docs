@@ -4,30 +4,11 @@
 
 Unit six, section one
 ++++++++++++++++++++++
-
-
 Making decisions about computers
-=================================
-
-
-Challenge work submission
-===========================
-
-1. Lorem ipsum
-2. Lorem ipsum
-
-
-.. note:: 
-   Corresponds to challenge work #??, on page ??? of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
 
 
-Works cited
-~~~~~~~~~~~~
-Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
-
-
-Assignment 6 (chapter seventeen, section one)
+Assignment 6 (chapter seventeen, section six)
 =================================================
 Question 1 on page 796-797, chapter 17:
 

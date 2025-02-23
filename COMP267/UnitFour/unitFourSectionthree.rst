@@ -10,10 +10,7 @@
 
 Unit four, section three
 ++++++++++++++++++++++++++
-
-
 Compilers and language translation
-====================================
 
 
 Assignment 4 (chapter four, section three)
