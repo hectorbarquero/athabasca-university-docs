@@ -7,6 +7,26 @@ Unit six, section one
 Making decisions about computers
 
 
+Challenge work submission
+===========================
+
+1. Read chapter 17 of the textbook.
+2. Complete challenge work #1, on page 796-797 of the text.
+
+
+.. note:: 
+   Corresponds to challenge work #1, on page 796-797 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
+
+.. warning::
+   To view my challenge work submission, go to https://learning.athabascau.ca/d2l/le/16078/discussions/threads/134737/View. The challenge work and the assignment are essentially the same, since the challenge work asks to do question 1 and I had selected question 1, the challenge work simply removes the extra three topics from the submission.
+
+
+Works cited
+~~~~~~~~~~~~
+Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
+
+
+
 
 Assignment 6 (chapter seventeen, section six)
 =================================================
