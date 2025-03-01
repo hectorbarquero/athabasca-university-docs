@@ -20,20 +20,31 @@ Challenge work submission
 
 
 .. note:: 
-   Corresponds to challenge work #2, on page 525 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
+   Corresponds to challenge work #2, on page 525 of the text. The instructions may say a report, but the course Brightspace says 2-3 paragraphs is sufficient.
 
 
+Vehicle dynamics (with a focus on fluid dynamics)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Von Neumann sequential processing vs parallel processing, the benefits of distributed computing**
+
+Vehicle dynamics involves modeling how force acts on all components of vehicle in motion, including aeronautic, traction based force, **and fluid dynamics**. Vehicle dynamics, including fluid, can build accurate simulations that help optimize all aspects of a vehicle, including safety and efficiency. Solving these problems improves safety, reduces operations costs, and improves cost savings for consumers.
+
+Computationally, a challenge comes from solving large, nonlinear differential equations in real time. Accurate vehicle dynamics requires near real time and responsive physics simulations. Sequential processing does not do well with real time scenarios since they're calculated per item, and can overload a GPU or CPU. Fortunately, *parallel processing* is faster and can handle more complex simulations with distributed computing-- splitting the workload across various distributed CPUs and GPUs. 
+
+Currently, AI and high-performance GPU development is allowing the use of real time embedded systems and supercomputer clusters, like the NVIDIA Jetson AGX Orin, which significantly improves simulations. In the past, supercomputers and more processing power were not practical for mounting on vehicles, but the advancements have made these computers small and practical, allowing them to be mounted on a dashboard or small engine.
 
 
 Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
+NVIDIA. "Fast Fluid Dynamics Simulation on the GPU." GPU Gems, https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu. Accessed 1 Mar. 2025.
+
 
 Assignment 4 (chapter four, section two)
 ===========================================
 
-8. 	In the following two Java output statements, Why do you think the first uses println and the second uses print?
+1. 	In the following two Java output statements, Why do you think the first uses println and the second uses print?
 
 **Answer**: Fundamentally, it corresponds to the UI/UX of the program. Both could be correct, but with the context of the message, each is better suited to their intended application.
 
