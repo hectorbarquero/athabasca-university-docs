@@ -23,6 +23,19 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #1, on page 684 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
+https://www.apple.com/ca/
+==========================
+
+I chose the Apple store as an example of a well designed and lightweight website since it has a very clear and concise experience both in the design and implementation.
+
+The use of color and white space are almost the same, the website changes only slightly with light tone gradients. Unlike competitors, the focus is on minimalism, which helps users find the products they're looking for.
+
+The ease of navigation is apparent in the limited options. In a comparitive example, NVIDIA and AMD carry various third party sellers and preferred partners when you select "Buy Now", which floods the page with affiliate links and redirects to external sites. Apple keeps the flow within its own website, which keeps consistency of the navigation experience. The taxonomy is clear and direct, giving the user control through the entire discovery-to-purchase experience.
+
+The privacy policy and security assurance is displayed in the footer, but it doesn't spam the user with popups like other websites.
+
+The purchase experience is seamless, providing details in a secure payment transaction and filling basic billing information is all that's required. 
+
 
 Works cited
 ~~~~~~~~~~~~

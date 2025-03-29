@@ -1,6 +1,6 @@
 .. I'm on page 214/468 right now <-- NOT STARTED
-.. Challenge work required, page 649 question 3 <-- not started
-.. assignment 5 is one exercise from chapter 13, 14, 15 and 16
+.. Challenge work required, page 649 question 3 <-- DONE NOT SUBMITTED
+.. assignment 5 is one exercise from chapter 13, 14, 15 and 16 <-- DONE
 .. QUESTION KEY
 .. chapter 13, question 10 page 650
 .. chapter 14, question 4, page 684
@@ -24,11 +24,21 @@ Challenge work submission
 .. note:: 
    Corresponds to challenge work #3, on page 649 of the text. The instructions may say a short profile, but the course Brightspace says 2-3 paragraphs is sufficient.
 
+Simscript
+==========
+
+When you want to model simulations, simscript is a better choice than a general purpose language (GPL), especially if you'd like to work with the modelling quickly and forego a lot of the programmatical noise. 
+
+The key features that stand out in the simscript documentation are built-in constructs for simulation modelling, which may need to be coded as structs manually if using C++. The code is different from a GPL language, and is reminiscent of the english language, making it incredibly accessible and abstracted at a high level. Both the built-in struct utility and the natural language allows simscript to be used for faster modelling of complex simulations. GPLs in contrast, would be verbose and clunky to code the equivalent.
+
+The main difference between simscript and other GPLs is it’s drawback: simscript doesn’t handle general programming tasks, and has a narrow scope of focus in its implementation since it’s purpose built for simulation. As a less used language, it also has limited resources available. Aside a few technical manuals and documentation references, there are limited forums, videos, and open source documentation portals for extending implementation or projects.
+
 
 Works cited
 ~~~~~~~~~~~~
 Schneider, G. Michael, and Judith Gersting. Invitation to Computer Science. 6th ed., Cengage Learning, 2013.
 
+Markowitz, H. M., Hausner, A., & Karr, H. (1987). Building simulation models with SIMSCRIPT II.5. CACI Products Company. Retrieved from https://www3.cs.stonybrook.edu/~cse529/simscript_docs/simbuild.pdf
 
 
 
