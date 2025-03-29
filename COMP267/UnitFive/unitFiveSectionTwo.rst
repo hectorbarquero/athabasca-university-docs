@@ -1,6 +1,6 @@
 .. I'm on page 214/468 right now <-- NOT STARTED
-.. Challenge work required, page 684 question 1 <-- not started
-.. assignment 5 is one exercise from chapter 13, 14, 15 and 16
+.. Challenge work required, page 684 question 1 <-- DONE submitted
+.. assignment 5 is one exercise from chapter 13, 14, 15 and 16 <-- DONE submitted
 .. QUESTION KEY
 .. chapter 13, question 10 page 650
 .. chapter 14, question 4, page 684
