@@ -1,6 +1,6 @@
 .. I'm on page 214/798 right now <-- DONE
-.. Challenge work ??? <-- NOT STARTED
-.. assignment 6 is Question 1 on page 796-797, chapter 17
+.. Challenge work <-- DONE, submitted
+.. assignment 6 is Question 1 on page 796-797, chapter 17 <-- DONE, submitted
 
 Unit six, section one
 ++++++++++++++++++++++

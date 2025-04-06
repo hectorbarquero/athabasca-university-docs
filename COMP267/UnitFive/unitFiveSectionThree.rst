@@ -1,5 +1,5 @@
 .. I'm on page 214/468 right now <-- NOT STARTED
-.. Challenge work required, write a brief review and description of a favourite book or movie depicting AI and/or robotics. <-- DONE but not submitted
+.. Challenge work required, write a brief review and description of a favourite book or movie depicting AI and/or robotics. <-- DONE submitted
 .. assignment 5 is one exercise from chapter 13, 14, 15 and 16 <-- DONE submitted
 .. QUESTION KEY
 .. chapter 13, question 10 page 650
