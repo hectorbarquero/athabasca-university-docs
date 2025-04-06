@@ -1,6 +1,6 @@
 .. I'm on page 214/468 right now <-- NOT STARTED
-.. Challenge work required, write a brief review and description of a favourite book or movie depicting AI and/or robotics.
-.. assignment 5 is one exercise from chapter 13, 14, 15 and 16
+.. Challenge work required, write a brief review and description of a favourite book or movie depicting AI and/or robotics. <-- DONE but not submitted
+.. assignment 5 is one exercise from chapter 13, 14, 15 and 16 <-- DONE submitted
 .. QUESTION KEY
 .. chapter 13, question 10 page 650
 .. chapter 14, question 4, page 684
@@ -13,13 +13,27 @@ Unit five, section three
 Artificial intelligence
 
 
-
 Challenge work submission
 ===========================
 
 1. Read chapter 15 of the textbook.
 2. Complete challenge work: write a brief review and description of a favourite book or movie depicting AI and/or robotics.
 
+Black mirror, season 2 episode 4
+=================================
+
+.. warning::
+   Spoilers ahead.
+
+For my submission on AI in television, I chose Black Mirror Season 2, Episode 4 for its jarring concept.
+
+Black Mirror explores near-future "what if?" dystopian scenarios, often centered on AI and technology. In this episode, two characters wake up in a winter cabin. Realizing they've been there for years, they recount their past stories. One worked for a company that created AI clones of users (contained in a home hub) to manage home automation.
+
+It’s later revealed the cabin itself is an AI instance, and the characters are digital copies. Their stories expose details to crimes being used in a real-time court case where their real life counterparts are accused. The most striking part is the ending. One character is acquitted of their crimes, but “blocked” by society and the victim, which makes them appear blurred and muted to others.
+
+This concept resonated with me given my past work in anti-CCTV and recognition technology. I had never considered the inverse application: technology deliberately erasing someone from reality. The brief ending shows the impossibility of communicating, and how society avoids someone who is blurred. 
+
+The jarring ending is only made worse when the viewer realizes that this barrier exists in todays current world, but in different ways (accessibility, wealth disparity, homelessness, vision or physical impairment, etc.)
 
 
 Works cited
