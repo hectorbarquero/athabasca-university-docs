@@ -1,9 +1,6 @@
 # Folder structure
 Project  contains 16 directories, 55 files.
 
-> **Preview this website by checking the live link in my About section on GitHub -->**
-[hectorbarquero.github.io/portfolio/](hectorbarquero.github.io/portfolio/)
-
 > This project was built during my studies at Athabasca University, and was built to be compatible with mobile, web, and small monitors.
 
 When you open the site, index.html is served up first with a welcome screen, which serves as a way to hydrate resources in advance. After load, you'll land on ../welcome/index.html. The loader only gets accessed on the initial site visit.
