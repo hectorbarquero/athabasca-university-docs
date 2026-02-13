@@ -1,20 +1,23 @@
 # athabasca-university-docs
 Contains projects written during Comp Sci & Mathematics study.
 
-![Alt text](./images/cs200-oreily.png)
+![oreily image](COMP200/images/cs200-oreily.png)
 
-# Come watch me lose my mind
+## Come watch me lose my mind
 
-If you've found this repo, you might be studying CS200 with me. I’ve taken a somewhat unconventional path. I got a job working in computing, and, generally speaking, I know how to code and program. I automate solutions every week, build websites, create plugins for the Atlassian marketplace, and write a lot of developer documentation for APIs. 
+
+### COMP200
+
+If you've found this repo, you might be studying CS and Mathematics with me at AU. I’ve taken a somewhat unconventional path. I got a job working in computing before studying it. I automate solutions every week, build websites, create plugins for the Atlassian marketplace, and write a lot of developer documentation for APIs. 
 
 I know how to write something that works, but as things became more complex, I realized how little I truly knew. I never understood *why* it worked.
 
 So here I am, figuring out why my bug-driven, brute-force development works—and why it doesn’t.
 
-The project includes documentation to support CS200, the prerequisite course that will unlock my continued learning in computer science.
+The project includes documentation and project files.
 
 
-# COMP266 folder structure
+### COMP266 folder structure
 Project  contains 16 directories, 55 files.
 
 > This project was built during my studies at Athabasca University, and was built to be compatible with mobile, web, and small monitors.
