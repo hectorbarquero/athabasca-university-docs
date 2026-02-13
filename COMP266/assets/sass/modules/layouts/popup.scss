@@ -1,0 +1,101 @@
+// indicate for popup to be the target of this scss
+#privacy-popup:target {
+    display: block;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    // scrolling
+    overflow-y: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    // +1 higher than overlay, and +1 higher than blur
+    z-index: 1002;
+    display: none;
+    border: 4px solid transparent;
+}
+
+.popup .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #1e536e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // close button dramatically above popup
+    z-index: 1100;
+}
+
+.popup.show .popup-close {
+    top: 10px;
+    // math isnt currently 100%. Leave as-is, but maybe 60% - 430px+
+    right: calc(50% - 310px);
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    border: 4px solid transparent;
+}
+
+/* slight animation here - currently not functioning, try again unit 5. */
+@keyframes border-pulse {
+    0% {
+        border-color: transparent;
+        box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); 
+    }
+    50% {
+        border-color: #1e536e;
+        box-shadow: 0 0 50px rgba(30, 83, 110, 0.8); 
+    }
+    100% {
+        border-color: transparent;
+        box-shadow: 0 0 30px rgba(30, 83, 110, 0.8); 
+    }
+}
+
+#privacy-popup:target .popup-overlay {
+    animation: border-pulse 1s infinite;
+    border-color: #1e536e; 
+}
+
+// a large container = behind popup to blur bg content
+.popup-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    // not negative z-index, positive. sets it below popup
+    z-index: 1000;
+    display: none;
+}
+
+/* Show popup and overlay when #privacy-popup is targeted */
+#privacy-popup:target .popup-overlay,
+#privacy-popup:target .popup-blur {
+    display: block;
+}

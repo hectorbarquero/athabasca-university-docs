@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hector's Toolbox</title>
+    
+    <meta name="description" content="Welcome.">
+    <meta name="keywords" content="tools, about, welcome, news, showcase, testimonials, footer">
+    <meta name="author" content="Hector Barquero">
+    <meta name="last-modified" content="2024-06-14">
+    
+    <meta property="og:title" content="Hector's Toolbox">
+    <meta property="og:description" content="Welcome.">
+    <meta property="og:type" content="website">
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <meta property="og:url" content="https://hectorbarquero.github.io/portfolio//home/welcome/index.html">
+    <meta property="og:image" content="https://hectorbarquero.github.io/portfolio//assets/images/og-image.png">
+    
+    <!-- following w3 and mdn, using a generic apple favicon for placeholder as I have no logo-->
+    <link rel="icon" href="../../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <!-- I'll add a manifest later-->
+    <link rel="manifest" href="../../assets/vendor/site.webmanifest">
+    
+    <link rel="stylesheet" href="../../css/styles.css"> 
+    <!-- add hydration later -->
+    <!-- leave dns pre-fetch domain wide -->
+    <!-- need to resolve my domain first, so consider my name a placeholder for now-->
+    <link rel="dns-prefetch" href="//https://hectorbarquero.github.io/portfolio/">
+</head>
+<body>
+    <div class="container">
+        <div class="left-pane" role="complementary">
+            <!-- particles.js for unit 6 here-->
+            <div id="particles-js"></div>
+            <script src="../../assets/js/particles.js"></script>
+            <script src="../../assets/js/app.js"></script>
+            <div class="content">
+                <h1 class="welcome-header">Hi, I'm Hector.</h1>
+                <h2 class="ctrt-heading"><span class="font-highlight">I like to build tools and write docs.</span></h2>
+                <p class="justified-para">
+                    Hello World! I'm a documentation specialist by day, programmer by night. I support common business tools that you're probably currently using. Find what works for you, and plug it in. I even left some docs to help you get started.</p>
+                <p class="justified-para">
+                    I'm always looking to connect-- so feel free to find and connect with me on LinkedIn. &#128075;
+                </p>
+                <!-- Email validation solution, source Rasel Mahmud: https://gist.github.com/rsmahmud/f6ad75b8a212a18720fd833b54ea6644 -->
+                <!-- barquerohr: mod flag var name && alerts for clarity, -rm val checks for brevity-->
+                <script type="text/javascript">
+                    function Validate() {
+                        var email = document.getElementById("email").value;
+                
+                        if(email == "") {
+                            alert("Empty email field. Provide your email id.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        var len = email.length;
+                        var atcount = 0;
+                        var atpos;
+                        var dotAfterAtFound = false;
+                
+                        for(var i = 0; i < len; i++) {
+                            if(email[i] == '@') {
+                                atpos = i;
+                                atcount++;
+                            }
+                            if(email[i] == ' ') {
+                                alert("Invalid email: unexpected character. Try again.");
+                                document.getElementById("email").focus();
+                                return false;
+                            }
+                        }
+                
+                        if(atcount != 1 || email[len-1] == '.' || email[len-2] == '.' || email[atpos+1] == ".") {
+                            alert("Invalid email. Try again.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        for(var i = atpos + 1; i < len; i++) {
+                            if(email[i] == ".") {
+                                dotAfterAtFound = true;
+                                break;
+                            }
+                        }
+                
+                        if(!dotAfterAtFound) {
+                            alert("Invalid email: '.' character missing after '@'. Try again.");
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                
+                        alert("Success.");
+                        return true;
+                    }
+                </script>                               
+                <div class="subscribe-form">
+                    <form action="mailto:hectorbarquero@hotmail.com" method="post" enctype="text/plain" onsubmit="return Validate()" novalidate>
+                        <div class="form-input">
+                            <input type="email" id="email" name="email" placeholder="Enter email" required>
+                            <button type="submit"><span class="button-highlight">Subscribe</span></button>
+                        </div>
+                    </form>
+                </div>
+                <footer id="contact-footer" role="contentinfo">
+                    <ul class="footer-links">
+                        <li class="footer-item">
+                        <!-- reddit -->
+                            <a href="https://www.reddit.com/r/technicalwriting/" aria-label="Reddit" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/reddit-icon.png" alt="Reddit Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                        <!-- linkedin -->
+                        <li class="footer-item">
+                            <a href="https://www.linkedin.com/in/hectorbarquero/" aria-label="LinkedIn" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/linkedin-icon.png" alt="LinkedIn Icon" width="48" height="48" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                        <!-- github -->
+                            <a href="https://github.com/hectorbarquero" aria-label="GitHub" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/github-icon.png" alt="GitHub Icon" width="41" height="41" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                        <!-- open src license GNU -->
+                            <a href="../../docs/LICENSE.txt" aria-label="GNU License Compliance Document" class="footer-link" target="_blank" rel="noopener">
+                                <img src="../../assets/icons/gnu-public-license-icon.png" alt="GNU License Icon" width="45" height="45" loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class ="footer-caption">Hector Barquero, &copy; 2024</p>
+                </footer>                 
+            </div>
+        </div>
+        <main class="right-pane" role="main">
+                <div class="navbar" role="navigation">
+                    <div class="nav-search">
+                        <ul>
+                            <li><a href="../welcome/index.html">Welcome</a></li>
+                            <li>
+                                <a href="../tools/index.html">Tools</a></li>
+                            <li><a href="../about/index.html">About</a>
+                        </ul>
+                        <input type="text" id="search-input" placeholder="Search" aria-label="Search">
+                        <button type="button" aria-label="Search button"><span>Go</span></button>
+                    </div>
+                </div>
+                <section id="testimonials" aria-labelledby="testimonials-heading" class="carousel">
+                    <h2 class="ctrt-heading">Companies I've helped</h2>
+                    <div class="carousel-wrapper">
+                        <ul class="carousel-items">
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/caf-icon.png" alt="armed forces logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/gd-icon.png" alt="general dynamics logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/tssa-icon.jpg" alt="nintendo logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/factory-icon.png" alt="nintendo logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/nintendo-icon.png" alt="nintendo logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/de-icon.jpg" alt="digital extremes logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/amd-icon.png" alt="amd computing logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/intel-icon.jpg" alt="intel computing logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/nvidia-logo.png" alt="nvidia computing logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/framos-icon.png" alt="framos machine vision logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/raw-thrills-icon.png" alt="raw thrills logo" loading="lazy">
+                            </li>
+                            <li class="carousel-item">
+                                <img src="../../assets/icons/bandai-icon.png" alt="bandai namco logo" loading="lazy">
+                            </li>
+                        </ul>
+                        <button class="carousel-control prev" aria-label="Previous">‹</button>
+                        <button class="carousel-control next" aria-label="Next">›</button>
+                    </div>
+                </section>
+            <div class="timeline">
+                <section id="news-posts" aria-labelledby="news-posts">
+                    <h2 class="post-ctrt-heading">My XML pre-processor</h2>
+                    <p class="justified-para">I wrote this tool to help a technical writer who was trying to change .xml id tagsets to a placeholder value, but wanted to leave all other document tags unchanged.</p>
+
+                    <p class="justified-para">
+                    My program is lightweight. Try it out.</p>  
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">1. Start with a source.xml file</h3>
+                    <p class="justified-para">Use your own .xml file, or see how it works with my demo file. If you use your own, just rename it to source.xml for the program to work. My program will reject any file type without an .xml extension, and throw an error.</p>
+                    &nbsp; 
+                    <img src="../../assets/images/tool-problem-1.gif" width="600px" alt="xml tool problem demo" id="styled-gif-id" loop>
+                    &nbsp;    
+                    <h3 class="post-third-indent-heading">2. Use node.js</h3>
+                    <p class="justified-para">I said it was light weight, and it is. &#127939;</p>
+                    <p class="justified-para">My program runs from terminal, but you need node.js to run it. Check your version to see if you have it, or<a href="https://nodejs.org/en/download/package-manager" target="_blank" rel="noopener"> download it here</a>.</p>
+                    &nbsp;
+                    <img src="../../assets/images/tool-dependencies-2.gif" width="600px" alt="xml tool pre proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">3. Run the program to target id tags</h3>
+                    <p class="justified-para">node preProcXML.js</p>
+                    <p class="justified-para">That's it. That's all it takes to run my program. You'll see a success prompt and you can take a look at the output. By default, every valid xml tag is ignored and my regex switches the id tag to a placeholder value of @@</p>
+                    <p class="justified-para">You can change this to suit your needs, but most technical writers will be able to take this output and manipulate it further, doing things like localizing, sanitizing, or batch changes.</p>
+                    &nbsp;
+                    <img src="../../assets/images/tool-preproc-3.gif" width="600px" alt="xml tool post proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                    <h3 class="post-third-indent-heading">4. Restore the .xml</h3>
+                    <p class="justified-para">After you've manipulated the output, you may want to put humpty dumpty back together again.</p>
+                    <p class="justified-para">node postprocXML.js</p>
+                    <p class="justified-para">That generates a file called finalXML.xml, which really is the same as the source.xml we start with. Don't trust it? I don't blame you. For sanity, I coded a feature that checks.</p>
+                    <img src="../../assets/images/tool-postproc-4.gif" width="600px" alt="xml tool post proc demo" id="styled-gif-id" loop>
+                    &nbsp;
+                </section>
+                <section id="news-posts" aria-labelledby="news-posts">
+                    <h2 class="post-ctrt-heading">Trending news</h2>
+                    <p class="justified-para">I've integrated an API to bring the latest news to you. You can browse this timeline to choose an article that interests you, right from my portfolio.</p>
+                    &nbsp;
+                    <!-- new tagset for api -->
+                    <div id="news-container"></div>
+                  </section>
+            </div>
+        </main>
+    </div>
+    <script src="../../assets/js/testimonials.js"></script>
+    <script src="../../assets/js/responsiveScript.js"></script>
+    <script src="../../assets/js/news-api.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* body style */
+
+$light-grey-start: #f1f1f1;
+$light-grey-end: #ffffff;
+
+@mixin gradient-background($start-color, $end-color) {
+    background: $start-color;
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: -o-linear-gradient(top, $start-color, $end-color);
+    background: -moz-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+body {
+    @include gradient-background($light-grey-start, $light-grey-end);
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    // mobile padding + center, which rn doesn't seem to work anymore after I overwrote a lot of scss -- come back unit 5. Maybe fix with .js
+    padding: 1rem; 
+    text-align: center;
+}

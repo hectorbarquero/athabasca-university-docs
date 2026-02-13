@@ -1,0 +1,16 @@
+/*reset*/
+@import './modules/common/reset.scss';
+
+/*module sass > css*/
+@import './modules/layouts/headings.scss';
+@import './modules/layouts/body.scss';
+@import './modules/layouts/para.scss';
+@import './modules/layouts/navbar.scss';
+@import './modules/layouts/email.scss';
+@import './modules/layouts/footer.scss';
+@import './modules/layouts/table.scss';
+@import './modules/layouts/popup.scss';
+
+/*page sass > css*/
+@import './modules/pages/landing.scss';
+@import './modules/pages/index.scss';

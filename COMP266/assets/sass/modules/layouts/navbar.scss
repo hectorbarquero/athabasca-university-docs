@@ -1,0 +1,99 @@
+/* navbar style */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // gradient ctrl for the navbar. increase blur(10px) to set a more intense blur
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .nav-search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.navbar input[type="text"] {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #222;
+    // was 120% b4 testing
+    width: 100%;
+    max-width: 240px;
+    box-sizing: border-box;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: auto;
+    min-height: 2rem;
+}
+
+.navbar button[type="button"] {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1E536E;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar input[type="text"]:hover,
+.navbar input[type="text"]:focus {
+    border-color: #1E536E;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    width: 240px; 
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    position: relative;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5f5;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 160px;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.navbar a {
+    color: #CCD0CF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}

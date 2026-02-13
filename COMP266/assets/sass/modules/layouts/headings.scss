@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+/* h1, h2, h3 */
+.welcome-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+    color: #06141B;
+}
+
+.ctrt-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #11212D;
+}
+
+.third-indent-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 5px 0 15px 20px;
+    color: #253745;
+}
+
+/* added to manage the news posts and general body text left-aligned, otherwise same*/
+.post-ctrt-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #11212D;
+    text-align: left;
+    margin-bottom: .75rem;
+}
+
+.post-third-indent-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #253745;
+    text-align: left;
+    margin-bottom: .75rem;
+}
