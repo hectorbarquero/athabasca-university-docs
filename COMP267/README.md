@@ -8,6 +8,8 @@ Contains projects written during Comp Sci & Mathematics study.
 
 ### COMP200
 
+> Deployed at: https://comp200-athabasca-university-docs.readthedocs.io/en/latest/index.html
+
 If you've found this repo, you might be studying CS and Mathematics with me at AU. I’ve taken a somewhat unconventional path. I got a job working in computing before studying it. I automate solutions every week, build websites, create plugins for the Atlassian marketplace, and write a lot of developer documentation for APIs. 
 
 I know how to write something that works, but as things became more complex, I realized how little I truly knew. I never understood *why* it worked.
