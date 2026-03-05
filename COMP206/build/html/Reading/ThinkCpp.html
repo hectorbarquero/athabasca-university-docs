@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Think C++ &mdash; COMP206 documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/_static/custom.css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Rooks Guide to C++" href="RooksGuide.html" />
+    <link rel="prev" title="COMP206 documentation" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COMP206 documentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">COMP206 reading</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Think C++</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#chapter-synopsis-and-notes">Chapter synopsis and notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-way-of-the-program">The way of the program</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#variables-and-types">Variables and types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#function">Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conditionals-and-recursion">Conditionals and recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fruitful-functions">Fruitful functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iteration">Iteration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strings-and-things">Strings and things</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structures">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#more-structures">More structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vectors">Vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#member-functions">Member functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vectors-of-objects">Vectors of Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#objects-of-vectors">Objects of Vectors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#classes-and-invariants">Classes and invariants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-input-output-and-apmatrixes">File Input/Output and apmatrixes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#appendix-ap-class-reference">Appendix: AP class reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="RooksGuide.html">Rooks Guide to C++</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ProgrammingFundamentals.html">Programming Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SubmissionInstructions.html">Submission instructions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Assignment one</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../AssignmentOne/main.html">Assignment One</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Assignment two</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../AssignmentTwo/main.html">Assignment Two</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Assignment three</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../AssignmentThree/main.html">Assignment Three</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Assignment four</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../AssignmentFour/main.html">Assignment Four</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COMP206 documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Think C++</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Reading/ThinkCpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="think-c">
+<h1>Think C++<a class="headerlink" href="#think-c" title="Link to this heading"></a></h1>
+<p>I wrapped up this book in December 2025. It was an easy read, but I took down some of the most interesting “refresher” type notes. It’s probably useful if you understand another language.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Total pages</p></td>
+<td><p>191</p></td>
+</tr>
+<tr class="row-even"><td><p>Currently on</p></td>
+<td><p>191</p></td>
+</tr>
+</tbody>
+</table>
+<section id="chapter-synopsis-and-notes">
+<h2>Chapter synopsis and notes<a class="headerlink" href="#chapter-synopsis-and-notes" title="Link to this heading"></a></h2>
+<section id="the-way-of-the-program">
+<h3>The way of the program<a class="headerlink" href="#the-way-of-the-program" title="Link to this heading"></a></h3>
+<p>This chapter introduces what programming is and how C++ fits as a formal, compiled language. It defines programs as precise instructions, explains why errors are unavoidable, and frames debugging as a systematic, experimental activity. It contrasts formal and natural languages to set expectations about precision and walks through a minimal first program to establish structure.</p>
+<ul class="simple">
+<li><p>Programming demands precision; computers do exactly what is written.</p></li>
+<li><p>Debugging is a core activity, not a failure state.</p></li>
+<li><p>Compile-time, run-time, and logic errors are fundamentally different.</p></li>
+<li><p>Effective debugging is experimental and methodical.</p></li>
+<li><p>Formal languages eliminate ambiguity.</p></li>
+</ul>
+</section>
+<section id="variables-and-types">
+<h3>Variables and types<a class="headerlink" href="#variables-and-types" title="Link to this heading"></a></h3>
+<p>This chapter explains how programs store and manipulate data. It covers values, variables, assignment, output, keywords, operators, and precedence rules, including how characters are treated numerically. The core idea is building complexity by composing simple expressions under strict rules.</p>
+<ul class="simple">
+<li><p>Assignment changes state; it is not mathematical equality.</p></li>
+<li><p>Types constrain behavior and catch errors early.</p></li>
+<li><p>Operator precedence can silently change results.</p></li>
+<li><p>Characters are numeric under the hood.</p></li>
+<li><p>Expression composition is foundational.</p></li>
+</ul>
+</section>
+<section id="function">
+<h3>Function<a class="headerlink" href="#function" title="Link to this heading"></a></h3>
+<p>This chapter introduces functions as the primary tool for decomposition. It covers floating-point behavior, type conversion, math functions, defining and using functions, parameters, locality, and returning results to control data flow in multi-function programs.</p>
+<ul class="simple">
+<li><p>Functions manage complexity more than they save typing.</p></li>
+<li><p>Floating-point arithmetic is approximate.</p></li>
+<li><p>Parameters and local variables are scope-limited.</p></li>
+<li><p>Returning values is the main data flow mechanism.</p></li>
+<li><p>Programs are built from many small functions.</p></li>
+</ul>
+</section>
+<section id="conditionals-and-recursion">
+<h3>Conditionals and recursion<a class="headerlink" href="#conditionals-and-recursion" title="Link to this heading"></a></h3>
+<p>This chapter focuses on control flow through conditionals and recursion. It explains selective execution, chaining and nesting, the role of <cite>return</cite>, and how recursion works via the call stack, including common failure modes.</p>
+<ul class="simple">
+<li><p>Control flow determines execution paths.</p></li>
+<li><p><cite>return</cite> exits a function immediately.</p></li>
+<li><p>Recursion depends on correct base cases.</p></li>
+<li><p>Infinite recursion usually means a missing stop condition.</p></li>
+<li><p>Stack diagrams clarify recursive execution.</p></li>
+</ul>
+</section>
+<section id="fruitful-functions">
+<h3>Fruitful functions<a class="headerlink" href="#fruitful-functions" title="Link to this heading"></a></h3>
+<p>This chapter deepens the use of functions that return values. It emphasizes incremental development, composition, overloading, boolean logic, and more advanced recursion patterns that rely on trusting correct function design.</p>
+<ul class="simple">
+<li><p>Functions with return values are easier to test and reuse.</p></li>
+<li><p>Boolean logic underpins decision-making.</p></li>
+<li><p>Overloading can reduce clarity if misused.</p></li>
+<li><p>Correct recursion relies on trusting contracts.</p></li>
+<li><p>Programs evolve incrementally.</p></li>
+</ul>
+</section>
+<section id="iteration">
+<h3>Iteration<a class="headerlink" href="#iteration" title="Link to this heading"></a></h3>
+<p>This chapter introduces repetition with loops. It covers multiple assignment, <cite>while</cite> and <cite>for</cite> loops, common looping patterns, nested iteration, and how encapsulation and generalization turn repeated logic into reusable functions.</p>
+<ul class="simple">
+<li><p>Loops express controlled repetition.</p></li>
+<li><p><cite>while</cite> expresses logic; <cite>for</cite> expresses counting.</p></li>
+<li><p>Nested loops increase complexity quickly.</p></li>
+<li><p>Encapsulation turns patterns into tools.</p></li>
+<li><p>Generalization extends solutions beyond examples.</p></li>
+</ul>
+</section>
+<section id="strings-and-things">
+<h3>Strings and things<a class="headerlink" href="#strings-and-things" title="Link to this heading"></a></h3>
+<p>This chapter treats strings as containers of characters. It covers storage, indexing, length, traversal, searching, counting, concatenation, mutability, comparison, and character classification, emphasizing safe and repeatable patterns.</p>
+<ul class="simple">
+<li><p>Strings must be traversed carefully.</p></li>
+<li><p>Indexing errors are common bugs.</p></li>
+<li><p>Searching and counting follow standard patterns.</p></li>
+<li><p>Strings are mutable in C++.</p></li>
+<li><p>Character utilities avoid hard-coded logic.</p></li>
+</ul>
+</section>
+<section id="structures">
+<h3>Structures<a class="headerlink" href="#structures" title="Link to this heading"></a></h3>
+<p>This chapter introduces <cite>struct</cite> for grouping related data. It explains defining structures, accessing fields, passing them to functions, call-by-value vs call-by-reference, returning structures, and basic input handling.</p>
+<ul class="simple">
+<li><p>Structures model related data.</p></li>
+<li><p>Passing by reference enables efficiency and mutation.</p></li>
+<li><p>Returning structures is safe and common.</p></li>
+<li><p>Value vs reference affects behavior.</p></li>
+<li><p>Input handling requires defensive coding.</p></li>
+</ul>
+</section>
+<section id="more-structures">
+<h3>More structures<a class="headerlink" href="#more-structures" title="Link to this heading"></a></h3>
+<p>This chapter refines structured programming by focusing on design choices. It introduces pure functions, <cite>const</cite> correctness, modifiers, incremental development, and thinking in terms of reusable algorithms.</p>
+<ul class="simple">
+<li><p>Pure functions simplify reasoning.</p></li>
+<li><p><cite>const</cite> communicates intent and safety.</p></li>
+<li><p>Modifiers change state; pure functions do not.</p></li>
+<li><p>Incremental development reduces risk.</p></li>
+<li><p>Algorithms are reusable problem-solving ideas.</p></li>
+</ul>
+</section>
+<section id="vectors">
+<h3>Vectors<a class="headerlink" href="#vectors" title="Link to this heading"></a></h3>
+<p>This chapter introduces vectors as dynamic sequences. It covers access, copying, iteration, size management, randomness, statistics, counting, histograms, and efficient single-pass algorithms.</p>
+<ul class="simple">
+<li><p>Vectors manage dynamic storage safely.</p></li>
+<li><p>Size must always be queried, never assumed.</p></li>
+<li><p>Single-pass algorithms are usually preferable.</p></li>
+<li><p>Randomness requires explicit seeding.</p></li>
+<li><p>Histograms reveal data distribution.</p></li>
+</ul>
+</section>
+<section id="member-functions">
+<h3>Member functions<a class="headerlink" href="#member-functions" title="Link to this heading"></a></h3>
+<p>This chapter moves behavior closer to data by introducing member functions. It explains implicit access to instance variables, constructors, header files, and separating interface from implementation.</p>
+<ul class="simple">
+<li><p>Behavior belongs with the data it operates on.</p></li>
+<li><p>Member functions implicitly know their object.</p></li>
+<li><p>Constructors enforce valid initial state.</p></li>
+<li><p>Header files define interfaces.</p></li>
+<li><p>Structure matters as programs grow.</p></li>
+</ul>
+</section>
+<section id="vectors-of-objects">
+<h3>Vectors of Objects<a class="headerlink" href="#vectors-of-objects" title="Link to this heading"></a></h3>
+<p>This chapter combines vectors with user-defined types. Using cards and decks, it introduces comparison, searching, sub-collections, and bisection search for efficiency.</p>
+<ul class="simple">
+<li><p>Collections of objects need comparison logic.</p></li>
+<li><p>Equality and ordering must be explicit.</p></li>
+<li><p>Search efficiency depends on organization.</p></li>
+<li><p>Sorted data enables faster algorithms.</p></li>
+<li><p>Decomposition applies to data structures.</p></li>
+</ul>
+</section>
+<section id="objects-of-vectors">
+<h3>Objects of Vectors<a class="headerlink" href="#objects-of-vectors" title="Link to this heading"></a></h3>
+<p>This chapter focuses on objects that contain vectors. It introduces enums, <cite>switch</cite>, shuffling, sorting, dealing, and mergesort, emphasizing composition and algorithmic thinking.</p>
+<ul class="simple">
+<li><p>Composition scales better than flat designs.</p></li>
+<li><p>Enumerations clarify state.</p></li>
+<li><p>Sorting and shuffling expose tradeoffs.</p></li>
+<li><p>Mergesort shows divide-and-conquer.</p></li>
+<li><p>Algorithms depend on structure, not content.</p></li>
+</ul>
+</section>
+<section id="classes-and-invariants">
+<h3>Classes and invariants<a class="headerlink" href="#classes-and-invariants" title="Link to this heading"></a></h3>
+<p>This chapter formalizes classes as a safer evolution of structures. It covers private data, accessors, invariants, preconditions, and encapsulation, using complex numbers as an example.</p>
+<ul class="simple">
+<li><p>Classes protect correctness.</p></li>
+<li><p>Private data enforces invariants.</p></li>
+<li><p>Accessors expose intent safely.</p></li>
+<li><p>Preconditions document assumptions.</p></li>
+<li><p>Invariants define valid states.</p></li>
+</ul>
+</section>
+<section id="file-input-output-and-apmatrixes">
+<h3>File Input/Output and apmatrixes<a class="headerlink" href="#file-input-output-and-apmatrixes" title="Link to this heading"></a></h3>
+<p>This chapter introduces streams and file I/O. It covers parsing text and numbers, simple data structures, matrices, and validating structured data from external sources.</p>
+<ul class="simple">
+<li><p>Files introduce persistence and failure modes.</p></li>
+<li><p>Parsing must be defensive.</p></li>
+<li><p>Data structures often mirror file layout.</p></li>
+<li><p>Matrices formalize 2D data.</p></li>
+<li><p>Correctness outweighs performance in I/O.</p></li>
+</ul>
+</section>
+<section id="appendix-ap-class-reference">
+<h3>Appendix: AP class reference<a class="headerlink" href="#appendix-ap-class-reference" title="Link to this heading"></a></h3>
+<p>Provides reference material for <cite>apstring</cite>, <cite>apvector</cite>, and <cite>apmatrix</cite>, used throughout the book to simplify learning.</p>
+<ul class="simple">
+<li><p>AP classes simplify learning.</p></li>
+<li><p>They abstract away STL complexity.</p></li>
+<li><p>Used consistently throughout the book.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="COMP206 documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="RooksGuide.html" class="btn btn-neutral float-right" title="Rooks Guide to C++" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, hector barquero.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
