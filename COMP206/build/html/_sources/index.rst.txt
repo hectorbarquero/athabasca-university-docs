@@ -21,6 +21,13 @@ COMP206 documentation
 
 .. toctree::
    :maxdepth: 4
+   :caption: Assignment instructions
+   :hidden:
+
+   AssignmentInstructions/AssignmentInstructions.rst
+
+.. toctree::
+   :maxdepth: 4
    :caption: Assignment one
    :hidden:
 
@@ -46,3 +53,10 @@ COMP206 documentation
    :hidden:
 
    AssignmentFour/main.rst
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Practice problems
+   :hidden:
+
+   PracticeProblems/PracticeProblems.rst

@@ -1,4 +1,4 @@
-Rooks Guide to C++
+Rooks guide to C++
 ++++++++++++++++++++
 I took a short break as work got busy and returned to finish this book in March 2026.
 
