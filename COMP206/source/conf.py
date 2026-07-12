@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'COMP206 documentation'
-copyright = '2025, hector barquero'
-author = 'hector barquero'
+project = 'COMP206 learning journal'
+copyright = '2025, Hector Barquero'
+author = 'Hector Barquero'
 
 
 # -- General configuration ---------------------------------------------------

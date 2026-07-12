@@ -2,7 +2,7 @@ Assignment one journal
 ++++++++++++++++++++++++
 
 +--------------+----------------------+
-| Time spent   | Jan 2025 to Aug 2026 |
+| Time spent   | Jan 2026 to Aug 2026 |
 +--------------+----------------------+
 | Student name | Hector Barquero      |
 +--------------+----------------------+
@@ -16,8 +16,8 @@ Assignment one journal
 
 Overview and reflections
 =========================
-What difficulties did i hit?
-Link to reading reflections
+.. What difficulties did i hit?
+.. Link to reading reflections
 
 Unit 1: Points to ponder
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,52 +30,559 @@ I've been programming in javascript a lot lately, so I almost forget definitions
 I also appreciate that both Think C++ and The Rooks Guide especially are really short and direct. I thought at first that they were quite dated, but I guess depending where you work... the C++ standard you might be writing could be dated too. (Where I am, I think it's an archaic standard, and the job previous to that we weren't using the latest either)
 
 
+Unit 2: Points to ponder
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Hector Barquero posted Feb 27, 2026 10:19 AM
+https://learning.athabascau.ca/d2l/le/18658/discussions/threads/337650/View
+
+Completing unit 2 was interesting because it has differences to modern c++ that I needed to refresh on. I recall learning the same traditional academic declarations when first studying c++ at Fanshawe College in 2016: 
+
+.. code-block::
+    //academic and traditional declaration the books seems to prefer:
+    int foo = 0;
+
+
+but when I started working in 2018+, I used brace form since it's modern best practice with c++:
+
+.. code-block::
+   //brace form which i think is c++ v11 and on, considered best practice to protect narrowing
+   int foo{0};
+
+This might be another thing for me to remember since I'm used to protecting type narrowing when doing narrowing conversion, but I scanned ahead for other units and see that the text prefers explicit casting conversion.
+
+This is all really good for me to read again because in javascript, everything is dynamically typed where the type belongs to the value, not the variables
+
+
+
 Readings
 =========
 
 Unit 1
 ~~~~~~~
-Use this index to go to the affiliated reading notes. This presents the readings more organized for the marker, since it keeps the assignment journal more readable rather than duplicating the reading notes which are nearly 100 pages.
 
-- ThinkCScpp: 1.1 “What is a programming language?”
-- ThinkCScpp: 1.2 “What is a program?”
-- ThinkCScpp: 1.3 “What is debugging?”
-- ThinkCScpp: 1.3.1 “Compile-time errors”
-- ThinkCScpp: 1.3.2 “Run-time errors”
-- ThinkCScpp: 1.3.3 “Logic errors and semantics”
-- ThinkCScpp: 1.3.4 “Experimental debugging”
-- ProgFund: 1 “Introduction to Programming”
-- ProgFund: 1.1 “Systems Development Life Cycle”
-- ProgFund: 1.3 “Modularization and C++ Program Layout”
-- ProgFund: 2 “Program Planning & Design”
-- ProgFund: 2.1 “Program Design”
-- ProgFund: 2.2 “Pseudocode”
-- ProgFund: 2.3 “Test Data”
-- ThinkCScpp: 1.4 “Formal and natural languages” 
-- ThinkCScpp: 1.5 “The first program”
-- ProgFund: 5 “Integrated Development Environment”
-- ProgFund: 5.1 “Integrated Development Environment”
-- ProgFund: 5.2 “Standard Input and Output”
-- ProgFund: 5.3 “Compiler Directives”
+.. rubric:: ThinkCScpp 1.1: What is a programming language?
+
+- A programming language provides formal rules for expressing instructions a computer can execute.
+- High-level languages like C++ must be translated into machine language before they can run.
+
+.. rubric:: ThinkCScpp 1.2: What is a program?
+
+- A program is a sequence of instructions that performs computation, input, output, testing, and repetition.
+
+.. rubric:: ThinkCScpp 1.3: What is debugging?
+
+- Debugging is the process of finding and correcting errors in a program.
+- Errors generally fall into compile-time, run-time, and logic categories.
+- Debugging requires testing assumptions rather than randomly changing code.
+
+.. rubric:: ThinkCScpp 1.3.1: Compile-time errors
+
+- Compile-time errors prevent the compiler from translating the source code.
+- They commonly result from invalid syntax, missing punctuation, or incorrect declarations.
+
+.. rubric:: ThinkCScpp 1.3.2: Run-time errors
+
+- Run-time errors occur after compilation while the program is executing.
+- A program might crash, stop unexpectedly, or perform an invalid operation.
+- The compiler can't always detect conditions that only appear during execution.
+- Testing different inputs helps identify when the failure occurs.
+
+.. rubric:: ThinkCScpp 1.3.3: Logic errors and semantics
+
+- Logic errors produce incorrect results even though the program compiles and runs.
+- Semantic errors happen when valid code doesn't express the intended meaning.
+
+.. rubric:: ThinkCScpp 1.3.4: Experimental debugging
+
+- Experimental debugging uses controlled tests to confirm or reject explanations for an error.
+- Debug output can reveal variable values and show which statements execute.
+- Changing several things at once makes it harder to identify the actual cause.
+
+.. rubric:: ProgFund 1: Introduction to Programming
+
+- Programming converts a problem-solving process into instructions a computer can follow.
+- Programs typically accept input, process data, and produce output.
+- Good programming requires planning, implementation, testing, and maintenance.
+
+.. rubric:: ProgFund 1.1: Systems Development Life Cycle
+
+- The SDLC organizes software work into planning, analysis, design, implementation, testing, and maintenance.
+- Each phase reduces uncertainty before more development effort is committed.
+
+.. rubric:: ProgFund 1.3: Modularization and C++ Program Layout
+
+- Modularization divides a large problem into smaller functions with specific responsibilities.
+- A C++ program normally contains directives, declarations, functions, and a ``main`` function.
+- Smaller modules are easier to test, reuse, and understand.
+- Clear layout helps readers recognize the program's structure quickly.
+
+.. rubric:: ProgFund 2: Program Planning & Design
+
+- Program planning defines the problem and solution before code is written.
+
+.. rubric:: ProgFund 2.1: Program Design
+
+- Program design identifies inputs, processing steps, outputs, and required decisions.
+- A planned solution is easier to implement and test than an improvised one.
+- Complex problems should be divided into manageable modules.
+
+.. rubric:: ProgFund 2.2: Pseudocode
+
+- Pseudocode describes program logic using structured language without strict C++ syntax.
+- It helps refine algorithms before implementation details become a distraction.
+
+.. rubric:: ProgFund 2.3: Test Data
+
+- Test data checks whether a program handles normal, boundary, and invalid inputs correctly.
+- Expected results should be decided before the program is executed.
+- One successful test can't prove that every possible input works.
+- Carefully selected cases can expose incorrect conditions and assumptions.
+- Tests should be repeated after changes to detect regressions.
+
+.. rubric:: ThinkCScpp 1.4: Formal and natural languages
+
+- Natural languages tolerate ambiguity, while formal languages require precise syntax and structure.
+- C++ can't infer intended meaning when its grammatical rules aren't followed.
+
+.. rubric:: ThinkCScpp 1.5: The first program
+
+- A basic C++ program defines ``main`` as its starting point.
+- ``cout`` writes output through the standard output stream.
+- Statements generally end with semicolons.
+- Compilation and execution are separate steps.
+
+.. rubric:: ProgFund 5: Integrated Development Environment
+
+- An IDE combines tools for editing, compiling, running, and debugging programs.
+- It simplifies development but doesn't replace understanding the build process.
+
+.. rubric:: ProgFund 5.1: Integrated Development Environment
+
+- IDEs provide features such as syntax highlighting, project management, and error navigation.
+- The compiler still determines whether C++ source code is valid.
+- Debuggers let programmers inspect execution without adding permanent output statements.
+
+.. rubric:: ProgFund 5.2: Standard Input and Output
+
+- ``cin`` reads values from standard input and ``cout`` writes values to standard output.
+- Stream operators indicate whether data moves into or out of a stream.
+- Input must match the destination variable's expected type.
+- Output can combine text, values, and formatting within one statement.
+
+.. rubric:: ProgFund 5.3: Compiler Directives
+
+- Preprocessor directives begin with ``#`` and are processed before compilation.
+- ``#include`` makes declarations from headers available to the source file.
+
 
 Unit 2
 ~~~~~~~
 
+.. rubric:: ThinkCScpp 2.1: More output
+
+- Multiple values can be sent to ``cout`` using consecutive insertion operators.
+- Escape sequences represent characters such as newlines and tabs.
+- Output statements don't automatically add spacing between values.
+
+.. rubric:: ThinkCScpp 2.2: Values
+
+- A value is a basic piece of data such as an integer, character, or string.
+- Every value has a type that determines its meaning and permitted operations.
+
+.. rubric:: ThinkCScpp 2.3: Variables
+
+- A variable is a named storage location associated with a specific type.
+- Variables must be declared before they can be used.
+- A variable's current value can change during execution.
+- Using descriptive names makes expressions easier to understand.
+
+.. rubric:: ProgFund 3: Data & Operators
+
+- Data types define how values are represented and which operations are valid.
+- Operators combine or modify values to produce new results.
+
+.. rubric:: ProgFund 3.1: Data Types in C++
+
+- C++ includes types for integers, floating-point numbers, characters, Boolean values, and text.
+- Choosing an appropriate type affects memory use, precision, range, and available operations.
+- C++ won't treat every type as interchangeable without a conversion.
+
+.. rubric:: ProgFund 3.2: Identifier Names
+
+- Identifiers name variables, functions, types, and other program elements.
+- An identifier can't begin with a digit or match a reserved keyword.
+- Consistent naming conventions make related identifiers easier to recognize.
+
+.. rubric:: ProgFund 3.3: Constants and Variables
+
+- Variables may change, while constants prevent reassignment after initialization.
+- Constants communicate that a value isn't expected to change.
+- ``const`` lets the compiler enforce that intention.
+- Both constants and variables require suitable types.
+
+.. rubric:: ProgFund 3.4: Data Manipulation
+
+- Expressions manipulate data through operators, variables, constants, and function calls.
+
+.. rubric:: ThinkCScpp 2.4: Assignment
+
+- Assignment stores the right-hand value in the variable on the left.
+- Assignment replaces the variable's previous value.
+- The assignment operator doesn't mean mathematical equality.
+
+.. rubric:: ThinkCScpp 2.5: Outputting variables
+
+- Variables can be inserted into an output stream alongside literal text.
+- Output reflects the variable's value at the time the statement executes.
+
+.. rubric:: ThinkCScpp 2.6: Keywords
+
+- Keywords have predefined meanings in C++ and can't be used as identifiers.
+- Examples include ``int``, ``return``, ``if``, and ``while``.
+- Editors often highlight keywords, but the compiler enforces their meaning.
+- Keyword spelling and capitalization must be exact.
+
+.. rubric:: ProgFund 3.5: Assignment Operator
+
+- The assignment operator evaluates the right-hand expression before storing its result.
+- The left side must refer to a writable storage location.
+
+.. rubric:: ProgFund 3.6: Arithmetic Operators
+
+- C++ supports addition, subtraction, multiplication, division, and remainder operations.
+- The operand types affect how an arithmetic expression is evaluated.
+- Division between integers discards the fractional part.
+- Parentheses can make the intended grouping explicit.
+- Invalid arithmetic, such as integer division by zero, can't produce a useful result.
+
+.. rubric:: ProgFund 3.7: Data Type Conversions
+
+- Conversions change a value from one type to another.
+- Implicit conversions happen automatically, while casts request a conversion explicitly.
+- Narrowing conversions can lose range or precision.
+
+.. rubric:: ProgFund 4: Often Used Data Types
+
+- Frequently used C++ types include integers, floating-point values, characters, strings, and Booleans.
+
+.. rubric:: ProgFund 4.1: Integer Data Type
+
+- Integer types represent whole numbers without fractional components.
+- Their supported range depends on the type and implementation.
+- Signed types support negative values, while unsigned types don't.
+- Overflow can produce incorrect or implementation-dependent behaviour.
+
+.. rubric:: ProgFund 4.2: Floating-Point Data Type
+
+- Floating-point types represent values with fractional components and wide ranges.
+- Many decimal fractions can't be represented exactly in binary.
+- ``double`` generally offers more precision than ``float``.
+
+.. rubric:: ProgFund 4.3: String Data Type
+
+- ``std::string`` stores and manipulates sequences of characters.
+- Strings support operations such as concatenation, comparison, indexing, and length checks.
+
+.. rubric:: RooksGuide 2: Variables
+
+- Variables associate names with typed storage that a program can read and modify.
+- C++ variables must be declared because their types are determined before execution.
+- Initialization gives a variable its first value.
+- Uninitialized local variables can contain indeterminate data.
+
+.. rubric:: RooksGuide 2.1: How do I decide which data type I need?
+
+- Choose a type based on the required values, precision, operations, and range.
+- The smallest possible type isn't always the clearest or safest choice.
+
+.. rubric:: RooksGuide 2.2: Identifiers
+
+- Identifiers should describe their purpose without conflicting with C++ naming rules.
+- Meaningful names reduce the need for explanatory comments.
+- C++ identifiers are case-sensitive.
+
+.. rubric:: RooksGuide 2.3: Declaring a Variable
+
+- A declaration introduces a variable's name and type to the compiler.
+
+.. rubric:: RooksGuide 2.4: Initializing Variables
+
+- Initialization assigns a value when a variable is created.
+- Brace initialization can reject some conversions that would lose information.
+- Initializing variables early prevents accidental use of unknown values.
+
+.. rubric:: ThinkCScpp 2.7: Operators
+
+- Operators perform computations using one or more operands.
+- The same operator may behave differently with different types.
+- Some operators modify values, while others only calculate results.
+- Operator misuse can still compile when the expression is syntactically valid.
+
+.. rubric:: ThinkCScpp 2.8: Order of operations
+
+- Operator precedence determines which parts of an expression are evaluated first.
+- Parentheses should be used when the intended order isn't immediately clear.
+
+.. rubric:: ThinkCScpp 2.9: Operators for characters
+
+- Character values can be compared and manipulated using their numeric encodings.
+- Arithmetic on characters usually produces an integer result.
+- Character ordering depends on the encoding used by the implementation.
+
+.. rubric:: ProgFund 4.4: Arithmetic Assignment Operators
+
+- Operators such as ``+=`` and ``*=`` combine arithmetic with assignment.
+- ``x += 2`` is generally equivalent to ``x = x + 2``.
+- Compound assignment avoids repeating the variable name.
+- The usual type conversion rules still apply.
+
+.. rubric:: ProgFund 4.5: Lvalue and Rvalue
+
+- An lvalue identifies an object or storage location that may appear on an assignment's left side.
+- An rvalue is commonly a temporary value or expression result.
+- Assignment requires a modifiable lvalue as its destination.
+
+.. rubric:: ProgFund 4.6: Integer Division and Modulus
+
+- Integer division removes the fractional portion of the result.
+- The modulus operator returns the remainder from integer division.
+- Modulus is useful for checking divisibility and extracting digits.
+- Negative operands can make remainder results less intuitive.
+
+.. rubric:: RooksGuide 2.5: Assignment Statements
+
+- Assignment changes an existing variable's value after it has been declared.
+- The source expression is evaluated before the destination is updated.
+
+.. rubric:: RooksGuide 3: Literals and Constants
+
+- Literals write fixed values directly in source code, while named constants give those values meaning.
+- Constants prevent values from being changed accidentally.
+- Replacing unexplained literals with named constants improves maintainability.
+
+.. rubric:: RooksGuide 3.1: Literals
+
+- A literal represents a value directly, such as ``42``, ``3.14``, ``'A'``, or ``"text"``.
+- Literal syntax helps determine the value's type.
+
+.. rubric:: RooksGuide 3.2: Declared Constants
+
+- A declared constant associates an immutable value with a descriptive identifier.
+- Constants should usually be initialized when declared.
+- ``const`` allows the compiler to reject later assignments.
+- Named constants avoid repeating unexplained values.
+- Changing one declaration can update every expression that uses the constant.
+
+.. rubric:: RooksGuide 4: Assignments
+
+- Assignment stores an expression's result in an existing object.
+- Chained assignments are possible but can reduce readability.
+- Assignment isn't interchangeable with initialization in every context.
+
+.. rubric:: ThinkCScpp 2.10: Composition
+
+- Composition combines variables, literals, operators, and function calls into larger expressions.
+- Complex expressions should remain readable and avoid repeating unnecessary calculations.
+
+
+Unit 3
+~~~~~~~
+
+.. rubric:: ThinkCScpp 3.1: Floating-point
+
+- Floating-point values approximate real numbers using limited binary precision.
+- ``double`` is commonly preferred when fractional calculations need reasonable precision.
+- Equality comparisons can fail when rounding produces slightly different results.
+
+.. rubric:: ThinkCScpp 3.2: Converting from double to int
+
+- Converting a ``double`` to ``int`` discards the fractional part rather than rounding it.
+- Values outside the integer type's range can't be represented safely.
+- An explicit cast makes the conversion visible to readers.
+- Rounding functions should be used when truncation isn't intended.
+
+.. rubric:: ThinkCScpp 3.3: Math functions
+
+- The ``<cmath>`` header provides functions for roots, powers, rounding, and trigonometry.
+- Math functions accept arguments and return calculated results.
+
+.. rubric:: ThinkCScpp 3.4: Composition
+
+- Function calls can be nested inside expressions and passed directly as arguments.
+- Composition can remove temporary variables but shouldn't make code difficult to read.
+- Each inner expression is evaluated before its result is used by the outer expression.
+
+.. rubric:: ThinkCScpp 3.5: Adding new functions
+
+- Functions package a named sequence of statements into a reusable operation.
+- A function definition specifies its return type, name, parameters, and body.
+- Decomposing code into functions reduces duplication.
+- Function names should describe the operation being performed.
+- ``main`` can call functions that were declared before the call.
+
+.. rubric:: ThinkCScpp 3.6: Definitions and uses
+
+- A function must be declared or defined before the compiler encounters a call to it.
+- A declaration describes the function's interface without providing its implementation.
+
+.. rubric:: ThinkCScpp 3.7: Programs with multiple functions
+
+- Multiple functions divide a program into smaller units with separate responsibilities.
+- Execution begins in ``main`` and moves into other functions when they're called.
+- Functions can call other functions when their declarations are visible.
+
+.. rubric:: ThinkCScpp 3.8: Parameters and arguments
+
+- Parameters are variables declared by a function, while arguments are values supplied by the caller.
+- Arguments are matched to parameters by position and compatible type.
+- Passing by value gives the function its own copy of the argument.
+
+.. rubric:: ThinkCScpp 3.9: Parameters and variables are local
+
+- Parameters and variables declared inside a function are local to that function.
+- Separate functions can use the same local name without sharing storage.
+- Local variables stop existing when their scope ends.
+- A function can't directly access another function's local variables.
+
+.. rubric:: ThinkCScpp 3.10: Functions with multiple parameters
+
+- Functions can accept multiple parameters separated by commas.
+- Each parameter requires its own declared type.
+- Arguments must be supplied in the expected order.
+
+.. rubric:: ThinkCScpp 3.11: Functions with results
+
+- A non-``void`` function returns a value using a ``return`` statement.
+- The returned value's type must be compatible with the declared return type.
+- Returned results can be stored, printed, or used inside larger expressions.
+- Every reachable path should return a value when the function isn't ``void``.
+- Returning a result often makes a function easier to reuse than printing internally.
+
+.. rubric:: ProgFund 6: Program Control Functions
+
+- Program control functions organize execution by separating tasks into callable modules.
+- Functions can receive data, perform processing, and return results.
+
+.. rubric:: ProgFund 6.1: Pseudocode Examples for Functions
+
+- Function pseudocode describes parameters, processing steps, and returned values without C++ syntax.
+- It helps define responsibilities before implementation.
+- Calls in the main algorithm show how individual modules interact.
+
+.. rubric:: ProgFund 6.2: Hierarchy or Structure Chart
+
+- A structure chart shows which functions call other functions.
+- It represents program organization without describing every statement.
+- Higher-level functions coordinate work performed by lower-level modules.
+- The chart can expose modules that are too large or tightly connected.
+
+.. rubric:: ProgFund 6.3: Program Control Functions
+
+- Control functions coordinate other functions rather than performing every task directly.
+
+.. rubric:: ProgFund 6.4: Void Data Type
+
+- A ``void`` function performs an action without returning a value.
+- ``void`` can also indicate that a function doesn't accept parameters in some declarations.
+- A ``void`` function may use ``return`` without an expression to exit early.
+
+.. rubric:: ProgFund 6.5: Documentation and Making Source Code Readable
+
+- Readable code uses meaningful names, consistent formatting, and focused functions.
+- Comments should explain intent or unusual decisions rather than repeat the code.
+- Excessive comments can become inaccurate when the implementation changes.
+- Documentation should describe interfaces, assumptions, and important constraints.
+- Consistent style makes errors and structural problems easier to notice.
+
+.. rubric:: RooksGuide 5: Output
+
+- Output streams send formatted values to destinations such as the console.
+- ``std::cout`` uses ``<<`` to insert data into the standard output stream.
+
+.. rubric:: RooksGuide 6: Input
+
+- ``std::cin`` uses ``>>`` to extract typed values from standard input.
+- Failed input leaves the stream in an error state until it's handled.
+- Whitespace-delimited extraction won't read an entire line containing spaces.
+- ``std::getline`` is better suited to full-line text input.
+
+.. rubric:: RooksGuide 7: Arithmetic
+
+- Arithmetic expressions follow C++ precedence and type-conversion rules.
+- Integer and floating-point operands can produce different results.
+- Parentheses clarify calculations and reduce reliance on remembered precedence.
+
+.. rubric:: RooksGuide 8: Comments
+
+- Comments document intent and are ignored during compilation.
+- Line comments begin with ``//``, while block comments use ``/*`` and ``*/``.
+- Good names and structure should carry most of the explanation.
+- Comments shouldn't preserve obsolete code that version control already stores.
+- Misleading comments are worse than missing comments.
+
+.. rubric:: RooksGuide 9: Data Types and Conversion
+
+- Data types define representation, range, precision, and supported operations.
+- Conversions allow expressions to combine different types.
+- Some conversions are safe, while others can lose information.
+
+.. rubric:: RooksGuide 9.1: Floating-point types
+
+- ``float``, ``double``, and ``long double`` offer different minimum precision and range.
+- Floating-point arithmetic is approximate and subject to rounding.
+- ``double`` is generally the default type for decimal literals.
+- More precision doesn't make every decimal value exact.
+
+.. rubric:: RooksGuide 9.2: Other types introduced by C++11
+
+- C++11 added features such as fixed-width integers, ``nullptr``, and improved type inference.
+- Fixed-width integer types are useful when an exact bit width is required.
+
+.. rubric:: RooksGuide 9.3: Conversion Between Types
+
+- Implicit conversions occur when C++ automatically changes a value's type.
+- Promotions usually preserve information, while narrowing conversions might not.
+- Mixed-type expressions convert operands to a common type.
+- Conversion behaviour should be considered before assigning the result.
+
+.. rubric:: RooksGuide 9.4: Coercion & Casting
+
+- Coercion is an automatic conversion performed by the language.
+- Casting explicitly requests that a value be treated as another type.
+- ``static_cast`` clearly expresses many ordinary compile-time conversions.
+
+.. rubric:: RooksGuide 9.5: Automatic Types in C++11
+
+- ``auto`` asks the compiler to infer a variable's type from its initializer.
+- The inferred type remains static and can't later change like a JavaScript variable.
+- ``auto`` can reduce repetition when the initializer already makes the type clear.
+- It shouldn't hide information that readers need to understand the code.
+- An ``auto`` variable normally requires an initializer.
 
 
 Practice problems
 ===================
+.. add leetcode problems, or unit problems?
+
 x
 
 
 Program design
 ===============
-x
+.. draw.io files? sketches?
+.. dolphin.js is easier ... 
+.. logarithm, test case plan and any math sketches
+
 
 
 Sources and references
 =======================
-https://cppreference.com/
-programming fundamentals pdf
-the rooks guide cpp
-think c++
+.. add competitive c++ from leetcode?
+
+1. cppreference.com. (n.d.). C++ reference. Retrieved Jan 2026 - Aug 2026, from https://cppreference.com/cpp
+
+2. Braunschweig, D., & Busbee, K. L. (2018). Programming fundamentals: A modular structured approach (2nd ed.). Rebus Community. https://press.rebus.community/programmingfundamentals/
+
+3. Hansen, J. A. (2013). The Rook’s guide to C++. Rook’s Guide Press. https://rooksguide.org/
+
+4. Downey, A. B. (1999). Think C++ (Version 1.1.0). Green Tea Press. https://www.greenteapress.com/thinkcpp/

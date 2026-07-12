@@ -1,0 +1,72 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Submission instructions}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Rules for deliverables}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Program rules}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Program naming}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Program test plans}{2}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Assignment instructions}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Assignment journal overview}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Technical requirements}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Test plan requirements}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Assignment one journal}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview and reflections}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Unit 1: Points to ponder}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Unit 2: Points to ponder}{5}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Readings}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Unit 1}{6}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Unit 2}{8}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Unit 3}{12}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Practice problems}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Program design}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Sources and references}{16}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Assignment two journal}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Assignment three journal}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Assignment four journal}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Practice problems}{23}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Think C++}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Chapter synopsis and notes}{25}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The way of the program}{25}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Variables and types}{25}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Function}{26}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Conditionals and recursion}{26}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Fruitful functions}{26}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}Iteration}{26}{subsection.8.1.6}%
+\contentsline {subsection}{\numberline {8.1.7}Strings and things}{27}{subsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.1.8}Structures}{27}{subsection.8.1.8}%
+\contentsline {subsection}{\numberline {8.1.9}More structures}{27}{subsection.8.1.9}%
+\contentsline {subsection}{\numberline {8.1.10}Vectors}{27}{subsection.8.1.10}%
+\contentsline {subsection}{\numberline {8.1.11}Member functions}{28}{subsection.8.1.11}%
+\contentsline {subsection}{\numberline {8.1.12}Vectors of Objects}{28}{subsection.8.1.12}%
+\contentsline {subsection}{\numberline {8.1.13}Objects of Vectors}{28}{subsection.8.1.13}%
+\contentsline {subsection}{\numberline {8.1.14}Classes and invariants}{28}{subsection.8.1.14}%
+\contentsline {subsection}{\numberline {8.1.15}File Input/Output and apmatrixes}{29}{subsection.8.1.15}%
+\contentsline {subsection}{\numberline {8.1.16}Appendix: AP class reference}{29}{subsection.8.1.16}%
+\contentsline {chapter}{\numberline {9}Rooks guide to C++}{31}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Chapter synopsis and notes}{31}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}History}{31}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Variables}{31}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Literals and constants}{31}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Assignments}{32}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Output}{32}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Input}{32}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {9.1.7}Arithmetic}{32}{subsection.9.1.7}%
+\contentsline {subsection}{\numberline {9.1.8}Comments}{32}{subsection.9.1.8}%
+\contentsline {subsection}{\numberline {9.1.9}Data types and conversion}{32}{subsection.9.1.9}%
+\contentsline {subsection}{\numberline {9.1.10}Conditionals}{33}{subsection.9.1.10}%
+\contentsline {subsection}{\numberline {9.1.11}Strings}{33}{subsection.9.1.11}%
+\contentsline {subsection}{\numberline {9.1.12}Loops}{33}{subsection.9.1.12}%
+\contentsline {subsection}{\numberline {9.1.13}Arrays}{33}{subsection.9.1.13}%
+\contentsline {subsection}{\numberline {9.1.14}Blocks, functions, and scope}{33}{subsection.9.1.14}%
+\contentsline {subsection}{\numberline {9.1.15}Problem solving \& troubleshooting}{34}{subsection.9.1.15}%
+\contentsline {subsection}{\numberline {9.1.16}The preprocessor}{34}{subsection.9.1.16}%
+\contentsline {subsection}{\numberline {9.1.17}Advanced arithmetic}{34}{subsection.9.1.17}%
+\contentsline {subsection}{\numberline {9.1.18}File I/O}{34}{subsection.9.1.18}%
+\contentsline {subsection}{\numberline {9.1.19}Pointers}{34}{subsection.9.1.19}%
+\contentsline {subsection}{\numberline {9.1.20}Dynamic data}{34}{subsection.9.1.20}%
+\contentsline {subsection}{\numberline {9.1.21}Classes and abstraction}{35}{subsection.9.1.21}%
+\contentsline {subsection}{\numberline {9.1.22}Separate compilation}{35}{subsection.9.1.22}%
+\contentsline {subsection}{\numberline {9.1.23}STL}{35}{subsection.9.1.23}%
+\contentsline {chapter}{\numberline {10}Programming fundamentals}{37}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Synopsis}{37}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Interesting notes}{37}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Definitions}{37}{section.10.3}%
