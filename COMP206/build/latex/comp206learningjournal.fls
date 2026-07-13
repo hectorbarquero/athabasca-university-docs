@@ -356,6 +356,9 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/tcxtt.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmri.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
 INPUT ./comp206learningjournal.ind
 INPUT ./comp206learningjournal.ind
 INPUT comp206learningjournal.ind
@@ -364,9 +367,12 @@ INPUT ./comp206learningjournal.out
 INPUT ./comp206learningjournal.out
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  12 JUL 2026 07:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  13 JUL 2026 06:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,7 @@ Chapter 3.
 
 ] [6]
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 5
-06.
+41.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
@@ -911,63 +911,98 @@ LaTeX Font Info:    Trying to load font information for TS1+txtt on input line
 File: ts1txtt.fd 2000/12/15 v3.1
 ) [12] [13]
 [14] [15] [16]
-Chapter 4.
-[17
+LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1669.
 
-] [18
+ [17] [18] [19] [20] [21] [22] [23] [24]
+Chapter 4.
+[25
+
+] [26
 
 ]
 Chapter 5.
-[19] [20
+[27] [28
 
 ]
 Chapter 6.
-[21] [22
+[29] [30
 
 ]
 Chapter 7.
-[23] [24
+[31] [32] [33] [34] [35] [36]
+Overfull \vbox (2.06047pt too high) detected at line 2575
+ []
+
+[37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+[52] [53] [54] [55] [56] [57] [58] [59] [60] [61]
+Overfull \vbox (1.14696pt too high) detected at line 4169
+ []
+
+[62] [63] [64] [65] [66] [67] [68] [69]
+Overfull \vbox (1.14696pt too high) detected at line 4682
+ []
+
+[70] [71] [72] [73] [74] [75]
+Overfull \vbox (1.14696pt too high) detected at line 5057
+ []
+
+[76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]
+Overfull \vbox (1.14696pt too high) detected at line 5814
+ []
+
+[88] [89] [90] [91] [92] [93]
+Overfull \vbox (1.14696pt too high) detected at line 6198
+ []
+
+[94] [95] [96] [97]
+Overfull \vbox (1.14696pt too high) detected at line 6452
+ []
+
+[98] [99] [100] [101] [102] [103] [104] [105] [106
 
 ]
 Chapter 8.
-[25] [26] [27] [28] [29] [30
+[107] [108] [109] [110] [111] [112
 
 ]
 Chapter 9.
-[31] [32] [33] [34] [35] [36
+[113] [114] [115] [116] [117] [118
 
 ]
 Chapter 10.
-(./comp206learningjournal.ind) [37] (./comp206learningjournal.aux)
+(./comp206learningjournal.ind) [119] (./comp206learningjournal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `comp206learningjournal.out' has not changed.
 
-(rerunfilecheck)             Checksum: 7F2DCE8C9E0E438E8FE85E64B6DDAD7B;10262.
+(rerunfilecheck)             Checksum: C5F8E21446A68EFF6B7C14686B57072F;65706.
  ) 
 Here is how much of TeX's memory you used:
- 20174 strings out of 474116
- 361486 string characters out of 5743682
- 1939187 words of memory out of 5000000
- 41984 multiletter control sequences out of 15000+600000
- 609161 words of font info for 77 fonts, out of 8000000 for 9000
+ 21040 strings out of 474116
+ 382931 string characters out of 5743682
+ 2026187 words of memory out of 5000000
+ 42508 multiletter control sequences out of 15000+600000
+ 612670 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 72i,11n,83p,1211b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,83p,1211b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/font
 awesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
-ublic/tex-gyre/qtmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
-tex-gyre/qtmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gy
-re/qtmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1x
-tt.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb
->
-Output written on comp206learningjournal.pdf (41 pages, 199548 bytes).
+ype1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1
+/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/publi
+c/tex-gyre/qtmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-
+gyre/qtmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/q
+tmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.
+pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
+Output written on comp206learningjournal.pdf (123 pages, 424593 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 546 compressed objects within 6 object streams
- 144 named destinations out of 1000 (max. 500000)
- 589 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2078 PDF objects out of 2487 (max. 8388607)
+ 1913 compressed objects within 20 object streams
+ 482 named destinations out of 1000 (max. 500000)
+ 2621 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'COMP206 learning journal'
+project = 'COMP206 Learning Journal'
 copyright = '2025, Hector Barquero'
 author = 'Hector Barquero'
 

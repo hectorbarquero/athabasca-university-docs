@@ -14,6 +14,33 @@ Assignment one journal
    This journal section acts as an index, with the reading contents contained in the **Readings** chapter. You can use this to jump to the correct chapter, and it organizes the Unit 1 assignment journal components more cleanly rather than having them duplicated.
 
 
+Program design
+===============
+.. draw.io files? sketches?
+.. dolphin.js is easier ... 
+.. logarithm, test case plan and any math sketches
+
+Multiplication table
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+Convert temperature from F to C
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Temperature conversion table
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Interactive help system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Print all prime numbers (1 to 10000)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 Overview and reflections
 =========================
 .. What difficulties did i hit?
@@ -21,6 +48,7 @@ Overview and reflections
 
 Unit 1: Points to ponder
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+Hector Barquero posted Feb 27, 2026 8:12 AM
 https://learning.athabascau.ca/d2l/le/18658/discussions/threads/337601/View?ou=18658
 
 I've programmed in C, C++ a lot and reading these feels like a nice refresher. 
@@ -37,20 +65,31 @@ https://learning.athabascau.ca/d2l/le/18658/discussions/threads/337650/View
 
 Completing unit 2 was interesting because it has differences to modern c++ that I needed to refresh on. I recall learning the same traditional academic declarations when first studying c++ at Fanshawe College in 2016: 
 
-.. code-block::
-    //academic and traditional declaration the books seems to prefer:
-    int foo = 0;
-
+//academic and traditional declaration the books seems to prefer:
+int foo = 0;
 
 but when I started working in 2018+, I used brace form since it's modern best practice with c++:
 
-.. code-block::
-   //brace form which i think is c++ v11 and on, considered best practice to protect narrowing
-   int foo{0};
+//brace form which i think is c++ v11 and on, considered best practice to protect narrowing
+int foo{0};
 
 This might be another thing for me to remember since I'm used to protecting type narrowing when doing narrowing conversion, but I scanned ahead for other units and see that the text prefers explicit casting conversion.
 
 This is all really good for me to read again because in javascript, everything is dynamically typed where the type belongs to the value, not the variables
+
+
+Unit 3: Points to ponder
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Hector Barquero posted Feb 27, 2026 1:27 PM
+https://learning.athabascau.ca/d2l/le/18658/discussions/threads/337734/View
+
+This unit was a good read. I spent a lot of time between multiple books this unit (including a javascript one I read yearly; eloquent javascript). I found there was a lot of reading that I thought I knew in the c++ books, but then it became blurry as I applied it in programming practice questions and tests- mainly because the casting, conversion, implicit coercion and explicit casting/conversion. 
+
+C++ prefers very deliberate programmer directed type conversion, but unlike javascript, the coercion happens less frequently.
+
+javascript mutates the types more freely so coercion feels like something to always watch for, and programming explicit casting (conversion in js) is something normal.
+
+I'm not sure how often I'll need to in this course, but I'll remember to use static_cast<var> or various named casts in my c++ programs, since the last time I touched it  we used the more archaic int foo = (int)bar; ... a C style cast which doesn't seem to be used or popular in the books anymore.
 
 
 
@@ -562,16 +601,422 @@ Unit 3
 
 Practice problems
 ===================
-.. add leetcode problems, or unit problems?
+.. collection of only my 5 best from each unit to save space
 
-x
+.. tip::
+   Below are only five of my favourite problems I solved for each unit. A comprehensive problemset is solved over the course of COMP206 and you can view my answers at :doc: `Practice Problems` <PracticeProblems.rst>
 
 
-Program design
-===============
-.. draw.io files? sketches?
-.. dolphin.js is easier ... 
-.. logarithm, test case plan and any math sketches
+Unit 1 practice problems
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fizz Buzz (Easy)
+----------------------------------------
+**Return numbers as strings, replacing multiples of 3 and 5 with the required words.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       vector<string> fizzBuzz(int n) {
+           vector<string> answer;
+
+           for (int i = 1; i <= n; ++i) {
+               if (i % 15 == 0) {
+                   answer.push_back("FizzBuzz");
+               } else if (i % 3 == 0) {
+                   answer.push_back("Fizz");
+               } else if (i % 5 == 0) {
+                   answer.push_back("Buzz");
+               } else {
+                   answer.push_back(to_string(i));
+               }
+           }
+
+           return answer;
+       }
+   };
+
+Number of Steps to Reduce a Number to Zero (Easy)
+-------------------------------------------------
+**Count how many divisions and subtractions are required to reduce a number to zero.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int numberOfSteps(int num) {
+           int steps = 0;
+
+           while (num > 0) {
+               if (num % 2 == 0) {
+                   num /= 2;
+               } else {
+                   --num;
+               }
+
+               ++steps;
+           }
+
+           return steps;
+       }
+   };
+
+Richest Customer Wealth (Easy)
+----------------------------------------
+**Find the greatest sum among the rows of a two-dimensional integer array.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int maximumWealth(vector<vector<int>>& accounts) {
+           int maximum = 0;
+
+           for (const vector<int>& customer : accounts) {
+               int total = 0;
+
+               for (int account : customer) {
+                   total += account;
+               }
+
+               maximum = max(maximum, total);
+           }
+
+           return maximum;
+       }
+   };
+
+Valid Palindrome (Easy)
+----------------------------------------
+**Determine whether normalized text reads the same forward and backward.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       bool isPalindrome(string s) {
+           int left = 0;
+           int right = static_cast<int>(s.size()) - 1;
+
+           while (left < right) {
+               while (left < right && !isalnum(s[left])) {
+                   ++left;
+               }
+
+               while (left < right && !isalnum(s[right])) {
+                   --right;
+               }
+
+               if (tolower(s[left]) != tolower(s[right])) {
+                   return false;
+               }
+
+               ++left;
+               --right;
+           }
+
+           return true;
+       }
+   };
+
+Two Sum (Easy)
+----------------------------------------
+**Return the indexes of two array values whose sum equals the target.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       vector<int> twoSum(vector<int>& nums, int target) {
+           unordered_map<int, int> indexes;
+
+           for (int i = 0; i < nums.size(); ++i) {
+               int required = target - nums[i];
+
+               if (indexes.count(required)) {
+                   return {indexes[required], i};
+               }
+
+               indexes[nums[i]] = i;
+           }
+
+           return {};
+       }
+   };
+
+
+Unit 2 practice problems
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Final Value of Variable After Performing Operations (Easy)
+----------------------------------------------------------
+**Apply a sequence of increment and decrement operations to an integer variable.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int finalValueAfterOperations(vector<string>& operations) {
+           int value = 0;
+
+           for (const string& operation : operations) {
+               if (operation[1] == '+') {
+                   ++value;
+               } else {
+                   --value;
+               }
+           }
+
+           return value;
+       }
+   };
+
+Subtract the Product and Sum of Digits of an Integer (Easy)
+-----------------------------------------------------------
+**Return the product of an integer's digits minus their sum.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int subtractProductAndSum(int n) {
+           int product = 1;
+           int sum = 0;
+
+           while (n > 0) {
+               int digit = n % 10;
+               product *= digit;
+               sum += digit;
+               n /= 10;
+           }
+
+           return product - sum;
+       }
+   };
+
+Count the Digits That Divide a Number (Easy)
+--------------------------------------------
+**Count how many digits divide the original integer without a remainder.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int countDigits(int num) {
+           int count = 0;
+
+           for (int remaining = num; remaining > 0; remaining /= 10) {
+               int digit = remaining % 10;
+
+               if (digit != 0 && num % digit == 0) {
+                   ++count;
+               }
+           }
+
+           return count;
+       }
+   };
+
+Plus One (Easy)
+----------------------------------------
+**Increment a large integer represented as an array of decimal digits.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       vector<int> plusOne(vector<int>& digits) {
+           for (int i = static_cast<int>(digits.size()) - 1; i >= 0; --i) {
+               if (digits[i] < 9) {
+                   ++digits[i];
+                   return digits;
+               }
+
+               digits[i] = 0;
+           }
+
+           digits.insert(digits.begin(), 1);
+           return digits;
+       }
+   };
+
+Valid Anagram (Easy)
+----------------------------------------
+**Determine whether two strings contain identical character counts.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       bool isAnagram(string s, string t) {
+           if (s.size() != t.size()) {
+               return false;
+           }
+
+           array<int, 26> counts{};
+
+           for (char character : s) {
+               ++counts[character - 'a'];
+           }
+
+           for (char character : t) {
+               --counts[character - 'a'];
+           }
+
+           for (int count : counts) {
+               if (count != 0) {
+                   return false;
+               }
+           }
+
+           return true;
+       }
+   };
+
+
+Unit 3 practice problems
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fibonacci Number (Easy)
+----------------------------------------
+**Return the requested Fibonacci number using a function with a result.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int fib(int n) {
+           if (n < 2) {
+               return n;
+           }
+
+           int previous = 0;
+           int current = 1;
+
+           for (int i = 2; i <= n; ++i) {
+               int next = previous + current;
+               previous = current;
+               current = next;
+           }
+
+           return current;
+       }
+   };
+
+Sqrt(x) (Easy)
+----------------------------------------
+**Return the truncated integer square root of a non-negative integer.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int mySqrt(int x) {
+           int left = 0;
+           int right = x;
+           int result = 0;
+
+           while (left <= right) {
+               int middle = left + (right - left) / 2;
+               long long square = static_cast<long long>(middle) * middle;
+
+               if (square <= x) {
+                   result = middle;
+                   left = middle + 1;
+               } else {
+                   right = middle - 1;
+               }
+           }
+
+           return result;
+       }
+   };
+
+Power of Two (Easy)
+----------------------------------------
+**Determine whether an integer is an exact power of two.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       bool isPowerOfTwo(int n) {
+           if (n <= 0) {
+               return false;
+           }
+
+           while (n % 2 == 0) {
+               n /= 2;
+           }
+
+           return n == 1;
+       }
+   };
+
+Reverse Integer (Medium)
+----------------------------------------
+**Reverse an integer's digits while returning zero when the result would overflow.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       int reverse(int x) {
+           int result = 0;
+
+           while (x != 0) {
+               int digit = x % 10;
+               x /= 10;
+
+               if (result > INT_MAX / 10 ||
+                   (result == INT_MAX / 10 && digit > 7)) {
+                   return 0;
+               }
+
+               if (result < INT_MIN / 10 ||
+                   (result == INT_MIN / 10 && digit < -8)) {
+                   return 0;
+               }
+
+               result = result * 10 + digit;
+           }
+
+           return result;
+       }
+   };
+
+Pow(x, n) (Medium)
+----------------------------------------
+**Calculate a floating-point base raised to an integer exponent.**
+
+.. code-block:: cpp
+
+   class Solution {
+   public:
+       double myPow(double x, int n) {
+           long long exponent = n;
+
+           if (exponent < 0) {
+               x = 1.0 / x;
+               exponent = -exponent;
+           }
+
+           double result = 1.0;
+
+           while (exponent > 0) {
+               if (exponent % 2 == 1) {
+                   result *= x;
+               }
+
+               x *= x;
+               exponent /= 2;
+           }
+
+           return result;
+       }
+   };
+
 
 
 
@@ -586,3 +1031,5 @@ Sources and references
 3. Hansen, J. A. (2013). The Rook’s guide to C++. Rook’s Guide Press. https://rooksguide.org/
 
 4. Downey, A. B. (1999). Think C++ (Version 1.1.0). Green Tea Press. https://www.greenteapress.com/thinkcpp/
+
+5. leetcode.com. (n.d.). *LeetCode*. Retrieved Jan 2025 - Aug 2026, from https://leetcode.com/
