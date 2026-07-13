@@ -9,323 +9,347 @@
 \contentsline {section}{\numberline {2.2}Technical requirements}{3}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Test plan requirements}{4}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Assignment one journal}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Program design}{5}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Multiplication table}{5}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Convert temperature from F to C}{5}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Temperature conversion table}{6}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Interactive help system}{6}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Print all prime numbers (1 to 10000)}{6}{subsection.3.1.5}%
-\contentsline {section}{\numberline {3.2}Overview and reflections}{6}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Unit 1: Points to ponder}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Unit 2: Points to ponder}{6}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Unit 3: Points to ponder}{7}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Readings}{7}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Unit 1}{7}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Unit 2}{10}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Unit 3}{14}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Practice problems}{18}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Unit 1 practice problems}{18}{subsection.3.4.1}%
-\contentsline {subsubsection}{Fizz Buzz (Easy)}{18}{subsubsection*.3}%
-\contentsline {subsubsection}{Number of Steps to Reduce a Number to Zero (Easy)}{18}{subsubsection*.4}%
-\contentsline {subsubsection}{Richest Customer Wealth (Easy)}{19}{subsubsection*.5}%
-\contentsline {subsubsection}{Valid Palindrome (Easy)}{19}{subsubsection*.6}%
-\contentsline {subsubsection}{Two Sum (Easy)}{20}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {3.4.2}Unit 2 practice problems}{20}{subsection.3.4.2}%
-\contentsline {subsubsection}{Final Value of Variable After Performing Operations (Easy)}{20}{subsubsection*.8}%
-\contentsline {subsubsection}{Subtract the Product and Sum of Digits of an Integer (Easy)}{21}{subsubsection*.9}%
-\contentsline {subsubsection}{Count the Digits That Divide a Number (Easy)}{21}{subsubsection*.10}%
-\contentsline {subsubsection}{Plus One (Easy)}{22}{subsubsection*.11}%
-\contentsline {subsubsection}{Valid Anagram (Easy)}{22}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {3.4.3}Unit 3 practice problems}{23}{subsection.3.4.3}%
-\contentsline {subsubsection}{Fibonacci Number (Easy)}{23}{subsubsection*.13}%
-\contentsline {subsubsection}{Sqrt(x) (Easy)}{23}{subsubsection*.14}%
-\contentsline {subsubsection}{Power of Two (Easy)}{24}{subsubsection*.15}%
-\contentsline {subsubsection}{Reverse Integer (Medium)}{24}{subsubsection*.16}%
-\contentsline {subsubsection}{Pow(x, n) (Medium)}{24}{subsubsection*.17}%
-\contentsline {section}{\numberline {3.5}Sources and references}{25}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Assignment two journal}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Assignment three journal}{29}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Assignment four journal}{31}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Practice problems}{33}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Unit 1 practice problems}{33}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Richest Customer Wealth (Easy)}{33}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Two Sum (Easy)}{33}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Fibonacci Number (Easy)}{34}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Valid Anagram (Easy)}{34}{subsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.1.5}Number of Steps to Reduce a Number to Zero (Easy)}{34}{subsection.7.1.5}%
-\contentsline {subsection}{\numberline {7.1.6}Valid Palindrome (Easy)}{35}{subsection.7.1.6}%
-\contentsline {subsection}{\numberline {7.1.7}Plus One (Easy)}{35}{subsection.7.1.7}%
-\contentsline {subsection}{\numberline {7.1.8}Count the Digits That Divide a Number (Easy)}{35}{subsection.7.1.8}%
-\contentsline {subsection}{\numberline {7.1.9}Final Value of Variable After Performing Operations (Easy)}{36}{subsection.7.1.9}%
-\contentsline {subsection}{\numberline {7.1.10}Fizz Buzz (Easy)}{36}{subsection.7.1.10}%
-\contentsline {subsection}{\numberline {7.1.11}Missing Number (Easy)}{36}{subsection.7.1.11}%
-\contentsline {subsection}{\numberline {7.1.12}Plus One (Easy)}{37}{subsection.7.1.12}%
-\contentsline {subsection}{\numberline {7.1.13}First Unique Character in a String (Easy)}{37}{subsection.7.1.13}%
-\contentsline {subsection}{\numberline {7.1.14}Ugly Number (Easy)}{37}{subsection.7.1.14}%
-\contentsline {subsection}{\numberline {7.1.15}Number of Steps to Reduce a Number to Zero (Easy)}{38}{subsection.7.1.15}%
-\contentsline {subsection}{\numberline {7.1.16}Remove Duplicates from Sorted Array (Easy)}{38}{subsection.7.1.16}%
-\contentsline {subsection}{\numberline {7.1.17}Count the Digits That Divide a Number (Easy)}{38}{subsection.7.1.17}%
-\contentsline {subsection}{\numberline {7.1.18}Happy Number (Easy)}{39}{subsection.7.1.18}%
-\contentsline {subsection}{\numberline {7.1.19}Remove Element (Easy)}{39}{subsection.7.1.19}%
-\contentsline {subsection}{\numberline {7.1.20}Single Number (Easy)}{39}{subsection.7.1.20}%
-\contentsline {subsection}{\numberline {7.1.21}Concatenation of Array (Easy)}{40}{subsection.7.1.21}%
-\contentsline {subsection}{\numberline {7.1.22}Climbing Stairs (Easy)}{40}{subsection.7.1.22}%
-\contentsline {subsection}{\numberline {7.1.23}Find the Index of the First Occurrence in a String (Easy)}{40}{subsection.7.1.23}%
-\contentsline {subsection}{\numberline {7.1.24}Happy Number (Easy)}{41}{subsection.7.1.24}%
-\contentsline {subsection}{\numberline {7.1.25}Add Digits (Easy)}{41}{subsection.7.1.25}%
-\contentsline {subsection}{\numberline {7.1.26}Merge Sorted Array (Easy)}{41}{subsection.7.1.26}%
-\contentsline {subsection}{\numberline {7.1.27}Ransom Note (Easy)}{42}{subsection.7.1.27}%
-\contentsline {subsection}{\numberline {7.1.28}Convert the Temperature (Easy)}{42}{subsection.7.1.28}%
-\contentsline {subsection}{\numberline {7.1.29}Add Two Integers (Easy)}{42}{subsection.7.1.29}%
-\contentsline {subsection}{\numberline {7.1.30}Remove Element (Easy)}{42}{subsection.7.1.30}%
-\contentsline {subsection}{\numberline {7.1.31}Build Array from Permutation (Easy)}{43}{subsection.7.1.31}%
-\contentsline {subsection}{\numberline {7.1.32}Roman to Integer (Easy)}{43}{subsection.7.1.32}%
-\contentsline {subsection}{\numberline {7.1.33}Two Sum (Easy)}{43}{subsection.7.1.33}%
-\contentsline {subsection}{\numberline {7.1.34}Climbing Stairs (Easy)}{44}{subsection.7.1.34}%
-\contentsline {subsection}{\numberline {7.1.35}Palindrome Number (Easy)}{44}{subsection.7.1.35}%
-\contentsline {subsection}{\numberline {7.1.36}Count the Digits That Divide a Number (Easy)}{44}{subsection.7.1.36}%
-\contentsline {subsection}{\numberline {7.1.37}Climbing Stairs (Easy)}{45}{subsection.7.1.37}%
-\contentsline {subsection}{\numberline {7.1.38}Number of Steps to Reduce a Number to Zero (Easy)}{45}{subsection.7.1.38}%
-\contentsline {subsection}{\numberline {7.1.39}Concatenation of Array (Easy)}{45}{subsection.7.1.39}%
-\contentsline {subsection}{\numberline {7.1.40}Final Value of Variable After Performing Operations (Easy)}{46}{subsection.7.1.40}%
-\contentsline {subsection}{\numberline {7.1.41}N\sphinxhyphen {}th Tribonacci Number (Easy)}{46}{subsection.7.1.41}%
-\contentsline {subsection}{\numberline {7.1.42}To Lower Case (Easy)}{46}{subsection.7.1.42}%
-\contentsline {subsection}{\numberline {7.1.43}Length of Last Word (Easy)}{47}{subsection.7.1.43}%
-\contentsline {subsection}{\numberline {7.1.44}Number of Good Pairs (Easy)}{47}{subsection.7.1.44}%
-\contentsline {subsection}{\numberline {7.1.45}Intersection of Two Arrays (Easy)}{47}{subsection.7.1.45}%
-\contentsline {subsection}{\numberline {7.1.46}Running Sum of 1d Array (Easy)}{48}{subsection.7.1.46}%
-\contentsline {subsection}{\numberline {7.1.47}Palindrome Number (Easy)}{48}{subsection.7.1.47}%
-\contentsline {subsection}{\numberline {7.1.48}Ugly Number (Easy)}{48}{subsection.7.1.48}%
-\contentsline {subsection}{\numberline {7.1.49}Shuffle the Array (Easy)}{49}{subsection.7.1.49}%
-\contentsline {subsection}{\numberline {7.1.50}Concatenation of Array (Easy)}{49}{subsection.7.1.50}%
-\contentsline {subsection}{\numberline {7.1.51}Score of a String (Easy)}{49}{subsection.7.1.51}%
-\contentsline {subsection}{\numberline {7.1.52}Climbing Stairs (Easy)}{49}{subsection.7.1.52}%
-\contentsline {subsection}{\numberline {7.1.53}Valid Anagram (Easy)}{50}{subsection.7.1.53}%
-\contentsline {subsection}{\numberline {7.1.54}Sqrt(x) (Easy)}{50}{subsection.7.1.54}%
-\contentsline {section}{\numberline {7.2}Unit 2 practice problems}{51}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Final Value of Variable After Performing Operations (Easy)}{51}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Power of Two (Easy)}{51}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Sqrt(x) (Easy)}{51}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Convert the Temperature (Easy)}{52}{subsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.2.5}Jewels and Stones (Easy)}{52}{subsection.7.2.5}%
-\contentsline {subsection}{\numberline {7.2.6}Contains Duplicate (Easy)}{52}{subsection.7.2.6}%
-\contentsline {subsection}{\numberline {7.2.7}Length of Last Word (Easy)}{52}{subsection.7.2.7}%
-\contentsline {subsection}{\numberline {7.2.8}Add Two Integers (Easy)}{53}{subsection.7.2.8}%
-\contentsline {subsection}{\numberline {7.2.9}Single Number (Easy)}{53}{subsection.7.2.9}%
-\contentsline {subsection}{\numberline {7.2.10}Number of Good Pairs (Easy)}{53}{subsection.7.2.10}%
-\contentsline {subsection}{\numberline {7.2.11}Number of Steps to Reduce a Number to Zero (Easy)}{54}{subsection.7.2.11}%
-\contentsline {subsection}{\numberline {7.2.12}Sqrt(x) (Easy)}{54}{subsection.7.2.12}%
-\contentsline {subsection}{\numberline {7.2.13}Final Value of Variable After Performing Operations (Easy)}{54}{subsection.7.2.13}%
-\contentsline {subsection}{\numberline {7.2.14}To Lower Case (Easy)}{55}{subsection.7.2.14}%
-\contentsline {subsection}{\numberline {7.2.15}Fibonacci Number (Easy)}{55}{subsection.7.2.15}%
-\contentsline {subsection}{\numberline {7.2.16}Smallest Even Multiple (Easy)}{55}{subsection.7.2.16}%
-\contentsline {subsection}{\numberline {7.2.17}Ugly Number (Easy)}{55}{subsection.7.2.17}%
-\contentsline {subsection}{\numberline {7.2.18}Power of Two (Easy)}{56}{subsection.7.2.18}%
-\contentsline {subsection}{\numberline {7.2.19}Plus One (Easy)}{56}{subsection.7.2.19}%
-\contentsline {subsection}{\numberline {7.2.20}Missing Number (Easy)}{56}{subsection.7.2.20}%
-\contentsline {subsection}{\numberline {7.2.21}Running Sum of 1d Array (Easy)}{57}{subsection.7.2.21}%
-\contentsline {subsection}{\numberline {7.2.22}Shuffle the Array (Easy)}{57}{subsection.7.2.22}%
-\contentsline {subsection}{\numberline {7.2.23}Two Sum (Easy)}{57}{subsection.7.2.23}%
-\contentsline {subsection}{\numberline {7.2.24}Number of Good Pairs (Easy)}{58}{subsection.7.2.24}%
-\contentsline {subsection}{\numberline {7.2.25}Count the Digits That Divide a Number (Easy)}{58}{subsection.7.2.25}%
-\contentsline {subsection}{\numberline {7.2.26}Subtract the Product and Sum of Digits of an Integer (Easy)}{58}{subsection.7.2.26}%
-\contentsline {subsection}{\numberline {7.2.27}Contains Duplicate (Easy)}{59}{subsection.7.2.27}%
-\contentsline {subsection}{\numberline {7.2.28}Richest Customer Wealth (Easy)}{59}{subsection.7.2.28}%
-\contentsline {subsection}{\numberline {7.2.29}Convert the Temperature (Easy)}{59}{subsection.7.2.29}%
-\contentsline {subsection}{\numberline {7.2.30}Fibonacci Number (Easy)}{60}{subsection.7.2.30}%
-\contentsline {subsection}{\numberline {7.2.31}Roman to Integer (Easy)}{60}{subsection.7.2.31}%
-\contentsline {subsection}{\numberline {7.2.32}Convert the Temperature (Easy)}{60}{subsection.7.2.32}%
-\contentsline {subsection}{\numberline {7.2.33}Richest Customer Wealth (Easy)}{61}{subsection.7.2.33}%
-\contentsline {subsection}{\numberline {7.2.34}Intersection of Two Arrays (Easy)}{61}{subsection.7.2.34}%
-\contentsline {subsection}{\numberline {7.2.35}Climbing Stairs (Easy)}{61}{subsection.7.2.35}%
-\contentsline {subsection}{\numberline {7.2.36}Richest Customer Wealth (Easy)}{62}{subsection.7.2.36}%
-\contentsline {subsection}{\numberline {7.2.37}Roman to Integer (Easy)}{62}{subsection.7.2.37}%
-\contentsline {subsection}{\numberline {7.2.38}Intersection of Two Arrays (Easy)}{62}{subsection.7.2.38}%
-\contentsline {subsection}{\numberline {7.2.39}Reverse String (Easy)}{63}{subsection.7.2.39}%
-\contentsline {subsection}{\numberline {7.2.40}Power of Two (Easy)}{63}{subsection.7.2.40}%
-\contentsline {subsection}{\numberline {7.2.41}Ransom Note (Easy)}{63}{subsection.7.2.41}%
-\contentsline {subsection}{\numberline {7.2.42}Intersection of Two Arrays (Easy)}{63}{subsection.7.2.42}%
-\contentsline {subsection}{\numberline {7.2.43}Roman to Integer (Easy)}{64}{subsection.7.2.43}%
-\contentsline {subsection}{\numberline {7.2.44}Number of Steps to Reduce a Number to Zero (Easy)}{64}{subsection.7.2.44}%
-\contentsline {subsection}{\numberline {7.2.45}Build Array from Permutation (Easy)}{64}{subsection.7.2.45}%
-\contentsline {subsection}{\numberline {7.2.46}Remove Duplicates from Sorted Array (Easy)}{65}{subsection.7.2.46}%
-\contentsline {subsection}{\numberline {7.2.47}Climbing Stairs (Easy)}{65}{subsection.7.2.47}%
-\contentsline {subsection}{\numberline {7.2.48}Concatenation of Array (Easy)}{65}{subsection.7.2.48}%
-\contentsline {subsection}{\numberline {7.2.49}Jewels and Stones (Easy)}{66}{subsection.7.2.49}%
-\contentsline {subsection}{\numberline {7.2.50}Number of Steps to Reduce a Number to Zero (Easy)}{66}{subsection.7.2.50}%
-\contentsline {subsection}{\numberline {7.2.51}Plus One (Easy)}{66}{subsection.7.2.51}%
-\contentsline {subsection}{\numberline {7.2.52}Palindrome Number (Easy)}{67}{subsection.7.2.52}%
-\contentsline {subsection}{\numberline {7.2.53}Count the Digits That Divide a Number (Easy)}{67}{subsection.7.2.53}%
-\contentsline {subsection}{\numberline {7.2.54}Shuffle the Array (Easy)}{67}{subsection.7.2.54}%
-\contentsline {subsection}{\numberline {7.2.55}Subtract the Product and Sum of Digits of an Integer (Easy)}{68}{subsection.7.2.55}%
-\contentsline {subsection}{\numberline {7.2.56}Length of Last Word (Easy)}{68}{subsection.7.2.56}%
-\contentsline {subsection}{\numberline {7.2.57}Valid Palindrome (Easy)}{68}{subsection.7.2.57}%
-\contentsline {subsection}{\numberline {7.2.58}Find the Index of the First Occurrence in a String (Easy)}{69}{subsection.7.2.58}%
-\contentsline {subsection}{\numberline {7.2.59}Add Digits (Easy)}{69}{subsection.7.2.59}%
-\contentsline {subsection}{\numberline {7.2.60}Smallest Even Multiple (Easy)}{69}{subsection.7.2.60}%
-\contentsline {subsection}{\numberline {7.2.61}Score of a String (Easy)}{69}{subsection.7.2.61}%
-\contentsline {subsection}{\numberline {7.2.62}Fibonacci Number (Easy)}{70}{subsection.7.2.62}%
-\contentsline {subsection}{\numberline {7.2.63}Number of Good Pairs (Easy)}{70}{subsection.7.2.63}%
-\contentsline {subsection}{\numberline {7.2.64}Single Number (Easy)}{70}{subsection.7.2.64}%
-\contentsline {subsection}{\numberline {7.2.65}Merge Strings Alternately (Easy)}{71}{subsection.7.2.65}%
-\contentsline {subsection}{\numberline {7.2.66}Valid Perfect Square (Easy)}{71}{subsection.7.2.66}%
-\contentsline {subsection}{\numberline {7.2.67}Build Array from Permutation (Easy)}{71}{subsection.7.2.67}%
-\contentsline {subsection}{\numberline {7.2.68}Jewels and Stones (Easy)}{72}{subsection.7.2.68}%
-\contentsline {subsection}{\numberline {7.2.69}Shuffle the Array (Easy)}{72}{subsection.7.2.69}%
-\contentsline {subsection}{\numberline {7.2.70}Roman to Integer (Easy)}{72}{subsection.7.2.70}%
-\contentsline {subsection}{\numberline {7.2.71}Add Two Integers (Easy)}{73}{subsection.7.2.71}%
-\contentsline {subsection}{\numberline {7.2.72}N\sphinxhyphen {}th Tribonacci Number (Easy)}{73}{subsection.7.2.72}%
-\contentsline {subsection}{\numberline {7.2.73}Valid Palindrome (Easy)}{73}{subsection.7.2.73}%
-\contentsline {subsection}{\numberline {7.2.74}Subtract the Product and Sum of Digits of an Integer (Easy)}{74}{subsection.7.2.74}%
-\contentsline {subsection}{\numberline {7.2.75}Valid Palindrome (Easy)}{74}{subsection.7.2.75}%
-\contentsline {subsection}{\numberline {7.2.76}N\sphinxhyphen {}th Tribonacci Number (Easy)}{75}{subsection.7.2.76}%
-\contentsline {subsection}{\numberline {7.2.77}Number of Steps to Reduce a Number to Zero (Easy)}{75}{subsection.7.2.77}%
-\contentsline {subsection}{\numberline {7.2.78}Final Value of Variable After Performing Operations (Easy)}{75}{subsection.7.2.78}%
-\contentsline {subsection}{\numberline {7.2.79}Number of Good Pairs (Easy)}{76}{subsection.7.2.79}%
-\contentsline {subsection}{\numberline {7.2.80}Happy Number (Easy)}{76}{subsection.7.2.80}%
-\contentsline {subsection}{\numberline {7.2.81}Majority Element (Easy)}{76}{subsection.7.2.81}%
-\contentsline {subsection}{\numberline {7.2.82}N\sphinxhyphen {}th Tribonacci Number (Easy)}{77}{subsection.7.2.82}%
-\contentsline {subsection}{\numberline {7.2.83}Merge Sorted Array (Easy)}{77}{subsection.7.2.83}%
-\contentsline {subsection}{\numberline {7.2.84}Move Zeroes (Easy)}{77}{subsection.7.2.84}%
-\contentsline {subsection}{\numberline {7.2.85}Richest Customer Wealth (Easy)}{78}{subsection.7.2.85}%
-\contentsline {subsection}{\numberline {7.2.86}Length of Last Word (Easy)}{78}{subsection.7.2.86}%
-\contentsline {subsection}{\numberline {7.2.87}Majority Element (Easy)}{78}{subsection.7.2.87}%
-\contentsline {subsection}{\numberline {7.2.88}Valid Perfect Square (Easy)}{79}{subsection.7.2.88}%
-\contentsline {subsection}{\numberline {7.2.89}N\sphinxhyphen {}th Tribonacci Number (Easy)}{79}{subsection.7.2.89}%
-\contentsline {subsection}{\numberline {7.2.90}Count the Digits That Divide a Number (Easy)}{80}{subsection.7.2.90}%
-\contentsline {subsection}{\numberline {7.2.91}Happy Number (Easy)}{80}{subsection.7.2.91}%
-\contentsline {subsection}{\numberline {7.2.92}Number of Good Pairs (Easy)}{80}{subsection.7.2.92}%
-\contentsline {subsection}{\numberline {7.2.93}Missing Number (Easy)}{81}{subsection.7.2.93}%
-\contentsline {subsection}{\numberline {7.2.94}Length of Last Word (Easy)}{81}{subsection.7.2.94}%
-\contentsline {subsection}{\numberline {7.2.95}Palindrome Number (Easy)}{81}{subsection.7.2.95}%
-\contentsline {subsection}{\numberline {7.2.96}Running Sum of 1d Array (Easy)}{82}{subsection.7.2.96}%
-\contentsline {subsection}{\numberline {7.2.97}Build Array from Permutation (Easy)}{82}{subsection.7.2.97}%
-\contentsline {section}{\numberline {7.3}Unit 3 practice problems}{82}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Score of a String (Easy)}{82}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Sqrt(x) (Easy)}{83}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Convert the Temperature (Easy)}{83}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Find the Index of the First Occurrence in a String (Easy)}{83}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Roman to Integer (Easy)}{84}{subsection.7.3.5}%
-\contentsline {subsection}{\numberline {7.3.6}Jewels and Stones (Easy)}{84}{subsection.7.3.6}%
-\contentsline {subsection}{\numberline {7.3.7}Valid Perfect Square (Easy)}{84}{subsection.7.3.7}%
-\contentsline {subsection}{\numberline {7.3.8}Intersection of Two Arrays (Easy)}{85}{subsection.7.3.8}%
-\contentsline {subsection}{\numberline {7.3.9}Score of a String (Easy)}{85}{subsection.7.3.9}%
-\contentsline {subsection}{\numberline {7.3.10}Majority Element (Easy)}{85}{subsection.7.3.10}%
-\contentsline {subsection}{\numberline {7.3.11}Concatenation of Array (Easy)}{86}{subsection.7.3.11}%
-\contentsline {subsection}{\numberline {7.3.12}Shuffle the Array (Easy)}{86}{subsection.7.3.12}%
-\contentsline {subsection}{\numberline {7.3.13}Add Digits (Easy)}{86}{subsection.7.3.13}%
-\contentsline {subsection}{\numberline {7.3.14}Number of Steps to Reduce a Number to Zero (Easy)}{86}{subsection.7.3.14}%
-\contentsline {subsection}{\numberline {7.3.15}Find the Index of the First Occurrence in a String (Easy)}{87}{subsection.7.3.15}%
-\contentsline {subsection}{\numberline {7.3.16}Two Sum (Easy)}{87}{subsection.7.3.16}%
-\contentsline {subsection}{\numberline {7.3.17}Move Zeroes (Easy)}{87}{subsection.7.3.17}%
-\contentsline {subsection}{\numberline {7.3.18}Concatenation of Array (Easy)}{88}{subsection.7.3.18}%
-\contentsline {subsection}{\numberline {7.3.19}First Unique Character in a String (Easy)}{88}{subsection.7.3.19}%
-\contentsline {subsection}{\numberline {7.3.20}Reverse String (Easy)}{88}{subsection.7.3.20}%
-\contentsline {subsection}{\numberline {7.3.21}Richest Customer Wealth (Easy)}{88}{subsection.7.3.21}%
-\contentsline {subsection}{\numberline {7.3.22}Two Sum (Easy)}{89}{subsection.7.3.22}%
-\contentsline {subsection}{\numberline {7.3.23}Find the Index of the First Occurrence in a String (Easy)}{89}{subsection.7.3.23}%
-\contentsline {subsection}{\numberline {7.3.24}Valid Perfect Square (Easy)}{89}{subsection.7.3.24}%
-\contentsline {subsection}{\numberline {7.3.25}Palindrome Number (Easy)}{90}{subsection.7.3.25}%
-\contentsline {subsection}{\numberline {7.3.26}Merge Strings Alternately (Easy)}{90}{subsection.7.3.26}%
-\contentsline {subsection}{\numberline {7.3.27}Jewels and Stones (Easy)}{90}{subsection.7.3.27}%
-\contentsline {subsection}{\numberline {7.3.28}Richest Customer Wealth (Easy)}{91}{subsection.7.3.28}%
-\contentsline {subsection}{\numberline {7.3.29}Convert the Temperature (Easy)}{91}{subsection.7.3.29}%
-\contentsline {subsection}{\numberline {7.3.30}Shuffle the Array (Easy)}{91}{subsection.7.3.30}%
-\contentsline {subsection}{\numberline {7.3.31}To Lower Case (Easy)}{92}{subsection.7.3.31}%
-\contentsline {subsection}{\numberline {7.3.32}Final Value of Variable After Performing Operations (Easy)}{92}{subsection.7.3.32}%
-\contentsline {subsection}{\numberline {7.3.33}Plus One (Easy)}{92}{subsection.7.3.33}%
-\contentsline {subsection}{\numberline {7.3.34}Valid Palindrome (Easy)}{93}{subsection.7.3.34}%
-\contentsline {subsection}{\numberline {7.3.35}Smallest Even Multiple (Easy)}{93}{subsection.7.3.35}%
-\contentsline {subsection}{\numberline {7.3.36}Valid Palindrome (Easy)}{93}{subsection.7.3.36}%
-\contentsline {subsection}{\numberline {7.3.37}Build Array from Permutation (Easy)}{94}{subsection.7.3.37}%
-\contentsline {subsection}{\numberline {7.3.38}Climbing Stairs (Easy)}{94}{subsection.7.3.38}%
-\contentsline {subsection}{\numberline {7.3.39}To Lower Case (Easy)}{94}{subsection.7.3.39}%
-\contentsline {subsection}{\numberline {7.3.40}Fibonacci Number (Easy)}{95}{subsection.7.3.40}%
-\contentsline {subsection}{\numberline {7.3.41}Add Digits (Easy)}{95}{subsection.7.3.41}%
-\contentsline {subsection}{\numberline {7.3.42}Add Digits (Easy)}{95}{subsection.7.3.42}%
-\contentsline {subsection}{\numberline {7.3.43}Ugly Number (Easy)}{95}{subsection.7.3.43}%
-\contentsline {subsection}{\numberline {7.3.44}Single Number (Easy)}{96}{subsection.7.3.44}%
-\contentsline {subsection}{\numberline {7.3.45}Running Sum of 1d Array (Easy)}{96}{subsection.7.3.45}%
-\contentsline {subsection}{\numberline {7.3.46}Happy Number (Easy)}{96}{subsection.7.3.46}%
-\contentsline {subsection}{\numberline {7.3.47}Climbing Stairs (Easy)}{97}{subsection.7.3.47}%
-\contentsline {subsection}{\numberline {7.3.48}Concatenation of Array (Easy)}{97}{subsection.7.3.48}%
-\contentsline {subsection}{\numberline {7.3.49}Intersection of Two Arrays (Easy)}{97}{subsection.7.3.49}%
-\contentsline {subsection}{\numberline {7.3.50}Reverse String (Easy)}{98}{subsection.7.3.50}%
-\contentsline {subsection}{\numberline {7.3.51}Number of Steps to Reduce a Number to Zero (Easy)}{98}{subsection.7.3.51}%
-\contentsline {subsection}{\numberline {7.3.52}Valid Anagram (Easy)}{98}{subsection.7.3.52}%
-\contentsline {subsection}{\numberline {7.3.53}Majority Element (Easy)}{99}{subsection.7.3.53}%
-\contentsline {subsection}{\numberline {7.3.54}Convert the Temperature (Easy)}{99}{subsection.7.3.54}%
-\contentsline {subsection}{\numberline {7.3.55}Add Two Integers (Easy)}{99}{subsection.7.3.55}%
-\contentsline {subsection}{\numberline {7.3.56}Valid Anagram (Easy)}{99}{subsection.7.3.56}%
-\contentsline {subsection}{\numberline {7.3.57}Length of Last Word (Easy)}{100}{subsection.7.3.57}%
-\contentsline {subsection}{\numberline {7.3.58}Roman to Integer (Easy)}{100}{subsection.7.3.58}%
-\contentsline {subsection}{\numberline {7.3.59}Score of a String (Easy)}{100}{subsection.7.3.59}%
-\contentsline {subsection}{\numberline {7.3.60}Ugly Number (Easy)}{101}{subsection.7.3.60}%
-\contentsline {subsection}{\numberline {7.3.61}Convert the Temperature (Easy)}{101}{subsection.7.3.61}%
-\contentsline {subsection}{\numberline {7.3.62}Add Two Integers (Easy)}{101}{subsection.7.3.62}%
-\contentsline {subsection}{\numberline {7.3.63}Power of Two (Easy)}{101}{subsection.7.3.63}%
-\contentsline {subsection}{\numberline {7.3.64}Contains Duplicate (Easy)}{102}{subsection.7.3.64}%
-\contentsline {subsection}{\numberline {7.3.65}Palindrome Number (Easy)}{102}{subsection.7.3.65}%
-\contentsline {subsection}{\numberline {7.3.66}Shuffle the Array (Easy)}{102}{subsection.7.3.66}%
-\contentsline {subsection}{\numberline {7.3.67}Concatenation of Array (Easy)}{103}{subsection.7.3.67}%
-\contentsline {subsection}{\numberline {7.3.68}Sqrt(x) (Easy)}{103}{subsection.7.3.68}%
-\contentsline {subsection}{\numberline {7.3.69}Jewels and Stones (Easy)}{103}{subsection.7.3.69}%
-\contentsline {subsection}{\numberline {7.3.70}Concatenation of Array (Easy)}{103}{subsection.7.3.70}%
-\contentsline {subsection}{\numberline {7.3.71}Climbing Stairs (Easy)}{104}{subsection.7.3.71}%
-\contentsline {subsection}{\numberline {7.3.72}Ugly Number (Easy)}{104}{subsection.7.3.72}%
-\contentsline {subsection}{\numberline {7.3.73}To Lower Case (Easy)}{104}{subsection.7.3.73}%
-\contentsline {subsection}{\numberline {7.3.74}Ugly Number (Easy)}{105}{subsection.7.3.74}%
-\contentsline {subsection}{\numberline {7.3.75}Ransom Note (Easy)}{105}{subsection.7.3.75}%
-\contentsline {subsection}{\numberline {7.3.76}Valid Palindrome (Easy)}{105}{subsection.7.3.76}%
-\contentsline {subsection}{\numberline {7.3.77}Roman to Integer (Easy)}{106}{subsection.7.3.77}%
-\contentsline {subsection}{\numberline {7.3.78}Concatenation of Array (Easy)}{106}{subsection.7.3.78}%
-\contentsline {subsection}{\numberline {7.3.79}First Unique Character in a String (Easy)}{106}{subsection.7.3.79}%
-\contentsline {subsection}{\numberline {7.3.80}Concatenation of Array (Easy)}{107}{subsection.7.3.80}%
-\contentsline {subsection}{\numberline {7.3.81}Reference}{107}{subsection.7.3.81}%
-\contentsline {chapter}{\numberline {8}Think C++}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Chapter synopsis and notes}{109}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}The way of the program}{109}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Variables and types}{109}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Function}{110}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Conditionals and recursion}{110}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}Fruitful functions}{110}{subsection.8.1.5}%
-\contentsline {subsection}{\numberline {8.1.6}Iteration}{110}{subsection.8.1.6}%
-\contentsline {subsection}{\numberline {8.1.7}Strings and things}{111}{subsection.8.1.7}%
-\contentsline {subsection}{\numberline {8.1.8}Structures}{111}{subsection.8.1.8}%
-\contentsline {subsection}{\numberline {8.1.9}More structures}{111}{subsection.8.1.9}%
-\contentsline {subsection}{\numberline {8.1.10}Vectors}{111}{subsection.8.1.10}%
-\contentsline {subsection}{\numberline {8.1.11}Member functions}{112}{subsection.8.1.11}%
-\contentsline {subsection}{\numberline {8.1.12}Vectors of Objects}{112}{subsection.8.1.12}%
-\contentsline {subsection}{\numberline {8.1.13}Objects of Vectors}{112}{subsection.8.1.13}%
-\contentsline {subsection}{\numberline {8.1.14}Classes and invariants}{112}{subsection.8.1.14}%
-\contentsline {subsection}{\numberline {8.1.15}File Input/Output and apmatrixes}{113}{subsection.8.1.15}%
-\contentsline {subsection}{\numberline {8.1.16}Appendix: AP class reference}{113}{subsection.8.1.16}%
-\contentsline {chapter}{\numberline {9}Rooks guide to C++}{115}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Chapter synopsis and notes}{115}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}History}{115}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Variables}{115}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Literals and constants}{115}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Assignments}{116}{subsection.9.1.4}%
-\contentsline {subsection}{\numberline {9.1.5}Output}{116}{subsection.9.1.5}%
-\contentsline {subsection}{\numberline {9.1.6}Input}{116}{subsection.9.1.6}%
-\contentsline {subsection}{\numberline {9.1.7}Arithmetic}{116}{subsection.9.1.7}%
-\contentsline {subsection}{\numberline {9.1.8}Comments}{116}{subsection.9.1.8}%
-\contentsline {subsection}{\numberline {9.1.9}Data types and conversion}{116}{subsection.9.1.9}%
-\contentsline {subsection}{\numberline {9.1.10}Conditionals}{117}{subsection.9.1.10}%
-\contentsline {subsection}{\numberline {9.1.11}Strings}{117}{subsection.9.1.11}%
-\contentsline {subsection}{\numberline {9.1.12}Loops}{117}{subsection.9.1.12}%
-\contentsline {subsection}{\numberline {9.1.13}Arrays}{117}{subsection.9.1.13}%
-\contentsline {subsection}{\numberline {9.1.14}Blocks, functions, and scope}{117}{subsection.9.1.14}%
-\contentsline {subsection}{\numberline {9.1.15}Problem solving \& troubleshooting}{118}{subsection.9.1.15}%
-\contentsline {subsection}{\numberline {9.1.16}The preprocessor}{118}{subsection.9.1.16}%
-\contentsline {subsection}{\numberline {9.1.17}Advanced arithmetic}{118}{subsection.9.1.17}%
-\contentsline {subsection}{\numberline {9.1.18}File I/O}{118}{subsection.9.1.18}%
-\contentsline {subsection}{\numberline {9.1.19}Pointers}{118}{subsection.9.1.19}%
-\contentsline {subsection}{\numberline {9.1.20}Dynamic data}{118}{subsection.9.1.20}%
-\contentsline {subsection}{\numberline {9.1.21}Classes and abstraction}{119}{subsection.9.1.21}%
-\contentsline {subsection}{\numberline {9.1.22}Separate compilation}{119}{subsection.9.1.22}%
-\contentsline {subsection}{\numberline {9.1.23}STL}{119}{subsection.9.1.23}%
-\contentsline {chapter}{\numberline {10}Programming fundamentals}{121}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Synopsis}{121}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Interesting notes}{121}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Definitions}{121}{section.10.3}%
+\contentsline {section}{\numberline {3.1}Program design}{6}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Multiplication table}{8}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Convert temperature from F to C}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Temperature conversion table}{9}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Interactive help system}{9}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Print all prime numbers (1 to 10000)}{9}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Overview and reflections}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Unit 1: Points to ponder}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Unit 2: Points to ponder}{9}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Unit 3: Points to ponder}{10}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Readings}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Unit 1}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Unit 2}{13}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Unit 3}{17}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Practice problems}{21}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Unit 1 practice problems}{21}{subsection.3.4.1}%
+\contentsline {subsubsection}{Fizz Buzz (Easy)}{21}{subsubsection*.3}%
+\contentsline {subsubsection}{Number of Steps to Reduce a Number to Zero (Easy)}{21}{subsubsection*.4}%
+\contentsline {subsubsection}{Richest Customer Wealth (Easy)}{22}{subsubsection*.5}%
+\contentsline {subsubsection}{Valid Palindrome (Easy)}{22}{subsubsection*.6}%
+\contentsline {subsubsection}{Two Sum (Easy)}{23}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {3.4.2}Unit 2 practice problems}{23}{subsection.3.4.2}%
+\contentsline {subsubsection}{Final Value of Variable After Performing Operations (Easy)}{23}{subsubsection*.8}%
+\contentsline {subsubsection}{Subtract the Product and Sum of Digits of an Integer (Easy)}{24}{subsubsection*.9}%
+\contentsline {subsubsection}{Count the Digits That Divide a Number (Easy)}{24}{subsubsection*.10}%
+\contentsline {subsubsection}{Plus One (Easy)}{25}{subsubsection*.11}%
+\contentsline {subsubsection}{Valid Anagram (Easy)}{25}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {3.4.3}Unit 3 practice problems}{26}{subsection.3.4.3}%
+\contentsline {subsubsection}{Fibonacci Number (Easy)}{26}{subsubsection*.13}%
+\contentsline {subsubsection}{Sqrt(x) (Easy)}{26}{subsubsection*.14}%
+\contentsline {subsubsection}{Power of Two (Easy)}{27}{subsubsection*.15}%
+\contentsline {subsubsection}{Reverse Integer (Medium)}{27}{subsubsection*.16}%
+\contentsline {subsubsection}{Pow(x, n) (Medium)}{27}{subsubsection*.17}%
+\contentsline {section}{\numberline {3.5}Sources and references}{28}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Assignment two journal}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Assignment three journal}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Assignment four journal}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Practice problems}{35}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Unit 1 practice problems}{35}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Richest Customer Wealth (Easy)}{35}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Two Sum (Easy)}{35}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Fibonacci Number (Easy)}{36}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Valid Anagram (Easy)}{36}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}Number of Steps to Reduce a Number to Zero (Easy)}{36}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}Valid Palindrome (Easy)}{37}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.7}Plus One (Easy)}{37}{subsection.7.1.7}%
+\contentsline {subsection}{\numberline {7.1.8}Count the Digits That Divide a Number (Easy)}{37}{subsection.7.1.8}%
+\contentsline {subsection}{\numberline {7.1.9}Final Value of Variable After Performing Operations (Easy)}{38}{subsection.7.1.9}%
+\contentsline {subsection}{\numberline {7.1.10}Fizz Buzz (Easy)}{38}{subsection.7.1.10}%
+\contentsline {subsection}{\numberline {7.1.11}Missing Number (Easy)}{38}{subsection.7.1.11}%
+\contentsline {subsection}{\numberline {7.1.12}Plus One (Easy)}{39}{subsection.7.1.12}%
+\contentsline {subsection}{\numberline {7.1.13}First Unique Character in a String (Easy)}{39}{subsection.7.1.13}%
+\contentsline {subsection}{\numberline {7.1.14}Ugly Number (Easy)}{39}{subsection.7.1.14}%
+\contentsline {subsection}{\numberline {7.1.15}Number of Steps to Reduce a Number to Zero (Easy)}{40}{subsection.7.1.15}%
+\contentsline {subsection}{\numberline {7.1.16}Remove Duplicates from Sorted Array (Easy)}{40}{subsection.7.1.16}%
+\contentsline {subsection}{\numberline {7.1.17}Count the Digits That Divide a Number (Easy)}{40}{subsection.7.1.17}%
+\contentsline {subsection}{\numberline {7.1.18}Happy Number (Easy)}{41}{subsection.7.1.18}%
+\contentsline {subsection}{\numberline {7.1.19}Remove Element (Easy)}{41}{subsection.7.1.19}%
+\contentsline {subsection}{\numberline {7.1.20}Single Number (Easy)}{41}{subsection.7.1.20}%
+\contentsline {subsection}{\numberline {7.1.21}Concatenation of Array (Easy)}{42}{subsection.7.1.21}%
+\contentsline {subsection}{\numberline {7.1.22}Climbing Stairs (Easy)}{42}{subsection.7.1.22}%
+\contentsline {subsection}{\numberline {7.1.23}Find the Index of the First Occurrence in a String (Easy)}{42}{subsection.7.1.23}%
+\contentsline {subsection}{\numberline {7.1.24}Happy Number (Easy)}{43}{subsection.7.1.24}%
+\contentsline {subsection}{\numberline {7.1.25}Add Digits (Easy)}{43}{subsection.7.1.25}%
+\contentsline {subsection}{\numberline {7.1.26}Merge Sorted Array (Easy)}{43}{subsection.7.1.26}%
+\contentsline {subsection}{\numberline {7.1.27}Ransom Note (Easy)}{44}{subsection.7.1.27}%
+\contentsline {subsection}{\numberline {7.1.28}Convert the Temperature (Easy)}{44}{subsection.7.1.28}%
+\contentsline {subsection}{\numberline {7.1.29}Add Two Integers (Easy)}{44}{subsection.7.1.29}%
+\contentsline {subsection}{\numberline {7.1.30}Remove Element (Easy)}{44}{subsection.7.1.30}%
+\contentsline {subsection}{\numberline {7.1.31}Build Array from Permutation (Easy)}{45}{subsection.7.1.31}%
+\contentsline {subsection}{\numberline {7.1.32}Roman to Integer (Easy)}{45}{subsection.7.1.32}%
+\contentsline {subsection}{\numberline {7.1.33}Two Sum (Easy)}{45}{subsection.7.1.33}%
+\contentsline {subsection}{\numberline {7.1.34}Climbing Stairs (Easy)}{46}{subsection.7.1.34}%
+\contentsline {subsection}{\numberline {7.1.35}Palindrome Number (Easy)}{46}{subsection.7.1.35}%
+\contentsline {subsection}{\numberline {7.1.36}Count the Digits That Divide a Number (Easy)}{46}{subsection.7.1.36}%
+\contentsline {subsection}{\numberline {7.1.37}Climbing Stairs (Easy)}{47}{subsection.7.1.37}%
+\contentsline {subsection}{\numberline {7.1.38}Number of Steps to Reduce a Number to Zero (Easy)}{47}{subsection.7.1.38}%
+\contentsline {subsection}{\numberline {7.1.39}Concatenation of Array (Easy)}{47}{subsection.7.1.39}%
+\contentsline {subsection}{\numberline {7.1.40}Final Value of Variable After Performing Operations (Easy)}{48}{subsection.7.1.40}%
+\contentsline {subsection}{\numberline {7.1.41}N\sphinxhyphen {}th Tribonacci Number (Easy)}{48}{subsection.7.1.41}%
+\contentsline {subsection}{\numberline {7.1.42}To Lower Case (Easy)}{48}{subsection.7.1.42}%
+\contentsline {subsection}{\numberline {7.1.43}Length of Last Word (Easy)}{49}{subsection.7.1.43}%
+\contentsline {subsection}{\numberline {7.1.44}Number of Good Pairs (Easy)}{49}{subsection.7.1.44}%
+\contentsline {subsection}{\numberline {7.1.45}Intersection of Two Arrays (Easy)}{49}{subsection.7.1.45}%
+\contentsline {subsection}{\numberline {7.1.46}Running Sum of 1d Array (Easy)}{50}{subsection.7.1.46}%
+\contentsline {subsection}{\numberline {7.1.47}Palindrome Number (Easy)}{50}{subsection.7.1.47}%
+\contentsline {subsection}{\numberline {7.1.48}Ugly Number (Easy)}{50}{subsection.7.1.48}%
+\contentsline {subsection}{\numberline {7.1.49}Shuffle the Array (Easy)}{51}{subsection.7.1.49}%
+\contentsline {subsection}{\numberline {7.1.50}Concatenation of Array (Easy)}{51}{subsection.7.1.50}%
+\contentsline {subsection}{\numberline {7.1.51}Score of a String (Easy)}{51}{subsection.7.1.51}%
+\contentsline {subsection}{\numberline {7.1.52}Climbing Stairs (Easy)}{51}{subsection.7.1.52}%
+\contentsline {subsection}{\numberline {7.1.53}Valid Anagram (Easy)}{52}{subsection.7.1.53}%
+\contentsline {subsection}{\numberline {7.1.54}Sqrt(x) (Easy)}{52}{subsection.7.1.54}%
+\contentsline {section}{\numberline {7.2}Unit 2 practice problems}{53}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Final Value of Variable After Performing Operations (Easy)}{53}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Power of Two (Easy)}{53}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Sqrt(x) (Easy)}{53}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Convert the Temperature (Easy)}{54}{subsection.7.2.4}%
+\contentsline {subsection}{\numberline {7.2.5}Jewels and Stones (Easy)}{54}{subsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.2.6}Contains Duplicate (Easy)}{54}{subsection.7.2.6}%
+\contentsline {subsection}{\numberline {7.2.7}Length of Last Word (Easy)}{54}{subsection.7.2.7}%
+\contentsline {subsection}{\numberline {7.2.8}Add Two Integers (Easy)}{55}{subsection.7.2.8}%
+\contentsline {subsection}{\numberline {7.2.9}Single Number (Easy)}{55}{subsection.7.2.9}%
+\contentsline {subsection}{\numberline {7.2.10}Number of Good Pairs (Easy)}{55}{subsection.7.2.10}%
+\contentsline {subsection}{\numberline {7.2.11}Number of Steps to Reduce a Number to Zero (Easy)}{56}{subsection.7.2.11}%
+\contentsline {subsection}{\numberline {7.2.12}Sqrt(x) (Easy)}{56}{subsection.7.2.12}%
+\contentsline {subsection}{\numberline {7.2.13}Final Value of Variable After Performing Operations (Easy)}{56}{subsection.7.2.13}%
+\contentsline {subsection}{\numberline {7.2.14}To Lower Case (Easy)}{57}{subsection.7.2.14}%
+\contentsline {subsection}{\numberline {7.2.15}Fibonacci Number (Easy)}{57}{subsection.7.2.15}%
+\contentsline {subsection}{\numberline {7.2.16}Smallest Even Multiple (Easy)}{57}{subsection.7.2.16}%
+\contentsline {subsection}{\numberline {7.2.17}Ugly Number (Easy)}{57}{subsection.7.2.17}%
+\contentsline {subsection}{\numberline {7.2.18}Power of Two (Easy)}{58}{subsection.7.2.18}%
+\contentsline {subsection}{\numberline {7.2.19}Plus One (Easy)}{58}{subsection.7.2.19}%
+\contentsline {subsection}{\numberline {7.2.20}Missing Number (Easy)}{58}{subsection.7.2.20}%
+\contentsline {subsection}{\numberline {7.2.21}Running Sum of 1d Array (Easy)}{59}{subsection.7.2.21}%
+\contentsline {subsection}{\numberline {7.2.22}Shuffle the Array (Easy)}{59}{subsection.7.2.22}%
+\contentsline {subsection}{\numberline {7.2.23}Two Sum (Easy)}{59}{subsection.7.2.23}%
+\contentsline {subsection}{\numberline {7.2.24}Number of Good Pairs (Easy)}{60}{subsection.7.2.24}%
+\contentsline {subsection}{\numberline {7.2.25}Count the Digits That Divide a Number (Easy)}{60}{subsection.7.2.25}%
+\contentsline {subsection}{\numberline {7.2.26}Subtract the Product and Sum of Digits of an Integer (Easy)}{60}{subsection.7.2.26}%
+\contentsline {subsection}{\numberline {7.2.27}Contains Duplicate (Easy)}{61}{subsection.7.2.27}%
+\contentsline {subsection}{\numberline {7.2.28}Richest Customer Wealth (Easy)}{61}{subsection.7.2.28}%
+\contentsline {subsection}{\numberline {7.2.29}Convert the Temperature (Easy)}{61}{subsection.7.2.29}%
+\contentsline {subsection}{\numberline {7.2.30}Fibonacci Number (Easy)}{62}{subsection.7.2.30}%
+\contentsline {subsection}{\numberline {7.2.31}Roman to Integer (Easy)}{62}{subsection.7.2.31}%
+\contentsline {subsection}{\numberline {7.2.32}Convert the Temperature (Easy)}{62}{subsection.7.2.32}%
+\contentsline {subsection}{\numberline {7.2.33}Richest Customer Wealth (Easy)}{63}{subsection.7.2.33}%
+\contentsline {subsection}{\numberline {7.2.34}Intersection of Two Arrays (Easy)}{63}{subsection.7.2.34}%
+\contentsline {subsection}{\numberline {7.2.35}Climbing Stairs (Easy)}{63}{subsection.7.2.35}%
+\contentsline {subsection}{\numberline {7.2.36}Richest Customer Wealth (Easy)}{64}{subsection.7.2.36}%
+\contentsline {subsection}{\numberline {7.2.37}Roman to Integer (Easy)}{64}{subsection.7.2.37}%
+\contentsline {subsection}{\numberline {7.2.38}Intersection of Two Arrays (Easy)}{64}{subsection.7.2.38}%
+\contentsline {subsection}{\numberline {7.2.39}Reverse String (Easy)}{65}{subsection.7.2.39}%
+\contentsline {subsection}{\numberline {7.2.40}Power of Two (Easy)}{65}{subsection.7.2.40}%
+\contentsline {subsection}{\numberline {7.2.41}Ransom Note (Easy)}{65}{subsection.7.2.41}%
+\contentsline {subsection}{\numberline {7.2.42}Intersection of Two Arrays (Easy)}{65}{subsection.7.2.42}%
+\contentsline {subsection}{\numberline {7.2.43}Roman to Integer (Easy)}{66}{subsection.7.2.43}%
+\contentsline {subsection}{\numberline {7.2.44}Number of Steps to Reduce a Number to Zero (Easy)}{66}{subsection.7.2.44}%
+\contentsline {subsection}{\numberline {7.2.45}Build Array from Permutation (Easy)}{66}{subsection.7.2.45}%
+\contentsline {subsection}{\numberline {7.2.46}Remove Duplicates from Sorted Array (Easy)}{67}{subsection.7.2.46}%
+\contentsline {subsection}{\numberline {7.2.47}Climbing Stairs (Easy)}{67}{subsection.7.2.47}%
+\contentsline {subsection}{\numberline {7.2.48}Concatenation of Array (Easy)}{67}{subsection.7.2.48}%
+\contentsline {subsection}{\numberline {7.2.49}Jewels and Stones (Easy)}{68}{subsection.7.2.49}%
+\contentsline {subsection}{\numberline {7.2.50}Number of Steps to Reduce a Number to Zero (Easy)}{68}{subsection.7.2.50}%
+\contentsline {subsection}{\numberline {7.2.51}Plus One (Easy)}{68}{subsection.7.2.51}%
+\contentsline {subsection}{\numberline {7.2.52}Palindrome Number (Easy)}{69}{subsection.7.2.52}%
+\contentsline {subsection}{\numberline {7.2.53}Count the Digits That Divide a Number (Easy)}{69}{subsection.7.2.53}%
+\contentsline {subsection}{\numberline {7.2.54}Shuffle the Array (Easy)}{69}{subsection.7.2.54}%
+\contentsline {subsection}{\numberline {7.2.55}Subtract the Product and Sum of Digits of an Integer (Easy)}{70}{subsection.7.2.55}%
+\contentsline {subsection}{\numberline {7.2.56}Length of Last Word (Easy)}{70}{subsection.7.2.56}%
+\contentsline {subsection}{\numberline {7.2.57}Valid Palindrome (Easy)}{70}{subsection.7.2.57}%
+\contentsline {subsection}{\numberline {7.2.58}Find the Index of the First Occurrence in a String (Easy)}{71}{subsection.7.2.58}%
+\contentsline {subsection}{\numberline {7.2.59}Add Digits (Easy)}{71}{subsection.7.2.59}%
+\contentsline {subsection}{\numberline {7.2.60}Smallest Even Multiple (Easy)}{71}{subsection.7.2.60}%
+\contentsline {subsection}{\numberline {7.2.61}Score of a String (Easy)}{71}{subsection.7.2.61}%
+\contentsline {subsection}{\numberline {7.2.62}Fibonacci Number (Easy)}{72}{subsection.7.2.62}%
+\contentsline {subsection}{\numberline {7.2.63}Number of Good Pairs (Easy)}{72}{subsection.7.2.63}%
+\contentsline {subsection}{\numberline {7.2.64}Single Number (Easy)}{72}{subsection.7.2.64}%
+\contentsline {subsection}{\numberline {7.2.65}Merge Strings Alternately (Easy)}{73}{subsection.7.2.65}%
+\contentsline {subsection}{\numberline {7.2.66}Valid Perfect Square (Easy)}{73}{subsection.7.2.66}%
+\contentsline {subsection}{\numberline {7.2.67}Build Array from Permutation (Easy)}{73}{subsection.7.2.67}%
+\contentsline {subsection}{\numberline {7.2.68}Jewels and Stones (Easy)}{74}{subsection.7.2.68}%
+\contentsline {subsection}{\numberline {7.2.69}Shuffle the Array (Easy)}{74}{subsection.7.2.69}%
+\contentsline {subsection}{\numberline {7.2.70}Roman to Integer (Easy)}{74}{subsection.7.2.70}%
+\contentsline {subsection}{\numberline {7.2.71}Add Two Integers (Easy)}{75}{subsection.7.2.71}%
+\contentsline {subsection}{\numberline {7.2.72}N\sphinxhyphen {}th Tribonacci Number (Easy)}{75}{subsection.7.2.72}%
+\contentsline {subsection}{\numberline {7.2.73}Valid Palindrome (Easy)}{75}{subsection.7.2.73}%
+\contentsline {subsection}{\numberline {7.2.74}Subtract the Product and Sum of Digits of an Integer (Easy)}{76}{subsection.7.2.74}%
+\contentsline {subsection}{\numberline {7.2.75}Valid Palindrome (Easy)}{76}{subsection.7.2.75}%
+\contentsline {subsection}{\numberline {7.2.76}N\sphinxhyphen {}th Tribonacci Number (Easy)}{77}{subsection.7.2.76}%
+\contentsline {subsection}{\numberline {7.2.77}Number of Steps to Reduce a Number to Zero (Easy)}{77}{subsection.7.2.77}%
+\contentsline {subsection}{\numberline {7.2.78}Final Value of Variable After Performing Operations (Easy)}{77}{subsection.7.2.78}%
+\contentsline {subsection}{\numberline {7.2.79}Number of Good Pairs (Easy)}{78}{subsection.7.2.79}%
+\contentsline {subsection}{\numberline {7.2.80}Happy Number (Easy)}{78}{subsection.7.2.80}%
+\contentsline {subsection}{\numberline {7.2.81}Majority Element (Easy)}{78}{subsection.7.2.81}%
+\contentsline {subsection}{\numberline {7.2.82}N\sphinxhyphen {}th Tribonacci Number (Easy)}{79}{subsection.7.2.82}%
+\contentsline {subsection}{\numberline {7.2.83}Merge Sorted Array (Easy)}{79}{subsection.7.2.83}%
+\contentsline {subsection}{\numberline {7.2.84}Move Zeroes (Easy)}{79}{subsection.7.2.84}%
+\contentsline {subsection}{\numberline {7.2.85}Richest Customer Wealth (Easy)}{80}{subsection.7.2.85}%
+\contentsline {subsection}{\numberline {7.2.86}Length of Last Word (Easy)}{80}{subsection.7.2.86}%
+\contentsline {subsection}{\numberline {7.2.87}Majority Element (Easy)}{80}{subsection.7.2.87}%
+\contentsline {subsection}{\numberline {7.2.88}Valid Perfect Square (Easy)}{81}{subsection.7.2.88}%
+\contentsline {subsection}{\numberline {7.2.89}N\sphinxhyphen {}th Tribonacci Number (Easy)}{81}{subsection.7.2.89}%
+\contentsline {subsection}{\numberline {7.2.90}Count the Digits That Divide a Number (Easy)}{82}{subsection.7.2.90}%
+\contentsline {subsection}{\numberline {7.2.91}Happy Number (Easy)}{82}{subsection.7.2.91}%
+\contentsline {subsection}{\numberline {7.2.92}Number of Good Pairs (Easy)}{82}{subsection.7.2.92}%
+\contentsline {subsection}{\numberline {7.2.93}Missing Number (Easy)}{83}{subsection.7.2.93}%
+\contentsline {subsection}{\numberline {7.2.94}Length of Last Word (Easy)}{83}{subsection.7.2.94}%
+\contentsline {subsection}{\numberline {7.2.95}Palindrome Number (Easy)}{83}{subsection.7.2.95}%
+\contentsline {subsection}{\numberline {7.2.96}Running Sum of 1d Array (Easy)}{84}{subsection.7.2.96}%
+\contentsline {subsection}{\numberline {7.2.97}Build Array from Permutation (Easy)}{84}{subsection.7.2.97}%
+\contentsline {section}{\numberline {7.3}Unit 3 practice problems}{84}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Score of a String (Easy)}{84}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Sqrt(x) (Easy)}{85}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Convert the Temperature (Easy)}{85}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}Find the Index of the First Occurrence in a String (Easy)}{85}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}Roman to Integer (Easy)}{86}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}Jewels and Stones (Easy)}{86}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}Valid Perfect Square (Easy)}{86}{subsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.3.8}Intersection of Two Arrays (Easy)}{87}{subsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.3.9}Score of a String (Easy)}{87}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}Majority Element (Easy)}{87}{subsection.7.3.10}%
+\contentsline {subsection}{\numberline {7.3.11}Concatenation of Array (Easy)}{88}{subsection.7.3.11}%
+\contentsline {subsection}{\numberline {7.3.12}Shuffle the Array (Easy)}{88}{subsection.7.3.12}%
+\contentsline {subsection}{\numberline {7.3.13}Add Digits (Easy)}{88}{subsection.7.3.13}%
+\contentsline {subsection}{\numberline {7.3.14}Number of Steps to Reduce a Number to Zero (Easy)}{88}{subsection.7.3.14}%
+\contentsline {subsection}{\numberline {7.3.15}Find the Index of the First Occurrence in a String (Easy)}{89}{subsection.7.3.15}%
+\contentsline {subsection}{\numberline {7.3.16}Two Sum (Easy)}{89}{subsection.7.3.16}%
+\contentsline {subsection}{\numberline {7.3.17}Move Zeroes (Easy)}{89}{subsection.7.3.17}%
+\contentsline {subsection}{\numberline {7.3.18}Concatenation of Array (Easy)}{90}{subsection.7.3.18}%
+\contentsline {subsection}{\numberline {7.3.19}First Unique Character in a String (Easy)}{90}{subsection.7.3.19}%
+\contentsline {subsection}{\numberline {7.3.20}Reverse String (Easy)}{90}{subsection.7.3.20}%
+\contentsline {subsection}{\numberline {7.3.21}Richest Customer Wealth (Easy)}{90}{subsection.7.3.21}%
+\contentsline {subsection}{\numberline {7.3.22}Two Sum (Easy)}{91}{subsection.7.3.22}%
+\contentsline {subsection}{\numberline {7.3.23}Find the Index of the First Occurrence in a String (Easy)}{91}{subsection.7.3.23}%
+\contentsline {subsection}{\numberline {7.3.24}Valid Perfect Square (Easy)}{91}{subsection.7.3.24}%
+\contentsline {subsection}{\numberline {7.3.25}Palindrome Number (Easy)}{92}{subsection.7.3.25}%
+\contentsline {subsection}{\numberline {7.3.26}Merge Strings Alternately (Easy)}{92}{subsection.7.3.26}%
+\contentsline {subsection}{\numberline {7.3.27}Jewels and Stones (Easy)}{92}{subsection.7.3.27}%
+\contentsline {subsection}{\numberline {7.3.28}Richest Customer Wealth (Easy)}{93}{subsection.7.3.28}%
+\contentsline {subsection}{\numberline {7.3.29}Convert the Temperature (Easy)}{93}{subsection.7.3.29}%
+\contentsline {subsection}{\numberline {7.3.30}Shuffle the Array (Easy)}{93}{subsection.7.3.30}%
+\contentsline {subsection}{\numberline {7.3.31}To Lower Case (Easy)}{94}{subsection.7.3.31}%
+\contentsline {subsection}{\numberline {7.3.32}Final Value of Variable After Performing Operations (Easy)}{94}{subsection.7.3.32}%
+\contentsline {subsection}{\numberline {7.3.33}Plus One (Easy)}{94}{subsection.7.3.33}%
+\contentsline {subsection}{\numberline {7.3.34}Valid Palindrome (Easy)}{95}{subsection.7.3.34}%
+\contentsline {subsection}{\numberline {7.3.35}Smallest Even Multiple (Easy)}{95}{subsection.7.3.35}%
+\contentsline {subsection}{\numberline {7.3.36}Valid Palindrome (Easy)}{95}{subsection.7.3.36}%
+\contentsline {subsection}{\numberline {7.3.37}Build Array from Permutation (Easy)}{96}{subsection.7.3.37}%
+\contentsline {subsection}{\numberline {7.3.38}Climbing Stairs (Easy)}{96}{subsection.7.3.38}%
+\contentsline {subsection}{\numberline {7.3.39}To Lower Case (Easy)}{96}{subsection.7.3.39}%
+\contentsline {subsection}{\numberline {7.3.40}Fibonacci Number (Easy)}{97}{subsection.7.3.40}%
+\contentsline {subsection}{\numberline {7.3.41}Add Digits (Easy)}{97}{subsection.7.3.41}%
+\contentsline {subsection}{\numberline {7.3.42}Add Digits (Easy)}{97}{subsection.7.3.42}%
+\contentsline {subsection}{\numberline {7.3.43}Ugly Number (Easy)}{97}{subsection.7.3.43}%
+\contentsline {subsection}{\numberline {7.3.44}Single Number (Easy)}{98}{subsection.7.3.44}%
+\contentsline {subsection}{\numberline {7.3.45}Running Sum of 1d Array (Easy)}{98}{subsection.7.3.45}%
+\contentsline {subsection}{\numberline {7.3.46}Happy Number (Easy)}{98}{subsection.7.3.46}%
+\contentsline {subsection}{\numberline {7.3.47}Climbing Stairs (Easy)}{99}{subsection.7.3.47}%
+\contentsline {subsection}{\numberline {7.3.48}Concatenation of Array (Easy)}{99}{subsection.7.3.48}%
+\contentsline {subsection}{\numberline {7.3.49}Intersection of Two Arrays (Easy)}{99}{subsection.7.3.49}%
+\contentsline {subsection}{\numberline {7.3.50}Reverse String (Easy)}{100}{subsection.7.3.50}%
+\contentsline {subsection}{\numberline {7.3.51}Number of Steps to Reduce a Number to Zero (Easy)}{100}{subsection.7.3.51}%
+\contentsline {subsection}{\numberline {7.3.52}Valid Anagram (Easy)}{100}{subsection.7.3.52}%
+\contentsline {subsection}{\numberline {7.3.53}Majority Element (Easy)}{101}{subsection.7.3.53}%
+\contentsline {subsection}{\numberline {7.3.54}Convert the Temperature (Easy)}{101}{subsection.7.3.54}%
+\contentsline {subsection}{\numberline {7.3.55}Add Two Integers (Easy)}{101}{subsection.7.3.55}%
+\contentsline {subsection}{\numberline {7.3.56}Valid Anagram (Easy)}{101}{subsection.7.3.56}%
+\contentsline {subsection}{\numberline {7.3.57}Length of Last Word (Easy)}{102}{subsection.7.3.57}%
+\contentsline {subsection}{\numberline {7.3.58}Roman to Integer (Easy)}{102}{subsection.7.3.58}%
+\contentsline {subsection}{\numberline {7.3.59}Score of a String (Easy)}{102}{subsection.7.3.59}%
+\contentsline {subsection}{\numberline {7.3.60}Ugly Number (Easy)}{103}{subsection.7.3.60}%
+\contentsline {subsection}{\numberline {7.3.61}Convert the Temperature (Easy)}{103}{subsection.7.3.61}%
+\contentsline {subsection}{\numberline {7.3.62}Add Two Integers (Easy)}{103}{subsection.7.3.62}%
+\contentsline {subsection}{\numberline {7.3.63}Power of Two (Easy)}{103}{subsection.7.3.63}%
+\contentsline {subsection}{\numberline {7.3.64}Contains Duplicate (Easy)}{104}{subsection.7.3.64}%
+\contentsline {subsection}{\numberline {7.3.65}Palindrome Number (Easy)}{104}{subsection.7.3.65}%
+\contentsline {subsection}{\numberline {7.3.66}Shuffle the Array (Easy)}{104}{subsection.7.3.66}%
+\contentsline {subsection}{\numberline {7.3.67}Concatenation of Array (Easy)}{105}{subsection.7.3.67}%
+\contentsline {subsection}{\numberline {7.3.68}Sqrt(x) (Easy)}{105}{subsection.7.3.68}%
+\contentsline {subsection}{\numberline {7.3.69}Jewels and Stones (Easy)}{105}{subsection.7.3.69}%
+\contentsline {subsection}{\numberline {7.3.70}Concatenation of Array (Easy)}{105}{subsection.7.3.70}%
+\contentsline {subsection}{\numberline {7.3.71}Climbing Stairs (Easy)}{106}{subsection.7.3.71}%
+\contentsline {subsection}{\numberline {7.3.72}Ugly Number (Easy)}{106}{subsection.7.3.72}%
+\contentsline {subsection}{\numberline {7.3.73}To Lower Case (Easy)}{106}{subsection.7.3.73}%
+\contentsline {subsection}{\numberline {7.3.74}Ugly Number (Easy)}{107}{subsection.7.3.74}%
+\contentsline {subsection}{\numberline {7.3.75}Ransom Note (Easy)}{107}{subsection.7.3.75}%
+\contentsline {subsection}{\numberline {7.3.76}Valid Palindrome (Easy)}{107}{subsection.7.3.76}%
+\contentsline {subsection}{\numberline {7.3.77}Roman to Integer (Easy)}{108}{subsection.7.3.77}%
+\contentsline {subsection}{\numberline {7.3.78}Concatenation of Array (Easy)}{108}{subsection.7.3.78}%
+\contentsline {subsection}{\numberline {7.3.79}First Unique Character in a String (Easy)}{108}{subsection.7.3.79}%
+\contentsline {subsection}{\numberline {7.3.80}Concatenation of Array (Easy)}{109}{subsection.7.3.80}%
+\contentsline {subsection}{\numberline {7.3.81}Reference}{109}{subsection.7.3.81}%
+\contentsline {chapter}{\numberline {8}Think C++}{111}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Chapter synopsis and notes}{111}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}The way of the program}{111}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Variables and types}{111}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Function}{112}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Conditionals and recursion}{112}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Fruitful functions}{112}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}Iteration}{112}{subsection.8.1.6}%
+\contentsline {subsection}{\numberline {8.1.7}Strings and things}{113}{subsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.1.8}Structures}{113}{subsection.8.1.8}%
+\contentsline {subsection}{\numberline {8.1.9}More structures}{113}{subsection.8.1.9}%
+\contentsline {subsection}{\numberline {8.1.10}Vectors}{113}{subsection.8.1.10}%
+\contentsline {subsection}{\numberline {8.1.11}Member functions}{114}{subsection.8.1.11}%
+\contentsline {subsection}{\numberline {8.1.12}Vectors of Objects}{114}{subsection.8.1.12}%
+\contentsline {subsection}{\numberline {8.1.13}Objects of Vectors}{114}{subsection.8.1.13}%
+\contentsline {subsection}{\numberline {8.1.14}Classes and invariants}{114}{subsection.8.1.14}%
+\contentsline {subsection}{\numberline {8.1.15}File Input/Output and apmatrixes}{115}{subsection.8.1.15}%
+\contentsline {subsection}{\numberline {8.1.16}Appendix: AP class reference}{115}{subsection.8.1.16}%
+\contentsline {chapter}{\numberline {9}Rooks guide to C++}{117}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Chapter synopsis and notes}{117}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}History}{117}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Variables}{117}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Literals and constants}{117}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Assignments}{118}{subsection.9.1.4}%
+\contentsline {subsection}{\numberline {9.1.5}Output}{118}{subsection.9.1.5}%
+\contentsline {subsection}{\numberline {9.1.6}Input}{118}{subsection.9.1.6}%
+\contentsline {subsection}{\numberline {9.1.7}Arithmetic}{118}{subsection.9.1.7}%
+\contentsline {subsection}{\numberline {9.1.8}Comments}{118}{subsection.9.1.8}%
+\contentsline {subsection}{\numberline {9.1.9}Data types and conversion}{118}{subsection.9.1.9}%
+\contentsline {subsection}{\numberline {9.1.10}Conditionals}{119}{subsection.9.1.10}%
+\contentsline {subsection}{\numberline {9.1.11}Strings}{119}{subsection.9.1.11}%
+\contentsline {subsection}{\numberline {9.1.12}Loops}{119}{subsection.9.1.12}%
+\contentsline {subsection}{\numberline {9.1.13}Arrays}{119}{subsection.9.1.13}%
+\contentsline {subsection}{\numberline {9.1.14}Blocks, functions, and scope}{119}{subsection.9.1.14}%
+\contentsline {subsection}{\numberline {9.1.15}Problem solving \& troubleshooting}{120}{subsection.9.1.15}%
+\contentsline {subsection}{\numberline {9.1.16}The preprocessor}{120}{subsection.9.1.16}%
+\contentsline {subsection}{\numberline {9.1.17}Advanced arithmetic}{120}{subsection.9.1.17}%
+\contentsline {subsection}{\numberline {9.1.18}File I/O}{120}{subsection.9.1.18}%
+\contentsline {subsection}{\numberline {9.1.19}Pointers}{120}{subsection.9.1.19}%
+\contentsline {subsection}{\numberline {9.1.20}Dynamic data}{120}{subsection.9.1.20}%
+\contentsline {subsection}{\numberline {9.1.21}Classes and abstraction}{121}{subsection.9.1.21}%
+\contentsline {subsection}{\numberline {9.1.22}Separate compilation}{121}{subsection.9.1.22}%
+\contentsline {subsection}{\numberline {9.1.23}STL}{121}{subsection.9.1.23}%
+\contentsline {chapter}{\numberline {10}Programming fundamentals}{123}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Chapter synopsis and notes}{123}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Chapter 1: Introduction to programming}{123}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Chapter 2: Program planning and design}{123}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Chapter 3: Data and operators}{123}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Chapter 4: Often\sphinxhyphen {}used data types}{124}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.5}Chapter 5: Integrated development environment}{124}{subsection.10.1.5}%
+\contentsline {subsection}{\numberline {10.1.6}Chapter 6: Program control functions}{124}{subsection.10.1.6}%
+\contentsline {subsection}{\numberline {10.1.7}Chapter 7: Specific task functions}{124}{subsection.10.1.7}%
+\contentsline {subsection}{\numberline {10.1.8}Chapter 8: Standard libraries}{124}{subsection.10.1.8}%
+\contentsline {subsection}{\numberline {10.1.9}Chapter 9: Character data, sizeof, typedef, and sequence}{124}{subsection.10.1.9}%
+\contentsline {subsection}{\numberline {10.1.10}Chapter 10: Introduction to structured programming}{125}{subsection.10.1.10}%
+\contentsline {subsection}{\numberline {10.1.11}Chapter 11: Two\sphinxhyphen {}way selection}{125}{subsection.10.1.11}%
+\contentsline {subsection}{\numberline {10.1.12}Chapter 12: Multiway selection}{125}{subsection.10.1.12}%
+\contentsline {subsection}{\numberline {10.1.13}Chapter 13: Test\sphinxhyphen {}after loops}{125}{subsection.10.1.13}%
+\contentsline {subsection}{\numberline {10.1.14}Chapter 14: Test\sphinxhyphen {}before loops}{125}{subsection.10.1.14}%
+\contentsline {subsection}{\numberline {10.1.15}Chapter 15: Counting loops}{125}{subsection.10.1.15}%
+\contentsline {subsection}{\numberline {10.1.16}Chapter 16: String class and unary operators}{126}{subsection.10.1.16}%
+\contentsline {subsection}{\numberline {10.1.17}Chapter 17: Conditional operator and recursion}{126}{subsection.10.1.17}%
+\contentsline {subsection}{\numberline {10.1.18}Chapter 18: Introduction to arrays}{126}{subsection.10.1.18}%
+\contentsline {subsection}{\numberline {10.1.19}Chapter 19: File I/O and array functions}{126}{subsection.10.1.19}%
+\contentsline {subsection}{\numberline {10.1.20}Chapter 20: More array functions}{126}{subsection.10.1.20}%
+\contentsline {subsection}{\numberline {10.1.21}Chapter 21: More on typedef}{127}{subsection.10.1.21}%
+\contentsline {subsection}{\numberline {10.1.22}Chapter 22: Pointers}{127}{subsection.10.1.22}%
+\contentsline {subsection}{\numberline {10.1.23}Chapter 23: More arrays and compiler directives}{127}{subsection.10.1.23}%
+\contentsline {subsection}{\numberline {10.1.24}Chapter 24: OOP and high\sphinxhyphen {}performance computing}{127}{subsection.10.1.24}%
+\contentsline {subsection}{\numberline {10.1.25}Chapter 25: Review materials}{127}{subsection.10.1.25}%
+\contentsline {subsection}{\numberline {10.1.26}Chapter 26: Appendix}{128}{subsection.10.1.26}%

@@ -341,6 +341,12 @@ This journal section acts as an index, with the reading contents contained in th
 
 \section{Program design}
 \label{\detokenize{AssignmentOne/main:program-design}}
+\noindent{\hspace*{\fill}\sphinxincludegraphics[width=700\sphinxpxdimen]{{a1-problem1-2}.png}\hspace*{\fill}}
+
+\noindent{\hspace*{\fill}\sphinxincludegraphics[width=700\sphinxpxdimen]{{a1-problem3-4}.png}\hspace*{\fill}}
+
+\noindent{\hspace*{\fill}\sphinxincludegraphics[width=700\sphinxpxdimen]{{a1-problem4-5}.png}\hspace*{\fill}}
+
 
 \subsection{Multiplication table}
 \label{\detokenize{AssignmentOne/main:multiplication-table}}\begin{itemize}
@@ -7979,6 +7985,9 @@ Iterators unify containers but can be confusing without practice.
 
 \chapter{Programming fundamentals}
 \label{\detokenize{Reading/ProgrammingFundamentals:programming-fundamentals}}\label{\detokenize{Reading/ProgrammingFundamentals::doc}}
+\sphinxAtStartPar
+Supplementary reading, I took my time reviewing the entirety of the book with extra focus to the chapters called out during the reading curriculum for COMP206.
+
 
 \begin{savenotes}\sphinxattablestart
 \sphinxthistablewithglobalstyle
@@ -7997,7 +8006,7 @@ Total pages
 Currently on
 &
 \sphinxAtStartPar
-0
+342
 \\
 \sphinxbottomrule
 \end{tabulary}
@@ -8005,14 +8014,528 @@ Currently on
 \sphinxattableend\end{savenotes}
 
 
-\section{Synopsis}
-\label{\detokenize{Reading/ProgrammingFundamentals:synopsis}}
+\section{Chapter synopsis and notes}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-synopsis-and-notes}}
 
-\section{Interesting notes}
-\label{\detokenize{Reading/ProgrammingFundamentals:interesting-notes}}
+\subsection{Chapter 1: Introduction to programming}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-1-introduction-to-programming}}
+\sphinxAtStartPar
+Introduces the systems development life cycle, basic C++ tooling, modularization, functions, and the normal layout of a C++ program. The chapter treats programming as a process of planning, coding, compiling, testing, and maintaining rather than only writing syntax.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A program should be divided into manageable modules instead of written as one large block.
 
-\section{Definitions}
-\label{\detokenize{Reading/ProgrammingFundamentals:definitions}}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{main}} acts as the program control function and coordinates the program’s execution.
+
+\item {} 
+\sphinxAtStartPar
+Compiler and IDE details can change, but the edit\sphinxhyphen{}build\sphinxhyphen{}run\sphinxhyphen{}debug cycle stays the same.
+
+\end{itemize}
+
+
+\subsection{Chapter 2: Program planning and design}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-2-program-planning-and-design}}
+\sphinxAtStartPar
+Explains how to understand a problem before coding it. It introduces design tools, pseudocode, test data, model checking, and code checking so that the planned solution can be verified before and after implementation.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Pseudocode describes program logic without depending on exact C++ syntax.
+
+\item {} 
+\sphinxAtStartPar
+Test data should include normal, boundary, and invalid cases.
+
+\item {} 
+\sphinxAtStartPar
+Design errors are cheaper to fix before they become code.
+
+\end{itemize}
+
+
+\subsection{Chapter 3: Data and operators}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-3-data-and-operators}}
+\sphinxAtStartPar
+Introduces C++ data types, identifier rules, constants, variables, assignment, arithmetic operators, and type conversion. The focus is on how values are represented, named, changed, and combined in expressions.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A variable has a type, identifier, storage location, and current value.
+
+\item {} 
+\sphinxAtStartPar
+Assignment stores a value; it does not test equality.
+
+\item {} 
+\sphinxAtStartPar
+Conversions can change precision or range, especially between floating\sphinxhyphen{}point and integer types.
+
+\end{itemize}
+
+
+\subsection{Chapter 4: Often\sphinxhyphen{}used data types}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-4-often-used-data-types}}
+\sphinxAtStartPar
+Expands on integer, floating\sphinxhyphen{}point, and string data, along with compound assignment, lvalues, rvalues, integer division, and modulus. It connects common types to the operators that can validly be used with them.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Integer division discards the fractional portion of the result.
+
+\item {} 
+\sphinxAtStartPar
+Modulus returns the remainder and is useful for divisibility and digit extraction.
+
+\item {} 
+\sphinxAtStartPar
+An lvalue identifies a storage location, while an rvalue represents a value used in an expression.
+
+\end{itemize}
+
+
+\subsection{Chapter 5: Integrated development environment}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-5-integrated-development-environment}}
+\sphinxAtStartPar
+Covers the role of an IDE, common compile and runtime errors, standard input and output, and compiler directives. The chapter shows how source code moves through preprocessing, compilation, linking, and execution.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{cin}} and \sphinxcode{\sphinxupquote{cout}} use stream extraction and insertion operators.
+
+\item {} 
+\sphinxAtStartPar
+Compiler errors should be fixed from the first reported error downward.
+
+\item {} 
+\sphinxAtStartPar
+Directives such as \sphinxcode{\sphinxupquote{\#include}} are handled before normal compilation.
+
+\end{itemize}
+
+
+\subsection{Chapter 6: Program control functions}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-6-program-control-functions}}
+\sphinxAtStartPar
+Introduces function\sphinxhyphen{}oriented program structure using pseudocode, hierarchy charts, control functions, \sphinxcode{\sphinxupquote{void}}, and source\sphinxhyphen{}code documentation. The goal is to make program flow visible and keep the top\sphinxhyphen{}level control logic simple.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A hierarchy chart shows which functions call other functions.
+
+\item {} 
+\sphinxAtStartPar
+A \sphinxcode{\sphinxupquote{void}} function performs work without returning a value.
+
+\item {} 
+\sphinxAtStartPar
+Readable indentation, names, and function comments reduce maintenance cost.
+
+\end{itemize}
+
+
+\subsection{Chapter 7: Specific task functions}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-7-specific-task-functions}}
+\sphinxAtStartPar
+Explains how functions can be created to perform one focused task. It covers local and global storage, declarations, definitions, parameters, return values, and placing user\sphinxhyphen{}defined functions in header files.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Local variables limit accidental coupling between functions.
+
+\item {} 
+\sphinxAtStartPar
+Global variables make data widely accessible but harder to reason about.
+
+\item {} 
+\sphinxAtStartPar
+Function interfaces should clearly define what data enters and what result leaves.
+
+\end{itemize}
+
+
+\subsection{Chapter 8: Standard libraries}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-8-standard-libraries}}
+\sphinxAtStartPar
+Introduces C++ standard libraries and the reusable functions, types, and constants they provide. The chapter emphasizes using existing library facilities instead of rewriting common operations.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Header files expose declarations needed by the compiler.
+
+\item {} 
+\sphinxAtStartPar
+Library documentation is part of normal programming work.
+
+\item {} 
+\sphinxAtStartPar
+Reusing tested library code is usually safer than creating an equivalent from scratch.
+
+\end{itemize}
+
+
+\subsection{Chapter 9: Character data, sizeof, typedef, and sequence}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-9-character-data-sizeof-typedef-and-sequence}}
+\sphinxAtStartPar
+Covers the \sphinxcode{\sphinxupquote{char}} type, character codes, the \sphinxcode{\sphinxupquote{sizeof}} operator, type aliases with \sphinxcode{\sphinxupquote{typedef}}, and the sequence or comma operator. These topics connect source\sphinxhyphen{}level syntax to storage size and expression evaluation.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A character is stored as a numeric code even when written as a quoted symbol.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{sizeof}} reports how many bytes a type or object occupies.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{typedef}} creates another name for an existing type; it does not create a distinct type.
+
+\end{itemize}
+
+
+\subsection{Chapter 10: Introduction to structured programming}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-10-introduction-to-structured-programming}}
+\sphinxAtStartPar
+Introduces structured programming through sequence, selection, and iteration. It uses pseudocode and flowcharts to model control flow and replace unstructured jumps with predictable control structures.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Most program logic can be expressed using sequence, selection, and repetition.
+
+\item {} 
+\sphinxAtStartPar
+Flowcharts visualize decisions, loops, input, output, and function calls.
+
+\item {} 
+\sphinxAtStartPar
+Structured control flow is easier to test and trace than arbitrary jumps.
+
+\end{itemize}
+
+
+\subsection{Chapter 11: Two\sphinxhyphen{}way selection}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-11-two-way-selection}}
+\sphinxAtStartPar
+Introduces \sphinxcode{\sphinxupquote{if}}, \sphinxcode{\sphinxupquote{else}}, Boolean values, relational operators, and compound statements. It focuses on choosing between two execution paths based on a true\sphinxhyphen{}or\sphinxhyphen{}false condition.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Relational operators produce Boolean results.
+
+\item {} 
+\sphinxAtStartPar
+Braces group multiple statements into one compound statement.
+
+\item {} 
+\sphinxAtStartPar
+Conditions should describe the decision clearly rather than rely on clever side effects.
+
+\end{itemize}
+
+
+\subsection{Chapter 12: Multiway selection}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-12-multiway-selection}}
+\sphinxAtStartPar
+Expands selection using nested \sphinxcode{\sphinxupquote{if}} statements, logical operators, truth tables, and the \sphinxcode{\sphinxupquote{switch}} structure. It also discusses branching statements and the limits of each selection method.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{\&\&}}, \sphinxcode{\sphinxupquote{||}}, and \sphinxcode{\sphinxupquote{!}} combine or reverse Boolean conditions.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{switch}} works best when comparing one expression against discrete constant choices.
+
+\item {} 
+\sphinxAtStartPar
+Nested conditions should be ordered so the most specific or restrictive cases are handled correctly.
+
+\end{itemize}
+
+
+\subsection{Chapter 13: Test\sphinxhyphen{}after loops}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-13-test-after-loops}}
+\sphinxAtStartPar
+Introduces the \sphinxcode{\sphinxupquote{do\sphinxhyphen{}while}} loop, flag\sphinxhyphen{}controlled repetition, assignment versus equality, and the pseudocode concept of repeat\sphinxhyphen{}until. A test\sphinxhyphen{}after loop always executes its body at least once.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Use \sphinxcode{\sphinxupquote{do\sphinxhyphen{}while}} when the action must occur before the continuation test.
+
+\item {} 
+\sphinxAtStartPar
+A flag is a Boolean or sentinel value used to control repetition.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{=}} changes a value, while \sphinxcode{\sphinxupquote{==}} compares two values.
+
+\end{itemize}
+
+
+\subsection{Chapter 14: Test\sphinxhyphen{}before loops}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-14-test-before-loops}}
+\sphinxAtStartPar
+Introduces prefix and postfix increment and decrement, the \sphinxcode{\sphinxupquote{while}} loop, counting patterns, and infinite\sphinxhyphen{}loop risks. A test\sphinxhyphen{}before loop may execute zero times when its condition starts false.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+The loop body must eventually change something used by the condition.
+
+\item {} 
+\sphinxAtStartPar
+Prefix and postfix forms differ when their resulting value is used inside a larger expression.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{while}} is appropriate when repetition is driven mainly by a condition rather than a fixed count.
+
+\end{itemize}
+
+
+\subsection{Chapter 15: Counting loops}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-15-counting-loops}}
+\sphinxAtStartPar
+Introduces \sphinxcode{\sphinxupquote{for}} loops, integer wraparound, formatted output, and nested loops. It shows how initialization, testing, and updating can be placed together for count\sphinxhyphen{}controlled repetition.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{for}} makes the counter lifecycle visible in one statement.
+
+\item {} 
+\sphinxAtStartPar
+Integer types have finite ranges and can wrap when their limits are exceeded.
+
+\item {} 
+\sphinxAtStartPar
+Nested loops are useful for tables, grids, combinations, and repeated row\sphinxhyphen{}column processing.
+
+\end{itemize}
+
+
+\subsection{Chapter 16: String class and unary operators}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-16-string-class-and-unary-operators}}
+\sphinxAtStartPar
+Introduces the C++ \sphinxcode{\sphinxupquote{string}} class and common operations such as assignment, comparison, concatenation, and length. It also distinguishes unary positive and unary negative from addition and subtraction.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{string}} provides a safer abstraction than manually managing character arrays.
+
+\item {} 
+\sphinxAtStartPar
+Unary negative changes the sign of the value produced by an expression, not the stored variable.
+
+\item {} 
+\sphinxAtStartPar
+Unary positive usually has no practical effect.
+
+\end{itemize}
+
+
+\subsection{Chapter 17: Conditional operator and recursion}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-17-conditional-operator-and-recursion}}
+\sphinxAtStartPar
+Covers the conditional \sphinxcode{\sphinxupquote{?:}} operator and compares recursive solutions with iterative ones. It explains how recursion repeatedly calls the same function until a base condition ends the process.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+The conditional operator produces one of two values from a Boolean condition.
+
+\item {} 
+\sphinxAtStartPar
+Every recursive solution needs a reachable base case.
+
+\item {} 
+\sphinxAtStartPar
+Iteration is often simpler and uses less call\sphinxhyphen{}stack space, while recursion can mirror naturally recursive problems.
+
+\end{itemize}
+
+
+\subsection{Chapter 18: Introduction to arrays}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-18-introduction-to-arrays}}
+\sphinxAtStartPar
+Introduces arrays as fixed\sphinxhyphen{}size collections of same\sphinxhyphen{}type elements. It covers array declaration, indexing, initialization, and displaying members using loops.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Array indexing begins at zero.
+
+\item {} 
+\sphinxAtStartPar
+Valid indexes run from zero through one less than the array size.
+
+\item {} 
+\sphinxAtStartPar
+C++ built\sphinxhyphen{}in arrays do not automatically protect against out\sphinxhyphen{}of\sphinxhyphen{}bounds access.
+
+\end{itemize}
+
+
+\subsection{Chapter 19: File I/O and array functions}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-19-file-i-o-and-array-functions}}
+\sphinxAtStartPar
+Combines file streams with arrays and functions. It covers opening files, loading array values, passing arrays to functions, and calculating statistics such as totals and averages.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Always verify that a file opened successfully before reading or writing.
+
+\item {} 
+\sphinxAtStartPar
+Arrays passed to functions normally decay to pointers, so size information must be supplied separately.
+
+\item {} 
+\sphinxAtStartPar
+Separate file handling from calculations to make both parts easier to test.
+
+\end{itemize}
+
+
+\subsection{Chapter 20: More array functions}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-20-more-array-functions}}
+\sphinxAtStartPar
+Builds reusable array\sphinxhyphen{}processing functions for finding a specific value and sorting array members. The chapter introduces basic searching and sorting as common data\sphinxhyphen{}processing operations.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A linear search checks elements until the target is found or the array ends.
+
+\item {} 
+\sphinxAtStartPar
+Sorting changes the arrangement of data and can make later searching or reporting easier.
+
+\item {} 
+\sphinxAtStartPar
+Search and sort functions should clearly define how failure or duplicate values are handled.
+
+\end{itemize}
+
+
+\subsection{Chapter 21: More on typedef}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-21-more-on-typedef}}
+\sphinxAtStartPar
+Uses \sphinxcode{\sphinxupquote{typedef}} to make array\sphinxhyphen{}processing code easier to modify for different data types. The chapter distinguishes flexible code, which adapts to array size, from versatile code, which adapts to different types.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A type alias can centralize a type choice used throughout a program.
+
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{sizeof}} can help calculate a built\sphinxhyphen{}in array’s element count in the same scope.
+
+\item {} 
+\sphinxAtStartPar
+Modern C++ generally uses \sphinxcode{\sphinxupquote{using}} aliases instead of \sphinxcode{\sphinxupquote{typedef}} for new code.
+
+\end{itemize}
+
+
+\subsection{Chapter 22: Pointers}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-22-pointers}}
+\sphinxAtStartPar
+Introduces memory addresses, the address operator, references, pointer variables, and the indirection operator. It connects pointers to parameter passing, arrays, and direct access to stored objects.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{\&value}} obtains an object’s address, while \sphinxcode{\sphinxupquote{*pointer}} accesses the pointed\sphinxhyphen{}to object.
+
+\item {} 
+\sphinxAtStartPar
+Pass\sphinxhyphen{}by\sphinxhyphen{}reference lets a function modify the caller’s original object.
+
+\item {} 
+\sphinxAtStartPar
+Uninitialized, null, and dangling pointers must not be dereferenced.
+
+\end{itemize}
+
+
+\subsection{Chapter 23: More arrays and compiler directives}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-23-more-arrays-and-compiler-directives}}
+\sphinxAtStartPar
+Introduces multidimensional arrays and conditional compilation. It shows how arrays can represent rows and columns and how preprocessor conditions can include or exclude source code.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+A two\sphinxhyphen{}dimensional array is commonly processed with nested loops.
+
+\item {} 
+\sphinxAtStartPar
+Dimensions and index order must remain consistent across declarations and function parameters.
+
+\item {} 
+\sphinxAtStartPar
+Conditional compilation is useful for platform differences and optional debugging code, but can make builds harder to reason about.
+
+\end{itemize}
+
+
+\subsection{Chapter 24: OOP and high\sphinxhyphen{}performance computing}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-24-oop-and-high-performance-computing}}
+\sphinxAtStartPar
+Provides a transition from modular structured programming to object\sphinxhyphen{}oriented programming, where data and related functions are encapsulated together. It also introduces high\sphinxhyphen{}performance computing, parallel work, sequential limits, multiple processors, and FLOPS as a performance measure.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+C++ supports both procedural and object\sphinxhyphen{}oriented program design.
+
+\item {} 
+\sphinxAtStartPar
+Parallel processing helps only when a task can be divided into independent or coordinated parts.
+
+\item {} 
+\sphinxAtStartPar
+More processors do not guarantee proportional speedup because some work remains sequential or requires coordination.
+
+\end{itemize}
+
+
+\subsection{Chapter 25: Review materials}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-25-review-materials}}
+\sphinxAtStartPar
+Organizes the book’s material into foundation, modular programming, structured programming, intermediate, and advanced topic groups. It is intended as a consolidated review before assignments or exams.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Review should connect concepts across chapters rather than memorize isolated syntax.
+
+\item {} 
+\sphinxAtStartPar
+Weak fundamentals in data, expressions, functions, or control flow affect every later topic.
+
+\item {} 
+\sphinxAtStartPar
+Rewriting small programs is more useful than only rereading completed examples.
+
+\end{itemize}
+
+
+\subsection{Chapter 26: Appendix}
+\label{\detokenize{Reading/ProgrammingFundamentals:chapter-26-appendix}}
+\sphinxAtStartPar
+Provides reference material including operator precedence, reserved C++ keywords, the ASCII character set, file\sphinxhyphen{}extension settings, and academic\sphinxhyphen{}integrity guidance.
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+Parentheses are clearer than relying heavily on memorized precedence.
+
+\item {} 
+\sphinxAtStartPar
+Reserved keywords cannot be used as identifiers.
+
+\item {} 
+\sphinxAtStartPar
+File extensions should remain visible so source files and compiled files are not confused.
+
+\end{itemize}
+
 
 
 \renewcommand{\indexname}{Index}
