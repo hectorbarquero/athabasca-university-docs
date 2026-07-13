@@ -16,9 +16,17 @@ Assignment one journal
 
 Program design
 ===============
-.. draw.io files? sketches?
-.. dolphin.js is easier ... 
-.. logarithm, test case plan and any math sketches
+.. image:: ../_static/images/a1-problem1-2.png
+   :width: 700px
+   :align: center
+
+.. image:: ../_static/images/a1-problem3-4.png
+   :width: 700px
+   :align: center
+
+.. image:: ../_static/images/a1-problem4-5.png
+   :width: 700px
+   :align: center
 
 
 Multiplication table

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  13 JUL 2026 07:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  13 JUL 2026 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -897,84 +897,80 @@ Chapter 2.
 Chapter 3.
 [5
 
-] [6]
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 5
-52.
+] [6] [7]
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 6
+57.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-[7] [8] [9] [10] [11]
+[8] [9] [10] [11] [12]
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
 1.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
-) [12] [13]
-[14] [15] [16]
+) [13] [14]
+[15] [16] [17]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1680.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1785.
 
- [17] [18] [19] [20] [21] [22] [23] [24]
-Chapter 4.
-[25
-
-] [26
+ [18] [19] [20] [21] [22] [23] [24] [25] [26
 
 ]
-Chapter 5.
+Chapter 4.
 [27] [28
 
 ]
-Chapter 6.
+Chapter 5.
 [29] [30
 
 ]
-Chapter 7.
+Chapter 6.
 [31] [32
 
 ]
-Chapter 8.
+Chapter 7.
 [33] [34] [35] [36] [37] [38]
-Overfull \vbox (2.06047pt too high) detected at line 2591
+Overfull \vbox (2.06047pt too high) detected at line 2706
  []
 
 [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53]
 [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
-Overfull \vbox (1.14696pt too high) detected at line 4185
+Overfull \vbox (1.14696pt too high) detected at line 4300
  []
 
 [64] [65] [66] [67] [68] [69] [70] [71]
-Overfull \vbox (1.14696pt too high) detected at line 4698
+Overfull \vbox (1.14696pt too high) detected at line 4813
  []
 
 [72] [73] [74] [75] [76] [77]
-Overfull \vbox (1.14696pt too high) detected at line 5073
+Overfull \vbox (1.14696pt too high) detected at line 5188
  []
 
 [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
-Overfull \vbox (1.14696pt too high) detected at line 5830
+Overfull \vbox (1.14696pt too high) detected at line 5945
  []
 
 [90] [91] [92] [93] [94] [95]
-Overfull \vbox (1.14696pt too high) detected at line 6214
+Overfull \vbox (1.14696pt too high) detected at line 6329
  []
 
 [96] [97] [98] [99]
-Overfull \vbox (1.14696pt too high) detected at line 6468
+Overfull \vbox (1.14696pt too high) detected at line 6583
  []
 
 [100] [101] [102] [103] [104] [105] [106] [107] [108
 
 ]
-Chapter 9.
+Chapter 8.
 [109] [110] [111] [112] [113] [114
 
 ]
-Chapter 10.
+Chapter 9.
 [115] [116] [117] [118] [119] [120
 
 ]
-Chapter 11.
+Chapter 10.
 (./comp206learningjournal.ind) [121] (./comp206learningjournal.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -982,16 +978,16 @@ L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `comp206learningjournal.out' has not changed.
 
-(rerunfilecheck)             Checksum: 10E0B3CB1635CD6CA1D7343F1A1FD81C;66922.
+(rerunfilecheck)             Checksum: 75C5E50EAE151CDB7A8980A3105108CF;66765.
  ) 
 Here is how much of TeX's memory you used:
- 21060 strings out of 474116
- 383497 string characters out of 5743682
+ 21058 strings out of 474116
+ 383421 string characters out of 5743682
  2026187 words of memory out of 5000000
- 42521 multiletter control sequences out of 15000+600000
+ 42520 multiletter control sequences out of 15000+600000
  612670 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 72i,11n,83p,1211b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,12n,83p,1211b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/font
 awesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
@@ -1003,10 +999,10 @@ gyre/qtmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/q
 tmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on comp206learningjournal.pdf (125 pages, 425880 bytes).
+Output written on comp206learningjournal.pdf (125 pages, 428950 bytes).
 PDF statistics:
- 2111 PDF objects out of 2487 (max. 8388607)
- 1944 compressed objects within 20 object streams
- 489 named destinations out of 1000 (max. 500000)
- 2669 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2106 PDF objects out of 2487 (max. 8388607)
+ 1939 compressed objects within 20 object streams
+ 488 named destinations out of 1000 (max. 500000)
+ 2661 words of extra memory for PDF output out of 10000 (max. 10000000)
 
