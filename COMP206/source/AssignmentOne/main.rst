@@ -20,31 +20,55 @@ Program design
 .. dolphin.js is easier ... 
 .. logarithm, test case plan and any math sketches
 
+
 Multiplication table
 ~~~~~~~~~~~~~~~~~~~~~~
+- Added nested for loops for the row and column values. (v1.0)
+- Used setw to align three-character row labels and four-character products. (v1.1-v1.5)
+- Compared the generated first and final rows with the supplied table. (v1.5)
+- Corrected the first-column width so the vertical bars align with the sample.(v1.5-v1.7)
 
 
 Convert temperature from F to C
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added a repetition loop for multiple conversions. (v1.0)
+- Implemented both temperature formulas using double values. (v1.0)
+- Accepted uppercase and lowercase F, C, Y and N. (v1.0)
+- Added input checks for non-numeric temperatures and unsupported units. (v1.2)
+- Added extra support and redesigned program a bit to handle when user enters temp as string not int or double. (v1.2)
+- Verified 32 F converts to 0 C, 100 C converts to 212 F and -40 converts to -40 in either direction. (v1.2)
 
 
 Temperature conversion table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+No changelog - was able to solve this in one attempt given similarity to previous problems.
+
+- Added static functions for Fahrenheit-to-Celsius and Celsius-to-Fahrenheit. (v1.0)
+- Generated exactly 100 rows beginning at -40 and increasing by 5. (v1.0)
+- Used fixed, setprecision(3) and setw for table formatting. (v1.0)
+- Verified the first row, the 100-degree row and the final 455-degree row. (v1.0)
 
 
 Interactive help system
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added a repeating menu implemented with a do-while loop. (v1.0)
+- Added switch cases for if, switch, for, while and do-while. (v1.1)
+- Added invalid-selection handling and support for x or X to exit. (v1.2)
+- Verified each menu option and both exit characters. (v1.3)
 
 
 Print all prime numbers (1 to 10000)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added nested for loops and the modulus operator for prime detection. (v1.0)
+- Began candidate testing at 2 because 1 is not prime. (v1.1)
+- Limited divisor testing to divisors whose square is no greater than the candidate. (v1.2)
+- Formatted the output as ten prime numbers per row. (v1.2)
+- Verified that 2 is the first prime, 9973 is the final prime and 1,229 primes are produced from 1 through 10,000. (v1.3)
 
 
 
 Overview and reflections
 =========================
-.. What difficulties did i hit?
-.. Link to reading reflections
 
 Unit 1: Points to ponder
 ~~~~~~~~~~~~~~~~~~~~~~~~~
