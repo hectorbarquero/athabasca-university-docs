@@ -45,27 +45,27 @@
 \contentsline {section}{\numberline {3.5}Sources and references}{28}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Assignment two journal}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Program design}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Problem 1}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Problem 2}{29}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Problem 3}{29}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Problem 4}{29}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}Problem 5}{29}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Overview and reflections}{29}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Unit 4: Points to ponder}{29}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Unit 5: Points to ponder}{30}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Unit 6: Points to ponder}{30}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Readings}{30}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Unit 4}{30}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Unit 5}{32}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Unit 6}{34}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Practice problems}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Unit 4 practice problems}{36}{subsection.4.4.1}%
-\contentsline {subsubsection}{Fizz Buzz (Easy)}{36}{subsubsection*.18}%
-\contentsline {subsection}{\numberline {4.4.2}Unit 5 practice problems}{36}{subsection.4.4.2}%
-\contentsline {subsubsection}{Pow(x, n) (Medium)}{36}{subsubsection*.19}%
-\contentsline {subsection}{\numberline {4.4.3}Unit 6 practice problems}{37}{subsection.4.4.3}%
-\contentsline {subsubsection}{Pascal’s Triangle (Easy)}{37}{subsubsection*.20}%
-\contentsline {section}{\numberline {4.5}Sources and references}{37}{section.4.5}%
+\contentsline {subsection}{\numberline {4.1.1}Animal inheritance and sounds}{29}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Book class and private attributes}{29}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Elevator construction, movement and cleanup}{30}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Rodent inheritance and behaviours}{30}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Points and shape hierarchy}{30}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Overview and reflections}{31}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Unit 4: Points to ponder}{31}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Unit 5: Points to ponder}{31}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Unit 6: Points to ponder}{31}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Readings}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Unit 4}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Unit 5}{33}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Unit 6}{35}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Practice problems}{37}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Unit 4 practice problems}{37}{subsection.4.4.1}%
+\contentsline {subsubsection}{Fizz Buzz (Easy)}{37}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {4.4.2}Unit 5 practice problems}{37}{subsection.4.4.2}%
+\contentsline {subsubsection}{Pow(x, n) (Medium)}{37}{subsubsection*.19}%
+\contentsline {subsection}{\numberline {4.4.3}Unit 6 practice problems}{38}{subsection.4.4.3}%
+\contentsline {subsubsection}{Pascal’s Triangle (Easy)}{38}{subsubsection*.20}%
+\contentsline {section}{\numberline {4.5}Sources and references}{38}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Assignment three journal}{39}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Assignment four journal}{41}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Practice problems}{43}{chapter.7}%

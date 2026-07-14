@@ -16,7 +16,13 @@ Assignment two journal
 
 Program design
 ===============
-.. add images
+.. image:: ../_static/images/a2-problem1-3.png
+   :width: 700px
+   :align: center
+
+.. image:: ../_static/images/a2-problem4-5.png
+   :width: 700px
+   :align: center
 
 
 Animal inheritance and sounds

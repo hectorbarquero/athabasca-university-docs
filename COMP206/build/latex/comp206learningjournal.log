@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  13 JUL 2026 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  14 JUL 2026 07:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,11 +934,11 @@ LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
 Chapter 4.
 [29
 
-] [30] [31] [32] [33] [34] [35] [36] [37] [38
-
-]
+] [30] [31] [32] [33] [34] [35] [36] [37] [38]
 Chapter 5.
-[39] [40
+[39
+
+] [40
 
 ]
 Chapter 6.
@@ -947,49 +947,49 @@ Chapter 6.
 ]
 Chapter 7.
 [43] [44] [45] [46] [47] [48]
-Overfull \vbox (2.06047pt too high) detected at line 3587
+Overfull \vbox (2.06047pt too high) detected at line 3711
  []
 
 [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
 [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
-Overfull \vbox (1.14696pt too high) detected at line 5181
+Overfull \vbox (1.14696pt too high) detected at line 5305
  []
 
 [74] [75] [76] [77] [78] [79] [80] [81]
-Overfull \vbox (1.14696pt too high) detected at line 5694
+Overfull \vbox (1.14696pt too high) detected at line 5818
  []
 
 [82] [83] [84] [85] [86] [87]
-Overfull \vbox (1.14696pt too high) detected at line 6069
+Overfull \vbox (1.14696pt too high) detected at line 6193
  []
 
 [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99]
-Overfull \vbox (1.14696pt too high) detected at line 6826
+Overfull \vbox (1.14696pt too high) detected at line 6950
  []
 
 [100] [101] [102] [103] [104] [105]
-Overfull \vbox (1.14696pt too high) detected at line 7210
+Overfull \vbox (1.14696pt too high) detected at line 7334
  []
 
 [106] [107] [108] [109]
-Overfull \vbox (1.14696pt too high) detected at line 7464
+Overfull \vbox (1.14696pt too high) detected at line 7588
  []
 
 [110] [111] [112] [113] [114] [115] [116] [117] [118]
-Overfull \vbox (2.06047pt too high) detected at line 8053
+Overfull \vbox (2.06047pt too high) detected at line 8177
  []
 
 [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129] [130]
 [131] [132]
-Overfull \vbox (2.62256pt too high) detected at line 8880
+Overfull \vbox (2.62256pt too high) detected at line 9004
  []
 
 [133] [134] [135] [136] [137] [138] [139] [140]
-Overfull \vbox (0.53639pt too high) detected at line 9353
+Overfull \vbox (0.53639pt too high) detected at line 9477
  []
 
 [141] [142] [143] [144] [145] [146] [147] [148]
-Overfull \vbox (1.14696pt too high) detected at line 9846
+Overfull \vbox (1.14696pt too high) detected at line 9970
  []
 
 [149] [150] [151] [152] [153] [154] [155] [156] [157] [158] [159] [160
@@ -1012,12 +1012,12 @@ L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `comp206learningjournal.out' has not changed.
 
-(rerunfilecheck)             Checksum: A99D970A9323AFCF1187E34214250D07;95187.
+(rerunfilecheck)             Checksum: 120BBB6B5B57C9B6DDCF1DEAD2ADC5B0;95818.
  ) 
 Here is how much of TeX's memory you used:
  21561 strings out of 474116
- 396181 string characters out of 5743682
- 2055187 words of memory out of 5000000
+ 396299 string characters out of 5743682
+ 2054187 words of memory out of 5000000
  42822 multiletter control sequences out of 15000+600000
  612670 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1033,7 +1033,7 @@ gyre/qtmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/q
 tmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on comp206learningjournal.pdf (182 pages, 2332868 bytes).
+Output written on comp206learningjournal.pdf (182 pages, 2335556 bytes).
 PDF statistics:
  2979 PDF objects out of 2984 (max. 8388607)
  2741 compressed objects within 28 object streams
