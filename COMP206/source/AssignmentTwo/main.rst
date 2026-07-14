@@ -19,29 +19,60 @@ Program design
 .. add images
 
 
-Problem 1
-~~~~~~~~~~~~~~~~~~~~~~
-- add changelog here
+Animal inheritance and sounds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added an Animal base class with a default constructor and generic sound() method. (v1.0)
+- Added Pig, Sheep, Duck and Cow child classes with animal-specific constructors and overridden sound() methods. (v1.0-v1.2)
+- Created several instances of each animal and verified oink, baah, quack and moo output. (v1.2)
+- Made sound() virtual so child sounds can be called through an Animal pointer. (v1.3)
+- Added an AnimalTest class that creates the correct child object from command-line input. (v1.3-v1.5)
+- Added support for mixed-case animal names and error handling for unknown animals or extra arguments. (v1.5-v1.7)
+- Used unique_ptr<Animal> so the selected child object is cleaned up automatically. (v1.7)
 
 
-Problem 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- add changelog here
+Book class and private attributes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added a Book class with private title, ISBN, author, edition, publisher and publication-year attributes. (v1.0)
+- Added public getter and setter methods for each private attribute. (v1.0-v1.2)
+- Added a default constructor and a parameterized constructor for initializing Book objects. (v1.2-v1.3)
+- Added display() to print all stored book information in a consistent format. (v1.3)
+- Created three Book objects using both constructors and setter methods. (v1.3-v1.5)
+- Verified that each object keeps its own values and that every getter returns the value assigned by its setter. (v1.5-v1.6)
 
 
-Problem 3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- add changelog here
+Elevator construction, movement and cleanup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added an Elevator class that stores the total number of floors and the current floor. (v1.0)
+- Added a default constructor for a five-storey building and a parameterized constructor for custom building sizes. (v1.0-v1.2)
+- Added moveTo() to move between floors and reject destinations outside the building range. (v1.2-v1.4)
+- Added handling for requests to move to the elevator's current floor. (v1.4)
+- Added a destructor that returns the elevator to floor one and prints the required cleanup message. (v1.4-v1.5)
+- Tested default construction, upward movement, downward movement, invalid movement and repeated movement. (v1.5-v1.7)
+- Used unique_ptr::reset() to demonstrate when a dynamically created Elevator object is destroyed in C++. (v1.7)
 
 
-Problem 4
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- add changelog here
+Rodent inheritance and behaviours
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added a Rodent base class with common eat(), sleep(), groom() and move() behaviours. (v1.0)
+- Added Mouse, Gerbil, Hamster and GuineaPig child classes. (v1.0-v1.2)
+- Overrode only behaviours that differ for each rodent, while leaving common behaviours inherited from Rodent. (v1.2-v1.4)
+- Added type() and demonstrateBehaviours() methods to identify each rodent and run all of its behaviours. (v1.4-v1.5)
+- Stored the child objects in a vector of unique_ptr<Rodent> objects. (v1.5)
+- Called each behaviour through Rodent pointers to verify runtime polymorphism. (v1.5-v1.7)
+- Verified that inherited methods still run when a child class does not override a behaviour. (v1.7)
 
 
-Problem 5
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- add changelog here
+Points and shape hierarchy
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Added a Point class with separate x and y values and show(), add() and subtract() methods. (v1.0)
+- Added a Shape base class with virtual area(), circumference(), boundingBox() and display() methods. (v1.0-v1.2)
+- Added Circle, Rectangle and Triangle child classes with default and parameterized constructors. (v1.2-v1.4)
+- Implemented area and circumference calculations for each valid shape. (v1.4-v1.5)
+- Added axis-aligned bounding-box calculations using minimum and maximum x and y coordinates. (v1.5)
+- Added constructor validation for positive circle radii, non-collinear triangles and four-sided shapes that satisfy rectangle rules. (v1.5-v1.7)
+- Added floating-point tolerance checks so calculated lengths and angles are not compared using exact equality. (v1.7)
+- Added square detection when all four rectangle sides have equal length. (v1.7-v1.8)
+- Tested valid circles, rectangles and triangles, along with an invalid circle, a non-rectangle quadrilateral, a square and a collinear triangle. (v1.8-v2.0)
 
 
 
