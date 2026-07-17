@@ -11,14 +11,6 @@ COMP206 documentation
 
 .. toctree::
    :maxdepth: 4
-   :caption: Assignment instructions
-   :hidden:
-
-   Reading/SubmissionInstructions.rst
-   AssignmentInstructions/AssignmentInstructions.rst
-
-.. toctree::
-   :maxdepth: 4
    :caption: Assignment one
    :hidden:
 
@@ -44,19 +36,3 @@ COMP206 documentation
    :hidden:
 
    AssignmentFour/main.rst
-
-.. toctree::
-   :maxdepth: 4
-   :caption: COMP206 Practice problems
-   :hidden:
-
-   PracticeProblems/PracticeProblems.rst
-
-.. toctree::
-   :maxdepth: 4
-   :caption: COMP206 reading
-   :hidden:
-
-   Reading/ThinkCpp.rst
-   Reading/RooksGuide.rst
-   Reading/ProgrammingFundamentals.rst

@@ -11,7 +11,7 @@ Assignment two journal
 .. tip::
    **How to use this journal**
    
-   This journal section acts as an index, with the reading contents contained in the **Readings** chapter. You can use this to jump to the correct chapter, and it organizes the Unit 1 assignment journal components more cleanly rather than having them duplicated.
+   Each assignment has it's own chapter. Use the right chapter to grade the assignment, which has program design notes, changelogs for versions as I made updates, reflections, and reading notes for the units of each assignment. There's also practice questions from the textbook which were recommended to be added to the learning journal for each assignment chapter. If a chapter is missing, it means that assignment isn't done yet because they're being completed sequentially-- not all at the same time.
 
 
 Program design
