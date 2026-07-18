@@ -25,8 +25,8 @@ Program design
    :align: center
 
 
-Animal inheritance and sounds
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assignment 2, Problem 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added an Animal base class with a default constructor and generic sound() method. (v1.0)
 - Added Pig, Sheep, Duck and Cow child classes with animal-specific constructors and overridden sound() methods. (v1.0-v1.2)
 - Created several instances of each animal and verified oink, baah, quack and moo output. (v1.2)
@@ -36,8 +36,8 @@ Animal inheritance and sounds
 - Used unique_ptr<Animal> so the selected child object is cleaned up automatically. (v1.7)
 
 
-Book class and private attributes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assignment 2, Problem 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added a Book class with private title, ISBN, author, edition, publisher and publication-year attributes. (v1.0)
 - Added public getter and setter methods for each private attribute. (v1.0-v1.2)
 - Added a default constructor and a parameterized constructor for initializing Book objects. (v1.2-v1.3)
@@ -46,8 +46,8 @@ Book class and private attributes
 - Verified that each object keeps its own values and that every getter returns the value assigned by its setter. (v1.5-v1.6)
 
 
-Elevator construction, movement and cleanup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assignment 2, Problem 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added an Elevator class that stores the total number of floors and the current floor. (v1.0)
 - Added a default constructor for a five-storey building and a parameterized constructor for custom building sizes. (v1.0-v1.2)
 - Added moveTo() to move between floors and reject destinations outside the building range. (v1.2-v1.4)
@@ -57,8 +57,8 @@ Elevator construction, movement and cleanup
 - Used unique_ptr::reset() to demonstrate when a dynamically created Elevator object is destroyed in C++. (v1.7)
 
 
-Rodent inheritance and behaviours
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assignment 2, Problem 4
+~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added a Rodent base class with common eat(), sleep(), groom() and move() behaviours. (v1.0)
 - Added Mouse, Gerbil, Hamster and GuineaPig child classes. (v1.0-v1.2)
 - Overrode only behaviours that differ for each rodent, while leaving common behaviours inherited from Rodent. (v1.2-v1.4)
@@ -68,7 +68,7 @@ Rodent inheritance and behaviours
 - Verified that inherited methods still run when a child class does not override a behaviour. (v1.7)
 
 
-Points and shape hierarchy
+Assignment 2, Problem 5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added a Point class with separate x and y values and show(), add() and subtract() methods. (v1.0)
 - Added a Shape base class with virtual area(), circumference(), boundingBox() and display() methods. (v1.0-v1.2)

@@ -29,15 +29,15 @@ Program design
    :align: center
 
 
-Multiplication table
-~~~~~~~~~~~~~~~~~~~~~~
+Assignment 1, Problem 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added nested for loops for the row and column values. (v1.0)
 - Used setw to align three-character row labels and four-character products. (v1.1-v1.5)
 - Compared the generated first and final rows with the supplied table. (v1.5)
 - Corrected the first-column width so the vertical bars align with the sample.(v1.5-v1.7)
 
 
-Convert temperature from F to C
+Assignment 1, Problem 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added a repetition loop for multiple conversions. (v1.0)
 - Implemented both temperature formulas using double values. (v1.0)
@@ -47,7 +47,7 @@ Convert temperature from F to C
 - Verified 32 F converts to 0 C, 100 C converts to 212 F and -40 converts to -40 in either direction. (v1.2)
 
 
-Temperature conversion table
+Assignment 1, Problem 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 No changelog - was able to solve this in one attempt given similarity to previous problems.
 
@@ -57,7 +57,7 @@ No changelog - was able to solve this in one attempt given similarity to previou
 - Verified the first row, the 100-degree row and the final 455-degree row. (v1.0)
 
 
-Interactive help system
+Assignment 1, Problem 4
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added a repeating menu implemented with a do-while loop. (v1.0)
 - Added switch cases for if, switch, for, while and do-while. (v1.1)
@@ -65,7 +65,7 @@ Interactive help system
 - Verified each menu option and both exit characters. (v1.3)
 
 
-Print all prime numbers (1 to 10000)
+Assignment 1, Problem 5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Added nested for loops and the modulus operator for prime detection. (v1.0)
 - Began candidate testing at 2 because 1 is not prime. (v1.1)
