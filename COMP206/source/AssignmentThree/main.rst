@@ -16,7 +16,13 @@ Assignment three journal
 
 Program design
 ===============
-.. add images
+.. image:: ../_static/images/a3-problem1-3.png
+   :width: 700px
+   :align: center
+
+.. image:: ../_static/images/a3-problem4-5.png
+   :width: 700px
+   :align: center
 
 
 Assignment 3, Problem 1
