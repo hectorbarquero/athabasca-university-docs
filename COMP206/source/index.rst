@@ -11,28 +11,7 @@ COMP206 documentation
 
 .. toctree::
    :maxdepth: 4
-   :caption: Assignment one
-   :hidden:
-
-   AssignmentOne/main.rst
-
-.. toctree::
-   :maxdepth: 4
-   :caption: Assignment two
-   :hidden:
-
-   AssignmentTwo/main.rst
-
-.. toctree::
-   :maxdepth: 4
    :caption: Assignment three
    :hidden:
 
    AssignmentThree/main.rst
-
-.. toctree::
-   :maxdepth: 4
-   :caption: Assignment four
-   :hidden:
-
-   AssignmentFour/main.rst

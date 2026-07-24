@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  18 JUL 2026 09:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.18)  18 JUL 2026 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -876,107 +876,63 @@ nput line 118.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 )
-<a1-problem1-2.png, id=376, 872.50969pt x 636.12656pt>
+<a3-problem1-3.png, id=126, 900.36375pt x 612.03656pt>
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
 29.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-File: a1-problem1-2.png Graphic file (type png)
-<use a1-problem1-2.png>
-Package pdftex.def Info: a1-problem1-2.png  used on input line 129.
-(pdftex.def)             Requested size: 469.75032pt x 342.47433pt.
+File: a3-problem1-3.png Graphic file (type png)
+<use a3-problem1-3.png>
+Package pdftex.def Info: a3-problem1-3.png  used on input line 129.
+(pdftex.def)             Requested size: 469.75803pt x 319.33482pt.
  [1
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}]
-<a1-problem3-4.png, id=385, 891.33pt x 634.62094pt>
-File: a1-problem3-4.png Graphic file (type png)
-<use a1-problem3-4.png>
-Package pdftex.def Info: a1-problem3-4.png  used on input line 131.
-(pdftex.def)             Requested size: 469.75055pt x 334.46889pt.
- [2 <./a1-problem1-2.png>]
-<a1-problem4-5.png, id=391, 893.58844pt x 636.12656pt>
-File: a1-problem4-5.png Graphic file (type png)
-<use a1-problem4-5.png>
-Package pdftex.def Info: a1-problem4-5.png  used on input line 133.
-(pdftex.def)             Requested size: 469.75453pt x 334.40823pt.
- [3 <./a1-problem3-4.png>]
+<a3-problem4-5.png, id=134, 882.29625pt x 615.80063pt>
+File: a3-problem4-5.png Graphic file (type png)
+<use a3-problem4-5.png>
+Package pdftex.def Info: a3-problem4-5.png  used on input line 131.
+(pdftex.def)             Requested size: 469.75536pt x 327.88559pt.
+ [2 <./a3-problem1-3.png>]
 LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 1
-38.
+36.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [4{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./
-a1-problem4-5.png>] [5] [6] [7] [8] [9] [10] [11]
-LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-1.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txtt.fd
-File: ts1txtt.fd 2000/12/15 v3.1
-) [12] [13]
-[14] [15] [16]
+) [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./
+a3-problem4-5.png>] [4] [5] [6] [7] [8] [9] [10]
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 1576.
-
- [17] [18] [19] [20] [21] [22] [23] [24]
-Chapter 2.
-<a2-problem1-3.png, id=508, 963.6pt x 676.77844pt>
-File: a2-problem1-3.png Graphic file (type png)
-<use a2-problem1-3.png>
-Package pdftex.def Info: a2-problem1-3.png  used on input line 2071.
-(pdftex.def)             Requested size: 469.75679pt x 329.9514pt.
-[25
-
-]
-<a2-problem4-5.png, id=513, 949.29657pt x 683.55376pt>
-File: a2-problem4-5.png Graphic file (type png)
-<use a2-problem4-5.png>
-Package pdftex.def Info: a2-problem4-5.png  used on input line 2073.
-(pdftex.def)             Requested size: 469.75116pt x 338.2715pt.
- [26 <./a2-problem1-3.png>] [27 <./a2-problem4-5.png>] [28] [29] [30]
-[31] [32] [33] [34] [35] [36]
-Chapter 3.
-[37
-
-] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
-Chapter 4.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 4131.
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-) (./comp206learningjournal.ind) [49
-
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}]
- (./comp206learningjournal.aux)
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 983.
+ [11] [12] [13] (./comp206learningjournal.ind) [14] (./comp206learningjournal.a
+ux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `comp206learningjournal.out' has not changed.
 
-(rerunfilecheck)             Checksum: AF2275EC0E3A8DD3B63DA9EBEF7CBA40;14738.
+(rerunfilecheck)             Checksum: 45C8E9EBDEDA590309384EFE3096967A;4122.
  ) 
 Here is how much of TeX's memory you used:
- 20260 strings out of 474116
- 363720 string characters out of 5743682
- 2060187 words of memory out of 5000000
- 42058 multiletter control sequences out of 15000+600000
- 613048 words of font info for 81 fonts, out of 8000000 for 9000
+ 19950 strings out of 474116
+ 357166 string characters out of 5743682
+ 2058187 words of memory out of 5000000
+ 41861 multiletter control sequences out of 15000+600000
+ 612444 words of font info for 79 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  72i,12n,83p,1211b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
-me5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/font
-awesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/p
-ublic/tex-gyre/qtmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/
-tex-gyre/qtmr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gy
-re/qtmri.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1x
-btt.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pf
-b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/tcxtt.pfb>
-Output written on comp206learningjournal.pdf (53 pages, 3461045 bytes).
+me5Free-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-
+gyre/qhvb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/q
+tmb.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pf
+b></usr/local/texlive/2024/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on comp206learningjournal.pdf (18 pages, 1350667 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 639 compressed objects within 7 object streams
- 151 named destinations out of 1000 (max. 500000)
- 702 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
