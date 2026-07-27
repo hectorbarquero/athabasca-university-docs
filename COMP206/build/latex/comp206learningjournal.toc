@@ -1,24 +1,21 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{\numberline {1}Assignment three journal}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Program design}{2}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Assignment 3, Problem 1}{3}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Assignment 3, Problem 2}{3}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Assignment 3, Problem 3}{4}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Assignment 3, Problem 4}{4}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Assignment 3, Problem 5}{4}{subsection.1.1.5}%
-\contentsline {section}{\numberline {1.2}Overview and reflections}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Unit 7: Points to ponder}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Unit 8: Points to ponder}{5}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Unit 9: Points to ponder}{5}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Readings}{5}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Unit 7}{5}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Unit 8}{7}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Unit 9}{9}{subsection.1.3.3}%
-\contentsline {section}{\numberline {1.4}Practice problems}{10}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Unit 7 practice problems}{10}{subsection.1.4.1}%
-\contentsline {subsubsection}{Find the Index of the First Occurrence in a String (Easy)}{10}{subsubsection*.3}%
-\contentsline {subsection}{\numberline {1.4.2}Unit 8 practice problems}{11}{subsection.1.4.2}%
-\contentsline {subsubsection}{Rectangle Overlap (Easy)}{11}{subsubsection*.4}%
-\contentsline {subsection}{\numberline {1.4.3}Unit 9 practice problems}{12}{subsection.1.4.3}%
-\contentsline {subsubsection}{Number of Days Between Two Dates (Easy)}{12}{subsubsection*.5}%
-\contentsline {section}{\numberline {1.5}Sources and references}{14}{section.1.5}%
+\contentsline {chapter}{\numberline {1}Assignment four journal}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Program design}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Concept and scope}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Player experience and command style}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}World plan}{2}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Items and treasures}{2}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Characters and encounters}{3}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Classes and responsibilities}{3}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}External text files}{3}{subsection.1.1.7}%
+\contentsline {subsection}{\numberline {1.1.8}Game state, scoring and ending}{3}{subsection.1.1.8}%
+\contentsline {subsection}{\numberline {1.1.9}Algorithmic scale}{3}{subsection.1.1.9}%
+\contentsline {section}{\numberline {1.2}Program test plan}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Overview and reflections}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Research notes}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Research and game concept}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}World map and external data}{7}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Object\sphinxhyphen {}oriented class design}{7}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Command parser and game logic}{8}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Testing and corrections}{8}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Sources and references}{8}{section.1.5}%

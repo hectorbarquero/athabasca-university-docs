@@ -11,7 +11,7 @@ COMP206 documentation
 
 .. toctree::
    :maxdepth: 4
-   :caption: Assignment three
+   :caption: Assignment four
    :hidden:
 
-   AssignmentThree/main.rst
+   AssignmentFour/main.rst

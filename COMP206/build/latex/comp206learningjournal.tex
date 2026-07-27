@@ -64,7 +64,7 @@
 
 
 \title{COMP206 Learning Journal}
-\date{Jul 18, 2026}
+\date{Jul 26, 2026}
 \release{}
 \author{Hector Barquero}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -88,8 +88,8 @@
 \sphinxstepscope
 
 
-\chapter{Assignment three journal}
-\label{\detokenize{AssignmentThree/main:assignment-three-journal}}\label{\detokenize{AssignmentThree/main::doc}}
+\chapter{Assignment four journal}
+\label{\detokenize{AssignmentFour/main:assignment-four-journal}}\label{\detokenize{AssignmentFour/main::doc}}
 
 \begin{savenotes}\sphinxattablestart
 \sphinxthistablewithglobalstyle
@@ -125,1030 +125,705 @@ Learning journal contains program design notes, changelogs for versions as I mad
 
 
 \section{Program design}
-\label{\detokenize{AssignmentThree/main:program-design}}
-\noindent{\hspace*{\fill}\sphinxincludegraphics[width=700\sphinxpxdimen]{{a3-problem1-3}.png}\hspace*{\fill}}
+\label{\detokenize{AssignmentFour/main:program-design}}
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[width=700\sphinxpxdimen]{{a3-problem4-5}.png}\hspace*{\fill}}
+\subsection{Concept and scope}
+\label{\detokenize{AssignmentFour/main:concept-and-scope}}
+\sphinxAtStartPar
+This project is a compact parser\sphinxhyphen{}based adventure game inspired by Lewis
+Carroll’s \sphinxstyleemphasis{Alice’s Adventures in Wonderland}. You (the player) represent Alice and
+begin beside the rabbit hole. The White Rabbit has lost four important
+objects: the Golden Key, Pocket Watch, Painted Rose and Queen’s Tart. You
+must descend into Wonderland, explore its connected locations, collect the four
+treasures and return them to the Hall of Doors. The Hall is the game’s safe
+room. After all treasures are stashed there, Alice must use the DRINK ME Bottle
+to become small enough to enter the tiny door and reach the Quiet Garden.
+
+\sphinxAtStartPar
+The game uses recognizable characters, places and objects while giving them a new game objective.
+The game scope demonstrates object\sphinxhyphen{}oriented design, external data
+loading, a command parser, state changes, inventory management, random events,
+scoring, winning and losing. It remains small enough to test every location and
+important command manually and I’ve included some instructions for fast tracking to
+certain winning or losing states.
 
 
-\subsection{Assignment 3, Problem 1}
-\label{\detokenize{AssignmentThree/main:assignment-3-problem-1}}\begin{itemize}
+\subsection{Player experience and command style}
+\label{\detokenize{AssignmentFour/main:player-experience-and-command-style}}
+\sphinxAtStartPar
+All communication is text. On the first visit to a location, the game prints a
+long description. Later visits print a shorter reminder. It then lists visible
+items, characters and available exits. The player enters short commands. Input
+is converted to lowercase, punctuation becomes whitespace and repeated spaces
+are removed. Therefore \sphinxcode{\sphinxupquote{GO NORTH!}}, \sphinxcode{\sphinxupquote{go north}} and \sphinxcode{\sphinxupquote{Go, north}} are treated
+consistently.
+
+\sphinxAtStartPar
+Direction shortcuts are supported. \sphinxcode{\sphinxupquote{go north}}, \sphinxcode{\sphinxupquote{north}} and \sphinxcode{\sphinxupquote{n}} all
+produce the same internal command. Other aliases are loaded from
+\sphinxcode{\sphinxupquote{actions.txt}}. Examples include \sphinxcode{\sphinxupquote{inventory}}, \sphinxcode{\sphinxupquote{invent}} and \sphinxcode{\sphinxupquote{i}} or
+\sphinxcode{\sphinxupquote{take}}, \sphinxcode{\sphinxupquote{get}} and \sphinxcode{\sphinxupquote{pick up}}. The parser separates an action from its
+object and optional target. For example, \sphinxcode{\sphinxupquote{throw cup at hatter}} becomes the
+action \sphinxcode{\sphinxupquote{throw}}, object \sphinxcode{\sphinxupquote{cup}} and target \sphinxcode{\sphinxupquote{hatter}}.
+
+\sphinxAtStartPar
+The opening message states the goal. \sphinxcode{\sphinxupquote{help}} lists valid commands and \sphinxcode{\sphinxupquote{score}}
+shows score, turns, energy, courage and treasure progress. Invalid commands do
+not end the game. They produce a direct message and allow another attempt.
+
+
+\subsection{World plan}
+\label{\detokenize{AssignmentFour/main:world-plan}}
+\sphinxAtStartPar
+The map contains eleven locations. The rabbit hole is intentionally one\sphinxhyphen{}way.
+Once Alice moves down from the Riverbank, no exit leads back above ground.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{Sister}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{s Lawn \PYGZlt{}\PYGZhy{}\PYGZgt{} Riverbank}
+                      \PYG{o}{|}
+                    \PYG{n}{down}
+                      \PYG{n}{v}
+                 \PYG{n}{Rabbit} \PYG{n}{Hole}
+                      \PYG{o}{|}
+                    \PYG{n}{down}
+                      \PYG{n}{v}
+              \PYG{n}{Hall} \PYG{n}{of} \PYG{n}{Doors} \PYG{p}{[}\PYG{n}{SAFE}\PYG{p}{]}
+       \PYG{n}{north} \PYG{o}{/}      \PYG{n}{east} \PYG{o}{|} \PYG{n}{west}       \PYGZbs{} \PYG{n}{south}
+            \PYG{n}{v}            \PYG{n}{v}              \PYG{n}{v}
+     \PYG{n}{Pool} \PYG{n}{of} \PYG{n}{Tears}  \PYG{n}{Mushroom} \PYG{n}{Forest}  \PYG{n}{Mad} \PYG{n}{Tea} \PYG{n}{Party}
+            \PYG{o}{|} \PYG{n}{east}       \PYG{o}{|} \PYG{n}{south}\PYG{o}{/}\PYG{n}{east}   \PYG{o}{|} \PYG{n}{south}
+            \PYG{n}{v}            \PYG{n}{v}              \PYG{n}{v}
+     \PYG{n}{Caucus} \PYG{n}{Garden} \PYG{o}{\PYGZlt{}}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}} \PYG{n}{Queen}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{s Garden \PYGZlt{}\PYGZhy{}\PYGZgt{} Royal Kitchen}
+                           \PYG{o}{|}
+                   \PYG{k}{return} \PYG{n}{north} \PYG{n}{to} \PYG{n}{Hall}
+
+\PYG{n}{Hall} \PYG{n}{of} \PYG{n}{Doors} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{down}\PYG{p}{,} \PYG{n}{when} \PYG{n}{unlocked} \PYG{o+ow}{and} \PYG{n}{Alice} \PYG{o+ow}{is} \PYG{n}{small}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZgt{}} \PYG{n}{Quiet} \PYG{n}{Garden} \PYG{p}{[}\PYG{n}{WIN}\PYG{p}{]}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+The Hall of Doors has five exits, satisfying the requirement for a room with
+more than three exits. It connects the major areas and acts as a safe gathering
+point. Stashed items do not count against the six\sphinxhyphen{}item carrying capacity. This
+encourages the player to return rather than carrying every useful object at
+once.
+
+\sphinxAtStartPar
+The locations are Sister’s Lawn, Riverbank, Rabbit Hole, Hall of Doors, Pool of
+Tears, Caucus Garden, Mushroom Forest, Mad Tea Party, Queen’s Garden, Royal
+Kitchen and Quiet Garden. Every location has an outgoing route and at least one
+incoming connection. The Rabbit Hole prevents reverse travel by omitting an
+upward exit. The Quiet Garden has an exit in the data model, although reaching
+it immediately completes the game.
+
+
+\subsection{Items and treasures}
+\label{\detokenize{AssignmentFour/main:items-and-treasures}}
+\sphinxAtStartPar
+The game defines 16 interactive items, exceeding the required 12.
+They include the White Rabbit’s Fan, Marmalade Jar, DRINK ME Bottle, EAT ME
+Cake, Thimble, Box of Comfits, Golden Key, Mushroom Piece, Tea Cup, Pocket
+Watch, Bread and Butter, Painted Rose, Croquet Flamingo, Hedgehog Croquet Ball,
+Pepper Shaker and Queen’s Tart.
+
+\sphinxAtStartPar
+Items have an identifier, display name, aliases, description, current location,
+takeable flag, treasure flag, point value, use message and state flags. Their
+location changes to \sphinxcode{\sphinxupquote{inventory}} when taken, a room identifier when dropped,
+\sphinxcode{\sphinxupquote{stash}} when stored safely or \sphinxcode{\sphinxupquote{consumed}} after single\sphinxhyphen{}use food and drink.
+This produces one consistent representation instead of separate room and
+inventory copies.
+
+\sphinxAtStartPar
+Food restores energy. The fan and painted rose protect Alice during hostile
+encounters. The pocket watch reports the current turn. The flamingo and
+hedgehog can be combined indirectly by carrying both and using either on the
+croquet field. The DRINK ME Bottle sets the small\sphinxhyphen{}size state needed for the
+final door. The EAT ME Cake and Mushroom Piece restore ordinary size.
+
+
+\subsection{Characters and encounters}
+\label{\detokenize{AssignmentFour/main:characters-and-encounters}}
+\sphinxAtStartPar
+Eight characters are defined: White Rabbit, Dodo, Caterpillar, Mad Hatter,
+Dormouse, Cheshire Cat, Queen of Hearts and Duchess. Each stores aliases, a
+location, description, friendly flag, dialogue and random encounter text.
+Talking to a character prints location\sphinxhyphen{}specific dialogue and awards a small
+first\sphinxhyphen{}conversation score.
+
+\sphinxAtStartPar
+Random encounters can occur after state\sphinxhyphen{}changing actions. A friendly encounter
+adds atmosphere without punishment. A hostile Queen or Duchess encounter may
+reduce courage. Carrying the tart makes a Queen encounter more likely. The fan
+or painted rose grants temporary protection. The \sphinxcode{\sphinxupquote{throw}} action also has a
+random outcome: the target either ducks or is bumped harmlessly. Random events
+use a Mersenne Twister generator. A seed can be supplied for repeatable testing,
+and random encounters can be disabled when testing a fixed route.
+
+
+\subsection{Classes and responsibilities}
+\label{\detokenize{AssignmentFour/main:classes-and-responsibilities}}
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Game}} is the highest class. It owns the repositories, current location,
+Inventory, Control object, score, turn count, energy, courage and other game
+flags. It loads data, runs the loop and dispatches parsed commands to methods.
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Location}} stores one room. \sphinxcode{\sphinxupquote{Locations}} loads and manages all Location
+objects. Each Location contains descriptions, visited and safe flags, and a map
+from directions to destination identifiers.
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Item}} stores one object. \sphinxcode{\sphinxupquote{Items}} loads all Item objects and finds them by
+identifier, alias and current location. \sphinxcode{\sphinxupquote{Character}} and \sphinxcode{\sphinxupquote{Characters}} use
+the same entity\sphinxhyphen{}and\sphinxhyphen{}repository pattern for non\sphinxhyphen{}player characters.
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Action}} stores a canonical action, aliases and help text. \sphinxcode{\sphinxupquote{Actions}} loads
+the action vocabulary and finds the longest alias matching the beginning of a
+command. Longest matching is necessary so \sphinxcode{\sphinxupquote{pick up}} is selected as a phrase
+instead of treating only \sphinxcode{\sphinxupquote{pick}} as an action.
+
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{Inventory}} maintains a vector of carried item identifiers and enforces a
+capacity of six. It does not duplicate full Item objects. \sphinxcode{\sphinxupquote{Control}} reads a
+line, normalizes it, recognizes direction shortcuts, matches a loaded Action
+and separates the object and target. \sphinxcode{\sphinxupquote{TextUtils}} supplies reusable string
+operations such as trimming, splitting, joining and command normalization.
+
+
+\subsection{External text files}
+\label{\detokenize{AssignmentFour/main:external-text-files}}
+\sphinxAtStartPar
+\sphinxcode{\sphinxupquote{locations.txt}} contains room names, long and short descriptions, the safe
+flag and exits. \sphinxcode{\sphinxupquote{items.txt}} defines object properties and starting locations.
+\sphinxcode{\sphinxupquote{characters.txt}} contains descriptions, dialogue and encounter text.
+\sphinxcode{\sphinxupquote{actions.txt}} contains canonical command names, aliases and help descriptions.
+Each non\sphinxhyphen{}comment record uses vertical bars between fields and commas inside
+alias or exit lists. Loading fails with a specific message if a file is missing
+or a record has the wrong number of fields. Cross\sphinxhyphen{}references are checked so an
+item, character or exit cannot silently point to an unknown location.
+
+
+\subsection{Game state, scoring and ending}
+\label{\detokenize{AssignmentFour/main:game-state-scoring-and-ending}}
+\sphinxAtStartPar
+A successful action advances the turn. Energy decreases every third turn.
+Consumable items restore it. If energy reaches zero, the game ends. Alice begins
+with three courage points. Hostile interactions and some random encounters can
+reduce courage; reaching zero also ends the game.
+
+\sphinxAtStartPar
+The player earns points for first visits, first conversations, selected items,
+the croquet interaction and safely stashing treasures. The score is secondary
+to the explicit win condition. The tiny door checks two facts: all four
+required treasures currently have \sphinxcode{\sphinxupquote{stash}} as their location, and Alice has
+used the DRINK ME Bottle. Passing both checks allows travel to the Quiet Garden,
+where the game prints the final score and ends successfully.
+
+
+\subsection{Algorithmic scale}
+\label{\detokenize{AssignmentFour/main:algorithmic-scale}}
+\sphinxAtStartPar
+Command normalization is linear in command length, \sphinxcode{\sphinxupquote{O(c)}}. Action matching is
+\sphinxcode{\sphinxupquote{O(a * s)}} for \sphinxcode{\sphinxupquote{a}} aliases and short command strings. Item and character
+searches are linear in their small collections, \sphinxcode{\sphinxupquote{O(i)}} and \sphinxcode{\sphinxupquote{O(k)}}. Location
+lookup and exit lookup use ordered maps, giving \sphinxcode{\sphinxupquote{O(log r)}} for \sphinxcode{\sphinxupquote{r}} rooms or
+exits. The complete game loop is \sphinxcode{\sphinxupquote{O(t * p)}}, where \sphinxcode{\sphinxupquote{t}} is the number of
+turns and \sphinxcode{\sphinxupquote{p}} is the bounded per\sphinxhyphen{}command parsing and object\sphinxhyphen{}search work. With
+the fixed assignment data, each turn behaves as constant practical work.
+
+
+\section{Program test plan}
+\label{\detokenize{AssignmentFour/main:program-test-plan}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{g}\PYG{o}{+}\PYG{o}{+} \PYG{o}{\PYGZhy{}}\PYG{n}{o} \PYG{n}{Wonderland}\PYG{o}{.}\PYG{n}{exe} \PYG{o}{*}\PYG{o}{.}\PYG{n}{cpp}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Expected result: compilation completes without warnings or errors. Run with ./Wonderland.exe
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{.}\PYG{o}{/}\PYG{n}{Wonderland}\PYG{o}{.}\PYG{n}{exe} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{seed} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{no}\PYG{o}{\PYGZhy{}}\PYG{n}{random} \PYG{o}{\PYGZlt{}} \PYG{n}{tests}\PYG{o}{/}\PYG{n}{win\PYGZus{}commands}\PYG{o}{.}\PYG{n}{txt}
+\end{sphinxVerbatim}
+
+\sphinxAtStartPar
+Expected results:
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Added command\sphinxhyphen{}line filename handling and documented that choice. (v1.0)
+The program loads all four external data files.
 
 \item {} 
 \sphinxAtStartPar
-Opened the requested file with \sphinxcode{\sphinxupquote{ifstream}} and added an open\sphinxhyphen{}failure check. (v1.0\sphinxhyphen{}v1.1)
+The four treasures can be collected and stashed.
 
 \item {} 
 \sphinxAtStartPar
-Counted words with \sphinxcode{\sphinxupquote{while (inputFile \textgreater{}\textgreater{} word)}} so all whitespace types act as delimiters. (v1.1)
+The output states that all four treasures are safe.
 
 \item {} 
 \sphinxAtStartPar
-Added usage output for missing or extra command\sphinxhyphen{}line arguments. (v1.1)
+Using the bottle enables the final downward movement.
 
 \item {} 
 \sphinxAtStartPar
-Tested the program with \sphinxcode{\sphinxupquote{excerpt.txt}}, an empty file and mixed spaces, tabs and line breaks. (v1.2)
-
-\item {} 
-\sphinxAtStartPar
-Verified that the supplied \sphinxcode{\sphinxupquote{excerpt.txt}} contains 327 whitespace\sphinxhyphen{}separated words. (v1.2)
+The Quiet Garden and \sphinxcode{\sphinxupquote{You win}} messages appear.
 
 \end{itemize}
 
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{.}\PYG{o}{/}\PYG{n}{Wonderland}\PYG{o}{.}\PYG{n}{exe} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{seed} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{no}\PYG{o}{\PYGZhy{}}\PYG{n}{random} \PYG{o}{\PYGZlt{}} \PYG{n}{tests}\PYG{o}{/}\PYG{n}{parser\PYGZus{}commands}\PYG{o}{.}\PYG{n}{txt}
+\end{sphinxVerbatim}
 
-\subsection{Assignment 3, Problem 2}
-\label{\detokenize{AssignmentThree/main:assignment-3-problem-2}}\begin{itemize}
+\sphinxAtStartPar
+Expected results:
+\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-Added a filename prompt using \sphinxcode{\sphinxupquote{getline}} so filenames may contain spaces. (v1.0)
-
-\item {} 
-\sphinxAtStartPar
-Read the file one complete line at a time with \sphinxcode{\sphinxupquote{getline(inputFile, line)}}. (v1.0)
-
-\item {} 
-\sphinxAtStartPar
-Added a pause after every displayed line that waits for the Enter key. (v1.0\sphinxhyphen{}v1.1)
+Punctuation and capitalization are ignored.
 
 \item {} 
 \sphinxAtStartPar
-Added one\sphinxhyphen{}based line numbers to make each displayed line easier to verify. (v1.1)
+\sphinxcode{\sphinxupquote{invent}} displays the inventory.
 
 \item {} 
 \sphinxAtStartPar
-Added checks for a blank filename and a file that cannot be opened. (v1.1)
+An unavailable direction is rejected.
 
 \item {} 
 \sphinxAtStartPar
-Tested normal text lines, blank lines and the supplied \sphinxcode{\sphinxupquote{excerpt.txt}}. (v1.2)
+An unknown action is rejected without terminating the loop.
+
+\item {} 
+\sphinxAtStartPar
+Taking and dropping the fan changes inventory state.
 
 \end{itemize}
 
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{o}{.}\PYG{o}{/}\PYG{n}{Wonderland}\PYG{o}{.}\PYG{n}{exe} \PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}\PYG{n}{data} \PYG{n}{tests}\PYG{o}{/}\PYG{n}{missing}\PYG{o}{\PYGZhy{}}\PYG{n}{data}
+\end{sphinxVerbatim}
 
-\subsection{Assignment 3, Problem 3}
-\label{\detokenize{AssignmentThree/main:assignment-3-problem-3}}\begin{itemize}
+\sphinxAtStartPar
+Expected result: the program reports the missing \sphinxcode{\sphinxupquote{locations.txt}} file and
+returns a failure status.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Added a \sphinxcode{\sphinxupquote{TextFileReader}} class containing an array of exactly 100 strings. (v1.0)
-
-\item {} 
-\sphinxAtStartPar
-Added a default constructor and a filename constructor that reads at most 100 lines. (v1.0)
-
-\item {} 
-\sphinxAtStartPar
-Added \sphinxcode{\sphinxupquote{contents()}} to combine stored lines into one newline\sphinxhyphen{}separated string. (v1.1)
-
-\item {} 
-\sphinxAtStartPar
-Added \sphinxcode{\sphinxupquote{display()}} to print each stored line using one\sphinxhyphen{}based line numbers. (v1.1)
+Fill all six inventory slots and attempt to take another item. Confirm that
+the capacity message appears.
 
 \item {} 
 \sphinxAtStartPar
-Added \sphinxcode{\sphinxupquote{isOpen()}} and \sphinxcode{\sphinxupquote{size()}} to support file\sphinxhyphen{}error checks and test verification. (v1.1\sphinxhyphen{}v1.2)
+Attempt \sphinxcode{\sphinxupquote{stash key}} outside the Hall of Doors. Confirm that its rejected.
 
 \item {} 
 \sphinxAtStartPar
-Added \sphinxcode{\sphinxupquote{TextFileReaderDemo::run()}} and forwarded the required global C++ \sphinxcode{\sphinxupquote{main()}} to it. (v1.2)
+Stash an item in the Hall, then take it again. Confirm that it returns to
+inventory.
 
 \item {} 
 \sphinxAtStartPar
-Tested the default constructor, missing files, short files and the 100\sphinxhyphen{}line storage limit. (v1.3)
-
-\end{itemize}
-
-
-\subsection{Assignment 3, Problem 4}
-\label{\detokenize{AssignmentThree/main:assignment-3-problem-4}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Added three \sphinxcode{\sphinxupquote{array\textless{}double, 25\textgreater{}}} objects for counter values, squares and sums. (v1.0)
+Attempt to enter the tiny door without four treasures. Confirm its locked.
 
 \item {} 
 \sphinxAtStartPar
-Filled the first array with counter values from 0 through 24. (v1.0)
+Stash all treasures but do not use the bottle. Confirm Alice is too large.
 
 \item {} 
 \sphinxAtStartPar
-Filled the second array using \sphinxcode{\sphinxupquote{value * value}} for each corresponding element. (v1.0)
+Use the cake after the bottle. Confirm Alice is again too large for the door.
 
 \item {} 
 \sphinxAtStartPar
-Filled the third array by adding corresponding elements from the first two arrays. (v1.0)
+Use \sphinxcode{\sphinxupquote{talk to queen}} without protection until courage reaches zero. Confirm
+the loss condition.
 
 \item {} 
 \sphinxAtStartPar
-Added formatted output using \sphinxcode{\sphinxupquote{counter; element + element = element}}. (v1.1)
+Use food while energy is below its maximum. Confirm recovery does not exceed
+30.
 
 \item {} 
 \sphinxAtStartPar
-Verified the first, middle and final rows and confirmed that exactly 25 rows are displayed. (v1.1)
-
-\end{itemize}
-
-
-\subsection{Assignment 3, Problem 5}
-\label{\detokenize{AssignmentThree/main:assignment-3-problem-5}}\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Reused the private \sphinxcode{\sphinxupquote{Book}} attributes and public get/set methods from Assignment 2. (v1.0)
+Carry the tart with random encounters enabled and a fixed seed. Confirm a
+Queen encounter can occur.
 
 \item {} 
 \sphinxAtStartPar
-Added a \sphinxcode{\sphinxupquote{Bookshelf}} class containing a vector of twelve distinct \sphinxcode{\sphinxupquote{Book}} objects. (v1.0)
+Change an item location to an unknown ID in \sphinxcode{\sphinxupquote{items.txt}}. Confirm startup
+validation reports the item ID.
 
-\item {} 
-\sphinxAtStartPar
-Displayed all twelve books in their original insertion order. (v1.1)
-
-\item {} 
-\sphinxAtStartPar
-Added \sphinxcode{\sphinxupquote{BookComparator::compareTo()}} to compare titles first and publication years second. (v1.1\sphinxhyphen{}v1.2)
-
-\item {} 
-\sphinxAtStartPar
-Connected the comparator to \sphinxcode{\sphinxupquote{std::sort}} through \sphinxcode{\sphinxupquote{operator()}}. (v1.2)
-
-\item {} 
-\sphinxAtStartPar
-Added two books with the same title to verify that the earlier publication year sorts first. (v1.3)
-
-\item {} 
-\sphinxAtStartPar
-Verified the unsorted and sorted lists both contain all twelve books and all stored attributes. (v1.4)
-
-\end{itemize}
+\end{enumerate}
 
 
 \section{Overview and reflections}
-\label{\detokenize{AssignmentThree/main:overview-and-reflections}}
-
-\subsection{Unit 7: Points to ponder}
-\label{\detokenize{AssignmentThree/main:unit-7-points-to-ponder}}
+\label{\detokenize{AssignmentFour/main:overview-and-reflections}}
 \sphinxAtStartPar
-Hector Barquero posted Mar 21, 2026 8:35 PM
-\sphinxurl{https://learning.athabascau.ca/d2l/le/18658/discussions/threads/350740/View}
-
-\sphinxAtStartPar
-I compared differences to javascript and the main differences I found were mutability. I forgot that there was a subtle difference, you can’t mutate strings in js, but you can in cpp.
-
-\sphinxAtStartPar
-I also forgot that s.find is a member function in cpp and returns string::npos when there’s nothing found, but in javascript it returns \sphinxhyphen{}1 (indexOf) and is a method you use on the string itself.
-
-
-\subsection{Unit 8: Points to ponder}
-\label{\detokenize{AssignmentThree/main:unit-8-points-to-ponder}}
-\sphinxAtStartPar
-Hector Barquero posted Jun 8, 2026 3:42 PM
-\sphinxurl{https://learning.athabascau.ca/d2l/le/18658/discussions/threads/391920/View}
+I began by reviewing the history and interaction style of \sphinxstyleemphasis{Colossal Cave
+Adventure}. The research showed that the game established the familiar pattern
+of a narrator describing a location, a player entering short commands, and the
+program changing a model of rooms, objects and progress. Sources describing the
+game emphasize movement between named locations, contextual object commands,
+inventory, treasure collection and a score. I also noted the early parser’s
+separation between motion words and action words. In particular, historical
+versions treated commands such as \sphinxcode{\sphinxupquote{go north}} and \sphinxcode{\sphinxupquote{north}} as equivalent.
+That directly influenced the command handling in this project.
 
 \sphinxAtStartPar
-Reading this chapter took me a long time, since I took a small hiatus from AU coursework\textendash{} but I’m back and was pleasantly surprised that things were ramping up in this chapter since we’ve moved from thinking about “just writing code” to now thinking about the tech debt of our mathematical calculations.
+The Ubuntu manual page for Open Adventure was useful because it describes the
+parser behaviour from a player’s perspective. It identifies the historic
+motion and action distinction and explains that motion words are handled
+immediately. I did not reproduce that parser exactly because some of its odd
+interpretations would be confusing in a new student project. Instead, I kept
+the useful conventions: short commands, action\sphinxhyphen{}object structure, direction
+abbreviations and forgiving capitalization.
 
 \sphinxAtStartPar
-Instead of passing regular vars, we’re now looking at structs and compound types, doing things like call by values and call by refs.
+I read the Project Gutenberg edition of \sphinxstyleemphasis{Alice’s Adventures in Wonderland} to
+select locations, characters and objects. The final design uses the riverbank,
+rabbit hole, hall of doors, pool of tears, caucus race, mushroom scene, tea
+party, Queen’s garden and kitchen. Objects such as the fan, marmalade jar,
+labelled bottle and cake, golden key, mushroom, watch, painted rose, flamingo and
+tarts gave the game enough items to support inventory actions without inventing
+an unrelated fantasy setting.
 
 \sphinxAtStartPar
-This is fun for me because compared to javascript, c++ makes these concepts explicit. In js, objects are passed around and object shapes change at runtime whereas c++ forces you to think about the structure of your data, if you want to copy it, and how you’ll pass it within functions. It feels like a step away for me from writing code to now writing calculations, and that’s fun.
-
-
-\subsection{Unit 9: Points to ponder}
-\label{\detokenize{AssignmentThree/main:unit-9-points-to-ponder}}
-\sphinxAtStartPar
-Hector Barquero posted Jun 12, 2026 4:05 AM
-\sphinxurl{https://learning.athabascau.ca/d2l/le/18658/discussions/threads/394111/View}
+The research also suggested separating program logic from descriptive data.
+Historical Adventure implementations contained substantial location,
+vocabulary and message data in addition to executable logic. I used that idea
+in a smaller object\sphinxhyphen{}oriented form: four text files define the world while C++
+classes implement the rules. This also satisfies the assignment requirement
+that actions, items, characters and location descriptions be loaded at startup.
 
 \sphinxAtStartPar
-I found this chapter a lighter read since it was less about syntax and more about design choices. One neat difference from what I’m used to is that c++ lets you declare const with a reference, for example:
+The first decision was to avoid adapting the entire book. That would create too
+many rooms and special cases to test reliably. I selected a connected group of
+recognizable scenes and gave them a new, explicit objective. The White Rabbit
+has lost four treasures. Alice must recover and store them, then enter the tiny
+door. The objective is stated before the first command so the player doesnt
+need prior knowledge of the novel.
 
 \sphinxAtStartPar
-const \&foo n
+I chose the Hall of Doors as the safe room because its central to the selected
+scenes and naturally supports many doors. It has five exits, so it also satisfies
+the requirement that one room have more than three exits. The map branches from
+this hub into the Pool of Tears, Mushroom Forest, Mad Tea Party and Queen’s
+Garden. Cross\sphinxhyphen{}connections reduce unnecessary backtracking and make the world
+feel less like a list of isolated rooms.
 
 \sphinxAtStartPar
-where you’re essentially saying: “hey use this original object, don’t copy it, and make it immutable”. Javascript doesn’t have that, so it’s neat for me to remember that’s a thing. Objects in js are mutable and passed around with reference\sphinxhyphen{}like behaviour by default, but in c++ you’re constantly thinking about choices between copying, modifying the original or a read only\sphinxhyphen{}like behaviour:
+Inventory capacity is six. This is not required for basic storage, but it gives
+the safe room a practical purpose. Alice can carry all four treasures and one or
+two tools, but collecting every object at once is impossible. The player must
+choose, drop or stash. Items are represented by one object whose \sphinxcode{\sphinxupquote{location}}
+field changes. I selected this model after considering separate lists in each
+room, the inventory and the safe area. Separate lists create synchronization
+problems because an item can accidentally exist in two places. A single location
+value makes the invariant clear: each item is in exactly one place.
 
 \sphinxAtStartPar
-for ex:
-foo n \textless{}\textendash{} copy
-foo \&n \textless{}\textendash{} modify original
-const n \textless{}\textendash{} read only
+The parser is deliberately limited rather than pretending to understand free
+English. It normalizes text and searches the loaded action aliases. The longest
+matching alias is selected, which permits a phrase such as \sphinxcode{\sphinxupquote{pick up}}. The
+remaining words become the object, except that \sphinxcode{\sphinxupquote{at}} and \sphinxcode{\sphinxupquote{on}} can divide an
+object from a target. This supports commands such as \sphinxcode{\sphinxupquote{throw cup at hatter}}.
+Direction words are handled separately so \sphinxcode{\sphinxupquote{go north}}, \sphinxcode{\sphinxupquote{north}} and \sphinxcode{\sphinxupquote{n}} map
+to the same command.
 
 \sphinxAtStartPar
-This chapter was cool because it exposed design patterns and thinking less than syntax, and exposed what other languages like javascript are hiding from you.
+I used first\sphinxhyphen{}visit and repeat descriptions to match a common text\sphinxhyphen{}adventure
+pattern and the assignment requirements. The Location object stores both forms
+and a visited flag. The first visit gives two exploration points and prints the
+long description. Later visits print the shorter version. The rule is contained
+in one method rather than repeated in every movement branch.
+
+\sphinxAtStartPar
+Random encounters were added only after deterministic movement and item logic
+worked. Random behaviour can make testing difficult, so the program supports a
+fixed seed and a \sphinxcode{\sphinxupquote{\sphinxhyphen{}\sphinxhyphen{}no\sphinxhyphen{}random}} option. Normal play still includes encounters.
+The Queen becomes more likely when Alice carries the tart, demonstrating that
+inventory can influence an encounter. Hostile encounters reduce courage only
+sometimes, and protective items can prevent the loss. This keeps randomness
+meaningful without making a winning route depend entirely on luck.
+
+\sphinxAtStartPar
+The largest structural challenge was deciding how the required plural classes
+should interact. I created small entity structures, such as Location and Item,
+plus collection classes named Locations and Items. The collections are
+responsible for loading and searching, while Game is responsible for game
+rules. This prevents Game from parsing every file itself and keeps the exact
+required component names visible in the design.
+
+\sphinxAtStartPar
+External data parsing introduced several possible errors: missing files, wrong
+field counts, invalid numeric values and references to locations that do not
+exist. Initially it would have been possible for an item to load with a bad
+room identifier and simply never appear. I added validation after loading. Game
+checks the starting room, every item location, every character location and
+every exit destination. A failed check prints the responsible identifier and
+ends startup.
+
+\sphinxAtStartPar
+A specific identifier bug appeared during the first winning\sphinxhyphen{}route test. The
+same function used to normalize player commands was also used on data IDs.
+Because command normalization replaces punctuation with spaces, an identifier
+such as \sphinxcode{\sphinxupquote{hall\_of\_doors}} became \sphinxcode{\sphinxupquote{hall of doors}}. Hard\sphinxhyphen{}coded state checks still
+used the underscore form, so the final\sphinxhyphen{}door restrictions were bypassed and the
+win location was not recognized. I corrected the design by treating internal
+identifiers differently from commands. IDs are trimmed and converted to
+lowercase but retain underscores. Player aliases are still normalized
+aggressively. This test demonstrated why machine identifiers and user\sphinxhyphen{}facing
+text should have separate rules.
+
+\sphinxAtStartPar
+Another parser issue involved \sphinxcode{\sphinxupquote{use object with target}}. The separators
+\textasciigrave{}\textasciigrave{} on \textasciigrave{}\textasciigrave{} and \textasciigrave{}\textasciigrave{} with \textasciigrave{}\textasciigrave{} have different lengths. The first implementation used
+the same substring offset for both, leaving part of the word \sphinxcode{\sphinxupquote{with}} in the
+target. I changed the parser to record which separator matched and remove the
+correct number of characters.
+
+\sphinxAtStartPar
+C++ object ownership was kept simple. Game owns repository objects directly and
+owns Control through \sphinxcode{\sphinxupquote{std::unique\_ptr}} because Control cannot be constructed
+until Actions has loaded. Items and characters are stored as values in maps.
+Inventory stores only IDs, so it cannot own or duplicate an Item. Methods obtain
+pointers to repository values for short operations. No pointer is stored after
+the map changes, and the maps are not structurally modified after loading.
+
+\sphinxAtStartPar
+Compilation testing used C++17 with \sphinxcode{\sphinxupquote{\sphinxhyphen{}Wall}}, \sphinxcode{\sphinxupquote{\sphinxhyphen{}Wextra}} and \sphinxcode{\sphinxupquote{\sphinxhyphen{}pedantic}}.
+The complete project compiled with no warnings. The first automated scenario
+uses a command transcript and disables random encounters. It travels from the
+riverbank through the rabbit hole, collects the four treasures, returns to the
+Hall of Doors, stashes them, uses the bottle and enters the Quiet Garden. The
+expected output includes the four\sphinxhyphen{}treasure message, the win message and a final
+score.
+
+\sphinxAtStartPar
+Parser tests include capitalization, punctuation and aliases. \sphinxcode{\sphinxupquote{LOOK!!!}} must
+behave as \sphinxcode{\sphinxupquote{look}}. \sphinxcode{\sphinxupquote{INVENT}} must behave as \sphinxcode{\sphinxupquote{inventory}}. Movement tests use
+both full and one\sphinxhyphen{}letter forms. Unknown actions must report an error without
+changing location. Invalid movement must also preserve the current location.
+
+\sphinxAtStartPar
+Inventory testing verifies take, list and drop. A separate manual sequence fills
+all six slots and attempts to take a seventh item. The expected response explains
+that something must be dropped or stashed. Safe\sphinxhyphen{}room testing verifies that
+\sphinxcode{\sphinxupquote{stash}} fails elsewhere, succeeds in the Hall, removes the item from carried
+inventory and makes it visible in the safe\sphinxhyphen{}room list. Taking a stashed item back
+out reduces the current treasure count.
+
+\sphinxAtStartPar
+Item tests cover size and energy state. The DRINK ME Bottle is consumed once and
+sets the small state. The EAT ME Cake and Mushroom Piece restore normal size.
+Food increases energy without passing the maximum. The pocket watch reports the
+turn count. Carrying both croquet objects and using one in the Queen’s Garden
+awards the croquet score only once.
+
+\sphinxAtStartPar
+Character tests call \sphinxcode{\sphinxupquote{talk}} for friendly and hostile characters. A first
+conversation awards points, while repeated conversation doesnt repeatedly add
+that score. Hostile conversation reduces courage when protection is inactive.
+The fan or rose supplies temporary protection. Throw tests use a fixed seed to
+confirm both the parser and the item’s transfer from inventory back to the room.
+
+\sphinxAtStartPar
+Failure testing renames or omits a data file and checks for a non\sphinxhyphen{}zero exit. I
+also changed an exit destination to an invalid identifier and confirmed that
+startup rejected it. These tests matter because the external text files are
+part of the final program, not optional supporting material.
+
+\sphinxAtStartPar
+The random system was tested in two modes. With a fixed seed, the same sequence
+of actions produces repeatable encounters. With a random\sphinxhyphen{}device seed, repeated
+short games produce different encounter timing. Randomness is intentionally not
+used for core puzzle success. A player can always win through correct movement,
+inventory and size state if energy and courage are managed.
+
+\sphinxAtStartPar
+The parser doesnt understand unrestricted sentences or pronouns. It expects a
+known action followed by a recognizable object name. This is appropriate for the
+course scope and is made explicit by the help command. The data format also doesnt
+support vertical bars inside descriptive text because that character is the
+field separator.
+
+\sphinxAtStartPar
+The final design meets the required minimums and provides a complete game loop.
+It includes eleven locations, eight characters, sixteen items, external data,
+random events, a safe room, inventory changes, long and short descriptions,
+multiple command forms, loss conditions and a defined win. The major design
+lesson was that a text adventure is easiest to manage when world data, parsing
+and state\sphinxhyphen{}changing rules have separate responsibilities.
 
 
-\section{Readings}
-\label{\detokenize{AssignmentThree/main:readings}}
+\section{Research notes}
+\label{\detokenize{AssignmentFour/main:research-notes}}
 
-\subsection{Unit 7}
-\label{\detokenize{AssignmentThree/main:unit-7}}\subsubsection*{ThinkCScpp 7.1: Containers for strings}
-\begin{itemize}
+\subsection{Research and game concept}
+\label{\detokenize{AssignmentFour/main:research-and-game-concept}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-A string stores an ordered sequence of characters in one object.
+Researched the short\sphinxhyphen{}command parser, room exploration, inventory and treasure\sphinxhyphen{}scoring conventions used by Colossal Cave Adventure. (v0.1\sphinxhyphen{}v0.2)
 
 \item {} 
 \sphinxAtStartPar
-\sphinxcode{\sphinxupquote{std::string}} manages its own storage and can grow or shrink as needed.
+Reviewed Alice’s Adventures in Wonderland for locations, characters and interactive objects suitable for a smaller game. (v0.1\sphinxhyphen{}v0.2)
+
+\item {} 
+\sphinxAtStartPar
+Defined the goal as recovering four lost treasures, returning them to a safe room and entering the tiny door. (v0.3)
+
+\item {} 
+\sphinxAtStartPar
+Reduced the adaptation to a connected set of scenes that could be completely documented and tested. (v0.3\sphinxhyphen{}v0.4)
 
 \end{itemize}
-\subsubsection*{ThinkCScpp 7.2: string variables}
-\begin{itemize}
+
+
+\subsection{World map and external data}
+\label{\detokenize{AssignmentFour/main:world-map-and-external-data}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-A \sphinxcode{\sphinxupquote{string}} variable can be declared, initialized, reassigned, and passed to functions.
+Designed eleven connected locations with the Rabbit Hole as a one\sphinxhyphen{}way transition into Wonderland. (v0.4)
 
 \item {} 
 \sphinxAtStartPar
-String literals use double quotes.
+Made the Hall of Doors a safe room with five exits and a stash for treasure storage. (v0.4\sphinxhyphen{}v0.5)
 
 \item {} 
 \sphinxAtStartPar
-\sphinxcode{\sphinxupquote{std::string}} belongs to the standard library.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.3: Extracting characters from a string}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-The subscript operator \sphinxcode{\sphinxupquote{{[}{]}}} accesses a character by its zero\sphinxhyphen{}based index.
+Added long first\sphinxhyphen{}visit descriptions and short repeat\sphinxhyphen{}visit descriptions to locations.txt. (v0.5)
 
 \item {} 
 \sphinxAtStartPar
-The first character is at index \sphinxcode{\sphinxupquote{0}}.
+Added sixteen items to items.txt, including four treasures and several usable food, size and protection items. (v0.5\sphinxhyphen{}v0.6)
 
 \item {} 
 \sphinxAtStartPar
-Accessing an invalid index produces undefined behaviour.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.4: Length}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-The \sphinxcode{\sphinxupquote{length}} or \sphinxcode{\sphinxupquote{size}} function returns the number of characters in a string.
+Added eight characters with descriptions, dialogue, friendly states and random encounter text to characters.txt. (v0.6)
 
 \item {} 
 \sphinxAtStartPar
-The final valid index is one less than the string’s length.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.5: Traversal}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-String traversal visits characters one at a time, usually with a loop.
+Added canonical actions, command aliases and help descriptions to actions.txt. (v0.6)
 
 \item {} 
 \sphinxAtStartPar
-An index\sphinxhyphen{}based loop can read or modify each character.
-
-\item {} 
-\sphinxAtStartPar
-A range\sphinxhyphen{}based loop is useful when the index isn’t needed.
-
-\item {} 
-\sphinxAtStartPar
-Traversal normally runs in linear time relative to the string length.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.6: A run\sphinxhyphen{}time error}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A run\sphinxhyphen{}time error can occur when a program accesses a string outside its valid range.
-
-\item {} 
-\sphinxAtStartPar
-The code may compile even though the invalid index only appears during execution.
-
-\item {} 
-\sphinxAtStartPar
-Boundary tests help expose off\sphinxhyphen{}by\sphinxhyphen{}one errors.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.7: The find function}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{string::find}} returns the first position where a character or substring appears.
-
-\item {} 
-\sphinxAtStartPar
-It returns \sphinxcode{\sphinxupquote{string::npos}} when no match exists.
-
-\item {} 
-\sphinxAtStartPar
-Searches can optionally begin at a specified index.
-
-\item {} 
-\sphinxAtStartPar
-The result should be checked before it’s used as an index.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.8: Our own version of find}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A custom find function scans characters until it locates the target.
-
-\item {} 
-\sphinxAtStartPar
-It should return either the matching position or a clear failure value.
-
-\item {} 
-\sphinxAtStartPar
-Writing the search manually demonstrates traversal, conditions, and early return.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.9: Looping and counting}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A counter can track how many characters satisfy a condition during traversal.
-
-\item {} 
-\sphinxAtStartPar
-The counter starts at zero and increases when a match is found.
-
-\item {} 
-\sphinxAtStartPar
-Counting requires examining every character unless an earlier result is sufficient.
-
-\item {} 
-\sphinxAtStartPar
-The operation is generally \sphinxcode{\sphinxupquote{O(n)}}.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.10: Increment and decrement operators}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{++}} adds one to a variable and \sphinxcode{\sphinxupquote{\sphinxhyphen{}\sphinxhyphen{}}} subtracts one.
-
-\item {} 
-\sphinxAtStartPar
-Prefix and postfix forms differ in the value produced by the expression.
-
-\item {} 
-\sphinxAtStartPar
-In simple loop updates, either form usually has the same practical effect.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.11: String concatenation}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-The \sphinxcode{\sphinxupquote{+}} operator joins strings into a new string.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{+=}} appends text to an existing string.
-
-\item {} 
-\sphinxAtStartPar
-At least one operand must be a \sphinxcode{\sphinxupquote{string}} for many concatenation expressions.
-
-\item {} 
-\sphinxAtStartPar
-Repeated concatenation can require additional memory allocations.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.12: strings are mutable}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Individual string characters can be changed through valid indexes.
-
-\item {} 
-\sphinxAtStartPar
-Strings can also be expanded, shortened, inserted into, or erased.
-
-\item {} 
-\sphinxAtStartPar
-Mutation changes the existing string rather than creating a separate result.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.13: strings are comparable}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Comparison operators compare strings lexicographically.
-
-\item {} 
-\sphinxAtStartPar
-Character case affects comparison results.
-
-\item {} 
-\sphinxAtStartPar
-Equality requires the same characters in the same order.
-
-\item {} 
-\sphinxAtStartPar
-Lexicographic order isn’t the same as comparing string lengths.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.14: Character classification}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Functions such as \sphinxcode{\sphinxupquote{isalpha}}, \sphinxcode{\sphinxupquote{isdigit}}, and \sphinxcode{\sphinxupquote{isspace}} classify characters.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{toupper}} and \sphinxcode{\sphinxupquote{tolower}} convert character case.
-
-\item {} 
-\sphinxAtStartPar
-These functions are provided by \sphinxcode{\sphinxupquote{\textless{}cctype\textgreater{}}}.
-
-\item {} 
-\sphinxAtStartPar
-Character arguments should be converted to \sphinxcode{\sphinxupquote{unsigned char}} when plain \sphinxcode{\sphinxupquote{char}} might be negative.
-
-\item {} 
-\sphinxAtStartPar
-Classification functions return values usable as Boolean conditions.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 7.15: Other string functions}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Common string operations include \sphinxcode{\sphinxupquote{substr}}, \sphinxcode{\sphinxupquote{insert}}, \sphinxcode{\sphinxupquote{erase}}, \sphinxcode{\sphinxupquote{replace}}, and \sphinxcode{\sphinxupquote{append}}.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{substr}} extracts part of a string using a starting position and optional length.
-
-\item {} 
-\sphinxAtStartPar
-Many functions return or modify positions measured from zero.
+Added startup validation for missing files, malformed records and invalid location references. (v1.1\sphinxhyphen{}v1.2)
 
 \end{itemize}
 
 
-\subsection{Unit 8}
-\label{\detokenize{AssignmentThree/main:unit-8}}\subsubsection*{ThinkCScpp 8.1: Compound values}
-\begin{itemize}
+\subsection{Object\sphinxhyphen{}oriented class design}
+\label{\detokenize{AssignmentFour/main:object-oriented-class-design}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-A compound value groups several related values into one object.
+Created Game as the highest class and owner of the complete game state and execution loop. (v0.7)
 
 \item {} 
 \sphinxAtStartPar
-Structures can combine members with different data types.
+Created Location and Locations classes to store, load and search the room map. (v0.7)
 
 \item {} 
 \sphinxAtStartPar
-Grouping related data makes function interfaces and program models clearer.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.2: Point objects}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A \sphinxcode{\sphinxupquote{Point}} structure can represent coordinates using members such as \sphinxcode{\sphinxupquote{x}} and \sphinxcode{\sphinxupquote{y}}.
+Created Item and Items classes to maintain one location state for every object. (v0.7\sphinxhyphen{}v0.8)
 
 \item {} 
 \sphinxAtStartPar
-Each object stores its own independent member values.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.3: Accessing instance variables}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-The dot operator accesses a structure object’s members.
+Created Character and Characters classes for fixed characters and random encounters. (v0.8)
 
 \item {} 
 \sphinxAtStartPar
-Member names are scoped by the structure type.
+Created Action and Actions classes to load valid commands and aliases. (v0.8)
 
 \item {} 
 \sphinxAtStartPar
-A pointer to a structure uses the \sphinxcode{\sphinxupquote{\sphinxhyphen{}\textgreater{}}} operator instead.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.4: Operations on structures}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Structures can be copied, assigned, initialized, and passed to functions.
+Created Inventory with a six\sphinxhyphen{}item capacity so the safe room has a practical purpose. (v0.8\sphinxhyphen{}v0.9)
 
 \item {} 
 \sphinxAtStartPar
-Member values can participate in ordinary expressions.
-
-\item {} 
-\sphinxAtStartPar
-Comparison isn’t automatically defined for every custom structure.
-
-\item {} 
-\sphinxAtStartPar
-Helper functions can implement operations specific to the structure.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.5: Structures as parameters}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Passing a structure to a function lets the function operate on the grouped data.
-
-\item {} 
-\sphinxAtStartPar
-The parameter type must match the structure type.
-
-\item {} 
-\sphinxAtStartPar
-Large structures are often passed by reference to avoid copying.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.6: Call by value}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Call by value gives the function a copy of the argument.
-
-\item {} 
-\sphinxAtStartPar
-Changes to the parameter don’t affect the original object.
-
-\item {} 
-\sphinxAtStartPar
-Copying provides isolation but can add cost for large objects.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.7: Call by reference}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A reference parameter gives the function access to the caller’s original object.
-
-\item {} 
-\sphinxAtStartPar
-Changes made through a non\sphinxhyphen{}\sphinxcode{\sphinxupquote{const}} reference affect the caller.
-
-\item {} 
-\sphinxAtStartPar
-References avoid copying and can’t be null after valid initialization.
-
-\item {} 
-\sphinxAtStartPar
-Use \sphinxcode{\sphinxupquote{const}} references when the function should only read the object.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.8: Rectangles}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A rectangle can be represented using a corner point, width, and height.
-
-\item {} 
-\sphinxAtStartPar
-Nested structures let one compound object contain another.
-
-\item {} 
-\sphinxAtStartPar
-Representation choices affect how position and size calculations are written.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.9: Structures as return types}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A function can construct and return a complete structure object.
-
-\item {} 
-\sphinxAtStartPar
-Returning a structure is useful when one calculation produces several related values.
-
-\item {} 
-\sphinxAtStartPar
-Modern compilers usually optimize away unnecessary return copies.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.10: Passing other types by reference}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Reference parameters aren’t limited to structures and can be used with built\sphinxhyphen{}in or library types.
-
-\item {} 
-\sphinxAtStartPar
-They can return multiple results through output parameters.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{const}} references allow efficient read\sphinxhyphen{}only access.
-
-\item {} 
-\sphinxAtStartPar
-Non\sphinxhyphen{}\sphinxcode{\sphinxupquote{const}} references should clearly signal that an argument may change.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 8.11: Getting user input}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Input can be read directly into structure members.
-
-\item {} 
-\sphinxAtStartPar
-Each extraction should be checked before the values are trusted.
-
-\item {} 
-\sphinxAtStartPar
-Prompts should make the expected format clear.
-
-\item {} 
-\sphinxAtStartPar
-Invalid input can leave the stream in a failed state.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{getline}} may be needed when text fields contain spaces.
+Created Control to read, normalize and parse player input before Game executes an action. (v0.9)
 
 \end{itemize}
 
 
-\subsection{Unit 9}
-\label{\detokenize{AssignmentThree/main:unit-9}}\subsubsection*{ThinkCScpp 9.1: Time}
-\begin{itemize}
+\subsection{Command parser and game logic}
+\label{\detokenize{AssignmentFour/main:command-parser-and-game-logic}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-A \sphinxcode{\sphinxupquote{Time}} structure can group hours, minutes, and seconds.
+Added lowercase conversion, punctuation removal and whitespace normalization for all player commands. (v0.9)
 
 \item {} 
 \sphinxAtStartPar
-The representation should define valid ranges for each member.
+Added support for go north, north and n as equivalent movement commands. (v0.9\sphinxhyphen{}v1.0)
 
 \item {} 
 \sphinxAtStartPar
-Related values are easier to pass and return as one object.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.2: printTime}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A \sphinxcode{\sphinxupquote{printTime}} function formats a \sphinxcode{\sphinxupquote{Time}} object for output.
+Used longest\sphinxhyphen{}alias matching so multiword actions such as pick up are recognized correctly. (v1.0)
 
 \item {} 
 \sphinxAtStartPar
-Separating formatting from calculation keeps responsibilities clear.
+Added object and target parsing for commands such as throw cup at hatter and use fan on queen. (v1.0)
 
 \item {} 
 \sphinxAtStartPar
-Padding may be used so minutes and seconds always occupy two digits.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.3: Functions for objects}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Functions can accept objects as parameters and perform type\sphinxhyphen{}specific operations.
+Added movement, look, take, drop, stash, use, talk, examine, throw, score, help and quit actions. (v1.0\sphinxhyphen{}v1.1)
 
 \item {} 
 \sphinxAtStartPar
-Related helper functions form an interface around the object’s representation.
+Added first\sphinxhyphen{}visit scoring, inventory capacity, energy, courage and safe\sphinxhyphen{}room treasure tracking. (v1.1)
 
 \item {} 
 \sphinxAtStartPar
-The function name should describe the operation rather than the storage details.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.4: Pure functions}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A pure function returns a result without modifying its arguments or external state.
+Added random character encounters and increased the chance of meeting the Queen while carrying the tart. (v1.1)
 
 \item {} 
 \sphinxAtStartPar
-The same inputs always produce the same output.
-
-\item {} 
-\sphinxAtStartPar
-Pure functions are easier to test and reuse.
-
-\item {} 
-\sphinxAtStartPar
-They reduce unexpected interactions between parts of a program.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.5: const parameters}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A \sphinxcode{\sphinxupquote{const}} reference parameter prevents the function from modifying the supplied object.
-
-\item {} 
-\sphinxAtStartPar
-It avoids copying while documenting read\sphinxhyphen{}only intent.
-
-\item {} 
-\sphinxAtStartPar
-The compiler rejects attempts to change the parameter.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.6: Modifiers}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A modifier changes an existing object rather than returning a separate object.
-
-\item {} 
-\sphinxAtStartPar
-Modifier functions usually take non\sphinxhyphen{}\sphinxcode{\sphinxupquote{const}} references.
-
-\item {} 
-\sphinxAtStartPar
-Their names should make the mutation clear.
-
-\item {} 
-\sphinxAtStartPar
-Callers must account for the original object’s changed state.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.7: Fill\sphinxhyphen{}in functions}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-A fill\sphinxhyphen{}in function writes a result into an object supplied by reference.
-
-\item {} 
-\sphinxAtStartPar
-It can avoid constructing a separate return value.
-
-\item {} 
-\sphinxAtStartPar
-Output parameters should be obvious from the function interface.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.8: Which is best?}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Pure functions are usually easier to reason about because they don’t change their inputs.
-
-\item {} 
-\sphinxAtStartPar
-Modifiers can be useful when updating an existing object is the intended operation.
-
-\item {} 
-\sphinxAtStartPar
-Fill\sphinxhyphen{}in functions may help when several results must be returned.
-
-\item {} 
-\sphinxAtStartPar
-The best design depends on clarity, ownership, cost, and expected use.
-
-\item {} 
-\sphinxAtStartPar
-Consistency matters more than forcing one style everywhere.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.9: Incremental development versus planning}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Incremental development adds and tests one small behaviour at a time.
-
-\item {} 
-\sphinxAtStartPar
-Up\sphinxhyphen{}front planning defines the representation and major operations before implementation.
-
-\item {} 
-\sphinxAtStartPar
-Complex tasks often benefit from combining both approaches.
-
-\item {} 
-\sphinxAtStartPar
-Tests should be added as each step becomes functional.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.10: Generalization}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Generalization replaces fixed assumptions with parameters or reusable operations.
-
-\item {} 
-\sphinxAtStartPar
-A generalized function can handle more cases without duplicated code.
-
-\item {} 
-\sphinxAtStartPar
-Abstraction shouldn’t make a simple solution harder to understand.
-
-\end{itemize}
-\subsubsection*{ThinkCScpp 9.11: Algorithms}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-An algorithm is a finite, defined sequence of steps for solving a problem.
-
-\item {} 
-\sphinxAtStartPar
-Algorithms can be compared by correctness, clarity, time cost, and memory cost.
-
-\item {} 
-\sphinxAtStartPar
-The same problem may support several valid algorithms.
-
-\item {} 
-\sphinxAtStartPar
-Input size determines how performance scales.
+Added a fixed random seed and no\sphinxhyphen{}random mode for repeatable scripted testing. (v1.1)
 
 \end{itemize}
 
 
-\section{Practice problems}
-\label{\detokenize{AssignmentThree/main:practice-problems}}
-
-\subsection{Unit 7 practice problems}
-\label{\detokenize{AssignmentThree/main:unit-7-practice-problems}}
-
-\subsubsection{Find the Index of the First Occurrence in a String (Easy)}
-\label{\detokenize{AssignmentThree/main:find-the-index-of-the-first-occurrence-in-a-string-easy}}
+\subsection{Testing and corrections}
+\label{\detokenize{AssignmentFour/main:testing-and-corrections}}\begin{itemize}
+\item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Return the first index where one string occurs inside another, or \textasciigrave{}\textasciigrave{}\sphinxhyphen{}1\textasciigrave{}\textasciigrave{} when it isn’t found.}
+Compiled all source files with C++17, Wall, Wextra and pedantic warning flags. (v1.2)
 
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{Solution}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{k}{public}\PYG{o}{:}
-\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{strStr}\PYG{p}{(}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{haystack}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{string}\PYG{+w}{ }\PYG{n}{needle}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{needle}\PYG{p}{.}\PYG{n}{empty}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{        }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{needle}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{haystack}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t}\PYG{+w}{ }\PYG{n}{start}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
-\PYG{+w}{             }\PYG{n}{start}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{needle}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{haystack}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{             }\PYG{o}{+}\PYG{o}{+}\PYG{n}{start}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-
-\PYG{+w}{            }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{matches}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{;}
-
-\PYG{+w}{            }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{size\PYGZus{}t}\PYG{+w}{ }\PYG{n}{offset}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
-\PYG{+w}{                 }\PYG{n}{offset}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{needle}\PYG{p}{.}\PYG{n}{size}\PYG{p}{(}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{                 }\PYG{o}{+}\PYG{o}{+}\PYG{n}{offset}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-
-\PYG{+w}{                }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{haystack}\PYG{p}{[}\PYG{n}{start}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{offset}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{!}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{needle}\PYG{p}{[}\PYG{n}{offset}\PYG{p}{]}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{                    }\PYG{n}{matches}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
-\PYG{+w}{                    }\PYG{k}{break}\PYG{p}{;}
-\PYG{+w}{                }\PYG{p}{\PYGZcb{}}
-\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{matches}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{                }\PYG{k}{return}\PYG{+w}{ }\PYG{k}{static\PYGZus{}cast}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{start}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\end{sphinxVerbatim}
-
-
-\subsection{Unit 8 practice problems}
-\label{\detokenize{AssignmentThree/main:unit-8-practice-problems}}
-
-\subsubsection{Rectangle Overlap (Easy)}
-\label{\detokenize{AssignmentThree/main:rectangle-overlap-easy}}
+\item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Determine whether two rectangles share an area greater than zero.}
+Created a deterministic command transcript that collects and stashes all four treasures and reaches the winning room. (v1.2)
 
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{Solution}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{k}{private}\PYG{o}{:}
-\PYG{+w}{    }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Point}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{x}\PYG{p}{;}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-
-\PYG{+w}{    }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Rectangle}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{n}{Point}\PYG{+w}{ }\PYG{n}{bottomLeft}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{Point}\PYG{+w}{ }\PYG{n}{topRight}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-
-\PYG{+w}{    }\PYG{n}{Rectangle}\PYG{+w}{ }\PYG{n+nf}{makeRectangle}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{values}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{p}{\PYGZob{}}\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{\PYGZcb{}}\PYG{p}{,}
-\PYG{+w}{            }\PYG{p}{\PYGZob{}}\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{values}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{\PYGZcb{}}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{    }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n+nf}{overlaps}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Rectangle}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{first}\PYG{p}{,}
-\PYG{+w}{                  }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Rectangle}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{second}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{separatedHorizontally}\PYG{+w}{ }\PYG{o}{=}
-\PYG{+w}{            }\PYG{n}{first}\PYG{p}{.}\PYG{n}{topRight}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{second}\PYG{p}{.}\PYG{n}{bottomLeft}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}
-\PYG{+w}{            }\PYG{n}{second}\PYG{p}{.}\PYG{n}{topRight}\PYG{p}{.}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{first}\PYG{p}{.}\PYG{n}{bottomLeft}\PYG{p}{.}\PYG{n}{x}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{separatedVertically}\PYG{+w}{ }\PYG{o}{=}
-\PYG{+w}{            }\PYG{n}{first}\PYG{p}{.}\PYG{n}{topRight}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{second}\PYG{p}{.}\PYG{n}{bottomLeft}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}
-\PYG{+w}{            }\PYG{n}{second}\PYG{p}{.}\PYG{n}{topRight}\PYG{p}{.}\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{first}\PYG{p}{.}\PYG{n}{bottomLeft}\PYG{p}{.}\PYG{n}{y}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{separatedHorizontally}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}
-\PYG{+w}{               }\PYG{o}{!}\PYG{n}{separatedVertically}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-
-\PYG{k}{public}\PYG{o}{:}
-\PYG{+w}{    }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{isRectangleOverlap}\PYG{p}{(}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{rec1}\PYG{p}{,}
-\PYG{+w}{                            }\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{rec2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{n}{Rectangle}\PYG{+w}{ }\PYG{n}{first}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{makeRectangle}\PYG{p}{(}\PYG{n}{rec1}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{Rectangle}\PYG{+w}{ }\PYG{n}{second}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{makeRectangle}\PYG{p}{(}\PYG{n}{rec2}\PYG{p}{)}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{overlaps}\PYG{p}{(}\PYG{n}{first}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{second}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\end{sphinxVerbatim}
-
-
-\subsection{Unit 9 practice problems}
-\label{\detokenize{AssignmentThree/main:unit-9-practice-problems}}
-
-\subsubsection{Number of Days Between Two Dates (Easy)}
-\label{\detokenize{AssignmentThree/main:number-of-days-between-two-dates-easy}}
+\item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Calculate the absolute number of days between two dates written as \textasciigrave{}\textasciigrave{}YYYY\sphinxhyphen{}MM\sphinxhyphen{}DD\textasciigrave{}\textasciigrave{}.}
+Found that command normalization changed underscore\sphinxhyphen{}based internal IDs into spaces and bypassed final\sphinxhyphen{}door state checks. (v1.2)
 
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{Solution}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{k}{private}\PYG{o}{:}
-\PYG{+w}{    }\PYG{k}{struct}\PYG{+w}{ }\PYG{n+nc}{Date}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{year}\PYG{p}{;}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{month}\PYG{p}{;}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{day}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
+\item {} 
+\sphinxAtStartPar
+Separated internal identifier handling from player\sphinxhyphen{}command normalization so IDs retain their underscores. (v1.2\sphinxhyphen{}v1.3)
 
-\PYG{+w}{    }\PYG{n}{Date}\PYG{+w}{ }\PYG{n+nf}{parseDate}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{string}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{value}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{n}{stoi}\PYG{p}{(}\PYG{n}{value}\PYG{p}{.}\PYG{n}{substr}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
-\PYG{+w}{            }\PYG{n}{stoi}\PYG{p}{(}\PYG{n}{value}\PYG{p}{.}\PYG{n}{substr}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{)}\PYG{p}{,}
-\PYG{+w}{            }\PYG{n}{stoi}\PYG{p}{(}\PYG{n}{value}\PYG{p}{.}\PYG{n}{substr}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{)}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\item {} 
+\sphinxAtStartPar
+Corrected target extraction for use object with target because with and on use different separator lengths. (v1.3)
 
-\PYG{+w}{    }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n+nf}{isLeapYear}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{year}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{year}\PYG{+w}{ }\PYG{o}{\PYGZpc{}}\PYG{+w}{ }\PYG{l+m+mi}{400}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}
-\PYG{+w}{               }\PYG{p}{(}\PYG{n}{year}\PYG{+w}{ }\PYG{o}{\PYGZpc{}}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{year}\PYG{+w}{ }\PYG{o}{\PYGZpc{}}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{o}{!}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\item {} 
+\sphinxAtStartPar
+Verified the final door remains locked without four stashed treasures and rejects Alice when she is not small enough. (v1.3)
 
-\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{daysBeforeYear}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{year}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{previousYear}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{year}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\item {} 
+\sphinxAtStartPar
+Verified the complete winning route ends in the Quiet Garden and prints the final score and turn count. (v1.3)
 
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{previousYear}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{365}\PYG{+w}{ }\PYG{o}{+}
-\PYG{+w}{               }\PYG{n}{previousYear}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}
-\PYG{+w}{               }\PYG{n}{previousYear}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{+w}{ }\PYG{o}{+}
-\PYG{+w}{               }\PYG{n}{previousYear}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{400}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\item {} 
+\sphinxAtStartPar
+Added parser, missing\sphinxhyphen{}data, inventory\sphinxhyphen{}capacity, hostile\sphinxhyphen{}character and cross\sphinxhyphen{}reference validation cases to the test plan. (v1.3\sphinxhyphen{}v1.4)
 
-\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{daysBeforeMonth}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Date}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{date}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{n}{array}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{12}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{monthLengths}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{28}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{30}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{30}\PYG{p}{,}
-\PYG{+w}{            }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{30}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{31}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{30}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{31}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{total}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{month}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{month}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{date}\PYG{p}{.}\PYG{n}{month}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{+}\PYG{n}{month}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{            }\PYG{n}{total}\PYG{+w}{ }\PYG{o}{+}\PYG{o}{=}\PYG{+w}{ }\PYG{n}{monthLengths}\PYG{p}{[}\PYG{n}{month}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{;}
-
-\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{month}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{isLeapYear}\PYG{p}{(}\PYG{n}{date}\PYG{p}{.}\PYG{n}{year}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{                }\PYG{o}{+}\PYG{o}{+}\PYG{n}{total}\PYG{p}{;}
-\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{total}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-
-\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{serialDay}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{n}{Date}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{date}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{daysBeforeYear}\PYG{p}{(}\PYG{n}{date}\PYG{p}{.}\PYG{n}{year}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
-\PYG{+w}{               }\PYG{n}{daysBeforeMonth}\PYG{p}{(}\PYG{n}{date}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}
-\PYG{+w}{               }\PYG{n}{date}\PYG{p}{.}\PYG{n}{day}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-
-\PYG{k}{public}\PYG{o}{:}
-\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{daysBetweenDates}\PYG{p}{(}\PYG{n}{string}\PYG{+w}{ }\PYG{n}{date1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{string}\PYG{+w}{ }\PYG{n}{date2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
-\PYG{+w}{        }\PYG{n}{Date}\PYG{+w}{ }\PYG{n}{first}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{parseDate}\PYG{p}{(}\PYG{n}{date1}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{        }\PYG{n}{Date}\PYG{+w}{ }\PYG{n}{second}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{parseDate}\PYG{p}{(}\PYG{n}{date2}\PYG{p}{)}\PYG{p}{;}
-
-\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{abs}\PYG{p}{(}\PYG{n}{serialDay}\PYG{p}{(}\PYG{n}{first}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{serialDay}\PYG{p}{(}\PYG{n}{second}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
-\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
-\PYG{p}{\PYGZcb{}}\PYG{p}{;}
-\end{sphinxVerbatim}
+\end{itemize}
 
 
 \section{Sources and references}
-\label{\detokenize{AssignmentThree/main:sources-and-references}}\begin{enumerate}
+\label{\detokenize{AssignmentFour/main:sources-and-references}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
@@ -1169,6 +844,46 @@ Downey, A. B. (1999). Think C++ (Version 1.1.0). Green Tea Press. \sphinxurl{htt
 \item {} 
 \sphinxAtStartPar
 leetcode.com. (n.d.). \sphinxstyleemphasis{LeetCode}. Retrieved Jan 2025 \sphinxhyphen{} Aug 2026, from \sphinxurl{https://leetcode.com/}
+
+\item {} 
+\sphinxAtStartPar
+Project Gutenberg, \sphinxstyleemphasis{Alice’s Adventures in Wonderland}:
+
+\end{enumerate}
+\begin{quote}
+
+\sphinxAtStartPar
+\sphinxurl{https://www.gutenberg.org/ebooks/11}
+\end{quote}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Ubuntu Manpages, \sphinxcode{\sphinxupquote{advent}} and the Open Adventure parser description:
+
+\end{enumerate}
+\begin{quote}
+
+\sphinxAtStartPar
+\sphinxurl{https://manpages.ubuntu.com/manpages/bionic/man6/advent.6.html}
+\end{quote}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Eric S. Raymond, \sphinxstyleemphasis{A Brief History of Colossal Cave Adventure}:
+
+\end{enumerate}
+\begin{quote}
+
+\sphinxAtStartPar
+\sphinxurl{https://www.catb.org/~esr/open-adventure/history.html}
+\end{quote}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+\sphinxAtStartPar
+Wikipedia, \sphinxstyleemphasis{Colossal Cave Adventure}, used for a broad gameplay and history (the assignment overview before confirming parser details with the manual page): \sphinxurl{https://en.wikipedia.org/wiki/Colossal\_Cave\_Adventure}
 
 \end{enumerate}
 
