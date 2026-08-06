@@ -1,0 +1,21 @@
+down
+down
+take bottle
+east
+take key
+west
+west
+take watch
+east
+south
+take rose
+south
+take tart
+north
+north
+stash key
+stash watch
+stash rose
+stash tart
+use bottle
+down

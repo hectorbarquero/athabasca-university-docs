@@ -1,0 +1,1 @@
+Game data error: Unable to open location file: tests/missing-data/locations.txt

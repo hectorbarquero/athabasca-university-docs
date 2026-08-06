@@ -1,0 +1,39 @@
+WONDERLAND: THE FOUR LOST TREASURES
+===================================
+You are Alice, standing beside a quiet riverbank. The White Rabbit has
+scattered four valuable objects through Wonderland: the Golden Key,
+Pocket Watch, Painted Rose and Queen's Tart. Find all four, return them
+to the Hall of Doors safe room, become small enough for the tiny door,
+and escape into the Quiet Garden.
+
+Type HELP for commands. Direction commands may be written as GO NORTH,
+NORTH or N. Capitalization and punctuation are ignored.
+
+Riverbank
+---------
+Warm afternoon light lies across the riverbank. A White Rabbit in a waistcoat hurries toward a dark opening beneath the hedge. The rabbit hole descends into uncertainty, and once you follow it there will be no path back.
+Items here: White Rabbit's Fan.
+Characters here: White Rabbit.
+Exits: down, west.
+
+> 
+Riverbank
+---------
+Warm afternoon light lies across the riverbank. A White Rabbit in a waistcoat hurries toward a dark opening beneath the hedge. The rabbit hole descends into uncertainty, and once you follow it there will be no path back.
+Items here: White Rabbit's Fan.
+Characters here: White Rabbit.
+Exits: down, west.
+
+> You are carrying nothing. (0/6 slots used)
+
+> You cannot go in that direction.
+
+> I do not understand that command. Type HELP for valid actions.
+
+> Taken: White Rabbit's Fan.
+
+> You are carrying White Rabbit's Fan. (1/6 slots used)
+
+> Dropped: White Rabbit's Fan.
+
+> You leave Wonderland with a score of 4.

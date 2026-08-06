@@ -1,0 +1,123 @@
+WONDERLAND: THE FOUR LOST TREASURES
+===================================
+You are Alice, standing beside a quiet riverbank. The White Rabbit has
+scattered four valuable objects through Wonderland: the Golden Key,
+Pocket Watch, Painted Rose and Queen's Tart. Find all four, return them
+to the Hall of Doors safe room, become small enough for the tiny door,
+and escape into the Quiet Garden.
+
+Type HELP for commands. Direction commands may be written as GO NORTH,
+NORTH or N. Capitalization and punctuation are ignored.
+
+Riverbank
+---------
+Warm afternoon light lies across the riverbank. A White Rabbit in a waistcoat hurries toward a dark opening beneath the hedge. The rabbit hole descends into uncertainty, and once you follow it there will be no path back.
+Items here: White Rabbit's Fan.
+Characters here: White Rabbit.
+Exits: down, west.
+
+> 
+Rabbit Hole
+-----------
+You tumble through a long shaft lined with cupboards, maps and empty shelves. The fall slows just enough for you to notice a marmalade jar before the tunnel bends toward a tiled chamber below.
+Items here: Marmalade Jar.
+Exits: down.
+
+> 
+Hall of Doors
+-------------
+A circular hall contains doors of every size. A glass table stands beneath a row of lamps, and one tiny door opens toward a quiet garden. This hall is a safe room: objects stashed here cannot be lost during random encounters. Passages lead toward several parts of Wonderland.
+Items here: DRINK ME Bottle, EAT ME Cake.
+Exits: down, east, north, south, west.
+
+> Taken: DRINK ME Bottle.
+
+> 
+Mushroom Forest
+---------------
+Huge blue mushrooms rise like umbrellas beneath twisted trees. A Caterpillar watches from above while a metallic glint shines between the roots of the largest mushroom.
+Items here: Golden Key, Mushroom Piece.
+Characters here: Caterpillar.
+Exits: east, south, west.
+
+> Taken: Golden Key.
+
+> 
+Hall of Doors
+-------------
+You are back in the Hall of Doors, your safe gathering place.
+Items here: EAT ME Cake.
+Exits: down, east, north, south, west.
+
+> 
+Mad Tea Party
+-------------
+A long table is crowded with cups, plates and empty chairs. The Mad Hatter and Dormouse guard the best places while insisting that every seat is already occupied.
+Items here: Bread and Butter, Pocket Watch, Tea Cup.
+Characters here: Dormouse, Mad Hatter.
+Exits: east, south.
+
+> Taken: Pocket Watch.
+
+> 
+Hall of Doors
+-------------
+You are back in the Hall of Doors, your safe gathering place.
+Items here: EAT ME Cake.
+Exits: down, east, north, south, west.
+
+> 
+Queen's Garden
+--------------
+Card gardeners hurry among rose trees, painting pale blossoms red before the Queen notices. A croquet field stretches toward the palace, using unusual equipment and even stranger rules.
+Items here: Hedgehog Croquet Ball, Croquet Flamingo, Painted Rose.
+Characters here: Cheshire Cat, Queen of Hearts.
+Exits: east, north, south, west.
+
+> Taken: Painted Rose.
+
+> 
+Royal Kitchen
+-------------
+Pepper hangs in the air while trays move rapidly between ovens and doors. One carefully guarded tart rests beside a cooling rack, apparently intended for the Queen's court.
+Items here: Pepper Shaker, Queen's Tart.
+Characters here: Duchess.
+Exits: east, north, west.
+
+> Taken: Queen's Tart.
+
+> 
+Queen's Garden
+--------------
+You are again among the painted roses and crooked croquet hoops.
+Items here: Hedgehog Croquet Ball, Croquet Flamingo.
+Characters here: Cheshire Cat, Queen of Hearts.
+Exits: east, north, south, west.
+
+> 
+Hall of Doors
+-------------
+You are back in the Hall of Doors, your safe gathering place.
+Items here: EAT ME Cake.
+Exits: down, east, north, south, west.
+
+> Stashed safely: Golden Key.
+
+> Stashed safely: Pocket Watch.
+
+> Stashed safely: Painted Rose.
+
+> Stashed safely: Queen's Tart.
+All four treasures are safe. The tiny door clicks open.
+
+> You become small enough to pass through the tiny door.
+
+> 
+Quiet Garden
+------------
+You pass through the tiny door into a sheltered garden of fountains and bright flower beds. Wonderland continues beyond the hedges, but this peaceful place marks the successful end of your search.
+Exits: up.
+
+You step through the tiny door into a quiet garden inside Wonderland.
+All four treasures remain safely stored in the Hall of Doors. You win.
+Final score: 152 in 21 turns.

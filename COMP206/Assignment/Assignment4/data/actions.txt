@@ -1,0 +1,14 @@
+# canonical|comma-separated aliases|help description
+go|go,walk,move|Move in a direction, for example GO NORTH or N.
+look|look,l|Display the full description of the current location.
+inventory|inventory,invent,i|List all items currently being carried.
+take|take,get,pick up|Take an item from the current location or safe-room stash.
+drop|drop,leave|Place a carried item in the current location.
+stash|stash,store,deposit|Store a carried item in the Hall of Doors safe room.
+use|use,eat,drink|Use a carried item, optionally on another object.
+talk|talk,speak|Talk to a character in the current location.
+examine|examine,inspect,x|Display the description of an item or character.
+throw|throw,toss|Throw a carried item at a character in the current location.
+score|score,points,status|Display score, turns, energy, courage and treasure progress.
+help|help,commands|Display the command list.
+quit|quit,exit,q|End the game without winning.

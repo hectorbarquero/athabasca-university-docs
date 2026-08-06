@@ -1,0 +1,38 @@
+Wonderland Adventure Game Submission
+Author: Hector Barquero
+Date: July 26, 2026
+
+.. note::
+   See the learning journal for more information, test plans, design notes and reflections.
+   This project structure kept flat intentionally for ease of marking (no folders, sub folders).
+
+Docs
+++++++++++++++++++++
+- COMP206_Assignment4_LearningJournal_HectorBarquero_STUDENT_ID.pdf
+
+Source files
+++++++++++++++++++++
+- main.cpp
+- Game.h / Game.cpp
+- Control.h / Control.cpp
+- Action.h / Action.cpp
+- Location.h / Location.cpp
+- Item.h / Item.cpp
+- Character.h / Character.cpp
+- Inventory.h / Inventory.cpp
+- TextUtils.h / TextUtils.cpp
+- Makefile
+
+Required game text files
+++++++++++++++++++++++++++++++
+- data/locations.txt
+- data/items.txt
+- data/characters.txt
+- data/actions.txt
+
+Testing files
+++++++++++++++++++++++++
+- tests/run_tests.sh
+- tests/win_commands.txt
+- tests/parser_commands.txt
+- generated test output transcripts

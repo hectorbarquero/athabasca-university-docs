@@ -1,0 +1,17 @@
+# id|name|aliases|description|location|takeable|treasure|points|use text
+white_rabbit_fan|White Rabbit's Fan|fan,rabbit fan|A small folding fan marked with the White Rabbit's initials.|riverbank|true|false|2|The fan produces a cool breeze and steadies your courage for several turns.
+marmalade_jar|Marmalade Jar|jar,marmalade|An empty orange-marmalade jar from a shelf in the rabbit hole.|rabbit_hole|true|false|1|The jar is empty, but it is useful for marking a location if dropped.
+drink_me_bottle|DRINK ME Bottle|bottle,drink me,potion|A tiny bottle labelled DRINK ME in neat paper letters.|hall_of_doors|true|false|3|You become small enough to pass through the tiny door.
+eat_me_cake|EAT ME Cake|cake,eat me|A small currant cake marked EAT ME.|hall_of_doors|true|false|3|You grow back to ordinary size and recover some energy.
+thimble|Thimble|thimble|A polished thimble offered as a prize after the caucus race.|pool_of_tears|true|false|2|You turn the thimble over in your hand, but it has no immediate effect.
+comfit_box|Box of Comfits|comfits,box,candy|A small box of sugared comfits from the caucus race prizes.|caucus_garden|true|false|2|The comfits restore some energy.
+golden_key|Golden Key|key,gold key|A small golden key that fits the tiny door in the Hall of Doors.|mushroom_forest|true|true|20|The key shines, but the final door opens only after every treasure is safely stashed.
+mushroom_piece|Mushroom Piece|mushroom,piece|A carefully cut piece from the Caterpillar's mushroom.|mushroom_forest|true|false|2|The mushroom restores energy and returns you to ordinary size.
+tea_cup|Tea Cup|cup,teacup|A chipped cup from the Mad Hatter's table.|mad_tea_party|true|false|1|The tea is somehow still warm and restores a little energy.
+pocket_watch|Pocket Watch|watch,rabbit watch|The White Rabbit's anxious pocket watch, still running on Wonderland time.|mad_tea_party|true|true|20|The watch reports the current game turn instead of a normal hour.
+bread_and_butter|Bread and Butter|bread,butter,sandwich|A simple plate of bread and butter left at the tea party.|mad_tea_party|true|false|2|The food restores some energy.
+painted_rose|Painted Rose|rose,red rose|A white rose hastily painted red to satisfy the Queen.|queen_garden|true|true|20|Holding the rose makes hostile encounters less intimidating for several turns.
+flamingo|Croquet Flamingo|flamingo,mallet|A puzzled flamingo being used as a croquet mallet.|queen_garden|true|false|3|The flamingo can complete a croquet turn when paired with the hedgehog ball.
+croquet_ball|Hedgehog Croquet Ball|hedgehog,ball,croquet ball|A curled hedgehog serving as a croquet ball.|queen_garden|true|false|3|The hedgehog ball can complete a croquet turn when paired with the flamingo.
+pepper_shaker|Pepper Shaker|pepper,shaker|A silver shaker responsible for much of the kitchen's sneezing.|royal_kitchen|true|false|1|A cloud of pepper appears, but no useful change follows.
+tart|Queen's Tart|tart,queen tart|One of the Queen's famous tarts and an important piece of court evidence.|royal_kitchen|true|true|20|You keep the tart intact because it is one of the four required treasures.
